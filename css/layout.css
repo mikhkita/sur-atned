@@ -1,0 +1,294 @@
+@charset "utf-8";
+
+
+@font-face {
+  	font-family: 'Ubuntu-Bold';
+  	src: url('../fonts/Ubuntu-Bold.eot?#iefix') format('embedded-opentype'),  
+  		url('../fonts/Ubuntu-Bold.woff') format('woff'), 
+  		url('../fonts/Ubuntu-Bold.ttf') format('truetype'), 
+		url('../fonts/Ubuntu-Bold.svg#Ubuntu-Bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu-Medium';
+  src: url('../fonts/Ubuntu-Medium.eot?#iefix') format('embedded-opentype'),  
+	  url('../fonts/Ubuntu-Medium.woff') format('woff'), 
+	  url('../fonts/Ubuntu-Medium.ttf')  format('truetype'), 
+	  url('../fonts/Ubuntu-Medium.svg#Ubuntu-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu.eot?#iefix') format('embedded-opentype'),  
+	  url('../fonts/Ubuntu.woff') format('woff'), 
+	  url('../fonts/Ubuntu.ttf')  format('truetype'), 
+	  url('../fonts/Ubuntu.svg#Ubuntu') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu-Light';
+  src: url('../fonts/Ubuntu-Light.eot?#iefix') format('embedded-opentype'),  
+	  url('../fonts/Ubuntu-Light.woff') format('woff'), 
+	  url('../fonts/Ubuntu-Light.ttf')  format('truetype'), 
+	  url('../fonts/Ubuntu-Light.svg#Ubuntu-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+	position: relative;
+}
+body {
+	min-width: 1000px;
+	text-align: center;
+	font-family: 'Ubuntu';
+	overflow-x: hidden;
+	-webkit-text-size-adjust: none;
+	color: #472275;
+}
+a{
+	text-decoration: none;
+	color: #472275;
+}
+li{
+	list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: 100;
+}
+label.error{
+	display: none !important;
+}
+input.error,textarea.error{
+	border: 1px solid #F00 !important;
+	box-shadow: 0 0px 0px 1px #F00;
+}
+.ps-lines{
+
+}
+	.ps-lines li.v{
+		position: fixed;
+		left: 50%;
+		height: 100%;
+		width: 1px;
+		top: 0px;
+		background-color: #00ffff;
+		opacity: 0.8;
+		z-index: 9999;
+	}
+	.ps-lines li.g{
+		position: absolute;
+		left: 0px;
+		width: 100%;
+		height: 1px;
+		background-color: #00ffff;
+		opacity: 0.8;
+		z-index: 9999;
+	}
+.fancybox-inner{
+	overflow: visible !important;
+}
+.bold{
+	font-family: 'PFM';
+}
+.underline{
+	text-decoration: underline;
+}
+.white{
+	color: #FFF;
+}
+.b{
+	position: relative;
+}
+.b-wide-block{
+	position: relative;
+	max-width: 1560px;
+	width: 100%;
+	min-width: 1160px;
+	margin: 0px auto;
+	background-color: #FFF;
+}
+.b-block{
+	position: relative;
+	width: 1160px;
+	margin: 0px auto;
+}
+.b-absolute{
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -500px;
+}
+input::-webkit-input-placeholder {
+	color: #434343;
+}
+input:-moz-placeholder {
+	color: #434343;
+}
+.b-icon{
+	position: relative;
+}
+.b-icon:before{
+	background-repeat: no-repeat;
+	background-image: url('../i/sprite.png');
+	background-size: 289px;
+	position: absolute;
+	content: "s";
+	font-size: 0px;
+}
+.b-orange-butt{
+
+}
+	.b-orange-butt:hover{
+		
+	}
+.b-head {
+}
+	.b-head .b-wide-block {
+			max-height: 191px;
+	}
+			.header {
+				background-color: #f5f7f8;
+				width: 100%;
+				height: 94px;
+				padding-top: 26px;	
+			}
+				.logo {
+					background-position: 50% 50%;
+					background-image: url('../i/logo.png');
+					background-size: cover;				
+					height: 58px;
+					width: 243px;	
+				}
+				.filials {
+				margin-top: 6px;
+				}
+					.filials {
+					}
+						.filial-addr {
+							font-family: "Ubuntu-Light";
+							text-align: left;
+							/* text-decoration: underline; */
+							margin-left: 58px;
+						}
+						.filial-addr:after {
+							display: block;
+							background-position: 50% 50%;
+							background-image: url("../i/vertical-line.png");
+							background-size: cover;
+							height: 40px;
+							width: 5px;
+						}
+							.filial-addr a {
+								font-size: 11.5px;
+								color: #73bb40;
+								text-decoration: underline; */
+							}
+							.filial-addr p {
+								font-size: 14px;
+								color: #656565;
+								line-height: 41px;
+							}
+				.search {
+					background-position: 50% 50%;
+					background-image: url('../i/search.svg');
+					background-size: 22px;
+					background-repeat: no-repeat;
+					border: 2px solid #e3e3e3;
+					border-radius: 50%;
+					background-color: #ffffff;
+					height: 50px;
+					width: 50px;
+					margin-left: 40px;
+					margin-top: 7px;
+				}
+				.callback  {
+					margin-top: 5px;
+					margin-left: 23px;
+				}
+					.callback a {
+						font-family: "Ubuntu";
+						font-size: 15px;
+						color: #74bc40;
+						line-height: 0px;
+						text-decoration: underline;
+						display: inline-block;
+						margin-top: 27px;
+						margin-left: 12px;
+					}
+				.callback-btn {
+					background-position: 50% 50%;
+					background-image: url('../i/callback.svg');
+					background-size: 22px;	
+					background-repeat: no-repeat;
+					border: 2px solid #74bc40;
+					border-radius: 50%;
+					height: 50px;
+					width: 50px;
+				}
+			.header-separate-gray {
+				border: 1px solid #e5e5e5;
+			}
+			.main-menu {
+				width: 100%;
+				height: 66px;
+			}
+				.main-menu .b-block {
+					overflow:hidden;
+				}
+				.main-menu ul {
+					display: block;
+				}
+					.main-menu li {
+						display: inline-block;
+					}
+					.main-menu li:last-child {
+						margin-right: 0px;
+					}				
+						.main-menu a {
+							font-family: "Ubuntu";
+							font-size: 12px;
+							color: #262626;
+							text-align: center;
+							text-transform: uppercase;
+							display: block;
+							box-sizing: border-box;
+							background-color: #ffffff;
+							float: left;
+							height: 66px;
+							padding: 26px 44px 0;
+							margin-right: -4px;
+						}
+						.main-menu a:hover {
+							background-color: #74bc40;
+							color: #ffffff;
+						}
+			.header-separate-green {
+				border: 1.5px solid #74bc40;
+				margin-top: 66px;
+				height: 1px;
+				background-color: #74bc40;
+			}
+.b-1{
+	
+}
+
+
+@media (-webkit-min-device-pixel-ratio: 1.5) {
+	.b-icon:before{
+		background-image: url('../i/sprite@2x.png');
+	}
+}	
+@media screen and (max-width: 1250px){
+	
+}
+@media screen and (max-width: 1020px){
+
+}

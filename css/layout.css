@@ -288,11 +288,8 @@ input:-moz-placeholder {
 					position: relative;
 					/* margin-top: 0px; */
 					margin-left: 120px;
-				}	
-				.callback:hover {
-					color: #ffffff;
 				}
-				.callback .callback-btn:hover {
+				.callback .callback-btn.onhover {
 					background-color: #74bc40;
 					color: #ffffff;
 				}		
@@ -310,7 +307,7 @@ input:-moz-placeholder {
 						color: #74bc40;
 						border-bottom: 2px dashed #74bc40;
 					}
-					.callback p:hover {
+					.callback p.onhover {
 						border-bottom: 0px;
 					}
 					.callback-btn {
@@ -321,7 +318,7 @@ input:-moz-placeholder {
 						position: absolute;
 						top: 4px;
 				}
-					.callback .icon-callback{
+					.callback .icon-callback {
 						content: "\e900";
 						position: absolute;
 						top: 19px;
@@ -335,6 +332,9 @@ input:-moz-placeholder {
 						line-height: 1;
 						color: #74bc40;
 						font-size: 20px;
+					}
+					.callback .icon-callback.onhover {
+						color: #f5f7f8;
 					}
 			.main-menu {
 				width: 100%;

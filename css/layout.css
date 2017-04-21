@@ -60,7 +60,7 @@ body {
 	text-align: center;
 	font-family: 'Ubuntu';
 	font-size: 16px;
-	line-height: 24px;
+	line-height: 13px;
 	overflow-x: hidden;
 	-webkit-text-size-adjust: none;
 	color: #472275;
@@ -183,7 +183,7 @@ input:-moz-placeholder {
 						display: block;
 					}
 				.filials {
-				margin-top: 6px;
+				margin-top: 9px;
 				}
 					.filials {
 						transition: opacity 0.25s ease;
@@ -192,10 +192,10 @@ input:-moz-placeholder {
 							font-family: "Ubuntu-Light";
 							text-align: left;
 							/* text-decoration: underline; */
-							margin-left: 56px;
+							margin-left: 41px;
 						}
 							.filial-addr a {
-								font-size: 11.5px;
+								font-size: 13px;
 								color: #73bb40;
 								text-decoration: underline; */
 							}
@@ -205,7 +205,7 @@ input:-moz-placeholder {
 							.filial-addr p {
 								font-size: 14px;
 								color: #656565;
-								line-height: 41px;
+								line-height: 42px;
 							}
 					.vertical-line {
 						background-position: 0 0;
@@ -234,8 +234,8 @@ input:-moz-placeholder {
 					height: 50px;
 					width: 50px;
 					position: absolute;
-					right: 216px;
-					top: 5px;
+					right: 212px;
+					top: 6px;
 					transition: width 0.55s ease;
 				}
 						.header .b-block .search.maxopacity { 
@@ -286,8 +286,8 @@ input:-moz-placeholder {
 
 				.callback  {
 					position: relative;
-					/* margin-top: 0px; */
-					margin-left: 120px;
+					margin-top: 2px;
+					margin-right: 1px;
 				}	
 				.callback:hover {
 					color: #ffffff;
@@ -305,10 +305,11 @@ input:-moz-placeholder {
 					}
 					.callback p {
 						position: absolute;
-						top: 16px;
+						top: 20px;
 						right: 3px;
 						color: #74bc40;
-						border-bottom: 2px dashed #74bc40;
+						border-bottom: 1px dashed #74bc40;
+						line-height: 18px;
 					}
 					.callback p:hover {
 						border-bottom: 0px;
@@ -324,8 +325,8 @@ input:-moz-placeholder {
 					.callback .icon-callback{
 						content: "\e900";
 						position: absolute;
-						top: 19px;
-						left: 18px;
+						top: 15px;
+						left: 15px;
 						font-family: 'icomoon' !important;
 						speak: none;
 						font-style: normal;

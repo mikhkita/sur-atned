@@ -363,9 +363,10 @@ input:-moz-placeholder {
 				.main-menu .b-block {
 					overflow:hidden;
 				}
-				.main-menu ul {
-					display: block;
-				}
+					.main-menu .b-block ul{
+						display: block;
+						float: left;
+					}
 					.main-menu li {
 						display: inline-block;
 					}
@@ -388,8 +389,8 @@ input:-moz-placeholder {
 							color: #ffffff;
 						}
 			.zapis-na-priem	{
-				margin-right: 0px;
-				max-width: 207px;
+				margin-right: 1px;
+				/* max-width: 217px; */
 			}
 				.b-block .zapis-na-priem a {
 					background-color: #74bc40;
@@ -404,29 +405,112 @@ input:-moz-placeholder {
 .main-content {
 
 }
-	.display-wide-block {
-
+	.major-slider {
 	}
-		.b-block {
-
+		.main-content .b-wide-block{
+			height: 438px;
 		}
-			.slider {
-
+			.back-slider {
+				height: 438px;
 			}
-				.mask {
-
+				.back-slide {
+					background-position: 50% 50%;
+					background-size: cover;
+					background-repeat: no-repeat;
+					height: 438px;
 				}
-					h2 {
-
+					.back-slider .slick-dots {
+						position: absolute;
+						top: 143px;
+						left: 50%;
+						margin-left: 554px;
+						background-color: transparent;
 					}
-					p {/* font-size: 16px; *//* font-family: Ubuntu-light; */}
-					a {
+						.back-slider .slick-dots li{
+							width: 40px;
+							height: 38px;
+							font-size: 0px;
+						}
+							.back-slider .slick-dots li button {
+								width: 40px;
+								height: 40px;
+								background-color: transparent;
+								border: none;
+								font-size: 0px;
+							}
+							.back-slider .slick-dots li button:after {
+								display: inline-block;
+								content: ".";
+								width: 10px;
+								height: 10px;
+								border-radius: 50%;
+								background-color: #ffffff;
+								font-size: 0px;
+								border: none;
+								margin-top: 0px;
+							}
+							.back-slider .slick-dots .slick-active button:after{
+								border-radius: 50%;
+								border: 5px solid #77bc40 !important;
+								width: 7px;
+								height: 7px;
+							}
+			.slick-prev { 
+				display: none !important 
+			}
+			.slick-next { 
+				display: none !important 
+			}
+			.b-block {
+				overflow: visible;
+			}
 
+					.slider-btns {
+						position: absolute;
+						left: 50%;
+						margin-left: 200px;
 					}
-					ul {float: left;}
-					li {
-
+					.slider-btns:after {
+						width: 6px;
+						height: 6px;
+						border-radius: 50%;
+						background-color: #ffffff;
+						position: absolute;					
 					}
+					.green-circle {
+						background-position: 50% 50%;
+						background-size: cover;
+						background-repeat: no-repeat;
+						background-image: url("../i/green-circle.png");
+						height: 438px;
+						width: 765px;		
+						position: absolute;
+						right: 50%;
+						margin-right: 15px;
+						top: 0;
+					}
+					.front-slider {
+						position: absolute;
+						left: 50%;
+						top: 0;
+						height: 438px;
+						width: 35%;
+						margin-left: -580px;
+						display: table-cell;
+						/* vertical-align: middle; */
+					}
+						.front-slider {
+							text-align: left;
+						}
+						.front-slider h2 {
+							font-family: "Ubuntu-Bold";
+						}
+						.front-slider p {
+							font-family: "Ubuntu-Light"
+						}
+						.front-slider s {
+							font-family: "Ubuntu-Medium"
+						}
 .b-1{
 	
 }

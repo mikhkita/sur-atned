@@ -1,8 +1,10 @@
 $(document).ready(function(){
-  $('.back-slider').slick({
-    dots: true
-  });
-  $('.front-slider').slick({
-    dots: true
-  });
+	$('.back-slider').slick({
+		dots: true,
+		asNavFor: '.front-slider'
+	});
+	$('.front-slider').slick({
+		fade: true,
+		asNavFor: '.back-slider'
+	});
 });

@@ -63,7 +63,7 @@ body {
 	line-height: 24px;
 	overflow-x: hidden;
 	-webkit-text-size-adjust: none;
-	color: #472275;
+	color: #ffffff;
 }
 a{
 	text-decoration: none;
@@ -420,6 +420,7 @@ input:-moz-placeholder {
 					height: 438px;
 				}
 					.back-slider .slick-dots {
+						z-index: 9999;
 						position: absolute;
 						top: 143px;
 						left: 50%;
@@ -477,40 +478,44 @@ input:-moz-placeholder {
 						background-color: #ffffff;
 						position: absolute;					
 					}
-					.green-circle {
-						background-position: 50% 50%;
-						background-size: cover;
-						background-repeat: no-repeat;
-						background-image: url("../i/green-circle.png");
-						height: 438px;
-						width: 765px;		
-						position: absolute;
-						right: 50%;
-						margin-right: 15px;
-						top: 0;
+			.green-circle {
+				background-position: 50% 50%;
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-image: url("../i/green-circle.png");
+				height: 438px;
+				width: 765px;		
+				position: absolute;
+				right: 50%;
+				margin-right: 15px;
+				top: 0;
+			}
+			.front-slider-align-container {
+				display: table;
+				height: 438px;
+				width: 500px;
+				position: absolute;
+				top: 0;
+				left: 200px;
+				}
+				.front-slider {
+					width: 35%;
+					display: table-cell;
+					vertical-align: middle;
+				}
+					.front-slide {
+						text-align: left;
 					}
-					.front-slider {
-						position: absolute;
-						left: 50%;
-						top: 0;
-						height: 438px;
-						width: 35%;
-						margin-left: -580px;
-						display: table-cell;
-						/* vertical-align: middle; */
+					.front-slide h2 {
+						font-family: "Ubuntu-Bold";
 					}
-						.front-slider {
-							text-align: left;
-						}
-						.front-slider h2 {
-							font-family: "Ubuntu-Bold";
-						}
-						.front-slider p {
-							font-family: "Ubuntu-Light"
-						}
-						.front-slider s {
-							font-family: "Ubuntu-Medium"
-						}
+					.front-slide p {
+						font-family: "Ubuntu-Light";
+					}
+					.front-slide s {
+						font-family: "Ubuntu-Medium";
+						color: #74bc40;
+					}
 .b-1{
 	
 }

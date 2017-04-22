@@ -457,10 +457,10 @@ input:-moz-placeholder {
 								height: 7px;
 							}
 			.slick-prev { 
-				display: none !important 
+				display: none !important;
 			}
 			.slick-next { 
-				display: none !important 
+				display: none !important;
 			}
 					.slider-btns {
 						position: absolute;
@@ -486,18 +486,21 @@ input:-moz-placeholder {
 				margin-right: 15px;
 				top: 0;
 			}
-			.front-slider-align-container {
-				display: table;
-				height: 438px;
-				position: absolute;
-				top: 0;
-				left: 200px;
-				}
 				.front-slider {
-					display: table-cell;
-					vertical-align: middle;
+					height: 438px;
+					position: absolute;
+					top: 0;
+					left: 200px;
+					width: 500px;					
 				}
+					.front-slider-align {
+						display: table !important;
+						height: 438px;
+						z-index: 10;
+					}
 					.front-slide {
+						display: table-cell;
+						vertical-align: middle;
 						text-align: left;
 					}
 					.front-slide h2 {
@@ -527,17 +530,7 @@ input:-moz-placeholder {
 						line-height: 56px;
 					}
 					.front-slide a:after {
-						font-family: 'icomoon' !important;
-						speak: none;
-						font-style: normal;
-						font-weight: normal;
-						font-variant: normal;
-						text-transform: none;
-						line-height: 1;
 						content: "\e902";
-					/* Better Font Rendering =========== */
-						-webkit-font-smoothing: antialiased;
-						-moz-osx-font-smoothing: grayscale;
 					}
 .b-1{
 	

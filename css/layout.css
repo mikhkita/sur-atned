@@ -42,11 +42,11 @@
 }
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?qrllgb');
-  src:  url('../fonts/icomoon.eot?qrllgb#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?qrllgb') format('truetype'),
-    url('../fonts/icomoon.woff?qrllgb') format('woff'),
-    url('../fonts/icomoon.svg?qrllgb#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?l9oetm');
+  src:  url('../fonts/icomoon.eot?l9oetm#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?l9oetm') format('truetype'),
+		url('../fonts/icomoon.woff?l9oetm') format('woff'),
+		url('../fonts/icomoon.svg?l9oetm#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -193,7 +193,7 @@ input:-moz-placeholder {
 						margin-left: 42px;
 						position: relative;
 					}
-					.filial-addr:after {
+					.filials li:after {
 						content: ".";
 						font-size: 0;
 						color: #f5f7f8;
@@ -206,7 +206,7 @@ input:-moz-placeholder {
 						top: 5px;
 						right: -21px;
 					}
-					.filials:last-child .filial-addr:after {
+					.filials li:last-child:after {
 						display: none;
 					} 
 						.filial-addr a {
@@ -462,10 +462,6 @@ input:-moz-placeholder {
 			.slick-next { 
 				display: none !important 
 			}
-			.b-block {
-				overflow: visible;
-			}
-
 					.slider-btns {
 						position: absolute;
 						left: 50%;
@@ -493,13 +489,11 @@ input:-moz-placeholder {
 			.front-slider-align-container {
 				display: table;
 				height: 438px;
-				width: 500px;
 				position: absolute;
 				top: 0;
 				left: 200px;
 				}
 				.front-slider {
-					width: 35%;
 					display: table-cell;
 					vertical-align: middle;
 				}
@@ -508,16 +502,58 @@ input:-moz-placeholder {
 					}
 					.front-slide h2 {
 						font-family: "Ubuntu-Bold";
+						line-height: 40px;
+						width: 200px;
+						display: inline-block;
+						margin-bottom: 20px;
+						font-size: 32px;
 					}
 					.front-slide p {
 						font-family: "Ubuntu-Light";
+						line-height: 30px;
+						width: 440px;
+						margin-bottom: 41px;
 					}
-					.front-slide s {
-						font-family: "Ubuntu-Medium";
+					.front-slide a {
+						font-family: "Ubuntu-Light";
+						font-size: 12px;
+						text-transform: uppercase;
 						color: #74bc40;
+						display: inline-block;
+						border-radius: 28px;
+						height: 56px;
+						background-color: #ffffff;
+						padding: 0px 30px 0px;
+						line-height: 56px;
+					}
+					.front-slide a:after {
+						font-family: 'icomoon' !important;
+						speak: none;
+						font-style: normal;
+						font-weight: normal;
+						font-variant: normal;
+						text-transform: none;
+						line-height: 1;
+						content: "\e902";
+					/* Better Font Rendering =========== */
+						-webkit-font-smoothing: antialiased;
+						-moz-osx-font-smoothing: grayscale;
 					}
 .b-1{
 	
+}
+
+.icon-icon-arrow-next:before {
+  content: "\e902";
+}
+.icon-icon-arrow-prev:before {
+  content: "\e903";
+}
+.icon-icon-map-pointer:before {
+  content: "\e904";
+}
+.icon-icon-mail:before {
+  content: "\e905";
 }
 .icon-callback:before {
   content: "\e900";

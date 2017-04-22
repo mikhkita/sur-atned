@@ -155,6 +155,18 @@ input:-moz-placeholder {
 	content: "s";
 	font-size: 0px;
 }
+.b-btn {
+	font-family: "Ubuntu-Light";
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #74bc40;
+	display: inline-block;
+	border-radius: 28px;
+	height: 56px;
+	background-color: #ffffff;
+	padding: 0px 30px 0px;
+	line-height: 56px;			
+}
 .b-orange-butt{
 
 }
@@ -450,16 +462,22 @@ input:-moz-placeholder {
 								border: none;
 								margin-top: 0px;
 							}
+							.back-slider .slick-dots li:hover button:after {
+								border-radius: 50%;
+								border: 5px solid #7e7e7e !important;
+								width: 7px;
+								height: 7px;
+							}
 							.back-slider .slick-dots .slick-active button:after{
 								border-radius: 50%;
 								border: 5px solid #77bc40 !important;
 								width: 7px;
 								height: 7px;
 							}
-			.slick-prev { 
+			.major-slider .slick-prev { 
 				display: none !important;
 			}
-			.slick-next { 
+			.major-slider .slick-next { 
 				display: none !important;
 			}
 					.slider-btns {
@@ -532,6 +550,172 @@ input:-moz-placeholder {
 					.front-slide a:after {
 						content: "\e902";
 					}
+	.about-company {
+
+	}
+		.about-company .b-wide-block {
+			height: 712px;
+			background-color: #ffffff;
+		}
+			.about-company .b-wide-block .b-block {
+				padding-top: 112px;
+			}
+				.about-align-cont {
+					
+				}
+					.left-slider {
+						height: 496px;
+						width: 742px;
+						position: relative;
+					}
+						.left-slide {
+							background-size: cover;
+							background-position: 50% 50%;
+							height: 496px;
+						}
+						.left-slider .slick-next {
+							height: 40px;
+							width: 40px;
+							border-radius: 50%;
+							background-color: #ffffff;
+							border: none;
+							font-size: 0;
+						}
+						.left-slider .slick-prev {
+							height: 45px;
+							width: 45px;
+							border-radius: 50%;
+							background-color: #fffbff;
+							border: none;
+							font-size: 0;
+							position: absolute;
+							right: 104px;
+							margin-top: -24px;
+							/* margin-left: -30px; */
+							box-shadow: 0 0 7px rgba(0,0,0,0.3);
+						}
+							.left-slider .slick-prev:after {
+								display: inline-block;
+								font-family: "icomoon";
+								font-size: 16px;
+								color: #b9b9b9;
+								content: "\e903";
+								border-radius: 50%;
+								border: none;
+								margin-top: 0px;
+							}
+							.left-slider .slick-prev:hover {
+								background-color: #74bc40 !important;
+								color: #ffffff;
+							}
+						.left-slider .slick-next {
+							height: 45px;
+							width: 45px;
+							border-radius: 50%;
+							background-color: #fffbff;
+							border: none;
+							font-size: 0;
+							box-shadow: 0 0 7px rgba(0,0,0,0.3);
+							margin-top: -24px;
+							position: absolute;
+							right: 46px;
+							/* margin-left: 20px; */
+						}
+							.left-slider .slick-next:after {
+								display: inline-block;
+								font-family: "icomoon";
+								font-size: 16px;
+								color: #b9b9b9;
+								content: "\e902";
+								border-radius: 50%;
+								border: none;
+								margin-top: 0px;
+							}
+							.left-slider .slick-next:hover {
+								background-color: #74bc40 !important;
+							}		
+					.right-slider .slick-dots {
+						z-index: 9999;
+						position: absolute;
+						bottom: 0;
+						left: -3px;
+						margin-bottom: -116px;
+						background-color: transparent;
+					}
+						.right-slider .slick-dots li{
+							width: 19px;
+							height: 19px;
+							font-size: 0px;
+							display: inline-block;
+						}
+							.right-slider .slick-dots li button {
+								width: 18px;
+								height: 18px;
+								background-color: transparent;
+								border: none;
+								font-size: 0px;
+							}
+							.right-slider .slick-dots li button:after {
+								display: inline-block;
+								content: ".";
+								width: 8px;
+								height: 8px;
+								border-radius: 50%;
+								background-color: #ebebeb;
+								font-size: 0px;
+								border: none;
+								margin-top: 0px;
+							}
+							.right-slider .slick-dots li:hover button:after {
+								background-color: #989898;
+							}
+							.right-slider .slick-dots .slick-active button:after{
+								background-color: #74bc40; 
+							}
+					.right-slider .slick-prev { 
+						display: none !important;
+					}
+					.right-slider .slick-next { 
+						display: none !important;
+					}
+					.right-slider {
+						margin-left: 48px;
+						width: 370px;
+						text-align: left;
+						margin-top: 0;
+					}
+					.right-slider:before {
+						content: "о компании";
+						font-family: "Ubuntu-Medium";
+						font-size: 20px;
+						color: #a4b1bf;
+						display: inline-block;
+						text-transform: uppercase;
+						/* margin-left: 9px; */
+						margin-top: 0;
+						position: absolute;
+						top: -5px;
+					}
+						.about-text-slide {
+						}
+						.about-text-slide h2 {
+							font-family: "Ubuntu-Bold";
+							font-size: 42px;
+							line-height: 46px;
+							color: #181818;
+							margin-top: 32px;
+							margin-bottom: 39px;
+						}
+						.about-text-slide p {
+							font-family: "Ubuntu-Light";
+							font-size: 16px;
+							line-height: 24px;
+							color: #171717;
+							margin-bottom: 36px;
+						}
+						.about-text-slide a {
+							border: 1px solid #e3e3e3;
+						}
 .b-1{
 	
 }

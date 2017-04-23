@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$('.back-slider').slick({
 		dots: true,
-		asNavFor: '.front-slider'
+		asNavFor: '.front-slider'	
 	});
 	$('.front-slider').slick({
 		fade: true,

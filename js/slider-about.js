@@ -10,6 +10,8 @@ $(document).ready(function(){
 		speed: 500,
 		fade: true,
 		cssEase: 'linear',
-		asNavFor: '.left-slider'
+		asNavFor: '.left-slider',
+		prevArrow: false,
+		nextArrow: false
 	});
 });

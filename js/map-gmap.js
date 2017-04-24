@@ -19,11 +19,25 @@ new google.maps.Point(0,0),
 new google.maps.Point(50,50)
 );
 var companyPos = new google.maps.LatLng(56.5079,84.9781);
+var companyPos_irk = new google.maps.LatLng(56.514293,85.0462039);
+var companyPos_perv = new google.maps.LatLng(56.5200287,84.9617992);
 var companyMarker = new google.maps.Marker({
 position: companyPos,
 map: map,
 icon: companyLogo,
-title:"Company Title"
+title:"Дента-Русь на Говорова"
+});
+var companyMarker_irk = new google.maps.Marker({
+position: companyPos_irk,
+map: map,
+icon: companyLogo,
+title:"Дента-Русь на Иркутском"
+});
+var companyMarker_perv = new google.maps.Marker({
+position: companyPos_perv,
+map: map,
+icon: companyLogo,
+title:"Дента-Русь на Первомайской"
 });
 
 google.maps.event.addListener(companyMarker, 'click', function() {

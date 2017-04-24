@@ -178,16 +178,36 @@ input:-moz-placeholder {
 	border-radius: 28px;
 	height: 56px;
 	background-color: #ffffff;
-	padding: 0px 30px 0px;
+	padding: 0px 20px 0px 30px;
 	line-height: 56px;
+	cursor: pointer;
 }
-.b-btn:after {
+.arrow {
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background-color: #74bc40;
+	line-height: 20px;
+	/* padding-bottom: 4px; */
+	margin-left: 14px;
+	text-align: center !important;
+}
+.arrow:hover {
+	background-color: #74bc40;
+}			
+.arrow:after {
 	font-family: "icomoon";
-	font-size: 16px;
-	color: #b9b9b9;
-	content: "\e902";
-	margin-left: 10px;
+	font-size: 10px;
+	color: #ffffff;
+	content: "\e907";
+	margin-left: 2px;
 }
+/*.b-btn:hover {
+	color: #ffffff;
+	background-color: #74bc40 !important;
+	border: 1px solid #74bc40;
+}*/
 .b-btn-next {
 	display: inline-block;
 	height: 45px;
@@ -200,6 +220,7 @@ input:-moz-placeholder {
 	font-size: 16px;
 	color: #b9b9b9;
 	line-height: 46px;
+	cursor: pointer;
 }
 .b-btn-next:after{
 	content: "\e902";
@@ -208,6 +229,7 @@ input:-moz-placeholder {
 .b-btn-next:hover {
 	background-color: #74bc40;
 	color: #ffffff;
+	border: 1px solid #74bc40 !important;
 }
 .b-btn-prev {
 	display: inline-block;
@@ -222,6 +244,7 @@ input:-moz-placeholder {
 	color: #b9b9b9;
 	line-height: 46px;
 	content: "\e903";
+	cursor: pointer;
 }
 .b-btn-prev:after{
 	content: "\e903";
@@ -230,9 +253,13 @@ input:-moz-placeholder {
 .b-btn-prev:hover {
 	background-color: #74bc40;
 	color: #ffffff;
+	border: 1px solid #74bc40 !important;
 }
 .show {
 	opacity: 1 !important;
+}
+.hide {
+	opacity: 0 !important;
 }
 .b-orange-butt{
 
@@ -331,6 +358,7 @@ input:-moz-placeholder {
 					right: 210px;
 					top: 6px;
 					transition: width 0.55s ease;
+					cursor: pointer;
 				}
 						.header .b-block .search.maxopacity { 
 							width: 600px;
@@ -499,12 +527,13 @@ input:-moz-placeholder {
 					height: 438px;
 				}
 					.back-slider .slick-dots {
-						z-index: 9999;
+						z-index: 10;
 						position: absolute;
 						top: 143px;
 						left: 50%;
 						margin-left: 554px;
 						background-color: transparent;
+						/* cursor: pointer; */
 					}
 						.back-slider .slick-dots li{
 							width: 40px;
@@ -517,6 +546,7 @@ input:-moz-placeholder {
 								background-color: transparent;
 								border: none;
 								font-size: 0px;
+								cursor: pointer;
 							}
 							.back-slider .slick-dots li button:after {
 								display: inline-block;
@@ -602,10 +632,6 @@ input:-moz-placeholder {
 						width: 440px;
 						margin-bottom: 36px;
 					}
-					.front-slide a {
-						color: #74bc40;
-						line-height: 52px;
-					}
 	.about-company {
 
 	}
@@ -659,6 +685,7 @@ input:-moz-placeholder {
 								background-color: transparent;
 								border: none;
 								font-size: 0px;
+								cursor: pointer;
 							}
 							.right-slider .slick-dots li button:after {
 								display: inline-block;
@@ -720,7 +747,7 @@ input:-moz-placeholder {
 						}
 						.about-text-slide a {
 							border: 1px solid #e3e3e3;
-							line-height: 52px;
+							line-height: 56px;
 						}		
 	.services {
 
@@ -953,6 +980,7 @@ input:-moz-placeholder {
 							font-size: 12px;
 							color: #ffffff;
 							background-color: #74bc40;
+							padding-right: 30px;
 						}
 						.review-reply a:hover {
 							background-color: #589b27;
@@ -965,8 +993,8 @@ input:-moz-placeholder {
 							margin-left: 23px;
 						}
 						.review-all a{
-							font-size: 12px;
-							font-family: "Ubuntu-Medium";
+							font-size: 14px;
+							font-family: "Ubuntu";
 							text-decoration: underline;
 							line-height: 54px;
 							display: inline-block;
@@ -998,6 +1026,32 @@ input:-moz-placeholder {
 				text-align: left;
 				background-color: rgba(255,255,255,0.8);
 				box-shadow: 0px 2px 6px #b9b9b9;
+				transition: opacity 0.25s ease;
+			}
+			.map-cont-close {
+				height: 24px;
+				width: 24px;
+				border-radius: 50%;
+				border: 1px solid #b9b9b9;
+				background-color: #ffffff;
+				position: absolute;
+				top: 33px;
+				right: 35px;
+				cursor: pointer;
+			}
+			.map-cont-close:hover {
+				background-color: #74bc40;
+				border: 1px solid #74bc40;
+			}			
+			.map-cont-close:after {
+				font-family: "icomoon";
+				font-size: 16px;
+				color: #b9b9b9;
+				content: "\e906";
+				margin-left: 4px;
+			}
+			.map-cont-close:hover:after {
+				color: #ffffff;
 			}
 				.map-cont h6 {
 					font-family: "Ubuntu-Medium";
@@ -1005,84 +1059,84 @@ input:-moz-placeholder {
 					line-height: 40px;
 					color: #1a1a1a;
 				}
-				.map-cont-head {
-					text-align: left;
-					color: #242424;
-					margin-bottom: 11px;
-				}
-					.map-cont-head h5 {
-						font-family: "Ubuntu-Medium";
-						font-size: 30px;
-						line-height: 42px;				
+					.map-cont-head {
+						text-align: left;
+						color: #242424;
+						margin-bottom: 11px;
 					}
-					.map-cont-head p {
-						font-family: "Ubuntu-Medium";
-						line-height: 23px;
-						color: #8c8c8c;
-						text-transform: uppercase;
-					}				
-					.map-cont-addr {
-						display: inline-block;
-						margin-right: 40px;
-					}
-						.map-cont-addr ul li:nth-child(1) p:before{
-							font-family: "icomoon";
-							font-size: 14px;
-							content: "\e904";
-							color: #74bc40;
-							margin-right: 5px;
-						}
-						.map-cont-addr ul li:nth-child(2) p:before{
-							font-family: "icomoon";
-							font-size: 13px;
-							content: "\e900";
-							color: #74bc40;
-							margin-right: 5px;
-						}
-						.map-cont-addr ul li:nth-child(3) p:before{
-							font-family: "icomoon";
-							font-size: 10px;
-							content: "\e905";
-							color: #74bc40;
-							margin-right: 5px;
-						}												
-						.map-cont-addr h5 {
+						.map-cont-head h5 {
 							font-family: "Ubuntu-Medium";
-							font-size: 16px;
-							line-height: 40px;
-							color: #1a1a1a;
+							font-size: 30px;
+							line-height: 42px;				
 						}
-						.map-cont-addr p {
-							font-family: "Ubuntu-Light";
-							font-size: 14px;
-							line-height: 35px;
-							color: #202020;						
-						}						
-					.map-cont-shedule {
-						font-family: "Ubuntu-Medium";
-						font-size: 14px;
-						line-height: 24px;
-						display: inline-block;
-					}
-						.map-cont-shedule h5 {
+						.map-cont-head p {
 							font-family: "Ubuntu-Medium";
-							font-size: 16px;
-							line-height: 40px;
-							color: #1a1a1a;						
+							line-height: 23px;
+							color: #8c8c8c;
+							text-transform: uppercase;
+						}				
+						.map-cont-addr {
+							display: inline-block;
+							margin-right: 40px;
 						}
-						.map-cont-shedule p {
+							.map-cont-addr ul li:nth-child(1) p:before{
+								font-family: "icomoon";
+								font-size: 14px;
+								content: "\e904";
+								color: #74bc40;
+								margin-right: 5px;
+							}
+							.map-cont-addr ul li:nth-child(2) p:before{
+								font-family: "icomoon";
+								font-size: 13px;
+								content: "\e900";
+								color: #74bc40;
+								margin-right: 5px;
+							}
+							.map-cont-addr ul li:nth-child(3) p:before{
+								font-family: "icomoon";
+								font-size: 10px;
+								content: "\e905";
+								color: #74bc40;
+								margin-right: 5px;
+							}												
+							.map-cont-addr h5 {
+								font-family: "Ubuntu-Medium";
+								font-size: 16px;
+								line-height: 40px;
+								color: #1a1a1a;
+							}
+							.map-cont-addr p {
+								font-family: "Ubuntu-Light";
+								font-size: 14px;
+								line-height: 35px;
+								color: #202020;						
+							}						
+						.map-cont-shedule {
 							font-family: "Ubuntu-Medium";
 							font-size: 14px;
-							line-height: 13px;
-							color: #1a1a1a;
-							margin-bottom: 11px;
-						}	
-						.map-cont-shedule h6 {
-							font-family: "Ubuntu-Light";
-							font-size: 14px;
-							line-height: 36px;
-							color: #1a1a1a;
-						}	
+							line-height: 24px;
+							display: inline-block;
+						}
+							.map-cont-shedule h5 {
+								font-family: "Ubuntu-Medium";
+								font-size: 16px;
+								line-height: 40px;
+								color: #1a1a1a;						
+							}
+							.map-cont-shedule p {
+								font-family: "Ubuntu-Medium";
+								font-size: 14px;
+								line-height: 13px;
+								color: #1a1a1a;
+								margin-bottom: 11px;
+							}	
+							.map-cont-shedule h6 {
+								font-family: "Ubuntu-Light";
+								font-size: 14px;
+								line-height: 36px;
+								color: #1a1a1a;
+							}	
 	.footer {
 	}
 		.footer-cont {

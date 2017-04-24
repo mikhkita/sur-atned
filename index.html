@@ -20,6 +20,7 @@
 	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
 	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript" src="js/map-gmap.js"></script>
 	<script type="text/javascript" src="js/jssor.js"></script>
 	<script type="text/javascript" src="js/jssor.slider.js"></script>
 	<script type="text/javascript" src="js/TweenMax.min.js"></script>
@@ -223,74 +224,74 @@
 				<div class="b-block">
 					<div class="services-texts">
 						<div class="services-text-container">
-							<div class="services-text show">
+							<div  id="data1" class="services-text show">
 								<h3>Диагностика</h3>
 								<p>Диагностика является самым сложным и одним из главных этапов качественного лечения. В клинике «Дента-Русь» используется несколько методов диагностики, которые позволяют определить вид заболевания и в дальнейшем назначить определенное лечение.</p>
 							</div>
 						</div>
 						<div class="services-text-container">
-							<div class="services-text">
+							<div  id="data2" class="services-text">
 								<h3>Header - HEADER</h3>
 								<p>ся несколько методов диаг</p>
 							</div>
 						</div>
 						<div class="services-text-container">
-							<div class="services-text">
+							<div  id="data3" class="services-text">
 								<h3></h3>
 								<p></p>
 							</div>
 						</div>
 						<div class="services-text-container">
-							<div class="services-text">
+							<div  id="data4" class="services-text">
 								<h3></h3>
 								<p></p>
 							</div>
 						</div>
 						<div class="services-text-container">
-							<div class="services-text">
+							<div  id="data5" class="services-text">
 								<h3></h3>
 								<p></p>
 							</div>
 						</div>
 						<div class="services-text-container">
-							<div class="services-text">
+							<div  id="data6" class="services-text">
 								<h3></h3>
 								<p></p>
 							</div>
 						</div>
 						<div class="services-text-container">
-							<div class="services-text">
+							<div  id="data7" class="services-text">
 								<h3></h3>
 								<p></p>
 							</div>
 						</div>
 						<div class="services-text-container">
-							<div class="services-text">
+							<div  id="data8" class="services-text">
 								<h3></h3>
 								<p></p>
 							</div>
 						</div>
 					</div>
 					<div class="services-images">
-						<div class="services-image show" style="background-image: url('./i/services-slide-01.png');"></div>
-						<div class="services-image" style="background-image: url('./i/services-slide-02.png');"></div>
-						<div class="services-image" style="background-image: url('./i/services-slide-01.png');"></div>
-						<div class="services-image" style="background-image: url('./i/services-slide-02.png');"></div>
-						<div class="services-image" style="background-image: url('./i/services-slide-01.png');"></div>
-						<div class="services-image" style="background-image: url('./i/services-slide-02.png');"></div>
-						<div class="services-image" style="background-image: url('./i/services-slide-01.png');"></div>
-						<div class="services-image" style="background-image: url('./i/services-slide-02.png');"></div>
+						<div  id="data1" class="services-image show" style="background-image: url('./i/services-slide-01.png');"></div>
+						<div  id="data2" class="services-image" style="background-image: url('./i/services-slide-02.png');"></div>
+						<div  id="data3" class="services-image" style="background-image: url('./i/services-slide-01.png');"></div>
+						<div  id="data4" class="services-image" style="background-image: url('./i/services-slide-02.png');"></div>
+						<div  id="data5" class="services-image" style="background-image: url('./i/services-slide-01.png');"></div>
+						<div  id="data6" class="services-image" style="background-image: url('./i/services-slide-02.png');"></div>
+						<div  id="data7" class="services-image" style="background-image: url('./i/services-slide-01.png');"></div>
+						<div  id="data8" class="services-image" style="background-image: url('./i/services-slide-02.png');"></div>
 					</div>
 					<div class="services-menu">
 						<ul>
-							<li><a href="#">Диагностика</a></li>
-							<li><a href="#">ТЕРАПЕВТИЧЕСКАЯ СТОМАТОЛОГИЯ</a></li>
-							<li><a href="#">ИМПЛАНТАЦИЯ</a></li>
-							<li><a href="#">Ортодонтия</a></li>
-							<li><a href="#">Эстетическая стоматология</a></li>
-							<li><a href="#">Хирургия</a></li>
-							<li><a href="#">Ортопедия</a></li>
-							<li><a href="#">Профгигиена и отбеливание</a></li>
+							<li><a  id="data1" href="">Диагностика</a></li>
+							<li><a  id="data2" href="">ТЕРАПЕВТИЧЕСКАЯ СТОМАТОЛОГИЯ</a></li>
+							<li><a  id="data3" href="">ИМПЛАНТАЦИЯ</a></li>
+							<li><a  id="data4" href="">Ортодонтия</a></li>
+							<li><a  id="data5" href="">Эстетическая стоматология</a></li>
+							<li><a  id="data6" href="">Хирургия</a></li>
+							<li><a  id="data7" href="">Ортопедия</a></li>
+							<li><a  id="data8" href="">Профгигиена и отбеливание</a></li>
 						</ul>
 					</div>
 				</div>
@@ -371,7 +372,7 @@
 		</div>
 		<div class="map clearfix">
 			<div class="b-wide-block">
-				<div class="map-block"></div>
+				<div class="map-block" id="map_canvas"></div>
 				<div class="map-cont">
 					<div class="map-cont-head">
 						<H5>Дента-Русь</H5>

@@ -1009,10 +1009,10 @@ input:-moz-placeholder {
 			height: 531px;
 		}
 			.map-block {
-				background-position: 50% 50%;
+/*				background-position: 50% 50%;
 				background-size: cover;
 				background-repeat: no-repeat;
-				background-image: url("../i/map.jpg");
+				background-image: url("../i/map.jpg");*/
 				height: 531px;
 			}
 			.map-cont {

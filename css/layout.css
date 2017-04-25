@@ -1275,6 +1275,7 @@ button {
 			letter-spacing: 10px;
 			margin-top: 29px;
 			padding-bottom: 32px;
+			text-transform: uppercase;
 			}
 /*Адаптировал под таблеты*/
 .b-1{

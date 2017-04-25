@@ -56,24 +56,20 @@ body {
 	position: relative;
 }
 body {
-	min-width: 1240px;
+	min-width: 760px;
 	text-align: center;
 	font-family: 'Ubuntu';
 	font-size: 16px;
 	line-height: 24px;
 	overflow-x: hidden;
 	-webkit-text-size-adjust: none;
-	color: #ffffff;
 }
 body {
 	background-position: 50% 50%;
-	background-image: url('../i/body-bgnd.jpg');
 	background-size: 1871px;
-	background-repeat: repeat-y;
 }
 a{
 	text-decoration: none;
-	color: #74bc40;
 }
 li{
 	list-style: none;
@@ -86,7 +82,6 @@ label.error{
 }
 input.error,textarea.error{
 	border: 1px solid #F00 !important;
-	box-shadow: 0 0px 0px 1px #F00;
 }
 [class^="icon-"]:before, [class*=" icon-"]:before{
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -111,7 +106,6 @@ input.error,textarea.error{
 		height: 100%;
 		width: 1px;
 		top: 0px;
-		background-color: #00ffff;
 		opacity: 0.8;
 		z-index: 9999;
 	}
@@ -120,7 +114,6 @@ input.error,textarea.error{
 		left: 0px;
 		width: 100%;
 		height: 1px;
-		background-color: #00ffff;
 		opacity: 0.8;
 		z-index: 9999;
 	}
@@ -134,22 +127,20 @@ input.error,textarea.error{
 	text-decoration: underline;
 }
 .white{
-	color: #FFF;
 }
 .b{
 	position: relative;
 }
 .b-wide-block{
 	position: relative;
-	max-width: 1560px;
+	max-width: 1240px;
 	width: 100%;
-	min-width: 1160px;
+	min-width: 960px;
 	margin: 0px auto;
-	background-color: #FFF;
 }
 .b-block{
 	position: relative;
-	width: 1160px;
+	width: 960px;
 	margin: 0px auto;
 }
 .b-absolute{
@@ -159,35 +150,28 @@ input.error,textarea.error{
 	margin-left: -500px;
 }
 input::-webkit-input-placeholder {
-	color: #434343;
 }
 input:-moz-placeholder {
-	color: #434343;
 }
 .b-icon{
 	position: relative;
 }
 .b-icon:before{
-	background-repeat: no-repeat;
-	background-image: url('../i/sprite.png');
 	background-size: 289px;
 	position: absolute;
 	content: "s";
 	font-size: 0px;
 }
 button {
-	background-color: transparent;
 	border: none;
 }
 .b-btn {
 	font-family: "Ubuntu-Light";
 	font-size: 12px;
 	text-transform: uppercase;
-	color: #74bc40;
 	display: inline-block;
 	border-radius: 28px;
 	height: 56px;
-	background-color: #ffffff;
 	padding: 0px 20px 0px 30px;
 	line-height: 56px;
 	cursor: pointer;
@@ -197,25 +181,20 @@ button {
 	height: 20px;
 	width: 20px;
 	border-radius: 50%;
-	background-color: #74bc40;
 	line-height: 20px;
 	/* padding-bottom: 4px; */
 	margin-left: 14px;
 	text-align: center !important;
 }
 .arrow:hover {
-	background-color: #74bc40;
 }			
 .arrow:after {
 	font-family: "icomoon";
 	font-size: 10px;
-	color: #ffffff;
 	content: "\e907";
 	margin-left: 2px;
 }
 /*.b-btn:hover {
-	color: #ffffff;
-	background-color: #74bc40 !important;
 	border: 1px solid #74bc40;
 }*/
 .b-btn-next {
@@ -224,11 +203,8 @@ button {
 	width: 45px;
 	border-radius: 50%;
 	border: none;
-	background-color: #ffffff;
-	box-shadow: 0 0 7px rgba(0,0,0,0.3);
 	font-family: "icomoon";
 	font-size: 16px;
-	color: #b9b9b9;
 	line-height: 46px;
 	cursor: pointer;
 }
@@ -237,8 +213,6 @@ button {
 	margin-left: 2px;
 }
 .b-btn-next:hover {
-	background-color: #74bc40;
-	color: #ffffff;
 	border: 1px solid #74bc40 !important;
 }
 .b-btn-prev {
@@ -247,11 +221,8 @@ button {
 	width: 45px;
 	border-radius: 50%;
 	border: none;
-	background-color: #ffffff;
-	box-shadow: 0 0 7px rgba(0,0,0,0.3);
 	font-family: "icomoon";
 	font-size: 16px;
-	color: #b9b9b9;
 	line-height: 46px;
 	content: "\e903";
 	cursor: pointer;
@@ -261,8 +232,6 @@ button {
 	margin-right: 2px;
 }
 .b-btn-prev:hover {
-	background-color: #74bc40;
-	color: #ffffff;
 	border: 1px solid #74bc40 !important;
 }
 .show {
@@ -284,14 +253,12 @@ button {
 			max-height: 191px;
 	}
 			.header {
-				background-color: #f5f7f8;
 				width: 100%;
 				height: 94px;
 				padding-top: 26px;	
 			}
 				.logo {
 					background-position: 50% 50%;
-					background-image: url('../i/logo.png');
 					background-size: cover;				
 					height: 58px;
 					width: 243px;	
@@ -313,7 +280,6 @@ button {
 					.filials li:after {
 						content: ".";
 						font-size: 0;
-						color: #f5f7f8;
 						box-sizing: border-box;
 						display: inline-block;
 						height: 48px;
@@ -328,7 +294,6 @@ button {
 					} 
 						.filial-addr a {
 							font-size: 13px;
-							color: #73bb40;
 							text-decoration: underline; */
 						}
 						.filial-addr a:hover {
@@ -336,14 +301,11 @@ button {
 						}
 						.filial-addr p {
 							font-size: 14px;
-							color: #656565;
 							line-height: 32px;
 						}
 					.vertical-line {
 						background-position: 0 0;
 						background-size: cover;
-						background-repeat: no-repeat;
-						background-image: url("../i/vertical-line.png");
 						height: 48px;
 						width: 2px;
 						position: relative;
@@ -359,7 +321,6 @@ button {
 					font-variant: normal;
 					text-transform: none;
 					line-height: 1;
-					color: #74bc40;
 					border: 1px solid #e3e3e3;
 					border-radius: 52px;
 					overflow:hidden;
@@ -379,7 +340,6 @@ button {
 						}
 					.search .open {
 						border: 2px solid #e3e3e3;
-						background-color: #ffffff;
 						border-radius: 52px;
 						margin-top: -2px;
 						margin-right: -2px;
@@ -404,7 +364,6 @@ button {
 								}							
 								.search .open .search-text {
 									font-size: 20px;
-									color: #656565;
 									border-style: none;
 									margin-left: 0;
 									/* display: inline-block; */
@@ -423,8 +382,6 @@ button {
 					margin-right: 0px;
 				}
 				.callback .callback-btn.onhover {
-					background-color: #74bc40;
-					color: #ffffff;
 				}		
 					.callback a {
 						width: 185px;
@@ -437,7 +394,6 @@ button {
 						position: absolute;
 						top: 20px;
 						right: 3px;
-						color: #74bc40;
 						border-bottom: 1px dashed #74bc40;
 						line-height: 18px;
 						/* left: 0px; */
@@ -466,11 +422,9 @@ button {
 						font-variant: normal;
 						text-transform: none;
 						line-height: 1;
-						color: #74bc40;
 						font-size: 20px;
 					}
 					.callback .icon-callback.onhover {
-						color: #f5f7f8;
 					}
 			.main-menu {
 				width: 100%;
@@ -490,12 +444,10 @@ button {
 					}
 						.main-menu a {
 							font-size: 12px;
-							color: #262626;
 							text-align: center;
 							text-transform: uppercase;
 							display: inline-block;
 							box-sizing: border-box;
-							background-color: #ffffff;
 							float: left;
 							height: 66px;
 							padding: 26px 44px 0;
@@ -503,22 +455,17 @@ button {
 							line-height: 14px;
 						}
 						.main-menu a:hover {
-							background-color: #74bc40;
-							color: #ffffff;
 						}
 			.zapis-na-priem	{
 			}
 				.b-block .zapis-na-priem a {
 					display: inline-block;
-					background-color: #74bc40;
-					color: #ffffff;
 					text-align: center;
 					margin: 0 auto;
 					width: 207px;
 					padding: 26px 0;
 				}
 				.b-block .zapis-na-priem a:hover {
-					background-color: #68ae36;
 				}
 .main-content {
 
@@ -534,7 +481,6 @@ button {
 				.back-slide {
 					background-position: 50% 50%;
 					background-size: cover;
-					background-repeat: no-repeat;
 					height: 438px;
 				}
 					.back-slider .slick-dots {
@@ -543,7 +489,6 @@ button {
 						top: 143px;
 						left: 50%;
 						margin-left: 554px;
-						background-color: transparent;
 						/* cursor: pointer; */
 					}
 						.back-slider .slick-dots li{
@@ -554,7 +499,6 @@ button {
 							.back-slider .slick-dots li button {
 								width: 40px;
 								height: 40px;
-								background-color: transparent;
 								border: none;
 								font-size: 0px;
 								cursor: pointer;
@@ -565,7 +509,6 @@ button {
 								width: 10px;
 								height: 10px;
 								border-radius: 50%;
-								background-color: #ffffff;
 								font-size: 0px;
 								border: none;
 								margin-top: 0px;
@@ -597,14 +540,11 @@ button {
 						width: 6px;
 						height: 6px;
 						border-radius: 50%;
-						background-color: #ffffff;
 						position: absolute;					
 					}
 			.green-circle {
 				background-position: 50% 50%;
 				background-size: cover;
-				background-repeat: no-repeat;
-				background-image: url("../i/green-circle.png");
 				height: 438px;
 				width: 765px;		
 				position: absolute;
@@ -648,7 +588,6 @@ button {
 	}
 		.about-company .b-wide-block {
 			height: 712px;
-			background-color: #ffffff;
 		}
 			.about-company .b-wide-block .b-block {
 				padding-top: 112px;
@@ -682,7 +621,6 @@ button {
 						bottom: 0;
 						left: -3px;
 						margin-bottom: -116px;
-						background-color: transparent;
 					}
 						.right-slider .slick-dots li{
 							width: 19px;
@@ -693,7 +631,6 @@ button {
 							.right-slider .slick-dots li button {
 								width: 18px;
 								height: 18px;
-								background-color: transparent;
 								border: none;
 								font-size: 0px;
 								cursor: pointer;
@@ -704,16 +641,13 @@ button {
 								width: 8px;
 								height: 8px;
 								border-radius: 50%;
-								background-color: #ebebeb;
 								font-size: 0px;
 								border: none;
 								margin-top: 0px;
 							}
 							.right-slider .slick-dots li:hover button:after {
-								background-color: #989898;
 							}
 							.right-slider .slick-dots .slick-active button:after{
-								background-color: #74bc40; 
 							}
 					.right-slider .b-btn-prev { 
 						display: none !important;
@@ -731,7 +665,6 @@ button {
 						content: "о компании";
 						font-family: "Ubuntu-Medium";
 						font-size: 20px;
-						color: #a4b1bf;
 						display: inline-block;
 						text-transform: uppercase;
 						/* margin-left: 9px; */
@@ -745,7 +678,6 @@ button {
 							font-family: "Ubuntu-Bold";
 							font-size: 42px;
 							line-height: 46px;
-							color: #181818;
 							margin-top: 32px;
 							margin-bottom: 39px;
 						}
@@ -753,7 +685,6 @@ button {
 							font-family: "Ubuntu-Light";
 							font-size: 16px;
 							line-height: 24px;
-							color: #171717;
 							margin-bottom: 36px;
 						}
 						.about-text-slide a {
@@ -765,10 +696,8 @@ button {
 	}
 		.services .b-wide-block {
 			height: 738px;
-			background-image: url("../i/services-bgrnd.jpg");
 			background-position: 50% 50%;
 			background-size: cover;
-			background-repeat: no-repeat; 
 		}
 			.b-block {
 
@@ -784,8 +713,6 @@ button {
 					width: 269px;
 					max-width: 400px;
 					margin-right: 28px;
-					background-color: #ffffff;
-					background-color: rgba(255, 255, 255, 0.8);
 					float: left;
 				}
 				.services-menu li:nth-child(4) {
@@ -801,26 +728,18 @@ button {
 							padding-left: 34px;
 							text-transform: uppercase;
 							text-align: left;
-							color: #282828;
 							display: table-cell;
 							width: 269px;
 							height: 110px;
 							line-height: 24px;
 							vertical-align: middle;
-							background-color: transparent;
 							cursor:pointer;
 						}
 						.services-menu li button:hover {
-							color: #74bc40;
-							background-color: #ffffff;
 						}
 						.services-menu li button:active {
-							color: #ffffff;
-							background-color: #717171;
 						}
 						.active {
-							color: #ffffff !important;
-							background-color: #717171 !important;							
 						}									
 				.services-texts {
 					/* width: 450px; */
@@ -843,13 +762,11 @@ button {
 						.services-text h3 {
 							font-family: "Ubuntu-Bold";
 							font-size: 48px;
-							color: #181818;
 							line-height: 55px;
 							margin-bottom: 28px;
 						}
 						.services-text p {
 							font-family: "Ubuntu-Light";
-							color: #171717;
 						}
 					.services-images .show {
 						opacity: 1;
@@ -868,7 +785,6 @@ button {
 						height: 620px;
 						background-position: 50% 50%;
 						background-size: cover;
-						background-repeat: no-repeat; 
 						opacity: 0;
 					}
 					.services-images .show {
@@ -878,7 +794,6 @@ button {
 
 	}
 		.reviews .b-wide-block {
-			background-color: #ffffff;
 			padding-top: 54px;
 			height: 580px;
 		}
@@ -889,7 +804,6 @@ button {
 					font-family: "Ubuntu-Bold";
 					font-size: 48px;
 					line-height: 55px;
-					color: #181818;
 					text-align: left;
 					/* margin-top: 54px; */
 					margin-bottom: 38px;
@@ -900,7 +814,6 @@ button {
 					margin-bottom: 26px;
 				}
 					.review-single {
-						background-color: #fafafa;
 						width: 519px;
 						margin-top: 18px;
 						margin-left: 80px;
@@ -914,7 +827,6 @@ button {
 							.review-single-phot {
 								background-position: 50% 50%;
 								background-size: cover;
-								background-repeat: no-repeat;
 								height: 110px;
 								width: 110px;
 								border-radius: 55px;
@@ -932,7 +844,6 @@ button {
 									font-size: 19px;
 									line-height: 28px;
 									text-transform: uppercase;
-									color: #73bb40;
 									text-align: left;
 									letter-spacing: 2px;
 								}
@@ -940,12 +851,10 @@ button {
 									font-family: "Ubuntu";
 									font-size: 18px;
 									line-height: 28px;
-									color: #bab9b8;
 									text-align: left;
 								}
 							.review-single-head .b-btn {
 								border: 1px solid #e3e3e3;
-								background-color: transparent;
 							}
 							.review-btn {
 								display: table-cell;
@@ -955,7 +864,6 @@ button {
 								width: 175px;
 							}
 					.review-single-text {
-						color: #1f1f1f;
 						text-align: left;
 						display: table-cell;
 						vertical-align: middle;
@@ -970,12 +878,10 @@ button {
 						border: 1px solid #b9b9b9;
 						right: 113px;
 						bottom: -23px;
-						box-shadow: none;
 					}
 					.review-slide-block  .b-btn-next {
 						border: 1px solid #b9b9b9;
 						position: absolute;
-						box-shadow: none;
 						right: 57px;
 						bottom: -23px;
 					}					
@@ -983,8 +889,6 @@ button {
 
 				}
 					.review-more-cont {
-						/* margin: 0 auto; */
-						/* width: 300px; */
 						text-align: left;
 					}
 						.review-reply {
@@ -994,12 +898,9 @@ button {
 						.review-reply a{
 							font-family: "Ubuntu-Medium";
 							font-size: 12px;
-							color: #ffffff;
-							background-color: #74bc40;
 							padding-right: 30px;
 						}
 						.review-reply a:hover {
-							background-color: #589b27;
 						}
 						.review-reply .b-btn:after {
 							display: none;							
@@ -1025,10 +926,8 @@ button {
 			height: 531px;
 		}
 			.map-block {
-/*				background-position: 50% 50%;
+				background-position: 50% 50%;
 				background-size: cover;
-				background-repeat: no-repeat;
-				background-image: url("../i/map.jpg");*/
 				height: 531px;
 			}
 			.map-cont {
@@ -1040,8 +939,6 @@ button {
 				padding: 34px 40px 0;
 				top: 90px;
 				text-align: left;
-				background-color: rgba(255,255,255,0.8);
-				box-shadow: 0px 2px 6px #b9b9b9;
 				transition: opacity 0.25s ease;
 			}
 			.map-cont-close {
@@ -1049,36 +946,30 @@ button {
 				width: 24px;
 				border-radius: 50%;
 				border: 1px solid #b9b9b9;
-				background-color: #ffffff;
 				position: absolute;
 				top: 33px;
 				right: 35px;
 				cursor: pointer;
 			}
 			.map-cont-close:hover {
-				background-color: #74bc40;
 				border: 1px solid #74bc40;
 			}			
 			.map-cont-close:after {
 				font-family: "icomoon";
 				font-size: 15px;
-				color: #b9b9b9;
 				content: "\e906";
 				margin-left: 5px;
 				line-height: 25px;
 			}
 			.map-cont-close:hover:after {
-				color: #ffffff;
 			}
 				.map-cont h6 {
 					font-family: "Ubuntu-Medium";
 					font-size: 16px;
 					line-height: 40px;
-					color: #1a1a1a;
 				}
 					.map-cont-head {
 						text-align: left;
-						color: #242424;
 						margin-bottom: 11px;
 					}
 						.map-cont-head h5 {
@@ -1089,7 +980,6 @@ button {
 						.map-cont-head p {
 							font-family: "Ubuntu-Medium";
 							line-height: 23px;
-							color: #8c8c8c;
 							text-transform: uppercase;
 						}				
 						.map-cont-addr {
@@ -1100,34 +990,29 @@ button {
 								font-family: "icomoon";
 								font-size: 14px;
 								content: "\e904";
-								color: #74bc40;
 								margin-right: 5px;
 							}
 							.map-cont-addr ul li:nth-child(2) p:before{
 								font-family: "icomoon";
 								font-size: 13px;
 								content: "\e900";
-								color: #74bc40;
 								margin-right: 5px;
 							}
 							.map-cont-addr ul li:nth-child(3) p:before{
 								font-family: "icomoon";
 								font-size: 10px;
 								content: "\e905";
-								color: #74bc40;
 								margin-right: 5px;
 							}												
 							.map-cont-addr h5 {
 								font-family: "Ubuntu-Medium";
 								font-size: 16px;
 								line-height: 40px;
-								color: #1a1a1a;
 							}
 							.map-cont-addr p {
 								font-family: "Ubuntu-Light";
 								font-size: 14px;
 								line-height: 35px;
-								color: #202020;						
 							}						
 						.map-cont-shedule {
 							font-family: "Ubuntu-Medium";
@@ -1139,20 +1024,17 @@ button {
 								font-family: "Ubuntu-Medium";
 								font-size: 16px;
 								line-height: 40px;
-								color: #1a1a1a;						
 							}
 							.map-cont-shedule p {
 								font-family: "Ubuntu-Medium";
 								font-size: 14px;
 								line-height: 13px;
-								color: #1a1a1a;
 								margin-bottom: 11px;
 							}	
 							.map-cont-shedule h6 {
 								font-family: "Ubuntu-Light";
 								font-size: 14px;
 								line-height: 36px;
-								color: #1a1a1a;
 							}	
 
 
@@ -1162,7 +1044,6 @@ button {
 		}
 			.footer-cont .b-wide-block {
 				height: 498px;
-				background-color: #f5f7f8;
 				border-top: 1px solid #e3e3e3;
 				border-bottom: 1px solid #e3e3e3;
 				text-align: left;
@@ -1177,7 +1058,6 @@ button {
 							font-family: "Ubuntu-Medium";
 							font-size: 17px;
 							line-height: 26px;
-							color: #1a1a1a;
 							text-transform: uppercase;
 						}
 						.footer-columns a {
@@ -1185,17 +1065,14 @@ button {
 							font-family: "Ubuntu-Light";
 							font-size: 14px;
 							line-height: 36px;
-							color: #1a1a1a;
 						}						
 						.footer-columns a:hover {
 							text-decoration: underline;
-							color: #74bc40;
 						}
 						.footer-columns p {
 							font-family: "Ubuntu-Light";
 							font-size: 14px;
 							line-height: 36px;
-							color: #1a1a1a;
 						}
 						.footer-logconts {
 							width: 255px;
@@ -1206,7 +1083,6 @@ button {
 							}
 							.footer-logo-img {
 								background-position: 50% 50%;
-								background-image: url("../i/logo-footer.png");
 								background-size: cover;				
 								height: 61px;
 								width: 255px;	
@@ -1220,7 +1096,6 @@ button {
 									margin-bottom: 14px;
 								}							
 								.footer-contacts p {
-									color: #656565;
 									line-height: 29px;
 								}					
 								.footer-contacts li {
@@ -1250,14 +1125,12 @@ button {
 								font-family: "Ubuntu-Medium";
 								font-size: 16px;
 								line-height: 40px;
-								color: #1a1a1a;
 							}
 			.footer-copyright {
 				position: absolute;
 				right: 0;
 				bottom: 40px;
 				background-position: 50% 50%;
-				background-image: url("../i/copyright-redder.png");
 				background-size: cover;
 				height: 16px;
 				width: 93px;
@@ -1274,7 +1147,6 @@ button {
 			font-family: "Ubuntu-Light";
 			font-size: 25px;
 			line-height: 40px;
-			color: #c2c2c2;
 			letter-spacing: 10px;
 			margin-top: 29px;
 			}
@@ -1304,7 +1176,6 @@ button {
 
 @media (-webkit-min-device-pixel-ratio: 1.5) {
 	.b-icon:before{
-		background-image: url('../i/sprite@2x.png');
 	}
 }	
 @media screen and (max-width: 1250px){

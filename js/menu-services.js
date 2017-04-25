@@ -1,4 +1,5 @@
-$('.services-menu li a').click(function() {
-$('.services-text').addClass("show");
-$('.services-image').addClass("show");
+$('#data1').click(function() {
+	$('#data1').addClass("active");
+	$('.services-text').addClass("show");
+	$('.services-image').addClass("show");
 });

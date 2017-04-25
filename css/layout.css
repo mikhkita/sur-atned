@@ -230,7 +230,7 @@ button {
 	border-radius: 50%;
 	border: none;
 	background-color: #ffffff;
-	box-shadow: 0 0 7px rgba(0,0,0,0.3);
+	box-shadow: 0px 3px 7px rgba(0,0,0,0.14);
 	font-family: "icomoon";
 	font-size: 16px;
 	color: #b9b9b9;
@@ -253,7 +253,7 @@ button {
 	border-radius: 50%;
 	border: none;
 	background-color: #ffffff;
-	box-shadow: 0 0 7px rgba(0,0,0,0.3);
+	box-shadow: 0px 3px 7px rgba(0,0,0,0.14);
 	font-family: "icomoon";
 	font-size: 16px;
 	color: #b9b9b9;
@@ -975,19 +975,19 @@ button {
 						}
 					.review-slide-block  .b-btn-prev {
 						position: absolute;
-						border: 1px solid #b9b9b9;
+						/* border: 1px solid #b9b9b9; */
 						right: 113px;
 						bottom: -23px;
-						box-shadow: none;
+						/* box-shadow: none; */
 						z-index: 10;
 					}
 					.review-slide-block  .b-btn-prev:hover {
-						border: 1px solid #74bc40;
+						border: none !important;
 					}
 					.review-slide-block  .b-btn-next {
-						border: 1px solid #b9b9b9;
+						/* border: 1px solid #b9b9b9; */
 						position: absolute;
-						box-shadow: none;
+						/* box-shadow: none; */
 						right: 57px;
 						bottom: -23px;
 					}					

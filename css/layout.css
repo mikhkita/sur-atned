@@ -220,6 +220,9 @@ button {
 	background-color: #74bc40 !important;
 	border: 1px solid #74bc40;
 }*/
+.slick-list {
+	position: relative;
+}
 .b-btn-next {
 	display: inline-block;
 	height: 45px;
@@ -670,7 +673,12 @@ button {
 						.left-slider .b-btn-prev {
 							position: absolute;
 							right: 104px;
-							margin-top: -24px;
+							bottom: -21px;
+							/* margin-top: -24px; */
+							z-index: 10;
+						}
+						.left-slider .b-btn-prev:hover {
+							border: none !important;
 						}
 						.left-slider .b-btn-next {
 							margin-top: -24px;
@@ -971,6 +979,10 @@ button {
 						right: 113px;
 						bottom: -23px;
 						box-shadow: none;
+						z-index: 10;
+					}
+					.review-slide-block  .b-btn-prev:hover {
+						border: 1px solid #74bc40;
 					}
 					.review-slide-block  .b-btn-next {
 						border: 1px solid #b9b9b9;

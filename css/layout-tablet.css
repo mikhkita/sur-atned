@@ -172,7 +172,7 @@ button {
 	display: inline-block;
 	border-radius: 28px;
 	height: 56px;
-	padding: 0px 20px 0px 30px;
+	padding: 0px 18px 0px 22px;
 	line-height: 56px;
 	cursor: pointer;
 }
@@ -274,7 +274,7 @@ button {
 						font-family: "Ubuntu-Light";
 						text-align: left;
 						/* text-decoration: underline; */
-						margin-left: 42px;
+						margin-left: 18px;
 						position: relative;
 					}
 					.filials li:after {
@@ -287,7 +287,7 @@ button {
 						border:1px solid #e3e3e3;
 						position: absolute;
 						top: 5px;
-						right: -21px;
+						right: -5px;
 					}
 					.filials li:last-child:after {
 						display: none;
@@ -327,13 +327,13 @@ button {
 					height: 54px;
 					width: 54px;
 					position: absolute;
-					right: 210px;
+					right: 200px;
 					top: 6px;
 					transition: width 0.55s ease;
 					cursor: pointer;
 				}
-						.header .b-block .search.maxopacity { 
-							width: 600px;
+						.header .b-block .search.maxopacity {
+							width: 490px;
 						}
 						.filials.maxopacity {
 							opacity: 0;
@@ -344,7 +344,7 @@ button {
 						margin-top: -2px;
 						margin-right: -2px;
 						height: 54px;
-						width: 600px;
+						width: 490px;
 						text-align: right;
 					}
 						.search .open .icon-search {
@@ -368,7 +368,7 @@ button {
 									margin-left: 0;
 									/* display: inline-block; */
 									height: 50px;
-									width: 550px;
+									width: 410px;
 									padding-left: 20px;
 								}
 								.search .open .search-button {
@@ -384,7 +384,7 @@ button {
 				.callback .callback-btn.onhover {
 				}		
 					.callback a {
-						width: 185px;
+						width: 186px;
 						box-sizing: border-box;
 						display: inline-block;
 						height: 52px;
@@ -392,12 +392,15 @@ button {
 					}
 					.callback p {
 						position: absolute;
-						top: 20px;
-						right: 3px;
+						top: 21px;
+						display: inline;
+						left: 57px;
 						border-bottom: 1px dashed #74bc40;
 						line-height: 18px;
-						/* left: 0px; */
+						/* text-decoration: underline dashed; */
 						font-size: 15px;
+						/* width: 63px; */
+						/* text-align: center; */
 					}
 					.callback p.onhover {
 						border-bottom: 0px;
@@ -409,6 +412,7 @@ button {
 						width: 48px;
 						position: absolute;
 						top: 5px;
+						/* text-align: center; */
 				}
 					.callback .icon-callback {
 						content: "\e900";
@@ -450,7 +454,7 @@ button {
 							box-sizing: border-box;
 							float: left;
 							height: 66px;
-							padding: 26px 44px 0;
+							padding: 26px 29px 0;
 							margin-right: -1px;
 							line-height: 14px;
 						}
@@ -462,7 +466,7 @@ button {
 					display: inline-block;
 					text-align: center;
 					margin: 0 auto;
-					width: 207px;
+					width: 217px;
 					padding: 26px 0;
 				}
 				.b-block .zapis-na-priem a:hover {
@@ -488,7 +492,7 @@ button {
 						position: absolute;
 						top: 143px;
 						left: 50%;
-						margin-left: 554px;
+						margin-left: 440px;
 						/* cursor: pointer; */
 					}
 						.back-slider .slick-dots li{
@@ -556,8 +560,9 @@ button {
 					height: 438px;
 					position: absolute;
 					top: 0;
-					left: 200px;
-					width: 500px;					
+					left: 50%;
+					width: 500px;
+					margin-left: -480px;
 				}
 					.front-slider-align {
 						display: table !important;
@@ -568,6 +573,7 @@ button {
 						display: table-cell;
 						vertical-align: middle;
 						text-align: left;
+						/* width: 200px; */
 					}
 					.front-slide h2 {
 						font-family: "Ubuntu-Bold";
@@ -580,14 +586,14 @@ button {
 					.front-slide p {
 						font-family: "Ubuntu-Light";
 						line-height: 30px;
-						width: 440px;
+						width: 370px;
 						margin-bottom: 36px;
 					}
 	.about-company {
 
 	}
 		.about-company .b-wide-block {
-			height: 712px;
+			/* height: 712px; */
 		}
 			.about-company .b-wide-block .b-block {
 				padding-top: 112px;
@@ -596,14 +602,14 @@ button {
 					
 				}
 					.left-slider {
-						height: 496px;
-						width: 742px;
+						height: 361px;
+						width: 540px;
 						position: relative;
 					}
 						.left-slide {
 							background-size: cover;
 							background-position: 50% 50%;
-							height: 496px;
+							height: 361px;
 						}
 						.left-slider .b-btn-prev {
 							position: absolute;
@@ -620,7 +626,7 @@ button {
 						position: absolute;
 						bottom: 0;
 						left: -3px;
-						margin-bottom: -116px;
+						margin-bottom: -26px;
 					}
 						.right-slider .slick-dots li{
 							width: 19px;
@@ -678,14 +684,14 @@ button {
 							font-family: "Ubuntu-Bold";
 							font-size: 42px;
 							line-height: 46px;
-							margin-top: 32px;
-							margin-bottom: 39px;
+							margin-top: 30px;
+							margin-bottom: 13px;
 						}
 						.about-text-slide p {
 							font-family: "Ubuntu-Light";
 							font-size: 16px;
 							line-height: 24px;
-							margin-bottom: 36px;
+							margin-bottom: 22px;
 						}
 						.about-text-slide a {
 							border: 1px solid #e3e3e3;
@@ -710,9 +716,9 @@ button {
 				.services-menu li {
 					display: inline-block;
 					height: 110px;
-					width: 269px;
+					width: 223px;
 					max-width: 400px;
-					margin-right: 28px;
+					margin-right: 22px;
 					float: left;
 				}
 				.services-menu li:nth-child(4) {
@@ -725,11 +731,11 @@ button {
 						.services-menu li button {
 							font-family: "Ubuntu";
 							font-size: 20px;
-							padding-left: 34px;
+							padding-left: 19px;
 							text-transform: uppercase;
 							text-align: left;
 							display: table-cell;
-							width: 269px;
+							width: 223px;
 							height: 110px;
 							line-height: 24px;
 							vertical-align: middle;
@@ -745,12 +751,13 @@ button {
 					/* width: 450px; */
 					position: absolute;
 					left: 0px;
+					z-index: 10;
 				}
 				.services-text-container {
 					position: absolute;
 					display: table;
 					height: 398px;
-					width: 450px;
+					width: 370px;
 				}
 					.services-text {
 						display: table-cell;
@@ -772,7 +779,6 @@ button {
 						opacity: 1;
 					}
 				.services-images {
-					width: 696px;
 					position: absolute;
 					top: 0;
 					right: 0;
@@ -781,8 +787,8 @@ button {
 						position: absolute;
 						top: 0;
 						right: 0;
-						width: 696px;
-						height: 620px;
+						width: 596px;
+						height: 520px;
 						background-position: 50% 50%;
 						background-size: cover;
 						opacity: 0;
@@ -809,7 +815,7 @@ button {
 					margin-bottom: 38px;
 				}
 				.review-slide-block {
-					width: 1190px;
+					width: 990px;
 					margin-left: -34px;
 					margin-bottom: 26px;
 				}
@@ -832,12 +838,14 @@ button {
 								border-radius: 55px;
 								overflow: hidden;
 								margin-left: -46px;
+								margin-right: 13px;
 							}
 							.review-single-name {
 								display: table-cell;
 								vertical-align: middle;
 								width: 200px;
 								text-align: left;
+								margin-left: 0px;
 							}
 								.review-single-name h5{
 									font-family: "Ubuntu";
@@ -845,7 +853,7 @@ button {
 									line-height: 28px;
 									text-transform: uppercase;
 									text-align: left;
-									letter-spacing: 2px;
+									letter-spacing: 1px;
 								}
 								.review-single-name p{
 									font-family: "Ubuntu";
@@ -860,8 +868,8 @@ button {
 								display: table-cell;
 								vertical-align: middle;
 								text-align: right;
-								padding-right: 44px;
-								width: 175px;
+								padding-right: 20px;
+								width: 198px;
 							}
 					.review-single-text {
 						text-align: left;
@@ -870,8 +878,8 @@ button {
 						height: 206px;
 					}
 						.review-single-text p {
-							margin-left: 45px;
-							width: 445px;
+							margin-left: 24px;
+							width: 352px;
 						}
 					.review-slide-block  .b-btn-prev {
 						position: absolute;
@@ -935,7 +943,7 @@ button {
 				height: 334px;
 				width: 332px;
 				left: 50%;
-				margin-left: 168px;
+				margin-left: 63px;
 				padding: 34px 40px 0;
 				top: 90px;
 				text-align: left;
@@ -984,7 +992,8 @@ button {
 						}				
 						.map-cont-addr {
 							display: inline-block;
-							margin-right: 40px;
+							/* margin-right: 40px; */
+							width: 210px;
 						}
 							.map-cont-addr ul li:nth-child(1) p:before{
 								font-family: "icomoon";
@@ -1043,16 +1052,16 @@ button {
 		.footer-cont {
 		}
 			.footer-cont .b-wide-block {
-				height: 498px;
+				/* height: 498px; */
 				border-top: 1px solid #e3e3e3;
 				border-bottom: 1px solid #e3e3e3;
 				text-align: left;
 			}
 				.footer-cont .b-block {
-					height: 498px;
+					/* height: 498px; */
 				}
 					.footer-columns {
-						padding-top: 64px;
+						/* padding-top: 64px; */
 					}
 						.footer-columns h4 {
 							font-family: "Ubuntu-Medium";
@@ -1076,7 +1085,7 @@ button {
 						}
 						.footer-logconts {
 							width: 255px;
-							margin-right: 12%; /*140px*/
+							margin-right: 70px; /*140px*/
 						}
 							.footer-logo {
 							margin-bottom: 26px;
@@ -1102,13 +1111,13 @@ button {
 									margin-bottom: 11px;
 								}
 						.footer-pages {
-							margin-right: 200px;
+							margin-right: 125px;
 						}
 							.footer-pages ul {
 								margin-top: 18px;
 							}
 						.footer-services {
-							margin-right: 119px;
+							margin-right: 54px;
 						}
 							.footer-services ul {
 								margin-top: 18px;

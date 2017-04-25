@@ -272,10 +272,12 @@ button {
 }
 .show {
 	opacity: 1 !important;
-	visibility: 
+	transition: opacity 0.25s ease;
 }
 .hide {
 	opacity: 0 !important;
+	z-index: -1;
+	/*display: none;*/
 }
 .b-orange-butt{
 
@@ -312,7 +314,7 @@ button {
 						font-family: "Ubuntu-Light";
 						text-align: left;
 						/* text-decoration: underline; */
-						margin-left: 42px;
+						margin-left: 66px;
 						position: relative;
 					}
 					.filials li:after {
@@ -326,7 +328,7 @@ button {
 						border:1px solid #e3e3e3;
 						position: absolute;
 						top: 5px;
-						right: -21px;
+						right: -33px;
 					}
 					.filials li:last-child:after {
 						display: none;
@@ -586,6 +588,12 @@ button {
 								width: 7px;
 								height: 7px;
 							}
+							.back-slider .slick-dots .slick-active button:hover:after{
+								border-radius: 50%;
+								border: 5px solid #77bc40 !important;
+								width: 7px;
+								height: 7px;
+							}							
 			.major-slider .b-btn-prev { 
 				display: none !important;
 			}
@@ -620,8 +628,9 @@ button {
 					height: 438px;
 					position: absolute;
 					top: 0;
-					left: 200px;
-					width: 500px;					
+					left: 50%;
+					margin-left: -580px;
+					width: 500px;
 				}
 					.front-slider-align {
 						display: table !important;
@@ -651,7 +660,6 @@ button {
 
 	}
 		.about-company .b-wide-block {
-			height: 712px;
 			background-color: #ffffff;
 		}
 			.about-company .b-wide-block .b-block {
@@ -664,6 +672,7 @@ button {
 						height: 496px;
 						width: 742px;
 						position: relative;
+						margin-bottom: 104px;
 					}
 						.left-slide {
 							background-size: cover;
@@ -724,6 +733,9 @@ button {
 							.right-slider .slick-dots .slick-active button:after{
 								background-color: #74bc40; 
 							}
+							.right-slider .slick-dots .slick-active button:hover:after{
+								background-color: #74bc40; 
+							}							
 					.right-slider .b-btn-prev { 
 						display: none !important;
 					}
@@ -1052,7 +1064,9 @@ button {
 				text-align: left;
 				background-color: rgba(255,255,255,0.8);
 				box-shadow: 0px 2px 6px #b9b9b9;
-				transition: opacity 0.25s ease;
+			}
+			.gov, .irk, .perv {
+				transition: opacity 0.5s ease;
 			}
 			.map-cont-close {
 				height: 24px;
@@ -1104,7 +1118,8 @@ button {
 						}				
 						.map-cont-addr {
 							display: inline-block;
-							margin-right: 40px;
+							/* margin-right: 40px; */
+							width: 208px;
 						}
 							.map-cont-addr ul li:nth-child(1) p:before{
 								font-family: "icomoon";
@@ -1171,17 +1186,18 @@ button {
 		.footer-cont {
 		}
 			.footer-cont .b-wide-block {
-				height: 498px;
 				background-color: #f5f7f8;
 				border-top: 1px solid #e3e3e3;
 				border-bottom: 1px solid #e3e3e3;
 				text-align: left;
 			}
 				.footer-cont .b-block {
-					height: 498px;
+				padding-top: 64px;
+				height: 334px;
+				padding-bottom: 100px;
 				}
 					.footer-columns {
-						padding-top: 64px;
+						/* padding-top: 64px; */
 					}
 						.footer-columns h4 {
 							font-family: "Ubuntu-Medium";

@@ -272,10 +272,12 @@ button {
 }
 .show {
 	opacity: 1 !important;
+	transition: opacity 0.25s ease;
 }
 .hide {
 	opacity: 0 !important;
-	display: none;
+	z-index: -1;
+	/*display: none;*/
 }
 .b-orange-butt{
 
@@ -586,6 +588,12 @@ button {
 								width: 7px;
 								height: 7px;
 							}
+							.back-slider .slick-dots .slick-active button:hover:after{
+								border-radius: 50%;
+								border: 5px solid #77bc40 !important;
+								width: 7px;
+								height: 7px;
+							}							
 			.major-slider .b-btn-prev { 
 				display: none !important;
 			}
@@ -725,6 +733,9 @@ button {
 							.right-slider .slick-dots .slick-active button:after{
 								background-color: #74bc40; 
 							}
+							.right-slider .slick-dots .slick-active button:hover:after{
+								background-color: #74bc40; 
+							}							
 					.right-slider .b-btn-prev { 
 						display: none !important;
 					}
@@ -1053,7 +1064,9 @@ button {
 				text-align: left;
 				background-color: rgba(255,255,255,0.8);
 				box-shadow: 0px 2px 6px #b9b9b9;
-				transition: opacity 0.25s ease;
+			}
+			.gov, .irk, .perv {
+				transition: opacity 0.5s ease;
 			}
 			.map-cont-close {
 				height: 24px;
@@ -1105,7 +1118,8 @@ button {
 						}				
 						.map-cont-addr {
 							display: inline-block;
-							margin-right: 40px;
+							/* margin-right: 40px; */
+							width: 208px;
 						}
 							.map-cont-addr ul li:nth-child(1) p:before{
 								font-family: "icomoon";

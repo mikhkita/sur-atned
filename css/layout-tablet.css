@@ -992,7 +992,8 @@ button {
 						}				
 						.map-cont-addr {
 							display: inline-block;
-							margin-right: 40px;
+							/* margin-right: 40px; */
+							width: 210px;
 						}
 							.map-cont-addr ul li:nth-child(1) p:before{
 								font-family: "icomoon";

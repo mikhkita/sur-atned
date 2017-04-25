@@ -14,13 +14,14 @@ function initialize() {
 	settings);
 
 	var companyLogo = new google.maps.MarkerImage('i/map-marker.png',
-	new google.maps.Size(91,138),
-	new google.maps.Point(0,0)
+	new google.maps.Size(45,68),
+	new google.maps.Point(0,0),
+	new google.maps.Point(22,68)
 	);
 
-	var companyPos = new google.maps.LatLng(56.5079,84.9781);
-	var companyPos_irk = new google.maps.LatLng(56.514293,85.0462039);
-	var companyPos_perv = new google.maps.LatLng(56.5200287,84.9617992);
+	var companyPos = new google.maps.LatLng(56.507841,84.97861);
+	var companyPos_irk = new google.maps.LatLng(56.5142726,85.0482779);
+	var companyPos_perv = new google.maps.LatLng(56.5200287,84.9628989);
 	var companyMarker = new google.maps.Marker({
 		position: companyPos,
 		map: map,
@@ -41,8 +42,28 @@ function initialize() {
 		});
 
 	google.maps.event.addListener(companyMarker, 'click', function() {
-	$('.map-cont').removeClass("hide");
-	$('.map-cont').addClass("show");
+	$('.gov').removeClass("hide");
+	$('.irk').removeClass("show");
+	$('.perv').removeClass("show");
+	$('.gov').addClass("show");
+	$('.irk').addClass("hide");
+	$('.perv').addClass("hide");
+	});
+	google.maps.event.addListener(companyMarker_irk, 'click', function() {
+	$('.irk').removeClass("hide");
+	$('.gov').removeClass("show");
+	$('.perv').removeClass("show");	
+	$('.irk').addClass("show");
+	$('.gov').addClass("hide");
+	$('.perv').addClass("hide");	
+	});
+	google.maps.event.addListener(companyMarker_perv, 'click', function() {
+	$('.perv').removeClass("hide");
+	$('.irk').removeClass("show");
+	$('.gov').removeClass("show");	
+	$('.perv').addClass("show");
+	$('.irk').addClass("hide");
+	$('.gov').addClass("hide");	
 	});
 }
 

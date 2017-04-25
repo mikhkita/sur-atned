@@ -65,6 +65,12 @@ body {
 	-webkit-text-size-adjust: none;
 	color: #ffffff;
 }
+body {
+	background-position: 50% 50%;
+	background-image: url('../i/body-bgnd.jpg');
+	background-size: 1871px;
+	background-repeat: repeat-y;
+}
 a{
 	text-decoration: none;
 	color: #74bc40;
@@ -257,6 +263,7 @@ input:-moz-placeholder {
 }
 .show {
 	opacity: 1 !important;
+	visibility: 
 }
 .hide {
 	opacity: 0 !important;

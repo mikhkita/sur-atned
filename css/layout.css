@@ -1052,10 +1052,11 @@ input:-moz-placeholder {
 			}			
 			.map-cont-close:after {
 				font-family: "icomoon";
-				font-size: 16px;
+				font-size: 15px;
 				color: #b9b9b9;
 				content: "\e906";
-				margin-left: 4px;
+				margin-left: 5px;
+				line-height: 25px;
 			}
 			.map-cont-close:hover:after {
 				color: #ffffff;

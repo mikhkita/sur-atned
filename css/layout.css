@@ -272,10 +272,10 @@ button {
 }
 .show {
 	opacity: 1 !important;
-	visibility: 
 }
 .hide {
 	opacity: 0 !important;
+	display: none;
 }
 .b-orange-butt{
 
@@ -312,7 +312,7 @@ button {
 						font-family: "Ubuntu-Light";
 						text-align: left;
 						/* text-decoration: underline; */
-						margin-left: 42px;
+						margin-left: 66px;
 						position: relative;
 					}
 					.filials li:after {
@@ -326,7 +326,7 @@ button {
 						border:1px solid #e3e3e3;
 						position: absolute;
 						top: 5px;
-						right: -21px;
+						right: -33px;
 					}
 					.filials li:last-child:after {
 						display: none;
@@ -620,8 +620,9 @@ button {
 					height: 438px;
 					position: absolute;
 					top: 0;
-					left: 200px;
-					width: 500px;					
+					left: 50%;
+					margin-left: -580px;
+					width: 500px;
 				}
 					.front-slider-align {
 						display: table !important;
@@ -651,7 +652,6 @@ button {
 
 	}
 		.about-company .b-wide-block {
-			height: 712px;
 			background-color: #ffffff;
 		}
 			.about-company .b-wide-block .b-block {
@@ -664,6 +664,7 @@ button {
 						height: 496px;
 						width: 742px;
 						position: relative;
+						margin-bottom: 104px;
 					}
 						.left-slide {
 							background-size: cover;
@@ -1171,17 +1172,18 @@ button {
 		.footer-cont {
 		}
 			.footer-cont .b-wide-block {
-				height: 498px;
 				background-color: #f5f7f8;
 				border-top: 1px solid #e3e3e3;
 				border-bottom: 1px solid #e3e3e3;
 				text-align: left;
 			}
 				.footer-cont .b-block {
-					height: 498px;
+				padding-top: 64px;
+				height: 334px;
+				padding-bottom: 100px;
 				}
 					.footer-columns {
-						padding-top: 64px;
+						/* padding-top: 64px; */
 					}
 						.footer-columns h4 {
 							font-family: "Ubuntu-Medium";

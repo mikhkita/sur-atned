@@ -189,12 +189,14 @@ button {
 	height: 56px;
 	background-color: #ffffff;
 	padding: 0px 20px 0px 30px;
-	line-height: 56px;
+	line-height: 57px;
 	cursor: pointer;
 }
 .arrow {
 	display: inline-block;
 	height: 20px;
+	position: relative;
+	top: -1px;
 	width: 20px;
 	border-radius: 50%;
 	background-color: #74bc40;
@@ -498,7 +500,7 @@ button {
 							background-color: #ffffff;
 							float: left;
 							height: 66px;
-							padding: 26px 44px 0;
+							padding: 27px 44px 0;
 							margin-right: -1px;
 							line-height: 14px;
 						}
@@ -515,7 +517,7 @@ button {
 					text-align: center;
 					margin: 0 auto;
 					width: 207px;
-					padding: 26px 0;
+					padding: 27px 0;
 				}
 				.b-block .zapis-na-priem a:hover {
 					background-color: #68ae36;
@@ -526,7 +528,6 @@ button {
 	.major-slider {
 	}
 		.main-content .b-wide-block{
-			height: 438px;
 		}
 			.back-slider {
 				height: 438px;
@@ -799,13 +800,13 @@ button {
 							font-family: "Ubuntu";
 							font-size: 20px;
 							padding-left: 34px;
-							text-transform: uppercase;
+							/* text-transform: uppercase; */
 							text-align: left;
 							color: #282828;
 							display: table-cell;
 							width: 269px;
 							height: 110px;
-							line-height: 24px;
+							line-height: 30px;
 							vertical-align: middle;
 							background-color: transparent;
 							cursor:pointer;
@@ -880,7 +881,6 @@ button {
 		.reviews .b-wide-block {
 			background-color: #ffffff;
 			padding-top: 54px;
-			height: 580px;
 		}
 			.reviews .b-wide-block .b-block {
 				/*overflow: hidden;*/
@@ -897,7 +897,7 @@ button {
 				.review-slide-block {
 					width: 1190px;
 					margin-left: -34px;
-					margin-bottom: 26px;
+					margin-bottom: 40px;
 				}
 					.review-single {
 						background-color: #fafafa;
@@ -934,13 +934,13 @@ button {
 									text-transform: uppercase;
 									color: #73bb40;
 									text-align: left;
-									letter-spacing: 2px;
+									letter-spacing: 1px;
 								}
 								.review-single-name p{
-									font-family: "Ubuntu";
-									font-size: 18px;
+									font-family: "Ubuntu-Light";
+									font-size: 16px;
 									line-height: 28px;
-									color: #bab9b8;
+									color: #cccccc;
 									text-align: left;
 								}
 							.review-single-head .b-btn {
@@ -979,9 +979,7 @@ button {
 						right: 57px;
 						bottom: -23px;
 					}					
-				.review-more {
-
-				}
+				.review-more {padding-bottom: 50px;}
 					.review-more-cont {
 						/* margin: 0 auto; */
 						/* width: 300px; */
@@ -1089,7 +1087,7 @@ button {
 						.map-cont-head p {
 							font-family: "Ubuntu-Medium";
 							line-height: 23px;
-							color: #8c8c8c;
+							color: #bbb7b7;
 							text-transform: uppercase;
 						}				
 						.map-cont-addr {
@@ -1268,15 +1266,15 @@ button {
 					width: 93px;					
 				}
 		.footer-sub {
-			height: 136px;
 		}
 			.footer-sub p {
 			font-family: "Ubuntu-Light";
 			font-size: 25px;
 			line-height: 40px;
-			color: #c2c2c2;
+			color: #dcdcdc;
 			letter-spacing: 10px;
 			margin-top: 29px;
+			padding-bottom: 32px;
 			}
 /*Адаптировал под таблеты*/
 .b-1{

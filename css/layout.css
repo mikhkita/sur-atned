@@ -892,32 +892,48 @@ button {
 						height: 738px;
 						background-position: 100% 0%;
 						background-size: auto auto;
-						background-repeat: no-repeat; 
+						background-repeat: no-repeat;
 						opacity: 0;
 					}
 					.img_diagnostika {
 						background-image: url('../i/services-slide-01.png');
+						background-position: 100% 0%;
+						background-size: auto auto;						
 					}
 					.img_terapevt-stom {
 						background-image: url('../i/services-slide-02.png');
+						background-position: 100% 0%;
+						background-size: auto auto;						
 					}
 					.img_implantation {
 						background-image: url('../i/services-slide-01.png');
+						background-position: 100% 0%;
+						background-size: auto auto;						
 					}
 					.img_ortodontiya {
 						background-image: url('../i/services-slide-02.png');
+						background-position: 100% 0%;
+						background-size: auto auto;						
 					}
 					.img_estetic-stom {
 						background-image: url('../i/services-slide-01.png');
+						background-position: 100% 0%;
+						background-size: auto auto;						
 					}
 					.img_hirurgiya {
 						background-image: url('../i/services-slide-02.png');
+						background-position: 100% 0%;
+						background-size: auto auto;						
 					}
 					.img_ortopedia {
 						background-image: url('../i/services-slide-01.png');
+						background-position: 100% 0%;
+						background-size: auto auto;						
 					}
 					.img_gigiena {
 						background-image: url('../i/services-slide-02.png');
+						background-position: 100% 0%;
+						background-size: auto auto;						
 					}
 	.reviews {
 
@@ -999,14 +1015,17 @@ button {
 								width: 175px;
 							}
 					.review-single-text {
+						overflow: hidden;
 						color: #1f1f1f;
 						text-align: left;
-						display: table-cell;
+						/* display: table-cell; */
 						vertical-align: middle;
-						height: 206px;
+						height: 170px;
+						padding: 0 45px 0px 45px;
+						margin-bottom: 40px;
 					}
 						.review-single-text p {
-							margin-left: 45px;
+							/* margin-left: 45px; */
 							width: 445px;
 						}
 					.review-slide-block  .b-btn-prev {

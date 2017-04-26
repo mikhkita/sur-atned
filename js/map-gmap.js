@@ -14,9 +14,10 @@ function initialize() {
 	settings);
 
 	var companyLogo = new google.maps.MarkerImage('i/map-marker.png',
-	new google.maps.Size(45,68),
+	new google.maps.Size(91,138),
 	new google.maps.Point(0,0),
-	new google.maps.Point(22,68)
+	new google.maps.Point(22,68),
+	new google.maps.Size(45,68)
 	);
 
 	var companyPos = new google.maps.LatLng(56.507841,84.97861);

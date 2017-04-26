@@ -212,6 +212,7 @@ button {
 					}
 				.filials {
 				margin-top: 3px;
+				transition: opacity 0.25s ease;
 				}
 					.filial-addr {
 						font-family: "Ubuntu-Light";
@@ -275,8 +276,10 @@ button {
 					transition: width 0.55s ease;
 					cursor: pointer;
 				}
+						.header .b-block .search.maxopacity {
 							width: 490px;
 						}
+						.filials.maxopacity {
 						}
 					.search .open {
 						border: 2px solid #e3e3e3;
@@ -879,6 +882,7 @@ button {
 				padding: 34px 40px 0;
 				top: 90px;
 				text-align: left;
+				transition: opacity 0.25s ease;
 			}
 			.map-cont-close {
 				height: 24px;

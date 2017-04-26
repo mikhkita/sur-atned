@@ -213,12 +213,13 @@ button {
 				.filials {
 				margin-top: 3px;
 				transition: opacity 0.25s ease;
+				margin-top: 4px;
 				}
 					.filial-addr {
 						font-family: "Ubuntu-Light";
 						text-align: left;
 						/* text-decoration: underline; */
-						margin-left: 18px;
+						margin-left: 33px;
 						position: relative;
 					}
 					.filials li:after {
@@ -231,7 +232,7 @@ button {
 						border:1px solid #e3e3e3;
 						position: absolute;
 						top: 5px;
-						right: -5px;
+						right: -17px;
 					}
 					.filials li:last-child:after {
 						display: none;
@@ -271,7 +272,7 @@ button {
 					height: 54px;
 					width: 54px;
 					position: absolute;
-					right: 200px;
+					right: 146px;
 					top: 6px;
 					transition: width 0.55s ease;
 					cursor: pointer;
@@ -327,7 +328,7 @@ button {
 				.callback .callback-btn.onhover {
 				}		
 					.callback a {
-						width: 186px;
+						width: 127px;
 						box-sizing: border-box;
 						display: inline-block;
 						height: 52px;
@@ -335,15 +336,15 @@ button {
 					}
 					.callback p {
 						position: absolute;
-						top: 21px;
+						top: 13px;
 						display: inline;
-						left: 57px;
-						border-bottom: 1px dashed #74bc40;
+						left: 65px;
+						border-bottom: none;
 						line-height: 18px;
 						/* text-decoration: underline dashed; */
 						font-size: 15px;
-						/* width: 63px; */
-						/* text-align: center; */
+						width: 63px;
+						text-align: left;
 					}
 					.callback p.onhover {
 						border-bottom: 0px;
@@ -671,8 +672,7 @@ button {
 						.services-menu li button {
 							font-family: "Ubuntu";
 							font-size: 20px;
-							padding-left: 19px;
-							text-transform: uppercase;
+							padding-left: 30px;
 							text-align: left;
 							display: table-cell;
 							width: 223px;

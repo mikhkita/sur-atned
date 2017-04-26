@@ -1,56 +1,6 @@
 @charset "utf-8";
 
 
-@font-face {
-  	font-family: 'Ubuntu-Bold';
-  	src: url('../fonts/Ubuntu-Bold.eot?#iefix') format('embedded-opentype'),  
-  		url('../fonts/Ubuntu-Bold.woff') format('woff'), 
-  		url('../fonts/Ubuntu-Bold.ttf') format('truetype'), 
-		url('../fonts/Ubuntu-Bold.svg#Ubuntu-Bold') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-  font-family: 'Ubuntu-Medium';
-  src: url('../fonts/Ubuntu-Medium.eot?#iefix') format('embedded-opentype'),  
-	  url('../fonts/Ubuntu-Medium.woff') format('woff'), 
-	  url('../fonts/Ubuntu-Medium.ttf')  format('truetype'), 
-	  url('../fonts/Ubuntu-Medium.svg#Ubuntu-Medium') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Ubuntu';
-  src: url('../fonts/Ubuntu.eot?#iefix') format('embedded-opentype'),  
-	  url('../fonts/Ubuntu.woff') format('woff'), 
-	  url('../fonts/Ubuntu.ttf')  format('truetype'), 
-	  url('../fonts/Ubuntu.svg#Ubuntu') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Ubuntu-Light';
-  src: url('../fonts/Ubuntu-Light.eot?#iefix') format('embedded-opentype'),  
-	  url('../fonts/Ubuntu-Light.woff') format('woff'), 
-	  url('../fonts/Ubuntu-Light.ttf')  format('truetype'), 
-	  url('../fonts/Ubuntu-Light.svg#Ubuntu-Light') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?l9oetm');
-  src:  url('../fonts/icomoon.eot?l9oetm#iefix') format('embedded-opentype'),
-		url('../fonts/icomoon.ttf?l9oetm') format('truetype'),
-		url('../fonts/icomoon.woff?l9oetm') format('woff'),
-		url('../fonts/icomoon.svg?l9oetm#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
 html,
 body {
 	position: relative;
@@ -106,16 +56,12 @@ input.error,textarea.error{
 		height: 100%;
 		width: 1px;
 		top: 0px;
-		opacity: 0.8;
-		z-index: 9999;
 	}
 	.ps-lines li.g{
 		position: absolute;
 		left: 0px;
 		width: 100%;
 		height: 1px;
-		opacity: 0.8;
-		z-index: 9999;
 	}
 .fancybox-inner{
 	overflow: visible !important;
@@ -235,11 +181,9 @@ button {
 	border: 1px solid #74bc40 !important;
 }
 .show {
-	opacity: 1 !important;
 	visibility: 
 }
 .hide {
-	opacity: 0 !important;
 }
 .b-orange-butt{
 
@@ -268,7 +212,6 @@ button {
 					}
 				.filials {
 				margin-top: 3px;
-				transition: opacity 0.25s ease;
 				}
 					.filial-addr {
 						font-family: "Ubuntu-Light";
@@ -332,11 +275,8 @@ button {
 					transition: width 0.55s ease;
 					cursor: pointer;
 				}
-						.header .b-block .search.maxopacity {
 							width: 490px;
 						}
-						.filials.maxopacity {
-							opacity: 0;
 						}
 					.search .open {
 						border: 2px solid #e3e3e3;
@@ -488,7 +428,6 @@ button {
 					height: 438px;
 				}
 					.back-slider .slick-dots {
-						z-index: 10;
 						position: absolute;
 						top: 143px;
 						left: 50%;
@@ -567,7 +506,6 @@ button {
 					.front-slider-align {
 						display: table !important;
 						height: 438px;
-						z-index: 10;
 					}
 					.front-slide {
 						display: table-cell;
@@ -622,7 +560,6 @@ button {
 							right: 46px;
 						}
 					.right-slider .slick-dots {
-						z-index: 9999;
 						position: absolute;
 						bottom: 0;
 						left: -3px;
@@ -751,7 +688,6 @@ button {
 					/* width: 450px; */
 					position: absolute;
 					left: 0px;
-					z-index: 10;
 				}
 				.services-text-container {
 					position: absolute;
@@ -764,7 +700,6 @@ button {
 						top: 0;
 						text-align: left;
 						vertical-align: middle;
-						opacity: 0;
 					}
 						.services-text h3 {
 							font-family: "Ubuntu-Bold";
@@ -776,7 +711,6 @@ button {
 							font-family: "Ubuntu-Light";
 						}
 					.services-images .show {
-						opacity: 1;
 					}
 				.services-images {
 					position: absolute;
@@ -791,10 +725,8 @@ button {
 						height: 520px;
 						background-position: 50% 50%;
 						background-size: cover;
-						opacity: 0;
 					}
 					.services-images .show {
-						opacity: 1;
 					}
 	.reviews {
 
@@ -947,7 +879,6 @@ button {
 				padding: 34px 40px 0;
 				top: 90px;
 				text-align: left;
-				transition: opacity 0.25s ease;
 			}
 			.map-cont-close {
 				height: 24px;

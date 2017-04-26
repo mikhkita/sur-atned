@@ -270,14 +270,14 @@ button {
 	color: #ffffff;
 	border: 1px solid #74bc40 !important;
 }
-.show {
-	opacity: 1 !important;
-	transition: opacity 0.25s ease;
-}
 .hide {
 	opacity: 0 !important;
 	z-index: -1;
 	/*display: none;*/
+}
+.show {
+	opacity: 1 !important;
+	transition: opacity 0.25s ease;
 }
 .b-orange-butt{
 
@@ -830,19 +830,22 @@ button {
 							vertical-align: middle;
 							background-color: transparent;
 							cursor:pointer;
+							transition: all 250ms ease;
 						}
 						.services-menu li button:hover {
 							color: #74bc40;
-							background-color: #ffffff;
+							background-color: #ffffff;	
+							transition: all 250ms ease;											
 						}
 						.services-menu li button:active {
 							color: #ffffff;
 							background-color: #717171;
 						}
-						.active {
+						#services_menu .active {
 							color: #ffffff !important;
-							background-color: #717171 !important;							
-						}									
+							background-color: #717171 !important;
+							transition: all 250ms ease;								
+						}						
 				.services-texts {
 					/* width: 450px; */
 					position: absolute;
@@ -853,13 +856,13 @@ button {
 					display: table;
 					height: 398px;
 					width: 450px;
+					opacity: 0;
 				}
 					.services-text {
 						display: table-cell;
 						top: 0;
 						text-align: left;
 						vertical-align: middle;
-						opacity: 0;
 					}
 						.services-text h3 {
 							font-family: "Ubuntu-Bold";
@@ -872,7 +875,7 @@ button {
 							font-family: "Ubuntu-Light";
 							color: #171717;
 						}
-					.services-images .show {
+					.services-text .show {
 						opacity: 1;
 					}
 				.services-images {

@@ -1,7 +1,7 @@
 function initialize() {
-	var latlng = new google.maps.LatLng(56.5075,84.9801);
+	var latlng = new google.maps.LatLng(56.5154711,85.0050281);
 	var settings = {
-		zoom: 17,
+		zoom: 13,
 		center: latlng,
 		mapTypeControl: false,
 		mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
@@ -12,6 +12,8 @@ function initialize() {
 		};
 	var map = new google.maps.Map(document.getElementById("map_canvas"), 
 	settings);
+
+
 
 	var companyLogo = new google.maps.MarkerImage('i/map-marker.png',
 	new google.maps.Size(91,138),
@@ -43,6 +45,9 @@ function initialize() {
 		});
 
 	google.maps.event.addListener(companyMarker, 'click', function() {
+
+	map.panTo(new google.maps.LatLng(56.507841,84.98091)); 
+	map.setZoom(17); 
 	$('.gov').removeClass("hide");
 	$('.irk').removeClass("show");
 	$('.perv').removeClass("show");
@@ -51,6 +56,8 @@ function initialize() {
 	$('.perv').addClass("hide");
 	});
 	google.maps.event.addListener(companyMarker_irk, 'click', function() {
+	map.panTo(new google.maps.LatLng(56.5142726,85.0505779)); 
+	map.setZoom(17); 
 	$('.irk').removeClass("hide");
 	$('.gov').removeClass("show");
 	$('.perv').removeClass("show");	
@@ -59,6 +66,8 @@ function initialize() {
 	$('.perv').addClass("hide");	
 	});
 	google.maps.event.addListener(companyMarker_perv, 'click', function() {
+	map.panTo(new google.maps.LatLng(56.5200287,84.9651989)); 
+	map.setZoom(17); 
 	$('.perv').removeClass("hide");
 	$('.irk').removeClass("show");
 	$('.gov').removeClass("show");	

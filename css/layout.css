@@ -888,15 +888,36 @@ button {
 						position: absolute;
 						top: 0;
 						right: 0;
-						width: 696px;
-						height: 620px;
-						background-position: 50% 50%;
-						background-size: cover;
+						width: 700px;
+						height: 738px;
+						background-position: 100% 0%;
+						background-size: auto auto;
 						background-repeat: no-repeat; 
 						opacity: 0;
 					}
-					.services-images .show {
-						opacity: 1;
+					.img_diagnostika {
+						background-image: url('../i/services-slide-01.png');
+					}
+					.img_terapevt-stom {
+						background-image: url('../i/services-slide-02.png');
+					}
+					.img_implantation {
+						background-image: url('../i/services-slide-01.png');
+					}
+					.img_ortodontiya {
+						background-image: url('../i/services-slide-02.png');
+					}
+					.img_estetic-stom {
+						background-image: url('../i/services-slide-01.png');
+					}
+					.img_hirurgiya {
+						background-image: url('../i/services-slide-02.png');
+					}
+					.img_ortopedia {
+						background-image: url('../i/services-slide-01.png');
+					}
+					.img_gigiena {
+						background-image: url('../i/services-slide-02.png');
 					}
 	.reviews {
 

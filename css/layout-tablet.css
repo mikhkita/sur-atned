@@ -810,11 +810,12 @@ button {
 						text-align: left;
 						display: table-cell;
 						vertical-align: middle;
-						height: 206px;
+						padding: 0 40px 0 40px;
 					}
 						.review-single-text p {
-							margin-left: 24px;
-							width: 352px;
+							/* margin-left: 24px; */
+							width: 340px;
+							margin-bottom: 30px;
 						}
 					.review-slide-block  .b-btn-prev {
 						position: absolute;

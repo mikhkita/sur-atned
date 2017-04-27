@@ -51,6 +51,17 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: '../fonts/ProximaNova-Semibold';
+  src: url('../fonts/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/ProximaNova-Semibold.otf')  format('opentype'),
+	     url('../fonts/ProximaNova-Semibold.woff') format('woff'), 
+	     url('../fonts/ProximaNova-Semibold.ttf')  format('truetype'), 
+	     url('../fonts/ProximaNova-Semibold.svg#ProximaNova-Semibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
 	position: relative;
@@ -1350,6 +1361,82 @@ button {
 			text-transform: uppercase;
 			}
 /*Адаптировал под таблеты*/
+.main-content {
+
+}
+	.b-wide-block {
+
+	}
+		.b-block {
+
+		}
+			.p_services {
+				text-align: left;
+				color: #252525;
+				padding-top: 30px;
+			}
+				.main-content_top_h1 {
+					margin-bottom: 20px;
+				}
+					.main-content_top_h1 h1 {
+						font-family: "Ubuntu-Medium";
+						font-size: 20px;
+						line-height: 55px;
+						text-transform: uppercase;
+						color: #a4b1bf;
+					}
+					.main-content_top_h1 h3 {
+						font-family: "Ubuntu-Bold";
+						font-size: 42px;
+						line-height: 42px;
+						color: #181818;
+					}				
+				.p_services_menu {
+				}
+					.p_services_menu li{
+						display: inline-block;
+						margin-right: 30px;
+						float: left;						
+					}		
+						.p_services_menu_btn {
+							font-family: "Ubuntu-Medium";
+							font-size: 20px;
+							line-height: 65px;
+							text-transform: uppercase;
+							color: #282828;
+							background-color: #f1f1f1;
+							height: 200px;
+							width: 265px;
+						}
+				.p_services_menu_info {
+
+				}
+					.p_services_menu_info_img {
+
+					}
+					.p_services_menu_info_text {
+						width: 50%;
+					}
+					.p_services_menu_info_text h3{
+						font-family: "Ubuntu-Bold";
+						font-size: 40px;
+						line-height: 55px;
+						color: #181818;
+					}
+					.p_services_menu_info_text p{
+						font-family: "Ubuntu-Light";
+						color: #171717;
+					}					
+					.p_services_menu_info_urls a{
+						font-family: "ProximaNova-Semibold";
+						line-height: 30px;
+						color: #74bc40;	
+					}
+					.p_services_menu_info_urls li{
+						display: inline-block;
+					}					
+
+
 .b-1{
 	
 }

@@ -1376,7 +1376,7 @@ button {
 				padding-top: 30px;
 			}
 				.main-content_top_h1 {
-					margin-bottom: 20px;
+					margin-bottom: 54px;
 				}
 					.main-content_top_h1 h1 {
 						font-family: "Ubuntu-Medium";
@@ -1396,23 +1396,33 @@ button {
 					.p_services_menu li{
 						display: inline-block;
 						margin-right: 30px;
-						float: left;						
+						float: left;
+						height: 200px;
+						width: 267px;
+						background-color: #f1f1f1;
 					}		
+					.p_services_menu li:nth-child(4) {
+						margin-right: 0px;	
+						margin-bottom: 30px;
+					}
+					.p_services_menu li:nth-child(8){
+						margin-right: 0px;
+					}
 						.p_services_menu_btn {
 							font-family: "Ubuntu-Medium";
 							font-size: 20px;
 							line-height: 65px;
 							text-transform: uppercase;
 							color: #282828;
-							background-color: #f1f1f1;
-							height: 200px;
-							width: 265px;
+							
+
 						}
 				.p_services_menu_info {
-
+					height: 512px;
 				}
 					.p_services_menu_info_img {
-
+						background-image: url('../i/services-tooth.png');
+						background-position: 50% 100%;
 					}
 					.p_services_menu_info_text {
 						width: 50%;

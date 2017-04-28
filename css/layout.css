@@ -296,6 +296,12 @@ button {
 	.b-orange-butt:hover{
 		
 	}
+.dummy-test-box {
+	height: 300px;
+	width: 1160px;
+	background-color: #74bc40;
+	margin: 0 auto; 
+}
 .b-head {
 }
 	.b-head .b-wide-block {

@@ -21,8 +21,7 @@ $('.p_services_menu_info_slider').slick({
  		if ( i == 4 ) {return '<a class="icon-terapevt"> <span>Терапевтическая стоматология</span></a>';}
  		if ( i == 5 ) {return '<a class="icon-estetic"> <span>Эстетическая стоматология</span></a>';}
  		if ( i == 6 ) {return '<a class="icon-surgery"> <span>хирургия и имплантация</span></a>';}
- 		if ( i == 7 ) {return '<a class="icon-childrens"> <span>детская стоматология</span></a>';}
-               
+ 		if ( i == 7 ) {return '<a class="icon-childrens"> <span>детская стоматология</span></a>';}          
   },
        dots:true,
 		prevArrow:false,

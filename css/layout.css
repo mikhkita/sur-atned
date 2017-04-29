@@ -42,11 +42,11 @@
 }
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?q94ekc');
-  src:  url('../fonts/icomoon.eot?q94ekc#iefix') format('embedded-opentype'),
-		url('../fonts/icomoon.ttf?q94ekc') format('truetype'),
-		url('../fonts/icomoon.woff?q94ekc') format('woff'),
-		url('../fonts/icomoon.svg?q94ekc#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?i17qk');
+  src:  url('../fonts/icomoon.eot?i17qk#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?i17qk') format('truetype'),
+		url('../fonts/icomoon.woff?i17qk') format('woff'),
+		url('../fonts/icomoon.svg?i17qk#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -1589,6 +1589,15 @@ button {
 	
 }
 
+.icon-addr-selection:before {
+  content: "\e910";
+}
+.icon-date-selection:before {
+  content: "\e911";
+}
+.icon-time-selection:before {
+  content: "\e912";
+}
 .icon-childrens:before {
   content: "\e908";
 }
@@ -1637,6 +1646,7 @@ button {
 .icon-search:before {
   content: "\e901";
 }
+
 
 @media (-webkit-min-device-pixel-ratio: 1.5) {
 	.b-icon:before{

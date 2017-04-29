@@ -296,11 +296,12 @@ button {
 	.b-orange-butt:hover{
 		
 	}
-.dummy-test-box {
+.dummy-box {
+	display: inline-block;
 	height: 300px;
 	width: 1160px;
-	background-color: #74bc40;
-	margin: 0 auto; 
+	margin: 0 15px;
+	background-color: rgba(24,182,0,0.4);
 }
 .b-head {
 }
@@ -1367,6 +1368,8 @@ button {
 			text-transform: uppercase;
 			}
 /*Адаптировал под таблеты*/
+
+/*Страница услуг*/
 .main-content {
 
 }
@@ -1398,24 +1401,28 @@ button {
 						color: #181818;
 					}				
 				.p_services_menu {
+				width: 1190px;
+				margin-left: -15px;
 				}
-					.p_services_menu li{
+					.p_services_menu_item{
 						display: inline-block;
-						margin-right: 30px;
+						margin-left: 15px;
+						margin-right: 15px;
+						margin-bottom: 25px;
 						float: left;
 						position: relative;
 						width: 267px;
 						background-color: #f1f1f1;
 					}		
-					.p_services_menu li:nth-child(4) {
+/*					.p_services_menu_item:nth-child(4) {
 						margin-right: 0px;	
 						margin-bottom: 30px;
 					}
-					.p_services_menu li:nth-child(8){
+					.p_services_menu_item:nth-child(8){
 						margin-right: 0px;
 						margin-bottom: 24px;
-					}
-						.p_services_menu a {
+					}*/
+						.p_services_menu_item a {
 							font-family: "Ubuntu-Medium";
 							font-size: 20px;
 							line-height: 24px;
@@ -1429,7 +1436,7 @@ button {
 							cursor: pointer;
 							vertical-align: bottom;
 						}
-						.p_services_menu a:hover span {
+						.p_services_menu_item a:hover span {
 							color: #74bc40;
 							text-decoration: underline;
 						}
@@ -1447,10 +1454,10 @@ button {
 						.p_services_menu .slick-active a:hover:before{
 							color: #ffffff;
 						}																
-						.p_services_menu a:hover:before {
+						.p_services_menu_item a:hover:before {
 							color: #000000;
 						}						
-						.p_services_menu a:before {
+						.p_services_menu_item a:before {
 							display: block;
 							font-family: 'icomoon' !important;
 							speak: none;
@@ -1465,10 +1472,11 @@ button {
 							text-decoration: initial;
 						}
 				.p_services_menu_info_container {
-					height: 0px;
-					width: 100%;
-					overflow: hidden;
-					float: left;
+					display: none;
+					/* height: 0px; */
+					/* width: 1560px; */
+					/* overflow: hidden; */
+					/* float: left; */
 					transition: all 400ms ease;
 				}
 				.p_services_menu_info {
@@ -1479,6 +1487,8 @@ button {
 					background-size: cover;
 					background-repeat: no-repeat;
 					transition: all 400ms ease;
+					width: 1560px;
+					margin-left: -185px;
 				}
 				.serv_info_show {
 					height: 537px;
@@ -1584,7 +1594,7 @@ button {
       background: #a08a7f; }
 .p_services_menu_info_slider .slick-dots li button {
       display: none !important; }*/
-
+/*конец Страница услуг*/
 .b-1{
 	
 }

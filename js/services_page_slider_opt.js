@@ -65,6 +65,12 @@ $(document).ready(function(){
 		}
 //----------  slider drop bottom rules
 		$('.p_services_menu_item a').click(function() {
+			 if ($(this).parent().hasClass('active')) {
+			 	$('.p_services_menu_item').removeClass('active');
+			 	$(".p_services_menu_info").removeClass("serv_info_show");
+			 	console.log()
+			 }
+			 else {
 				var dataEventVal = $(this).attr("data-eventblock");
 				var actButt = $(this).parent().attr('data-msbtn');
 				actButt = actButt-1;
@@ -78,6 +84,7 @@ $(document).ready(function(){
 				$('.p_services_menu_info_triangle_im').addClass('item_'+currentCell+'');
 				$(".p_services_menu_info").removeClass("serv_info_show");
 				$('[data-nrow-block='+dataEventVal+']').addClass("serv_info_show");
+		}
 		});
 
 		$('.map-cont-close').click(function() {

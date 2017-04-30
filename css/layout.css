@@ -1403,6 +1403,7 @@ button {
 				.p_services_menu {
 				width: 1190px;
 				margin-left: -15px;
+				line-height: 0px; /* bag margin */
 				}
 					.p_services_menu_item{
 						display: inline-block;
@@ -1570,6 +1571,7 @@ button {
 						font-family: "Ubuntu-Light";
 						color: #171717;
 						margin-bottom: 38px;
+						line-height: 24px;
 					}
 					.p_services_menu_info_urls {
 						display: inline-block;

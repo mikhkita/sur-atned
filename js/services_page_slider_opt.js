@@ -47,6 +47,7 @@ $(document).ready(function(){
 			for ( columnToFill; columnToFill <= next_it*blockToFill; columnToFill = columnToFill + 1) {
 				$('.footer [data-slide-id='+columnToFill+']' ).clone().appendTo( $('[data-nrow-block='+blockToFill+'] .p_services_menu_info .b-block .p_services_menu_info_slider').attr('data-nslider',blockToFill));
 				$('[data-msbtn='+columnToFill+'] a').attr('data-eventBlock',blockToFill);
+				//$('[data-msbtn='+columnToFill+'] a span').attr('data-eventBlock',blockToFill);
 				$('[data-msbtn='+columnToFill+'] a').attr('data-sldots',cnt);	
 				cnt = cnt + 1;				
 			}
@@ -64,12 +65,15 @@ $(document).ready(function(){
 		}
 //----------  slider drop bottom rules
 		$('body').click(function(event) {
+			var elem = $(event.target);
 			var dataEventVal = $(event.target).attr('data-eventblock');
 				console.log ('dataEventVal - ' + dataEventVal, 'evtard - ' + $(event.target));
 				var currentRow = dataEventVal;
 				var currentCell = $(event.target).attr('data-sldots');
+				
 				$('[data-nrow-block = '+currentRow+'] .slick-dots li:eq('+currentCell+')').click();
 				$('.p_services_menu_info_triangle_im').removeClass('item_1').removeClass('item_2').removeClass('item_3').removeClass('item_0');
+				
 				$('.p_services_menu_info_triangle_im').addClass('item_'+currentCell+'');
 				$(':not([data-nrow-block='+dataEventVal+'])').removeClass("serv_info_show");
 				$('[data-nrow-block='+dataEventVal+']').addClass("serv_info_show");

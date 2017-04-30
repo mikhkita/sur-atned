@@ -1428,23 +1428,26 @@ button {
 							width: 267px;
 							cursor: pointer;
 							vertical-align: bottom;
+							transition: all 200ms ease;
+							-moz-transition:all 200ms ease;
+							-webkit-transition:all 200ms ease;
 						}
 						.p_services_menu_item a:hover span {
 							color: #74bc40;
 							text-decoration: underline;
 						}
-						.p_services_menu .slick-active a{
+						.p_services_menu .active a{
 							color: #ffffff;
 							background-color: #74bc40;
 						}		
-						.p_services_menu .slick-active a:before{
+						.p_services_menu .active a:before{
 							color: #ffffff;
 						}	
-						.p_services_menu .slick-active a:hover span{
+						.p_services_menu .active a:hover span{
 							color: #ffffff;
 							text-decoration: none;
 						}		
-						.p_services_menu .slick-active a:hover:before{
+						.p_services_menu .active a:hover:before{
 							color: #ffffff;
 						}																
 						.p_services_menu_item a:hover:before {
@@ -1471,6 +1474,8 @@ button {
 					/* float: left; */
 					visibility: hidden;
 					transition: all 400ms ease;
+					-moz-transition:all 400ms ease;
+					-webkit-transition:all 400ms ease;					
 				}
 				.p_services_menu .p_services_menu_info_container {
 					display: inline-block;				
@@ -1484,17 +1489,21 @@ button {
 					background-size: cover;
 					background-repeat: no-repeat;
 					transition: all 400ms ease;
+					-moz-transition:all 400ms ease;
+					-webkit-transition:all 400ms ease;					
 					width: 1560px;
 					height: 0px;
 					margin-left: -185px;
 					visibility: visible;
-					top: -31px;
+					top: -25px;
 				}
 				.serv_info_show {
 					height: 537px;
 					margin-bottom: 30px;
 					visibility: visible;
 					transition: all 400ms ease;
+					-moz-transition:all 400ms ease;
+					-webkit-transition:all 400ms ease;					
 				}
 				.p_services_menu .slick-dots {
 					display: none !important;
@@ -1528,6 +1537,8 @@ button {
 				.p_services_menu_info_triangle_im {
 					/* position: absolute; */
 					transition: all 300ms ease;
+					-moz-transition:all 300ms ease;
+					-webkit-transition:all 300ms ease;					
 					margin-left: -933px;
 					height: 31px;
 					width: 2500px;
@@ -1701,11 +1712,15 @@ button {
 		overflow: hidden;
 		/*display: inline-block;*/
 		transition: all 400ms ease;
+		-moz-transition:all 400ms ease;
+		-webkit-transition:all 400ms ease;		
 	}	
 		.p_doctors_slide {
 			position: relative;
 			margin-bottom: 30px;
 			transition: all 400ms ease;
+			-moz-transition:all 400ms ease;
+			-webkit-transition:all 400ms ease;			
 			width: 1560px;
 			left: -185px !important;
 		}
@@ -1715,6 +1730,8 @@ button {
 		overflow: visible;
 		visibility: visible;
 		transition: all 400ms ease;
+		-moz-transition:all 400ms ease;
+		-webkit-transition:all 400ms ease;		
 	}					
 			.p_doctors_menu_info_triangle {
 				position: absolute;
@@ -1725,6 +1742,8 @@ button {
 				.p_doctors_menu_info_triangle_im {
 					position: absolute;
 					transition: all 300ms ease;
+					-moz-transition:all 400ms ease;
+					-webkit-transition:all 400ms ease;					
 					left: -579px;
 					height: 31px;
 					z-index: 10;

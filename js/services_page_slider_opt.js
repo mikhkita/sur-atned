@@ -66,6 +66,10 @@ $(document).ready(function(){
 //----------  slider drop bottom rules
 		$('.p_services_menu_item a').click(function() {
 				var dataEventVal = $(this).attr("data-eventblock");
+				var actButt = $(this).parent().attr('data-msbtn');
+				actButt = actButt-1;
+				$('.p_services_menu_item').removeClass('active');
+				$('.p_services_menu_item:eq('+actButt+')').addClass('active');
 //			var elem = $(event.target);
 				var currentRow = dataEventVal;
 				var currentCell = $(this).attr('data-sldots');
@@ -77,7 +81,7 @@ $(document).ready(function(){
 		});
 
 		$('.map-cont-close').click(function() {
-			
+			$('.p_services_menu_item').removeClass('active');
 			$(".p_services_menu_info").removeClass("serv_info_show");
 		});
 

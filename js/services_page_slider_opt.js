@@ -66,11 +66,14 @@ $(document).ready(function(){
 		$('body').click(function(event) {
 			var dataEventVal = $(event.target).attr('data-eventblock');
 				console.log ('dataEventVal - ' + dataEventVal, 'evtard - ' + $(event.target));
-				//$(':not([data-nrow-block='+dataEventVal+'])').removeClass("serv_info_show");
-				$('[data-nrow-block='+dataEventVal+']').addClass("serv_info_show");
 				var currentRow = dataEventVal;
 				var currentCell = $(event.target).attr('data-sldots');
 				$('[data-nrow-block = '+currentRow+'] .slick-dots li:eq('+currentCell+')').click();
+				$('.p_services_menu_info_triangle_im').removeClass('item_1').removeClass('item_2').removeClass('item_3').removeClass('item_0');
+				$('.p_services_menu_info_triangle_im').addClass('item_'+currentCell+'');
+				$(':not([data-nrow-block='+dataEventVal+'])').removeClass("serv_info_show");
+				$('[data-nrow-block='+dataEventVal+']').addClass("serv_info_show");
+				
 		});
 
 

@@ -1480,7 +1480,7 @@ button {
 					transition: all 400ms ease;
 				}
 				.p_services_menu .p_services_menu_info_container {
-					display: none;
+					display: inline-block;				
 				}
 				.p_services_menu_info {
 					position: relative;
@@ -1496,10 +1496,19 @@ button {
 				.serv_info_show {
 					height: 537px;
 					margin-top: -25px;
+					margin-bottom: 30px;
+					overflow: visible;
+					transition: all 400ms ease;
 				}
-				.p_services_menu_info_slider {
-					
+				.p_services_menu .slick-dots {
+					display: none !important;
+				}
+				.p_services_menu .p_services_menu_info_slider {
+					display: block;
 				}				
+				.p_services_menu_info_slider {
+					display: none;
+				}
 				.p_services_menu_info_slider_items {
 					position: relative;
 				}
@@ -1510,26 +1519,32 @@ button {
 				}
 				.p_services_menu_info_triangle_im {
 					position: absolute;
-					transition: all 200ms ease;
+					transition: all 300ms ease;
+					left: 100px;
 					height: 25px;
-					width: 50px;					
+					width: 50px;	
+					margin-top: 25px;				
 					background-image: url('../i/services-info-triangle.png');
 					background-position: 50% 50%;
 					background-size: cover;
 					background-repeat: no-repeat;
-					left: 400px;
+
+				}
+				.item_0 {
+					left: 100px;
+					margin-top: 0px;
 				}
 				.item_1 {
-					left: 310px;
+					left: 400px;
+					margin-top: 0px;
 				}
 				.item_2 {
-					left: 610px;
+					left: 700px;
+					margin-top: 0px;
 				}
 				.item_3 {
-					left: 910px;
-				}
-				.item_4 {
-					left: 1210px;
+					left: 1000px;
+					margin-top: 0px;
 				}												
 					.p_services_menu_info_img {
 						background-image: url('../i/services-tooth.png');
@@ -1560,23 +1575,27 @@ button {
 						display: inline-block;
 						width: 600px;
 						margin-bottom: 30px;
+						background-color: transparent;
 					}					
 					.p_services_menu_info_urls a{
 						display: block;
 						font-family: "ProximaNova-Semibold";
 						text-decoration: underline;
 						line-height: 19px;
-						color: #757575;
+						color: #757575 !important;
 						width: 154px;
 						height: 40px;
 						margin-bottom: 26px;
 						margin-right: 44px;
+						background-color: transparent !important;
 					}
 					.p_services_menu_info_urls a:hover {
-						color: #74bc40;
+						color: #74bc40 !important;
+						background-color: transparent !important;
 					}
 					.p_services_menu_info_urls li{
 						float: left;
+						
 					}					
 
 /*.p_services_menu_info_slider .slick-dots {

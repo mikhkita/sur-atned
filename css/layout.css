@@ -303,6 +303,10 @@ button {
 	margin: 0 15px;
 	background-color: rgba(24,182,0,0.4);
 }
+.main-content_top_h1 {
+	margin-top: 30px;
+	margin-bottom: 54px;
+}
 .b-head {
 }
 	.b-head .b-wide-block {
@@ -1382,11 +1386,7 @@ button {
 			.p_services {
 				text-align: left;
 				color: #252525;
-				padding-top: 30px;
 			}
-				.main-content_top_h1 {
-					margin-bottom: 54px;
-				}
 					.main-content_top_h1 h1 {
 						font-family: "Ubuntu-Medium";
 						font-size: 20px;
@@ -1415,14 +1415,6 @@ button {
 						width: 267px;
 						background-color: #f1f1f1;
 					}		
-/*					.p_services_menu_item:nth-child(4) {
-						margin-right: 0px;	
-						margin-bottom: 30px;
-					}
-					.p_services_menu_item:nth-child(8){
-						margin-right: 0px;
-						margin-bottom: 24px;
-					}*/
 						.p_services_menu_item a {
 							font-family: "Ubuntu-Medium";
 							font-size: 20px;
@@ -1513,26 +1505,36 @@ button {
 				.p_services_menu_info_slider_items {
 					position: relative;
 				}
+				.services_slide_close_btn {
+					top: 22px;
+					right: 12px;
+					width: 29px;
+					height: 29px;
+				}
+				.services_slide_close_btn:after {
+					font-size: 20px;
+					line-height: 30px;
+				}				
 				.p_services_menu_info_triangle {
+					/* display: block; */
 					height: 25px;
 					width: 100%;
 					/* margin-bottom: 66px; */
+					overflow: hidden;
 				}
 				.p_services_menu_info_triangle_im {
-					position: absolute;
+					/* position: absolute; */
 					transition: all 300ms ease;
-					left: 100px;
+					margin-left: -933px;
 					height: 25px;
-					width: 50px;	
-					margin-top: 25px;				
+					width: 2500px;
 					background-image: url('../i/services-info-triangle.png');
 					background-position: 50% 50%;
 					background-size: cover;
 					background-repeat: no-repeat;
-
 				}
 				.item_0 {
-					left: 100px;
+					/* left: 100px; */
 					margin-top: 0px;
 				}
 				.item_1 {
@@ -1599,26 +1601,192 @@ button {
 						float: left;
 						
 					}					
-
-/*.p_services_menu_info_slider .slick-dots {
-  padding: 0; }
- .p_services_menu_info_slider .slick-dots li {
-    position: relative;
-    display: inline-block;
-    width: 19%;
-    height: 15px;
-    margin: 0 2px 0 0;
-    padding: 0;
-    cursor: pointer;
-    background: #ccbdb6;
-    transition: width 5s ease-out 0s; }
-.p_services_menu_info_slider .slick-dots li:last-child {
-      margin-right: 0; }
-.p_services_menu_info_slider .slick-dots li:hover, .p_services_menu_info_slider .slick-dots li.slick-active {
-      background: #a08a7f; }
-.p_services_menu_info_slider .slick-dots li button {
-      display: none !important; }*/
 /*конец Страница услуг*/
+/*doctors page*/
+.b-wide-block {
+
+}
+	.b-block {
+
+	}
+		.p_doctors {
+			text-align: left;
+			line-height: 0px;
+		}
+			.p_doctors_menu {
+				color: #181815;
+				width: 1188px;
+				margin-left: -14px;
+			}
+				.p_doctors_menu_item {
+					display: inline-block;
+					height: 365px;
+					width: 365px;
+					margin-left: 14px;
+					margin-right: 14px;
+					position: relative;
+					background-position: 50% 50%;
+					background-repeat: no-repeat;
+					overflow: hidden;
+				}
+				.doc-1 {
+					background-image: url('../i/doctor-1.jpg');
+					background-size: auto auto;
+				}
+				.doc-2 {
+					background-image: url('../i/doctor-2.jpg');
+					background-size: auto auto;					
+				}
+				.doc-3 {
+					background-image: url('../i/doctor-3.jpg');
+					background-size: auto auto;					
+				}
+				.doc-4 {
+					background-image: url('../i/doctor-4.jpg');
+					background-size: auto auto;					
+				}
+				.doc-5 {
+					background-image: url('../i/doctor-5.jpg');
+					background-size: auto auto;					
+				}
+				.doc-6 {
+					background-image: url('../i/doctor-6.jpg');
+					background-size: auto auto;					
+				}				
+					.p_doctors_menu_vcard {
+						position: absolute;
+						width: 305px;
+						padding: 24px 30px 26px;
+						bottom: 0px;
+						background-color: rgba(116,188,64,0.9);
+					}
+						.p_doctors_menu_vcard h5{
+							text-transform: uppercase;
+							font-family: "Ubuntu-Bold";
+							font-size: 22px;
+							line-height: 26px;
+							color: #ffffff;
+						}
+						.p_doctors_menu_vcard h6{
+							text-transform: uppercase;
+							font-family: "Ubuntu-Medium";
+							font-size: 16px;
+							line-height: 24px;
+							color: #ffffff;
+							margin-bottom: 14px;
+						}						
+						.p_doctors_menu_vcard p{
+							font-family: "Ubuntu-Light";
+							font-size: 16px;
+							line-height: 18px;
+							color: #ffffff;
+						}																														
+	.p_doctors_slider {
+		text-align: left;
+		color: #181815;
+	}
+		.p_doctors_slide {
+			position: relative;
+		}
+			.p_doctors_menu_info_triangle {
+				position: absolute;
+				height: 25px;
+				width: 100%;
+				overflow: hidden;
+			}
+				.p_doctors_menu_info_triangle_im {
+					position: absolute;
+					transition: all 300ms ease;
+					left: -579px;
+					height: 25px;
+					z-index: 10;
+					width: 2060px;
+					background-image: url('../i/services-info-triangle.png');
+					background-position: 50% 50%;
+					background-size: cover;
+					background-repeat: no-repeat;
+				}
+			.p_doctors_slide_top {
+				position: relative;
+			}
+
+				.p_doctors_slide_img {
+					background-image: url("../i/doctor-orig-1.jpg");
+					background-repeat: no-repeat;
+					background-position: 50% 50%;
+					background-size: auto;
+					width: 100%;
+					height: 596px;
+					position: absolute;
+				}
+				.p_doctors_slide_top .b-block {
+				height: 596px;
+				/* padding-top: 100px; */
+				}
+					.p_doctors_slide_text {
+						padding-top: 111px;
+						width: 665px;
+					}
+						.p_doctors_slide_text h4 {
+							line-height: 24px;
+							color: #ffffff;
+							font-size: 36px;
+							font-family: "Ubuntu-bold";
+							margin-bottom: 24px;
+						}
+						.p_doctors_slide_text h5 {
+							font-family: "Ubuntu-medium";
+							font-size: 20px;
+							line-height: 20px;
+							text-transform: uppercase;
+							color: #7a7a7a;
+							margin-bottom: 31px;
+						}
+						.p_doctors_slide_text p {
+							font-family: "Ubuntu-Light";
+							color: #ffffff;
+							margin-bottom: 50px;
+							font-size: 16px;
+							display: block;
+							width: 586px;
+						}
+						.p_doctors_slide_text a {
+							font-family: "Ubuntu-medium";
+							font-size: 12px;
+						}
+						.p_doctors_slide_btn {
+							padding-right: 25px;
+						}
+					.p_doctors_slide_close_btn {
+						top: 54px;
+						right: 12px;
+						height: 29px;
+						width: 29px;
+					}
+					.p_doctors_slide_close_btn:after {
+						font-size: 20px;
+						line-height: 30px;
+					}					
+			.p_doctors_slide_bott {
+				padding: 54px 0 34px;
+				background-color: #f3f3f3;
+			}
+				.p_doctors_slide_bott h6 {
+					font-family: "Ubuntu-Medium";
+					font-size: 18px;
+					margin-bottom: 22px;
+				}
+				.p_doctors_slide_bott ul {
+					margin-bottom: 20px;
+				} 
+					.p_doctors_slide_bott li {
+						list-style-type: disc;
+						list-style-position: inside;
+						font-family: "Ubuntu-Light";
+						font-size: 16px;
+						line-height: 30px;
+					}
+/*doctors page*/
 .b-1{
 	
 }

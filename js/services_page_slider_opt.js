@@ -57,7 +57,7 @@ $(document).ready(function(){
 			$('.p_services_menu [data-nslider='+blockToFill+']').slick({
 				slidesToShow: 1,
 				slidesToScroll: 1,
-				fadein: true,
+				fade: true,
 				dots: true,
 				prevArrow:false,
 				nextArrow:false
@@ -65,7 +65,7 @@ $(document).ready(function(){
 		}
 //----------  slider drop bottom rules
 		$('body').click(function(event) {
-			var elem = $(event.target);
+			//uyyvar elem = $(event.target);
 			var dataEventVal = $(event.target).attr('data-eventblock');
 				console.log ('dataEventVal - ' + dataEventVal, 'evtard - ' + $(event.target));
 				var currentRow = dataEventVal;
@@ -77,8 +77,13 @@ $(document).ready(function(){
 				$('.p_services_menu_info_triangle_im').addClass('item_'+currentCell+'');
 				$(':not([data-nrow-block='+dataEventVal+'])').removeClass("serv_info_show");
 				$('[data-nrow-block='+dataEventVal+']').addClass("serv_info_show");
+		
+
 				
 		});
+
+		$(this).attr("data-id");
+
 
 
 //------------------ 

@@ -43,9 +43,12 @@ $(document).ready(function(){
 			if ( blockToFill > 1 ) {
 				columnToFill = ((blockToFill - 1) * next_it)+1;
 			}
+			var cnt = 0;
 			for ( columnToFill; columnToFill <= next_it*blockToFill; columnToFill = columnToFill + 1) {
 				$('.footer [data-slide-id='+columnToFill+']' ).clone().appendTo( $('[data-nrow-block='+blockToFill+'] .p_services_menu_info .b-block .p_services_menu_info_slider').attr('data-nslider',blockToFill));
-				$('[data-msbtn='+columnToFill+']').attr('data-eventBlock',blockToFill);	
+				$('[data-msbtn='+columnToFill+'] a').attr('data-eventBlock',blockToFill);
+				$('[data-msbtn='+columnToFill+'] a').attr('data-sldots',cnt);	
+				cnt = cnt + 1;				
 			}
 
 
@@ -54,67 +57,24 @@ $(document).ready(function(){
 				slidesToShow: 1,
 				slidesToScroll: 1,
 				fadein: true,
-				dots: false,
+				dots: true,
 				prevArrow:false,
 				nextArrow:false
 			});
 		}
-
-		$('.p_services_menu').click(function(event) {
-			var dataEventVal = $(event.target).attr("data-eventblock");
-				console.log ('dataEventVal - ' + dataEventVal);
+//----------  slider drop bottom rules
+		$('body').click(function(event) {
+			var dataEventVal = $(event.target).attr('data-eventblock');
+				console.log ('dataEventVal - ' + dataEventVal, 'evtard - ' + $(event.target));
+				//$(':not([data-nrow-block='+dataEventVal+'])').removeClass("serv_info_show");
 				$('[data-nrow-block='+dataEventVal+']').addClass("serv_info_show");
-				$('data-nrow-block:not([data-nrow-block='+dataEventVal+'])').removeClass("serv_info_show");
-			// $('.p_services_menu_info_container').addClass("serv_info_show");
-			// });
-
-			// jQuery(function($){
-			// 	$(document).mouseup(function (e){ 
-			// 		var div = $(".p_services_menu");
-			// 		var div2 = $(".p_services_menu_info_container");
-			// 		if ((!div.is(e.target) 
-			// 		    && div.has(e.target).length === 0) && (!div2.is(e.target) 
-			// 		    && div2.has(e.target).length === 0)) { 
-			// 			$('.p_services_menu_info_container').removeClass("serv_info_show");
-			// 		}	
-			// 	});
+				var currentRow = dataEventVal;
+				var currentCell = $(event.target).attr('data-sldots');
+				$('[data-nrow-block = '+currentRow+'] .slick-dots li:eq('+currentCell+')').click();
 		});
 
-		// $('.p_services-menu button').click(function(event){
-		// // $("[data-id = event.data]").addClass('hide');
-		// var dataVal = $(event.target).attr("data-id");
-		// $('.services-menu ul li button').removeClass('active');
-		// $('.services-menu ul li [data-id ='+dataVal+']').addClass('active');
-		// $('.services-image').addClass('hide').removeClass('show');
-		// $('.services-images [data-id ='+dataVal+']').addClass('show').removeClass('hide');
-		// $('.services-text-container').addClass('hide').removeClass('show');
-		// $('.services-texts [data-id ='+dataVal+']').addClass('show').removeClass('hide');
-		//   // alert('Вы нажали на элемент "foo"' + dataVal);
-		// });
 
-//--------------------подключение слайдера
-
-
-
-		
-	// $('.p_services_menu_info_slider').slick({
-	//        customPaging: function (slider, i)
-	//  {
-	//  		if ( i == 0 ) {return '<a class="icon-diagnostic"> <span>Диагностика</span></a>';}
-	//  		if ( i == 1 ) {return '<a class="icon-orthopedic"> <span>ортопедия</span></a>';}
-	//  		if ( i == 2 ) {return '<a class="icon-orthodontic"> <span>Ортодонтия</span></a>';}
-	//  		if ( i == 3 ) {return '<a class="icon-profgigiena"> <span>Профгигиена и отбеливание</span></a>';}
-	//  		if ( i == 4 ) {return '<a class="icon-terapevt"> <span>Терапевтическая стоматология</span></a>';}
-	//  		if ( i == 5 ) {return '<a class="icon-estetic"> <span>Эстетическая стоматология</span></a>';}
-	//  		if ( i == 6 ) {return '<a class="icon-surgery"> <span>хирургия и имплантация</span></a>';}
-	//  		if ( i == 7 ) {return '<a class="icon-childrens"> <span>детская стоматология</span></a>';}          
-	//   },
-	//        dots:true,
-	// 		prevArrow:false,
-	// 		nextArrow:false,	       
-	//        appendDots:$('.p_services_menu')
-	//    });	
-
+//------------------ 
 
 
 });

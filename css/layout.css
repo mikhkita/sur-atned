@@ -1465,17 +1465,18 @@ button {
 							text-decoration: initial;
 						}
 				.p_services_menu_info_container {
-					display: none;
-					height: 0px;
+					
 					/* width: 1560px; */
-					 overflow: hidden; 
+					/*overflow: hidden; */
 					/* float: left; */
+					visibility: hidden;
 					transition: all 400ms ease;
 				}
 				.p_services_menu .p_services_menu_info_container {
 					display: inline-block;				
 				}
 				.p_services_menu_info {
+					overflow: hidden;
 					position: relative;
 					text-align: left;
 					background-image: url('../i/services-info-bgnd.png');
@@ -1484,13 +1485,15 @@ button {
 					background-repeat: no-repeat;
 					transition: all 400ms ease;
 					width: 1560px;
+					height: 0px;
 					margin-left: -185px;
+					visibility: visible;
+					top: -31px;
 				}
 				.serv_info_show {
 					height: 537px;
-					margin-top: -25px;
 					margin-bottom: 30px;
-					overflow: visible;
+					visibility: visible;
 					transition: all 400ms ease;
 				}
 				.p_services_menu .slick-dots {
@@ -1517,7 +1520,7 @@ button {
 				}				
 				.p_services_menu_info_triangle {
 					/* display: block; */
-					height: 25px;
+					height: 31px;
 					width: 100%;
 					/* margin-bottom: 66px; */
 					overflow: hidden;
@@ -1526,7 +1529,7 @@ button {
 					/* position: absolute; */
 					transition: all 300ms ease;
 					margin-left: -933px;
-					height: 25px;
+					height: 31px;
 					width: 2500px;
 					background-image: url('../i/services-info-triangle.png');
 					background-position: 50% 50%;
@@ -1534,19 +1537,19 @@ button {
 					background-repeat: no-repeat;
 				}
 				.item_0 {
-					/* left: 100px; */
+					margin-left: -930px;
 					margin-top: 0px;
 				}
 				.item_1 {
-					left: 400px;
+					margin-left: -636px;
 					margin-top: 0px;
 				}
 				.item_2 {
-					left: 700px;
+					margin-left: -336px;
 					margin-top: 0px;
 				}
 				.item_3 {
-					left: 1000px;
+					margin-left: -40px;
 					margin-top: 0px;
 				}												
 					.p_services_menu_info_img {
@@ -1583,7 +1586,8 @@ button {
 					}					
 					.p_services_menu_info_urls a{
 						display: block;
-						font-family: "ProximaNova-Semibold";
+						font-family: "Ubuntu";
+						font-size: 15px;
 						text-decoration: underline;
 						line-height: 19px;
 						color: #757575 !important;
@@ -1611,7 +1615,7 @@ button {
 	}
 		.p_doctors {
 			text-align: left;
-			line-height: 0px;
+			
 		}
 			.p_doctors_menu {
 				color: #181815;
@@ -1628,6 +1632,7 @@ button {
 					background-position: 50% 50%;
 					background-repeat: no-repeat;
 					overflow: hidden;
+					margin-bottom: 25px;
 				}
 				.doc-1 {
 					background-image: url('../i/doctor-1.jpg');
@@ -1681,16 +1686,39 @@ button {
 							line-height: 18px;
 							color: #ffffff;
 						}																														
+	
+	.footer .p_doctors_slider {
+		display: none;
+	}
 	.p_doctors_slider {
 		text-align: left;
 		color: #181815;
+
 	}
+	.p_doctors_slider_cont {
+		height: 0px;
+		width: 1560px;
+		overflow: hidden;
+		/*display: inline-block;*/
+		transition: all 400ms ease;
+	}	
 		.p_doctors_slide {
 			position: relative;
+			margin-bottom: 30px;
+			transition: all 400ms ease;
+			width: 1560px;
+			left: -185px !important;
 		}
+	.doct_info_show {
+		height: 537px;
+		margin-bottom: 30px;
+		overflow: visible;
+		visibility: visible;
+		transition: all 400ms ease;
+	}					
 			.p_doctors_menu_info_triangle {
 				position: absolute;
-				height: 25px;
+				height: 31px;
 				width: 100%;
 				overflow: hidden;
 			}
@@ -1698,7 +1726,7 @@ button {
 					position: absolute;
 					transition: all 300ms ease;
 					left: -579px;
-					height: 25px;
+					height: 31px;
 					z-index: 10;
 					width: 2060px;
 					background-image: url('../i/services-info-triangle.png');
@@ -1706,6 +1734,15 @@ button {
 					background-size: cover;
 					background-repeat: no-repeat;
 				}
+				.p_doctors_menu .item_0 {
+					margin-left: -80px;
+				}
+				.p_doctors_menu .item_1 {
+					margin-left: 280px;
+				}
+				.p_doctors_menu .item_2 {
+					margin-left: 660px;
+				}				
 			.p_doctors_slide_top {
 				position: relative;
 			}
@@ -1786,6 +1823,9 @@ button {
 						font-size: 16px;
 						line-height: 30px;
 					}
+				.p_doctors_menu .slick-dots {
+					display: none !important;
+				}							
 /*doctors page*/
 .b-1{
 	

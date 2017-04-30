@@ -34,7 +34,7 @@ $(document).ready(function(){
 		for ( columns; columns < menu_items+next_it; columns = columns+columns) {
 			var pos = columns - 1;
 			var block = columns/next_it; // number of row
-			$( '.p_services_menu_item:eq('+pos+')' ).after( $('.footer .p_services_menu_info').clone().attr('data-nrow-block',block));//'<div data-nrow='+block+' class="dummy-box"></div>' 
+			$( '.p_services_menu_item:eq('+pos+')' ).after( $('.footer .p_services_menu_info_container').clone().attr('data-nrow-block',block));//'<div data-nrow='+block+' class="dummy-box"></div>' 
 			console.log('row - ' + columns + 'pos - ' + pos + 'block - ' + block)
 		}
 //---------------------- вставляем слайды в блоки
@@ -45,7 +45,7 @@ $(document).ready(function(){
 			}
 			var cnt = 0;
 			for ( columnToFill; columnToFill <= next_it*blockToFill; columnToFill = columnToFill + 1) {
-				$('.footer [data-slide-id='+columnToFill+']' ).clone().appendTo( $('[data-nrow-block='+blockToFill+'] .b-block .p_services_menu_info_slider').attr('data-nslider',blockToFill));
+				$('.footer [data-slide-id='+columnToFill+']' ).clone().appendTo( $('[data-nrow-block='+blockToFill+'] .p_services_menu_info .b-block .p_services_menu_info_slider').attr('data-nslider',blockToFill));
 				$('[data-msbtn='+columnToFill+'] a').attr('data-eventBlock',blockToFill);
 				//$('[data-msbtn='+columnToFill+'] a span').attr('data-eventBlock',blockToFill);
 				$('[data-msbtn='+columnToFill+'] a').attr('data-sldots',cnt);	
@@ -72,13 +72,13 @@ $(document).ready(function(){
 				$('[data-nrow-block = '+currentRow+'] .slick-dots li:eq('+currentCell+')').click();
 				$('.p_services_menu_info_triangle_im').removeClass('item_1').removeClass('item_2').removeClass('item_3').removeClass('item_0');
 				$('.p_services_menu_info_triangle_im').addClass('item_'+currentCell+'');
-				$(".p_services_menu_info").removeClass("serv_info_show");
+				$(".p_services_menu_info_container").removeClass("serv_info_show");
 				$('[data-nrow-block='+dataEventVal+']').addClass("serv_info_show");
 		});
 
 		$('.map-cont-close').click(function() {
 			
-			$(".p_services_menu_info").removeClass("serv_info_show");
+			$(".p_services_menu_info_container").removeClass("serv_info_show");
 		});
 
 

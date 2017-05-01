@@ -23,6 +23,7 @@ $(document).ready(function(){
 			var next_it = it+1;
 			var next_param_top = $('.p_services_menu_item:eq('+next_it+')').offset().top;
 			if ( param_top == next_param_top  ) {
+
 			}
 			else {
 				var columns = next_it;
@@ -31,8 +32,9 @@ $(document).ready(function(){
 			}
 		}
 //---------------------- вставляем пустой блок поле каждого ряда кнопок количество рядов block количество элементов next_it у боксов data-nrow
-		for ( columns; columns < menu_items+next_it; columns = columns+columns) {
+		for ( columns; columns < menu_items+next_it; columns = columns+next_it) {
 			var pos = columns - 1;
+			if (pos>=menu_items) {pos=menu_items-1;}
 			var block = columns/next_it; // number of row
 			$( '.p_services_menu_item:eq('+pos+')' ).after( $('.footer .p_services_menu_info').clone().attr('data-nrow-block',block));//'<div data-nrow='+block+' class="dummy-box"></div>' 
 			console.log('row - ' + columns + 'pos - ' + pos + 'block - ' + block)

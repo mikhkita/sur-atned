@@ -1499,7 +1499,7 @@ button {
 				}
 				.serv_info_show {
 					height: 537px;
-					margin-bottom: 30px;
+					margin-bottom: 0px;
 					visibility: visible;
 					transition: all 400ms ease;
 					-moz-transition:all 400ms ease;

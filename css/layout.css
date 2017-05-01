@@ -1524,8 +1524,8 @@ button {
 					height: 29px;
 				}
 				.services_slide_close_btn:after {
-					font-size: 20px;
-					line-height: 29px;
+					font-size: 19px;
+					line-height: 30px;
 				}				
 				.p_services_menu_info_triangle {
 					/* display: block; */
@@ -1642,6 +1642,7 @@ button {
 					background-position: 50% 50%;
 					background-repeat: no-repeat;
 					overflow: hidden;
+					cursor: pointer;
 					/* margin-bottom: 25px; */
 				}
 				.doc-1 {
@@ -1870,7 +1871,90 @@ button {
 				}							
 /*doctors page*/
 /*about page begin*/
+	.p_about {
+		text-align: left;
+	}
+	.p_about p{
+		color: #171717;
+	}
+		.b-wide-block {
 
+		}
+			.p_about_b_about {
+
+			}
+				.b-block {
+
+				}
+					.p_about_b_about_text {
+						width: 390px;
+						padding: 12px 0 72px 0;
+					}				
+						.p_about .main-content_top_h1 {margin-bottom: 45px;}
+							.p_about_b_about_text p{
+								font-family: "Ubuntu-Light";
+								margin-bottom: 31px;
+							}
+
+							.p_about .p_about_btn {
+								border: 1px solid #e3e3e3;
+								padding-right: 30px;
+							}
+					.p_about_b_about_stats {
+						height: 100px;
+						width: 50%;
+						padding: 42px 20px;
+						color: #252525;
+					}
+						.p_about_b_about_stats_bookmarks {
+
+						}
+	.p_about_b_advantages {
+		background-color: #f2f2f2;
+	}
+		.p_about_b_advantages h4 {
+			font-family: "Ubuntu-Bold";
+			font-size: 29px;
+			color: #171717;
+			margin-bottom: 23px;
+		}
+			.p_about_b_advantages .b-block {
+				padding: 30px 0 40px;
+			}
+				.p_about_b_advantages_header {
+					display: inline-block;
+				}
+				.p_about_b_advantages_pluses {
+					width: 1190px;
+					margin-left: -15px;
+				}
+					.p_about_b_advantages_pluses_item {
+						display: inline-block;
+						width: 364px;
+						margin: 0 15px;
+						padding: 12px 0 27px 0;
+						float: left;
+						}
+						.p_about_b_advantages_pluses_item_img {
+							background-size: auto auto;
+							background-position: 50% 50%;
+							background-repeat: no-repeat;
+							height: 120px;
+							width: 120px;
+							margin-bottom: 22px;
+						}
+	.p_about_b_clinics {
+
+	}
+		.b-block {
+
+		}
+			.p_about_b_clinics_header  {
+
+			}
+			.p_about_b_clinics_galary {
+
+			}
 /*about page end*/
 
 .b-1{

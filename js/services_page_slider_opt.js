@@ -102,10 +102,11 @@ $(document).ready(function(){
 			$('.p_services_menu_item').removeClass('active');
 			$(".p_services_menu_info").removeClass("serv_info_show");
 		});
-	$(window).resize(function(){
-
-		if ($(window).width()<1241) {window.setTimeout('location.reload()', 500);}
-	});
+	// $(window).resize(function(){
+	// 	if ($(window).width()<1241) {
+	// 		window.setTimeout('location.reload()', 500);
+	// 	}
+	// });
 
 
 //------------------ 

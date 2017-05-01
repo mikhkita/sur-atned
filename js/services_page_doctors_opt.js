@@ -87,12 +87,11 @@ $(document).ready(function(){
 				    }, 400);
 				}
 				setTimeout(scrll, 410);
-
 			}
 		});
 
 		$('.map-cont-close').click(function() {
-			
+			$('.p_doctors_menu_item').removeClass('active');
 			$(".p_doctors_slider_cont").removeClass("doct_info_show");
 		});
 

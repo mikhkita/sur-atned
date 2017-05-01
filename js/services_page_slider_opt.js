@@ -86,8 +86,17 @@ $(document).ready(function(){
 				$('.p_services_menu_info_triangle_im').addClass('item_'+currentCell+'');
 				$(".p_services_menu_info").removeClass("serv_info_show");
 				$('[data-nrow-block='+dataEventVal+']').addClass("serv_info_show");
+
+				function scrll () {  
+					var offs = $('.p_services_menu_item:eq('+actButt+')').offset().top; 
+					$('html, body').animate({
+				        scrollTop: offs
+				    }, 400);
+				}
+				setTimeout(scrll, 410);
 		}
 		});
+
 
 		$('.map-cont-close').click(function() {
 			$('.p_services_menu_item').removeClass('active');

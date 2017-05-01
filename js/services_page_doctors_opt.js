@@ -79,6 +79,15 @@ $(document).ready(function(){
 				$('.p_doctors_menu_info_triangle_im').addClass('item_'+currentCell+'');
 				$(".p_doctors_slider_cont").removeClass("doct_info_show");
 				$('[data-nrow-block='+dataEventVal+']').addClass("doct_info_show");
+
+				function scrll () {  
+					var offs = $('.p_doctors_menu_item:eq('+actButt+')').offset().top; 
+					$('html, body').animate({
+				        scrollTop: offs
+				    }, 400);
+				}
+				setTimeout(scrll, 410);
+
 			}
 		});
 

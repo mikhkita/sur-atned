@@ -557,7 +557,7 @@ button {
 		.main-content .b-wide-block{
 		}
 			.back-slider {
-				height: 438px;
+				
 			}
 				.back-slide {
 					background-position: 50% 50%;
@@ -1643,7 +1643,7 @@ button {
 					background-position: 50% 50%;
 					background-repeat: no-repeat;
 					overflow: hidden;
-					margin-bottom: 25px;
+					/* margin-bottom: 25px; */
 				}
 				.doc-1 {
 					background-image: url('../i/doctor-1.jpg');
@@ -1709,11 +1709,13 @@ button {
 	.p_doctors_slider_cont {
 		height: 0px;
 		width: 1560px;
+		margin-top: -6px;
+		margin-left: -186px;
 		overflow: hidden;
-		/*display: inline-block;*/
+		display: inline-block;
 		transition: all 400ms ease;
 		-moz-transition:all 400ms ease;
-		-webkit-transition:all 400ms ease;		
+		-webkit-transition:all 400ms ease;
 	}	
 		.p_doctors_slide {
 			position: relative;
@@ -1722,16 +1724,15 @@ button {
 			-moz-transition:all 400ms ease;
 			-webkit-transition:all 400ms ease;			
 			width: 1560px;
-			left: -185px !important;
+			/*left: -185px;*/
 		}
 	.doct_info_show {
-		height: 537px;
-		margin-bottom: 30px;
-		overflow: visible;
+		height: 1242px;
+		/* margin-bottom: 30px; */
 		visibility: visible;
 		transition: all 400ms ease;
 		-moz-transition:all 400ms ease;
-		-webkit-transition:all 400ms ease;		
+		-webkit-transition:all 400ms ease;
 	}					
 			.p_doctors_menu_info_triangle {
 				position: absolute;
@@ -1747,20 +1748,20 @@ button {
 					left: -579px;
 					height: 31px;
 					z-index: 10;
-					width: 2060px;
+					width: 2360px;
 					background-image: url('../i/services-info-triangle.png');
 					background-position: 50% 50%;
 					background-size: cover;
 					background-repeat: no-repeat;
 				}
 				.p_doctors_menu .item_0 {
-					margin-left: -80px;
+					margin-left: -235px;
 				}
 				.p_doctors_menu .item_1 {
-					margin-left: 280px;
+					margin-left: 170px;
 				}
 				.p_doctors_menu .item_2 {
-					margin-left: 660px;
+					margin-left: 565px;
 				}				
 			.p_doctors_slide_top {
 				position: relative;

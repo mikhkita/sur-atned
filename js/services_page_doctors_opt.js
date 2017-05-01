@@ -60,7 +60,17 @@ $(document).ready(function(){
 		}
 //----------  slider drop bottom rules
 		$('.p_doctors_menu_item').click(function() {
+			 if ($(this).hasClass('active')) {
+			 	$('.p_doctors_menu_item').removeClass('active');
+			 	$(".p_doctors_slider_cont").removeClass("doct_info_show");
+			 	console.log()
+			 }
+			 else {			
 				var dataEventVal = $(this).attr("data-eventblock");
+				var actButt = $(this).attr('data-mdbtn');
+				actButt = actButt-1;
+				$('.p_doctors_menu_item').removeClass('active');
+				$('.p_doctors_menu_item:eq('+actButt+')').addClass('active');				
 //			var elem = $(event.target);
 				var currentRow = dataEventVal;
 				var currentCell = $(this).attr('data-sldots');
@@ -69,6 +79,7 @@ $(document).ready(function(){
 				$('.p_doctors_menu_info_triangle_im').addClass('item_'+currentCell+'');
 				$(".p_doctors_slider_cont").removeClass("doct_info_show");
 				$('[data-nrow-block='+dataEventVal+']').addClass("doct_info_show");
+			}
 		});
 
 		$('.map-cont-close').click(function() {

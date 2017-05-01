@@ -1639,7 +1639,6 @@ button {
 					width: 365px;
 					margin-left: 14px;
 					margin-right: 14px;
-					position: relative;
 					background-position: 50% 50%;
 					background-repeat: no-repeat;
 					overflow: hidden;
@@ -1670,12 +1669,24 @@ button {
 					background-size: auto auto;					
 				}				
 					.p_doctors_menu_vcard {
-						position: absolute;
+						margin-top: 266px;
 						width: 305px;
 						padding: 24px 30px 26px;
 						bottom: 0px;
 						background-color: rgba(116,188,64,0.9);
+						transition: all 400ms ease;
+						-moz-transition:all 400ms ease;
+						-webkit-transition:all 400ms ease;
 					}
+/*					.p_doctors_menu_item,.active .p_doctors_menu_vcard {
+						margin-top: 215px;
+					}*/
+					.p_doctors_menu_item:hover 	.p_doctors_menu_vcard {
+						margin-top: 215px;
+						transition: all 400ms ease;
+						-moz-transition:all 400ms ease;
+						-webkit-transition:all 400ms ease;
+					}					
 						.p_doctors_menu_vcard h5{
 							text-transform: uppercase;
 							font-family: "Ubuntu-Bold";
@@ -1689,15 +1700,26 @@ button {
 							font-size: 16px;
 							line-height: 24px;
 							color: #ffffff;
+							margin-bottom: 50px;
+							transition: all 400ms ease;
+							-moz-transition:all 400ms ease;
+							-webkit-transition:all 400ms ease;							
+						}	
+/*						.p_doctors_menu_item,.active .p_doctors_menu_vcard h6{
 							margin-bottom: 14px;
-						}						
+						}*/
+						.p_doctors_menu_item:hover 	.p_doctors_menu_vcard h6{
+							margin-bottom: 14px;
+							transition: all 400ms ease;
+							-moz-transition:all 400ms ease;
+							-webkit-transition:all 400ms ease;								
+						}											
 						.p_doctors_menu_vcard p{
 							font-family: "Ubuntu-Light";
 							font-size: 16px;
 							line-height: 18px;
 							color: #ffffff;
-						}																														
-	
+						}																															
 	.footer .p_doctors_slider {
 		display: none;
 	}
@@ -1748,20 +1770,20 @@ button {
 					left: -579px;
 					height: 31px;
 					z-index: 10;
-					width: 2360px;
+					width: 2510px;
 					background-image: url('../i/services-info-triangle.png');
 					background-position: 50% 50%;
 					background-size: cover;
 					background-repeat: no-repeat;
 				}
 				.p_doctors_menu .item_0 {
-					margin-left: -235px;
+					margin-left: -305px;
 				}
 				.p_doctors_menu .item_1 {
-					margin-left: 170px;
+					margin-left: 95px;
 				}
 				.p_doctors_menu .item_2 {
-					margin-left: 565px;
+					margin-left: 485px;
 				}				
 			.p_doctors_slide_top {
 				position: relative;

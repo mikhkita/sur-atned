@@ -1252,6 +1252,174 @@ button {
 						
 					}					
 /*конец Страница услуг*/
+/*doctors page*/
+.b-wide-block {
+}
+	.b-block {
+	}
+		.p_doctors {
+			text-align: left;	
+		}
+			.p_doctors_menu {
+				width: 1188px;
+				margin-left: -14px;
+			}
+				.p_doctors_menu_item {
+					height: 365px;
+					width: 365px;
+					margin-left: 14px;
+					margin-right: 14px;
+					/* margin-bottom: 25px; */
+				}
+				.doc-1 {
+				}
+				.doc-2 {
+				}
+				.doc-3 {
+				}
+				.doc-4 {
+				}
+				.doc-5 {
+				}
+				.doc-6 {
+				}				
+					.p_doctors_menu_vcard {
+						margin-top: 266px;
+						width: 305px;
+						padding: 24px 30px 26px;
+						bottom: 0px;
+					}
+/*					.p_doctors_menu_item,.active .p_doctors_menu_vcard {
+						margin-top: 215px;
+					}*/
+					.p_doctors_menu_item:hover 	.p_doctors_menu_vcard {
+						margin-top: 215px;
+					}					
+						.p_doctors_menu_vcard h5{
+							text-transform: uppercase;
+							font-size: 22px;
+							line-height: 26px;
+						}
+						.p_doctors_menu_vcard h6{
+							text-transform: uppercase;
+							font-size: 16px;
+							line-height: 24px;
+							margin-bottom: 50px;
+						}	
+/*						.p_doctors_menu_item,.active .p_doctors_menu_vcard h6{
+							margin-bottom: 14px;
+						}*/
+						.p_doctors_menu_item:hover 	.p_doctors_menu_vcard h6{
+							margin-bottom: 14px;
+						}											
+						.p_doctors_menu_vcard p{
+							font-size: 16px;
+							line-height: 18px;
+						}																															
+	.footer .p_doctors_slider {
+	}
+	.p_doctors_slider {
+		text-align: left;
+
+	}
+	.p_doctors_slider_cont {
+		height: 0px;
+		width: 1560px;
+		margin-top: -6px;
+		margin-left: -186px;
+	}	
+		.p_doctors_slide {
+			margin-bottom: 30px;
+			width: 1560px;
+			/*left: -185px;*/
+		}
+	.doct_info_show {
+		height: 1242px;
+		/* margin-bottom: 30px; */
+	}					
+			.p_doctors_menu_info_triangle {
+				height: 31px;
+				width: 100%;
+			}
+				.p_doctors_menu_info_triangle_im {
+					left: -579px;
+					height: 31px;
+					width: 2510px;
+				}
+				.p_doctors_menu .item_0 {
+					margin-left: -305px;
+				}
+				.p_doctors_menu .item_1 {
+					margin-left: 95px;
+				}
+				.p_doctors_menu .item_2 {
+					margin-left: 485px;
+				}				
+			.p_doctors_slide_top {
+			}
+
+				.p_doctors_slide_img {
+					width: 100%;
+					height: 596px;
+				}
+				.p_doctors_slide_top .b-block {
+				height: 596px;
+				/* padding-top: 100px; */
+				}
+					.p_doctors_slide_text {
+						padding-top: 111px;
+						width: 665px;
+					}
+						.p_doctors_slide_text h4 {
+							line-height: 24px;
+							font-size: 36px;
+							margin-bottom: 24px;
+						}
+						.p_doctors_slide_text h5 {
+							font-size: 20px;
+							line-height: 20px;
+							text-transform: uppercase;
+							margin-bottom: 31px;
+						}
+						.p_doctors_slide_text p {
+							margin-bottom: 50px;
+							font-size: 16px;
+							width: 586px;
+						}
+						.p_doctors_slide_text a {
+							font-size: 12px;
+						}
+						.p_doctors_slide_btn {
+							padding-right: 25px;
+						}
+					.p_doctors_slide_close_btn {
+						top: 54px;
+						right: 12px;
+						height: 29px;
+						width: 29px;
+					}
+					.p_doctors_slide_close_btn:after {
+						font-size: 20px;
+						line-height: 30px;
+					}					
+			.p_doctors_slide_bott {
+				padding: 54px 0 34px;
+			}
+				.p_doctors_slide_bott h6 {
+					font-size: 18px;
+					margin-bottom: 22px;
+				}
+				.p_doctors_slide_bott ul {
+					margin-bottom: 20px;
+				} 
+					.p_doctors_slide_bott li {
+						list-style-type: disc;
+						font-size: 16px;
+						line-height: 30px;
+					}
+				.p_doctors_menu .slick-dots {
+				}							
+/*doctors page*/
 .b-1{
 	
 }

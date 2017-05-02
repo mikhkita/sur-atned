@@ -1,0 +1,15 @@
+diff a/css/layout.css b/css/layout.css	(rejected hunks)
+@@ -1639,11 +1639,11 @@
+ 					width: 365px;
+ 					margin-left: 14px;
+ 					margin-right: 14px;
+-					position: relative;
++					/*position: relative;*/
+ 					background-position: 50% 50%;
+ 					background-repeat: no-repeat;
+ 					overflow: hidden;
+-					margin-bottom: 25px;
++					/*margin-bottom: 25px;*/
+ 				}
+ 				.doc-1 {
+ 					background-image: url('../i/doctor-1.jpg');

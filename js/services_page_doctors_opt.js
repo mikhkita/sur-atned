@@ -29,7 +29,7 @@ $(document).ready(function(){
 		for ( columns; columns < menu_items+next_it; columns = columns+columns) {
 			var pos = columns - 1;
 			var block = columns/next_it; // number of row
-			$( '.p_doctors_menu_item:eq('+pos+')' ).after( $('.footer .p_doctors_slider_cont').clone().attr('data-nrow-block',block));//'<div data-nrow='+block+' class="dummy-box"></div>' 
+			$( '.p_doctors_menu_item:eq('+pos+')' ).after( $('.footer .p_doctors_slider_cont').clone().attr('data-nrow-block',block).attr('offset',$( '.p_doctors_menu_item:eq('+pos+')' ).offset().top));//'<div data-nrow='+block+' class="dummy-box"></div>' 
 			console.log('row - ' + columns + 'pos - ' + pos + 'block - ' + block)
 		}
 //---------------------- вставляем слайды в блоки
@@ -63,7 +63,7 @@ $(document).ready(function(){
 			 if ($(this).hasClass('active')) {
 			 	$('.p_doctors_menu_item').removeClass('active');
 			 	$(".p_doctors_slider_cont").removeClass("doct_info_show");
-			 	console.log()
+			 	console.log('closed must be');
 			 }
 			 else {			
 				var dataEventVal = $(this).attr("data-eventblock");
@@ -81,12 +81,14 @@ $(document).ready(function(){
 				$('[data-nrow-block='+dataEventVal+']').addClass("doct_info_show");
 
 				function scrll () {  
-					var offs = $('.p_doctors_menu_item:eq('+actButt+')').offset().top; 
+					var actscrll = $('.active').attr('data-eventblock')
+					var offs = $('[data-nrow-block='+actscrll+']').attr('offset')
+					//var offs = $('.p_doctors_menu_item:eq('+actButt+')').offset().top; 
 					$('html, body').animate({
 				        scrollTop: offs
-				    }, 400);
+				    }, 150);
 				}
-				setTimeout(scrll, 410);
+				setTimeout(scrll, 0);
 			}
 		});
 

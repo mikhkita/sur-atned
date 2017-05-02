@@ -36,7 +36,7 @@ $(document).ready(function(){
 			var pos = columns - 1;
 			if (pos>=menu_items) {pos=menu_items-1;}
 			var block = columns/next_it; // number of row
-			$( '.p_services_menu_item:eq('+pos+')' ).after( $('.footer .p_services_menu_info').clone().attr('data-nrow-block',block));//'<div data-nrow='+block+' class="dummy-box"></div>' 
+			$( '.p_services_menu_item:eq('+pos+')' ).after( $('.footer .p_services_menu_info').clone().attr('data-nrow-block',block).attr('offset',$( '.p_services_menu_item:eq('+pos+')' ).offset().top));//'<div data-nrow='+block+' class="dummy-box"></div>' 
 			console.log('row - ' + columns + 'pos - ' + pos + 'block - ' + block)
 		}
 //---------------------- вставляем слайды в блоки
@@ -88,12 +88,14 @@ $(document).ready(function(){
 				$('[data-nrow-block='+dataEventVal+']').addClass("serv_info_show");
 
 				function scrll () {  
-					var offs = $('.p_services_menu_item:eq('+actButt+')').offset().top; 
+					var actscrll = $('.active a').attr('data-eventblock')
+					var offs = $('[data-nrow-block='+actscrll+']').attr('offset')					
+					//var offs = $('.p_services_menu_item:eq('+actButt+')').offset().top; 
 					$('html, body').animate({
 				        scrollTop: offs
-				    }, 400);
+				    }, 150);
 				}
-				setTimeout(scrll, 410);
+				setTimeout(scrll, 0);
 		}
 		});
 

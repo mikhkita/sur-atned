@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function mainf (){
 	var menu_items = $('.p_doctors_menu_item').length;
 		console.log (menu_items);
 	
@@ -71,7 +71,6 @@ $(document).ready(function(){
 				actButt = actButt-1;
 				$('.p_doctors_menu_item').removeClass('active');
 				$('.p_doctors_menu_item:eq('+actButt+')').addClass('active');				
-//			var elem = $(event.target);
 				var currentRow = dataEventVal;
 				var currentCell = $(this).attr('data-sldots');
 				$('[data-nrow-block = '+currentRow+'] .slick-dots li:eq('+currentCell+')').click();
@@ -100,6 +99,14 @@ $(document).ready(function(){
 
 
 //------------------ 
-
+window.onresize = resizes;	
+function resizes () {
+	$('.p_doctors_menu .p_doctors_slider_cont').remove();
+	$('.map-cont-close').off( "click" );
+	$('.p_doctors_menu_item').off( "click" );
+	$('.p_doctors_menu_item').removeClass('active');
+	$(".p_doctors_slider_cont").removeClass("serv_info_show");	
+	mainf();
+}
 
 });

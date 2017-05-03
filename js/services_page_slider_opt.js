@@ -1,11 +1,6 @@
 $(document).ready(function mainf (){
 	var menu_items = $('.p_services_menu_item').length;
 	console.log (menu_items);
-
-	var dataVal = $('.p_services_menu_item:eq(1)').attr('data-msbtn');
-	// var obj = $('.p_services_menu div:eq(0)');
-	// var offset = $('.p_services_menu div [data-id = msbtn'+dataVal+']').offset();
-	
 	
 	var first_off = $('.p_services_menu_item:eq(0)').offset().top;
 	var offset = first_off;
@@ -23,7 +18,6 @@ $(document).ready(function mainf (){
 		var next_it = it+1;
 		var next_param_top = $('.p_services_menu_item:eq('+next_it+')').offset().top;
 		if ( param_top == next_param_top  ) {
-
 		}
 		else {
 			var columns = next_it;

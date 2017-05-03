@@ -1261,14 +1261,14 @@ button {
 			text-align: left;	
 		}
 			.p_doctors_menu {
-				width: 1188px;
-				margin-left: -14px;
+				width: 960px;
+				margin-left: 0;
 			}
 				.p_doctors_menu_item {
 					height: 365px;
 					width: 365px;
-					margin-left: 14px;
-					margin-right: 14px;
+					margin-left: 55px;
+					margin-right: 58px;
 					/* margin-bottom: 25px; */
 				}
 				.doc-1 {
@@ -1326,7 +1326,7 @@ button {
 		height: 0px;
 		width: 1560px;
 		margin-top: -6px;
-		margin-left: -186px;
+		margin-left: -300px;
 	}	
 		.p_doctors_slide {
 			margin-bottom: 30px;
@@ -1335,7 +1335,7 @@ button {
 		}
 	.doct_info_show {
 		height: 1242px;
-		/* margin-bottom: 30px; */
+		margin-bottom: 30px;
 	}					
 			.p_doctors_menu_info_triangle {
 				height: 31px;
@@ -1347,10 +1347,10 @@ button {
 					width: 2510px;
 				}
 				.p_doctors_menu .item_0 {
-					margin-left: -305px;
+					margin-left: -265px;
 				}
 				.p_doctors_menu .item_1 {
-					margin-left: 95px;
+					margin-left: 220px;
 				}
 				.p_doctors_menu .item_2 {
 					margin-left: 485px;
@@ -1361,14 +1361,16 @@ button {
 				.p_doctors_slide_img {
 					width: 100%;
 					height: 596px;
+					margin-left: 86px;
 				}
 				.p_doctors_slide_top .b-block {
+				/*width: 960px;*/
 				height: 596px;
 				/* padding-top: 100px; */
 				}
 					.p_doctors_slide_text {
 						padding-top: 111px;
-						width: 665px;
+						width: 560px;
 					}
 						.p_doctors_slide_text h4 {
 							line-height: 24px;
@@ -1384,7 +1386,7 @@ button {
 						.p_doctors_slide_text p {
 							margin-bottom: 50px;
 							font-size: 16px;
-							width: 586px;
+							width: 560px;
 						}
 						.p_doctors_slide_text a {
 							font-size: 12px;
@@ -1424,24 +1426,6 @@ button {
 	
 }
 
-.icon-icon-arrow-next:before {
-  content: "\e902";
-}
-.icon-icon-arrow-prev:before {
-  content: "\e903";
-}
-.icon-icon-map-pointer:before {
-  content: "\e904";
-}
-.icon-icon-mail:before {
-  content: "\e905";
-}
-.icon-callback:before {
-  content: "\e900";
-}
-.icon-search:before {
-  content: "\e901";
-}
 
 @media (-webkit-min-device-pixel-ratio: 1.5) {
 	.b-icon:before{

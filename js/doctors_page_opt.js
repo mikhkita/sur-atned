@@ -9,7 +9,7 @@ $(document).ready(function mainf (){
 		offset = $('.p_doctors_menu_item:eq('+i+')').offset().top;
 		i++;
 
-	// console.log (offset);
+	 console.log ('offset - ' + offset);
 	}
 	
 //---------------------- определяем количество элементов в строке (первой)
@@ -30,7 +30,7 @@ $(document).ready(function mainf (){
 		var pos = columns - 1;
 		if (pos>=menu_items) {pos=menu_items-1;}
 		var block = columns/next_it; // number of row
-		$( '.p_doctors_menu_item:eq('+pos+')' ).after( $('.footer .p_doctors_slider_cont').clone().attr('data-nrow-block',block).attr('offset',$( '.p_doctors_menu_item:eq('+pos+')' ).offset().top));//'<div data-nrow='+block+' class="dummy-box"></div>' 
+		$( '.p_doctors_menu_item:eq('+pos+')' ).after( $('.footer .p_doctors_slider_cont').clone().attr('data-nrow-block',block).attr('offset',$( '.p_doctors_menu_item:eq('+pos+')' ).offset().top+$( '.p_doctors_menu_item:eq('+pos+')' ).height()));//'<div data-nrow='+block+' class="dummy-box"></div>' 
 		console.log('row - ' + columns + 'pos - ' + pos + 'block - ' + block)
 	}
 //---------------------- вставляем слайды в блоки
@@ -86,7 +86,7 @@ $(document).ready(function mainf (){
 				//var offs = $('.p_doctors_menu_item:eq('+actButt+')').offset().top; 
 				$('html, body').animate({
 			        scrollTop: offs
-			    }, 150);
+			    }, 400);
 			}
 			setTimeout(scrll, 0);
 		}

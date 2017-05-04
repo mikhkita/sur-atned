@@ -1639,53 +1639,50 @@ button {
 					margin-right: 32px;
 					background-position: 50% 50%;
 					background-repeat: no-repeat;
+					background-size: cover;
 					overflow: hidden;
 					cursor: pointer;
 					float: left;
 					margin-bottom: 6px;
+					position: relative;
 				}
 				.p_doctors_menu_item:nth-child(4n-1) {
 					margin-right: 0px;
 				}
 				.doc-1 {
 					background-image: url('../i/doctor-1.jpg');
-					background-size: auto auto;
 				}
 				.doc-2 {
 					background-image: url('../i/doctor-2.jpg');
-					background-size: auto auto;					
 				}
 				.doc-3 {
 					background-image: url('../i/doctor-3.jpg');
-					background-size: auto auto;					
 				}
 				.doc-4 {
 					background-image: url('../i/doctor-4.jpg');
-					background-size: auto auto;					
 				}
 				.doc-5 {
 					background-image: url('../i/doctor-5.jpg');
-					background-size: auto auto;					
 				}
 				.doc-6 {
 					background-image: url('../i/doctor-6.jpg');
-					background-size: auto auto;					
 				}				
 					.p_doctors_menu_vcard {
-						margin-top: 266px;
-						width: 305px;
+						width: 100%;
 						padding: 24px 30px 26px;
-						bottom: 0px;
+						bottom: 0;
 						background-color: rgba(116,188,64,0.9);
 						transition: all 400ms ease;
 						-moz-transition:all 400ms ease;
 						-webkit-transition:all 400ms ease;
+						box-sizing: border-box;
+						position: absolute;
 					}
 /*					.p_doctors_menu_item,.active .p_doctors_menu_vcard {
 						margin-top: 215px;
 					}*/
 					.p_doctors_menu_item:hover 	.p_doctors_menu_vcard {
-						margin-top: 215px;
+						
 						transition: all 400ms ease;
 						-moz-transition:all 400ms ease;
 						-webkit-transition:all 400ms ease;
@@ -1712,7 +1709,7 @@ button {
 							margin-bottom: 14px;
 						}*/
 						.p_doctors_menu_item:hover 	.p_doctors_menu_vcard h6{
-							margin-bottom: 14px;
+							/*margin-bottom: 0px;*/
 							transition: all 400ms ease;
 							-moz-transition:all 400ms ease;
 							-webkit-transition:all 400ms ease;								

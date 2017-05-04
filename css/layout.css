@@ -1626,24 +1626,26 @@ button {
 	}
 		.p_doctors {
 			text-align: left;
-			
+			padding-bottom: 50px;
 		}
 			.p_doctors_menu {
 				color: #181815;
-				width: 1188px;
-				margin-left: -14px;
+				/* width: 1188px; */
 			}
 				.p_doctors_menu_item {
 					display: inline-block;
 					height: 365px;
 					width: 365px;
-					margin-left: 14px;
-					margin-right: 14px;
+					margin-right: 32px;
 					background-position: 50% 50%;
 					background-repeat: no-repeat;
 					overflow: hidden;
 					cursor: pointer;
-					/* margin-bottom: 25px; */
+					float: left;
+					margin-bottom: 6px;
+				}
+				.p_doctors_menu_item:nth-child(4n-1) {
+					margin-right: 0px;
 				}
 				.doc-1 {
 					background-image: url('../i/doctor-1.jpg');

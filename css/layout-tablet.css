@@ -1265,10 +1265,9 @@ button {
 				margin-left: 0;
 			}
 				.p_doctors_menu_item {
-					height: 365px;
-					width: 365px;
-					margin-left: 55px;
-					margin-right: 58px;
+					height: 300px;
+					width: 300px;
+					margin-right: 30px;
 					/* margin-bottom: 25px; */
 				}
 				.doc-1 {
@@ -1292,7 +1291,7 @@ button {
 /*					.p_doctors_menu_item,.active .p_doctors_menu_vcard {
 						margin-top: 215px;
 					}*/
-					.p_doctors_menu_item:hover 	.p_doctors_menu_vcard {
+/*					.p_doctors_menu_item:hover 	.p_doctors_menu_vcard {
 						margin-top: 215px;
 					}					
 						.p_doctors_menu_vcard h5{
@@ -1305,17 +1304,17 @@ button {
 							font-size: 16px;
 							line-height: 24px;
 							margin-bottom: 50px;
-						}	
+						}	*/
 /*						.p_doctors_menu_item,.active .p_doctors_menu_vcard h6{
 							margin-bottom: 14px;
 						}*/
-						.p_doctors_menu_item:hover 	.p_doctors_menu_vcard h6{
+/*						.p_doctors_menu_item:hover 	.p_doctors_menu_vcard h6{
 							margin-bottom: 14px;
 						}											
 						.p_doctors_menu_vcard p{
 							font-size: 16px;
 							line-height: 18px;
-						}																															
+						}	*/																														
 	.footer .p_doctors_slider {
 	}
 	.p_doctors_slider {

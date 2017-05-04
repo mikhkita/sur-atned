@@ -1648,25 +1648,7 @@ button {
 				}
 				.p_doctors_menu_item:nth-child(4n-1) {
 					margin-right: 0px;
-				}
-				.doc-1 {
-					background-image: url('../i/doctor-1.jpg');
-				}
-				.doc-2 {
-					background-image: url('../i/doctor-2.jpg');
-				}
-				.doc-3 {
-					background-image: url('../i/doctor-3.jpg');
-				}
-				.doc-4 {
-					background-image: url('../i/doctor-4.jpg');
-				}
-				.doc-5 {
-					background-image: url('../i/doctor-5.jpg');
-				}
-				.doc-6 {
-					background-image: url('../i/doctor-6.jpg');
-				}				
+				}		
 					.p_doctors_menu_vcard {
 						width: 100%;
 						padding: 24px 30px 26px;
@@ -1732,7 +1714,7 @@ button {
 		height: 0px;
 		width: 1560px;
 		margin-top: -6px;
-		margin-left: -186px;
+		margin-left: -200px;
 		overflow: hidden;
 		display: inline-block;
 		transition: all 400ms ease;
@@ -1741,7 +1723,6 @@ button {
 	}	
 		.p_doctors_slide {
 			position: relative;
-			margin-bottom: 30px;
 			transition: all 400ms ease;
 			-moz-transition:all 400ms ease;
 			-webkit-transition:all 400ms ease;			
@@ -1749,7 +1730,7 @@ button {
 			/*left: -185px;*/
 		}
 	.doct_info_show {
-		height: 1242px;
+		height: 1212px;
 		/* margin-bottom: 30px; */
 		visibility: visible;
 		transition: all 400ms ease;

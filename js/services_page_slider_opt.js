@@ -95,6 +95,14 @@ $(document).ready(function mainf (){
 	$('.map-cont-close').click(function() {
 		$('.p_services_menu_item').removeClass('active');
 		$(".p_services_menu_info").removeClass("serv_info_show");
+			function scrlClose () {  
+				//var offs = $('.p_doctors_menu_item:eq('+actButt+')').offset().top; 
+				var offsc = $('[data-eventblock="1"]').offset().top;
+				$('html, body').animate({
+			        scrollTop: offsc
+			    }, 400);
+			}	
+			setTimeout(scrlClose, 0);			
 	});
 
 

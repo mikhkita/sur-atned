@@ -1386,6 +1386,7 @@ button {
 			.p_services {
 				text-align: left;
 				color: #252525;
+				padding-bottom: 50px;
 			}
 					.main-content_top_h1 h1 {
 						font-family: "Ubuntu-Medium";
@@ -1724,11 +1725,9 @@ button {
 			-moz-transition:all 400ms ease;
 			-webkit-transition:all 400ms ease;			
 			width: 1560px;
-			/*left: -185px;*/
 		}
 	.doct_info_show {
 		height: 1212px;
-		/* margin-bottom: 30px; */
 		visibility: visible;
 		transition: all 400ms ease;
 		-moz-transition:all 400ms ease;
@@ -1751,7 +1750,7 @@ button {
 					width: 2510px;
 					background-image: url('../i/services-info-triangle.png');
 					background-position: 50% 50%;
-					background-size: cover;
+					background-size: auto;
 					background-repeat: no-repeat;
 				}
 				.p_doctors_menu .item_0 {
@@ -1768,10 +1767,7 @@ button {
 			}
 
 				.p_doctors_slide_img {
-					background-image: url("../i/doctor-orig-1.jpg");
 					background-repeat: no-repeat;
-					background-position: 50% 50%;
-					background-size: auto;
 					width: 100%;
 					height: 596px;
 					position: absolute;

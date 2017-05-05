@@ -1163,12 +1163,14 @@ button {
 				.p_services_menu_info {
 					text-align: left;
 					width: 1560px;
+					min-height: 0px;
 					height: 0px;
 					margin-left: -280px;
 					top: -25px;
 				}
 				.serv_info_show {
-					height: 590px;
+					min-height: 590px;
+					height: initial;
 					margin-bottom: 0px;
 				}
 				.p_services_menu .slick-dots {
@@ -1303,6 +1305,7 @@ button {
 
 	}
 	.p_doctors_slider_cont {
+		min-height: 0px;
 		height: 0px;
 		width: 1560px;
 		margin-top: -6px;
@@ -1314,7 +1317,8 @@ button {
 			/*left: -185px;*/
 		}
 	.doct_info_show {
-		height: 1242px;
+		min-height: 600px;
+		height: initial;
 		margin-bottom: 30px;
 	}					
 			.p_doctors_menu_info_triangle {

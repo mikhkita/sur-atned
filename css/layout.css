@@ -1474,9 +1474,9 @@ button {
 					/*overflow: hidden; */
 					/* float: left; */
 					visibility: hidden;
-					transition: all 400ms ease;
-					-moz-transition:all 400ms ease;
-					-webkit-transition:all 400ms ease;					
+					transition: all 300ms ease;
+					-moz-transition:all 300ms ease;
+					-webkit-transition:all 300ms ease;					
 				}
 				.p_services_menu .p_services_menu_info_container {
 					display: inline-block;				
@@ -1489,9 +1489,9 @@ button {
 					background-position: 50% 50%;
 					background-size: cover;
 					background-repeat: no-repeat;
-					transition: all 400ms ease;
-					-moz-transition:all 400ms ease;
-					-webkit-transition:all 400ms ease;					
+					transition: all 300ms ease;
+					-moz-transition:all 300ms ease;
+					-webkit-transition:all 300ms ease;					
 					width: 1560px;
 					min-height: 0px;
 					height: 0px;
@@ -1504,9 +1504,9 @@ button {
 					height: initial;
 					margin-bottom: 0px;
 					visibility: visible;
-					transition: all 400ms ease;
-					-moz-transition:all 400ms ease;
-					-webkit-transition:all 400ms ease;					
+					transition: all 300ms ease;
+					-moz-transition:all 300ms ease;
+					-webkit-transition:all 300ms ease;					
 				}
 				.p_services_menu .slick-dots {
 					display: none !important;

@@ -86,7 +86,7 @@ $(document).ready(function mainf (){
 				//var offs = $('.p_services_menu_item:eq('+actButt+')').offset().top; 
 				$('html, body').animate({
 			        scrollTop: offs
-			    }, 150);
+			    }, 300);
 			}
 			setTimeout(scrll, 0);
 		}

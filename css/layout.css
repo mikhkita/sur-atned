@@ -2069,6 +2069,55 @@ button {
 						-webkit-transition:all 200ms ease;						
 					}					
 /*about page end*/
+/*styles*/
+.styles{
+	text-align: left;
+	color: #000000;
+}
+.styles h1 {
+	font-family: "Ubuntu-Medium";
+	font-size: 20px;
+	line-height: 65px;
+	color: #a4b1bf;
+}
+.styles h2 {
+	font-family: "Ubuntu-Medium";
+	font-size: 29px;
+	line-height: 24px;
+	color: #171717;
+}
+.styles h3 {
+	font-family: "Ubuntu-Bold";
+	font-size: 18px;
+	line-height: 36px;
+	color: #0e0e0e;
+}
+.styles h4 {
+	font-family: "Ubuntu-Bold";
+	font-size: 42px;
+	line-height: 46px;
+	color: #181818;
+}
+.styles p {
+	font-family: "Ubuntu-Light";
+	font-size: 16px;
+	line-height: 24px;
+	color: #171717;
+}
+.styles a {
+	font-family: "Ubuntu-Light";
+	font-size: 16px;
+	line-height: 36px;
+	color: #72bb40;
+	text-decoration: underline;
+}
+.styles span {
+	font-family: "Ubuntu-Light";
+	font-size: 16px;
+	line-height: 24px;
+	color: #939393;
+}
+/*styles*/
 
 .b-1{
 	

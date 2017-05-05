@@ -38,5 +38,10 @@ $(document).ready(function mainf (){
 	    }
 	});	
 	$('[data-aboutid=1]').click();
-
+window.onresize = resizes;	
+function resizes () {
+	$('.start').empty();
+	$('.p_about_b_about_stats_menu_item').off( "click" );
+	mainf();
+}
 });

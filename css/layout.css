@@ -1955,7 +1955,6 @@ button {
 								font-family: "Ubuntu";
 								font-size: 16px;
 								color: #ffffff;
-								content: "2017";
 								line-height: 74px;
 								margin-left: 20px;
 							}
@@ -1967,7 +1966,6 @@ button {
 								font-family: "Ubuntu-Bold";
 								font-size: 29px;
 								color: #ffffff;
-								content: "2018";
 								line-height: 73px;
 								/* right: 20px; */
 								/* position: absolute; */
@@ -1989,16 +1987,18 @@ button {
 					display: inline-block;
 				}
 				.p_about_b_advantages_pluses {
-					width: 1190px;
-					margin-left: -15px;
+					width: 100%;
 				}
 					.p_about_b_advantages_pluses_item {
 						display: inline-block;
 						width: 364px;
-						margin: 0 15px;
+						margin-right: 30px;
 						padding: 13px 0 27px 0;
 						float: left;
 						}
+					.p_about_b_advantages_pluses_item:nth-child(3n) {
+						margin-right: 0px;
+					}
 						.p_about_b_advantages_pluses_item_img {
 							background-size: auto auto;
 							background-position: 50% 50%;

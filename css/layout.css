@@ -1493,13 +1493,15 @@ button {
 					-moz-transition:all 400ms ease;
 					-webkit-transition:all 400ms ease;					
 					width: 1560px;
+					min-height: 0px;
 					height: 0px;
 					margin-left: -185px;
 					visibility: visible;
 					top: -25px;
 				}
 				.serv_info_show {
-					height: 537px;
+					min-height: 537px;
+					height: initial;
 					margin-bottom: 0px;
 					visibility: visible;
 					transition: all 400ms ease;
@@ -1708,6 +1710,7 @@ button {
 
 	}
 	.p_doctors_slider_cont {
+		min-height: 0px;
 		height: 0px;
 		width: 1560px;
 		margin-top: -6px;
@@ -1727,7 +1730,8 @@ button {
 			width: 1560px;
 		}
 	.doct_info_show {
-		height: 1212px;
+		min-height: 600px;
+		height: initial;
 		visibility: visible;
 		transition: all 400ms ease;
 		-moz-transition:all 400ms ease;

@@ -54,7 +54,8 @@ $(document).ready(function mainf (){
 			fade: true,
 			dots: true,
 			prevArrow:false,
-			nextArrow:false
+			nextArrow:false,
+			adaptiveHeight: true
 		});
 	}
 //----------  slider drop bottom rules

@@ -736,7 +736,6 @@ button {
 	}
 		.reviews .b-wide-block {
 			padding-top: 54px;
-			height: 580px;
 		}
 			.reviews .b-wide-block .b-block {
 				/*overflow: hidden;*/
@@ -752,7 +751,6 @@ button {
 				.review-slide-block {
 					width: 990px;
 					margin-left: -34px;
-					margin-bottom: 26px;
 				}
 					.review-single {
 						width: 519px;
@@ -819,12 +817,10 @@ button {
 						}
 					.review-slide-block  .b-btn-prev {
 						position: absolute;
-						border: 1px solid #b9b9b9;
 						right: 113px;
 						bottom: -23px;
 					}
 					.review-slide-block  .b-btn-next {
-						border: 1px solid #b9b9b9;
 						position: absolute;
 						right: 57px;
 						bottom: -23px;

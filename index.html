@@ -82,7 +82,7 @@
 						</div>						
 					</div>
 					<div class="callback right">
-						<a href="#">
+						<a data-morphing class="btn" data-src="#b-popup-3" href="javascript:;">
 							<div class="callback-btn">
 								<div class="icon-callback"></div>						
 							</div>
@@ -117,7 +117,7 @@
 						</li>
 					</ul>
 					<div class="zapis-na-priem right">
-						<a data-morphing class="btn" id="morphing" data-src="#b-popup-2" href="javascript:;">записаться на прием</a>
+						<a data-morphing class="btn" data-src="#b-popup-2" href="javascript:;">записаться на прием</a>
 					</div>
 				</div>					
 			</div>							
@@ -732,8 +732,21 @@
 				</div>
 			</form>
 		</div>
-		<div class="b-popup-zvonok">
-
+		<div class="b-popup" id="b-popup-3">
+			<h3>Заказать звонок</h3>
+			<form action="kitsend.php" method="POST" id="b-form-3">
+				<div class="left">
+					<div class="name">
+						<label for="name-3">УКАЖИТЕ ВАШЕ ФИО</label><br>
+						<input type="text" id="name-3" name="name" placeholder="Иван Иванович Иванов">
+					</div>
+					<div class="phone">
+						<label for="tel-3">УКАЖИТЕ ВАШ ТЕЛЕФОН</label><br>
+						<input type="text" id="tel-3" name="phone" placeholder="+7(999)333-22-11">
+					</div>
+				</div>
+				<button>записаться</button>
+			</form>
 		</div>
 		<div class="b-thanks b-popup" id="b-popup-success">
 			<h3>Спасибо!</h3>

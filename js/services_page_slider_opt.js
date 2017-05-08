@@ -109,8 +109,15 @@ $(document).ready(function mainf (){
 
 
 //------------------ 
+var winsize = $(window).width();
+
+
 window.onresize = resizes;	
 function resizes () {
+if (
+	(($(window).width()<1240) && (winsize>=1241))||(($(window).width()>1241) && (winsize<1241))
+	) 
+{	
 	$('.p_services_menu .p_services_menu_info').remove();
 	$('.map-cont-close').off( "click" );
 	$('.p_services_menu_item a').off( "click" );
@@ -118,5 +125,11 @@ function resizes () {
 	$(".p_services_menu_info").removeClass("serv_info_show");	
 	mainf();
 }
+}
+
+
+
+
+
 });
 

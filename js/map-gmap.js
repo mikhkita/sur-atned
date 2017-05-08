@@ -47,7 +47,7 @@ function initialize() {
 	var coords = new google.maps.LatLng(56.508041,84.98091)
 
 	google.maps.event.addListener(companyMarker, 'click', function() {
-	map.panTo(coords); 
+	map.panTo(companyPos); 
 	map.setZoom(17); 
 	$('.gov').removeClass("hide");
 	$('.irk').removeClass("show");
@@ -57,7 +57,7 @@ function initialize() {
 	$('.perv').addClass("hide");
 	});
 	google.maps.event.addListener(companyMarker_irk, 'click', function() {
-	map.panTo(coords); 
+	map.panTo(companyPos_irk); 
 	map.setZoom(17); 
 	$('.irk').removeClass("hide");
 	$('.gov').removeClass("show");
@@ -67,7 +67,7 @@ function initialize() {
 	$('.perv').addClass("hide");	
 	});
 	google.maps.event.addListener(companyMarker_perv, 'click', function() {
-	map.panTo(coords); 
+	map.panTo(companyPos_perv); 
 	map.setZoom(17); 
 	$('.perv').removeClass("hide");
 	$('.irk').removeClass("show");

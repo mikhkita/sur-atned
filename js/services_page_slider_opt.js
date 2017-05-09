@@ -1,6 +1,6 @@
 $(document).ready(function mainf (){
 	var menu_items = $('.p_services_menu_item').length;
-	console.log (menu_items);
+	
 	
 	var first_off = $('.p_services_menu_item:eq(0)').offset().top;
 	var offset = first_off;
@@ -111,11 +111,10 @@ $(document).ready(function mainf (){
 //------------------ 
 var winsize = $(window).width();
 
-
 window.onresize = resizes;	
 function resizes () {
 if (
-	(($(window).width()<1240) && (winsize>=1241))||(($(window).width()>1241) && (winsize<1241))
+	(($(window).width()<1241) && (winsize>=1241))||(($(window).width()>1241) && (winsize<1241))
 	) 
 {	
 	$('.p_services_menu .p_services_menu_info').remove();
@@ -125,6 +124,7 @@ if (
 	$(".p_services_menu_info").removeClass("serv_info_show");	
 	mainf();
 }
+
 }
 
 

@@ -76,12 +76,6 @@ body {
 	-webkit-text-size-adjust: none;
 	color: #ffffff;
 }
-body {
-	background-position: 50% 0;
-	background-image: url('../i/body-bgnd.jpg');
-	background-size: 1871px;
-	background-repeat: repeat-y;
-}
 a{
 	text-decoration: none;
 	color: #74bc40;
@@ -202,6 +196,12 @@ button {
 	padding: 0px 20px 0px 30px;
 	line-height: 57px;
 	cursor: pointer;
+	z-index: 200;
+
+	transition: all ease 200ms;
+}
+.b-btn:hover {
+	background-color: #ffffff !important;
 }
 .arrow {
 	display: inline-block;
@@ -307,6 +307,31 @@ button {
 	margin-top: 30px;
 	margin-bottom: 54px;
 }
+.background-block {
+	background-position: 50% 0;
+	background-image: url('../i/slide-01.jpg');
+	background-size: 100%;
+	background-repeat: repeat-y;	
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	filter: blur(10px);
+}
+.background-layer {
+	position: absolute;
+	width: 100%;
+	height: 100%;	
+}
+	.background-layer .b-wide-block {
+		position: relative;
+		height: 100%;
+	}
+		.background-layer .white-block  {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			background-color: #ffffff;
+		}
 .b-head {
 }
 	.b-head .b-wide-block {
@@ -397,11 +422,11 @@ button {
 					position: absolute;
 					right: 210px;
 					top: 6px;
-					transition: width 0.55s ease;
+					transition: width 0.25s ease;
 					cursor: pointer;
 				}
 						.header .b-block .search.maxopacity { 
-							width: 600px;
+							width: 675px;
 						}
 						.filials.maxopacity {
 							opacity: 0;
@@ -413,7 +438,7 @@ button {
 						margin-top: -2px;
 						margin-right: -2px;
 						height: 54px;
-						width: 600px;
+						width: 675px;
 						text-align: right;
 					}
 						.search .open .icon-search {
@@ -433,13 +458,15 @@ button {
 								}							
 								.search .open .search-text {
 									font-size: 20px;
+									line-height: 50px;
 									color: #656565;
 									border-style: none;
 									margin-left: 0;
-									/* display: inline-block; */
-									height: 50px;
-									width: 550px;
-									padding-left: 20px;
+									display: inline-block;
+									height: 54px;
+									width: 615px;
+									padding: 0 0 0 24px;
+									margin: 0px;
 								}
 								.search .open .search-button {
 									margin-right: 20px;
@@ -1652,8 +1679,8 @@ button {
 				}		
 					.p_doctors_menu_vcard {
 						width: 100%;
-						padding: 24px 30px 0px 30px;
-						bottom: 0;
+						padding: 24px 30px 26px 30px;
+						top: 271px;
 						background-color: rgba(116,188,64,0.9);
 						transition: all 300ms ease;
 						-moz-transition:all 300ms ease;
@@ -1662,7 +1689,7 @@ button {
 						position: absolute;
 					}
 					.p_doctors_menu_item:hover 	.p_doctors_menu_vcard {
-						padding-bottom: 26px;
+						
 						transition: all 300ms ease;
 						-moz-transition:all 300ms ease;
 						-webkit-transition:all 300ms ease;
@@ -2064,8 +2091,17 @@ button {
 						opacity: 1;
 						transition: all 200ms ease;
 						-moz-transition:all 200ms ease;
-						-webkit-transition:all 200ms ease;						
+						-webkit-transition:all 200ms ease;	
 					}					
+					.p_about_b_clinics_galary_windows p {
+						font-family: "Ubuntu-Medium";
+						font-size: 16px;
+						line-height: 20px;
+						color: #ffffff;
+						position: absolute;
+						left: 26px;
+						top: 25px;
+					}
 /*about page end*/
 /*styles*/
 .styles{

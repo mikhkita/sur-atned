@@ -258,27 +258,13 @@ button {
 						top: 4px;
 					}
 				.search {
-					font-family: 'icomoon' !important;
-					speak: none;
-					font-size: 20px;
-					font-style: normal;
-					font-weight: normal;
-					font-variant: normal;
-					text-transform: none;
-					line-height: 1;
-					border: 1px solid #e3e3e3;
-					border-radius: 52px;
-					overflow:hidden;
 					height: 54px;
 					width: 54px;
-					position: absolute;
 					right: 146px;
 					top: 6px;
-					transition: width 0.55s ease;
-					cursor: pointer;
 				}
 						.header .b-block .search.maxopacity {
-							width: 490px;
+							width: 545px;
 						}
 						.filials.maxopacity {
 						}
@@ -288,7 +274,7 @@ button {
 						margin-top: -2px;
 						margin-right: -2px;
 						height: 54px;
-						width: 490px;
+						width: 545px;
 						text-align: right;
 					}
 						.search .open .icon-search {
@@ -311,8 +297,8 @@ button {
 									border-style: none;
 									margin-left: 0;
 									/* display: inline-block; */
-									height: 50px;
-									width: 410px;
+									height: 54px;
+									width: 490px;
 									padding-left: 20px;
 								}
 								.search .open .search-button {

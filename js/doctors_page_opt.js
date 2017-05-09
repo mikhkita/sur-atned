@@ -109,8 +109,12 @@ $(document).ready(function mainf (){
 
 
 //------------------ 
+var winsize = $(window).width();
 window.onresize = resizes;	
 function resizes () {
+if (
+	(($(window).width()<1241) && (winsize>=1241))||(($(window).width()>1241) && (winsize<1241))
+	) {	
 	$('.p_doctors_menu .p_doctors_slider_cont').remove();
 	$('.map-cont-close').off( "click" );
 	$('.p_doctors_menu_item').off( "click" );
@@ -118,5 +122,18 @@ function resizes () {
 	$(".p_doctors_slider_cont").removeClass("serv_info_show");	
 	mainf();
 }
+}
+//-----on hover vcards
+
+	$('.p_doctors_menu_item').hover(function () {
+		var heghtid = $(this).attr('data-mdbtn');
+		var vcardheight = 271- 26 - $('[data-mdbtn='+heghtid+'] .p_doctors_menu_vcard p').height();
+		var ad = $('[data-mdbtn='+heghtid+'] .p_doctors_menu_vcard').css('top',''+vcardheight+'px');
+		},
+		function ()	{
+		var heghtid = $(this).attr('data-mdbtn');
+		$('[data-mdbtn='+heghtid+'] .p_doctors_menu_vcard').css('top','271px');
+		}
+	);
 
 });

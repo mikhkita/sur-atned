@@ -318,7 +318,7 @@ button {
 						box-sizing: border-box;
 						display: inline-block;
 						height: 52px;
-						margin-top: 5px;
+						/*margin-top: 5px;*/
 					}
 					.callback p {
 						position: absolute;
@@ -331,6 +331,7 @@ button {
 						font-size: 15px;
 						width: 63px;
 						text-align: left;
+						white-space: normal;
 					}
 					.callback p.onhover {
 						border-bottom: 0px;

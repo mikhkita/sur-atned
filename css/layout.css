@@ -208,7 +208,7 @@ button {
 	transition: all ease 200ms;
 }
 .b-btn:hover {
-	background-color: #4f921e !important;
+	background-color: #74bc40 !important;
 	color: #ffffff;
 }
 .b-btn:hover .arrow {
@@ -554,6 +554,7 @@ button {
 					}
 					.main-menu li {
 						display: inline-block;
+						position: relative;
 					}
 						.main-menu a {
 							font-size: 12px;
@@ -572,6 +573,17 @@ button {
 						.main-menu a:hover {
 							background-color: #74bc40;
 							color: #ffffff;
+						}
+						.main-menu .header_dropdown_menu {
+							position: absolute;
+							opacity: 0;		
+						}
+						.main-menu .header_dropdown_menu ul {
+							float: initial;
+						}
+						.main-menu .header_dropdown_menu li {
+							display: block;
+							position: initial;
 						}
 			.zapis-na-priem	{
 			}
@@ -715,6 +727,9 @@ button {
 						line-height: 30px;
 						width: 440px;
 						margin-bottom: 36px;
+					}
+					.front-slide .b-btn:hover {
+						background-color: #5fab28 !important;
 					}
 	.about-company {
 

@@ -435,7 +435,7 @@ button {
 					position: absolute;
 					right: 210px;
 					top: 6px;
-					transition: width 0.25s ease;
+					transition: width 0.4s ease;
 					cursor: pointer;
 				}
 						.header .b-block .search.maxopacity { 

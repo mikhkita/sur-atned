@@ -24,14 +24,8 @@ $(document).ready(function mainf (){
 		var ad = $('[data-mdbtn='+heghtid+'] .p_doctors_menu_vcard').css('top',''+vcardheight+'px');
 		},
 		function ()	{
-		if ($(window).width()>1241) {
 			var heghtid = $(this).attr('data-mdbtn');
-			$('[data-mdbtn='+heghtid+'] .p_doctors_menu_vcard').css('top','');			
-			}	
-		else {
-			var heghtid = $(this).attr('data-mdbtn');
-			$('[data-mdbtn='+heghtid+'] .p_doctors_menu_vcard').css('top','');			
-		}
+			$('[data-mdbtn='+heghtid+'] .p_doctors_menu_vcard').css('top','');					
 		}
 	);	
 //---------------------- определяем количество элементов в строке (первой)

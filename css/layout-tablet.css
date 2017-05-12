@@ -825,7 +825,7 @@ button {
 						.review-reply a{
 							font-family: "Ubuntu-Medium";
 							font-size: 12px;
-							padding-right: 30px;
+							padding: 0 30px;
 						}
 						.review-reply a:hover {
 						}

@@ -825,7 +825,7 @@ button {
 						.review-reply a{
 							font-family: "Ubuntu-Medium";
 							font-size: 12px;
-							padding-right: 30px;
+							padding: 0 30px;
 						}
 						.review-reply a:hover {
 						}
@@ -1255,16 +1255,10 @@ button {
 					margin-right: 30px;
 					margin-bottom: 6px;
 				}
-				.p_doctors_menu_item:nth-child(4n-1) {
-					margin-right: 0px;
-				}		
 					.p_doctors_menu_vcard {
-						padding: 24px 30px 0px 30px;
-						bottom: 0;
-					}
-					.p_doctors_menu_item:hover 	.p_doctors_menu_vcard {
-						padding-bottom: 26px;
-					}									
+						padding: 24px 30px 26px 30px;
+						top: 206px;
+					}								
 						.p_doctors_menu_vcard h5{
 							font-size: 22px;
 							line-height: 26px;
@@ -1276,11 +1270,7 @@ button {
 						}											
 						.p_doctors_menu_vcard p{
 							font-size: 16px;
-							line-height: 0px;						
-						}		
-						.p_doctors_menu_item:hover 	.p_doctors_menu_vcard p {
-							line-height: 18px;
-						}																														
+						}																															
 	.footer .p_doctors_slider {
 	}
 	.p_doctors_slider {

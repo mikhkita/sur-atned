@@ -26,11 +26,11 @@ $(document).ready(function mainf (){
 		function ()	{
 		if ($(window).width()>1241) {
 			var heghtid = $(this).attr('data-mdbtn');
-			$('[data-mdbtn='+heghtid+'] .p_doctors_menu_vcard').css('top','271px');			
+			$('[data-mdbtn='+heghtid+'] .p_doctors_menu_vcard').css('top','');			
 			}	
 		else {
 			var heghtid = $(this).attr('data-mdbtn');
-			$('[data-mdbtn='+heghtid+'] .p_doctors_menu_vcard').css('top','206px');			
+			$('[data-mdbtn='+heghtid+'] .p_doctors_menu_vcard').css('top','');			
 		}
 		}
 	);	

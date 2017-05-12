@@ -11,7 +11,29 @@ $(document).ready(function mainf (){
 
 	 console.log ('offset - ' + offset);
 	}
-	
+//-----on hover vcards
+
+	$('.p_doctors_menu_item').hover(function () {
+		var heghtid = $(this).attr('data-mdbtn');
+		if ($(window).width()>1241) {
+			var vcardheight = 271 - 26 - $('[data-mdbtn='+heghtid+'] .p_doctors_menu_vcard p').height();
+		}
+		else {
+			var vcardheight = 206 - 26 - $('[data-mdbtn='+heghtid+'] .p_doctors_menu_vcard p').height();
+		}
+		var ad = $('[data-mdbtn='+heghtid+'] .p_doctors_menu_vcard').css('top',''+vcardheight+'px');
+		},
+		function ()	{
+		if ($(window).width()>1241) {
+			var heghtid = $(this).attr('data-mdbtn');
+			$('[data-mdbtn='+heghtid+'] .p_doctors_menu_vcard').css('top','271px');			
+			}	
+		else {
+			var heghtid = $(this).attr('data-mdbtn');
+			$('[data-mdbtn='+heghtid+'] .p_doctors_menu_vcard').css('top','206px');			
+		}
+		}
+	);	
 //---------------------- определяем количество элементов в строке (первой)
 	for (var it = 0; it < menu_items; it++) {
 		var param_top = $('.p_doctors_menu_item:eq('+it+')').offset().top;
@@ -123,17 +145,6 @@ if (
 	mainf();
 }
 }
-//-----on hover vcards
 
-	$('.p_doctors_menu_item').hover(function () {
-		var heghtid = $(this).attr('data-mdbtn');
-		var vcardheight = 271- 26 - $('[data-mdbtn='+heghtid+'] .p_doctors_menu_vcard p').height();
-		var ad = $('[data-mdbtn='+heghtid+'] .p_doctors_menu_vcard').css('top',''+vcardheight+'px');
-		},
-		function ()	{
-		var heghtid = $(this).attr('data-mdbtn');
-		$('[data-mdbtn='+heghtid+'] .p_doctors_menu_vcard').css('top','271px');
-		}
-	);
 
 });

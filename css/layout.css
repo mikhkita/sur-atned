@@ -2159,18 +2159,6 @@ button {
 		margin-bottom: 44px;
 		width: 790px;
 	}
-	.file {
-		position: relative;
-		margin: 0 48px 32px 0;
-	}
-	.file img{
-		display: inline-block;
-		height: 54px;
-		width: 43px;
-		margin-right: 15px;
-		margin-bottom: 0px !important;
-		float: left;
-	}
 	.styles a {
 		font-family: "Ubuntu-Light";
 		font-size: 16px;
@@ -2211,6 +2199,7 @@ button {
 	}
 	.styles img {
 		margin-bottom: 42px;
+		width: 100%;
 	}
 	.styles .table {
 		/* margin-top: 20px; */
@@ -2268,7 +2257,19 @@ button {
 		}
 		.styles tr:nth-child(2n){
 			background-color: #ffffff;
-		}	
+		}
+	.file {
+		position: relative;
+		margin: 0 48px 32px 0;
+	}
+	.file img{
+		display: inline-block;
+		height: 54px;
+		width: 43px;
+		margin-right: 15px;
+		margin-bottom: 0px !important;
+		float: left;
+	}			
 /*styles*/
 
 .b-1{

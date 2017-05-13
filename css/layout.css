@@ -208,7 +208,7 @@ button {
 	transition: all ease 200ms;
 }
 .b-btn:hover {
-	background-color: #4f921e !important;
+	background-color: #74bc40 !important;
 	color: #ffffff;
 }
 .b-btn:hover .arrow {
@@ -345,8 +345,7 @@ button {
 			width: 100%;
 			background-color: #ffffff;
 		}
-.b-head {
-}
+.b-head {}
 	.b-head .b-wide-block {
 			max-height: 191px;
 	}
@@ -546,7 +545,7 @@ button {
 				border-bottom: 3px solid #74bc40;
 			}
 				.main-menu .b-block {
-					overflow:hidden;
+					/* overflow:hidden; */
 				}
 					.main-menu .b-block ul{
 						display: block;
@@ -554,24 +553,61 @@ button {
 					}
 					.main-menu li {
 						display: inline-block;
+						position: relative;
+						float: left;
 					}
 						.main-menu a {
 							font-size: 12px;
 							color: #262626;
-							text-align: center;
 							text-transform: uppercase;
 							display: inline-block;
 							box-sizing: border-box;
 							background-color: #ffffff;
-							float: left;
 							height: 66px;
-							padding: 27px 44px 0;
-							margin-right: -1px;
+							padding: 27px 45px 0;
+							/* margin-right: -1px; */
 							line-height: 14px;
 						}
 						.main-menu a:hover {
 							background-color: #74bc40;
 							color: #ffffff;
+							transition: all 200ms ease;
+							-moz-transition:all 200ms ease;
+							-webkit-transition:all 200ms ease;								
+						}
+						.main-menu .header_dropdown_menu {
+							position: absolute;
+							visibility: hidden;
+							opacity: 0;
+							top: 66px;
+							z-index: 99;
+						}
+						.main-menu .header_dropdown_menu ul {
+							float: initial;
+						}
+						.main-menu .header_dropdown_menu li {
+							display: block;
+							position: initial;
+							width: 100%;
+						}
+						.main-menu .header_dropdown_menu a {
+							text-align: left;
+							width: 100%;
+							padding: 27px 25px 0;
+							background-color: rgba(255,255,255,0.88);
+						}
+						.main-menu .header_dropdown_menu a:hover {
+							width: 100%;
+							padding-left: 25px;
+							background-color: #74bc40;
+						}						
+						.main-menu li:hover .header_dropdown_menu {
+							opacity: 1;
+							visibility: visible;
+							box-shadow: 0px 6px 25px rgba(0,0,0,0.3);
+							transition: all 200ms ease;
+							-moz-transition:all 200ms ease;
+							-webkit-transition:all 200ms ease;
 						}
 			.zapis-na-priem	{
 			}
@@ -715,6 +751,9 @@ button {
 						line-height: 30px;
 						width: 440px;
 						margin-bottom: 36px;
+					}
+					.front-slide .b-btn:hover {
+						background-color: #5fab28 !important;
 					}
 	.about-company {
 

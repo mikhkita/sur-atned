@@ -755,7 +755,7 @@ button {
 						margin-top: 18px;
 						margin-left: 80px;
 						margin-right: 0px; 
-					}
+					}										
 						.review-single-head {
 							display: table;
 							width: 100%;
@@ -809,10 +809,36 @@ button {
 						padding: 0 40px 0 40px;
 					}
 						.review-single-text p {
-							/* margin-left: 24px; */
-							width: 340px;
 							margin-bottom: 30px;
 						}
+					.review-single-full {
+						width: 750px;
+						padding: 50px !important;					
+					}
+						.review-single-full .review-single-head {
+							width: 100%;
+							margin-top: 0px;
+							margin-bottom: 26px;
+						}
+							.review-single-full .review-single-phot {
+								height: 110px;
+								width: 110px;
+								margin-left: 0px;
+							}
+							.review-single-full .review-single-name {
+								display: inline-block;
+								padding: 27px; 
+								text-align: left;
+							}	
+							.review-single-full .review-single-text {
+								padding: 0px;
+								height: initial;
+								margin-bottom: 0px;
+							}		
+							.review-single-full .review-single-text p {
+								max-height: initial;
+								margin-bottom: 0px;
+							}						
 					.review-slide-block  .b-btn-prev {
 						position: absolute;
 						right: 113px;
@@ -1631,9 +1657,6 @@ button {
 	.p_reviews-single:nth-child(2n) {
 		margin: 0 0px 30px 0;
 	}	
-	.p_reviews-single-full {
-		width: 750px;					
-	}
 		.p_reviews-single-head {
 			width: 100%;
 			margin-bottom: 30px;

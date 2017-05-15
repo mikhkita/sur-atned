@@ -598,6 +598,7 @@ button {
 							width: 100%;
 							padding: 27px 25px 0;
 							background-color: rgba(255,255,255,0.88);
+							white-space: nowrap;
 						}
 						.main-menu .header_dropdown_menu li:hover a {
 							width: 100%;
@@ -1068,6 +1069,9 @@ button {
 						margin-left: 80px;
 						margin-right: 0px; 
 					}
+					.review-single-full {
+						width: 750px;					
+					}
 						.review-single-head {
 							display: table;
 							width: 100%;
@@ -1118,18 +1122,15 @@ button {
 								width: 175px;
 							}
 					.review-single-text {
-						overflow: hidden;
 						color: #1f1f1f;
 						text-align: left;
-						/* display: table-cell; */
-						vertical-align: middle;
-						height: 150px;
 						padding: 0 45px 0px 45px;
 						margin-bottom: 30px;
+						overflow: hidden;						
 					}
 						.review-single-text p {
-							/* margin-left: 45px; */
-							width: 445px;
+							overflow: hidden;
+							max-height: 145px;
 						}
 					.review-slide-block  .b-btn-prev {
 						position: absolute;
@@ -1186,6 +1187,39 @@ button {
 						.review-all a:hover {
 							text-decoration: none;
 						}
+					.review-single-full {
+						width: 750px;
+						padding: 50px !important;					
+					}
+						.review-single-full .review-single-head {
+							display: table;
+							width: 100%;
+							margin-top: 0px;
+							margin-bottom: 26px;
+						}
+							.review-single-full .review-single-phot {
+								background-position: 50% 50%;
+								background-size: cover;
+								background-repeat: no-repeat;
+								height: 110px;
+								width: 110px;
+								border-radius: 55px;
+								overflow: hidden;
+								margin-left: 0px;
+							}
+							.review-single-full .review-single-name {
+								display: inline-block;
+								padding: 27px; 
+								text-align: left;
+							}	
+							.review-single-full .review-single-text {
+								padding: 0px;
+								height: initial;
+								margin-bottom: 0px;
+							}		
+							.review-single-full .review-single-text p {
+								max-height: initial;
+							}										
 	.map {
 
 	}

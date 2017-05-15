@@ -1502,6 +1502,9 @@ button {
 				color: #252525;
 				padding-bottom: 50px;
 			}
+				.main-content_top_h1 {
+					text-align: left;
+				}
 					.main-content_top_h1 h1 {
 						font-family: "Ubuntu-Medium";
 						font-size: 20px;
@@ -2468,7 +2471,77 @@ button {
 		float: left;
 	}			
 /*b-text*/
-
+/*reviews page*/
+.p_reviews {
+	padding-bottom: 50px;
+}
+	.p_reviews-single {
+		background-color: #fafafa;
+		box-sizing: border-box;
+		width: 565px;
+		padding: 45px;
+		margin: 0 30px 30px 0;
+	}
+	.p_reviews-single:nth-child(2n) {
+		margin: 0 0px 30px 0;
+	}	
+	.p_reviews-single-full {
+		width: 750px;					
+	}
+		.p_reviews-single-head {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+			.p_reviews-single-phot {
+				background-position: 50% 50%;
+				background-size: cover;
+				background-repeat: no-repeat;
+				height: 110px;
+				width: 110px;
+				border-radius: 55px;
+				overflow: hidden;
+			}
+			.p_reviews-single-name {
+				display: inline-block;
+				text-align: left;
+				margin: 27px 0 0 27px;
+			}
+				.p_reviews-single-name h5{
+					font-family: "Ubuntu";
+					font-size: 19px;
+					line-height: 28px;
+					text-transform: uppercase;
+					color: #73bb40;
+					text-align: left;
+					letter-spacing: 1px;
+				}
+				.p_reviews-single-name p{
+					font-family: "Ubuntu-Light";
+					font-size: 16px;
+					line-height: 28px;
+					color: #cccccc;
+					text-align: left;
+				}
+			.p_reviews-single-head .b-btn {
+				border: 1px solid #e3e3e3;
+				background-color: transparent;
+			}
+			.p_reviews-btn {
+				display: inline-block;
+				text-align: right;
+				width: 175px;
+				margin-top: 27px;
+			}
+	.p_reviews-single-text {
+		color: #1f1f1f;
+		text-align: left;
+		overflow: hidden;
+	}
+		.p_reviews-single-text p {
+			overflow: hidden;
+			max-height: 145px;
+		}
+/*reviews page*/
 .b-1{
 	
 }

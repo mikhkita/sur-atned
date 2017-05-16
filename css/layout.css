@@ -325,19 +325,19 @@ button {
 	margin-bottom: 54px;
 	text-align: left;
 }
-.main-content_top_h1 h1 {
-	font-family: "Ubuntu-Medium";
-	font-size: 20px;
-	line-height: 55px;
-	text-transform: uppercase;
-	color: #a4b1bf;
-}
-.main-content_top_h1 h2 {
-	font-family: "Ubuntu-Bold";
-	font-size: 42px;
-	line-height: 42px;
-	color: #181818;
-}
+	.main-content_top_h1 h1 {
+		font-family: "Ubuntu-Medium";
+		font-size: 20px;
+		line-height: 55px;
+		text-transform: uppercase;
+		color: #a4b1bf;
+	}
+	.main-content_top_h1 h2 {
+		font-family: "Ubuntu-Bold";
+		font-size: 42px;
+		line-height: 42px;
+		color: #181818;
+	}
 .background-block {
 	background-position: 50% 0;
 	background-image: url('../i/slide-blur-01.jpg');
@@ -951,18 +951,22 @@ button {
 						}
 						.services-menu li button:hover {
 							color: #74bc40;
-							background-color: #ffffff;	
+							background-color: rgba(255,255,255, 0.9);	
 							transition: all 250ms ease;											
 						}
 						.services-menu li button:active {
 							color: #ffffff;
-							background-color: #717171;
+							background-color: rgba(113,113,113, 0.5);
 						}
 						#services_menu .active {
 							color: #ffffff !important;
-							background-color: #717171 !important;
+							background-color: rgba(113,113,113, 0.5)!important;
 							transition: all 250ms ease;								
-						}						
+						}		
+						#services_menu .active:hover{
+							background-color: rgba(113,113,113, 0.8)!important;
+							transition: all 250ms ease;						
+						}												
 				.services-texts {
 					/* width: 450px; */
 					position: absolute;

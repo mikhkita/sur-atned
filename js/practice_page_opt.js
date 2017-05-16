@@ -1,6 +1,6 @@
 $(document).ready(function mainf (){
 	var menu_items = $('.p_practice_menu_item').length;
-	console.log (menu_items);
+	// console.log (menu_items);
 
 	var first_off = $('.p_practice_menu_item:eq(0)').offset().top;
 	var offset = first_off;
@@ -9,7 +9,7 @@ $(document).ready(function mainf (){
 		offset = $('.p_practice_menu_item:eq('+i+')').offset().top;
 		i++;
 
-	 console.log ('offset - ' + offset);
+	 // console.log ('offset - ' + offset);
 	}
 //-----on hover vcards
 
@@ -47,7 +47,7 @@ $(document).ready(function mainf (){
 		if (pos>=menu_items) {pos=menu_items-1;}
 		var block = columns/next_it; // number of row
 		$( '.p_practice_menu_item:eq('+pos+')' ).after( $('.footer .p_practice_slider_cont').clone().attr('data-nrow-block',block).attr('offset',$( '.p_practice_menu_item:eq('+pos+')' ).offset().top+$( '.p_practice_menu_item:eq('+pos+')' ).height()));//'<div data-nrow='+block+' class="dummy-box"></div>' 
-		console.log('row - ' + columns + 'pos - ' + pos + 'block - ' + block)
+		// console.log('row - ' + columns + 'pos - ' + pos + 'block - ' + block)
 	}
 //---------------------- вставляем слайды в блоки
 	for (var blockToFill = 1; blockToFill <= block; blockToFill = blockToFill + 1 ) {
@@ -81,7 +81,7 @@ $(document).ready(function mainf (){
 		 if ($(this).hasClass('active')) {
 		 	$('.p_practice_menu_item').removeClass('active');
 		 	$(".p_practice_slider_cont").removeClass("pract_info_show");
-		 	console.log('closed must be');
+		 	// console.log('closed must be');
 		 }
 		 else {			
 			var dataEventVal = $(this).attr("data-eventblock");

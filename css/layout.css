@@ -87,7 +87,7 @@ a{
 	text-decoration: none;
 	color: #74bc40;
 }
-p {
+p, ul, table {
 	font-family: "Ubuntu-Light";
 }
 li{
@@ -323,6 +323,20 @@ button {
 .main-content_top_h1 {
 	margin-top: 30px;
 	margin-bottom: 54px;
+	text-align: left;
+}
+.main-content_top_h1 h1 {
+	font-family: "Ubuntu-Medium";
+	font-size: 20px;
+	line-height: 55px;
+	text-transform: uppercase;
+	color: #a4b1bf;
+}
+.main-content_top_h1 h2 {
+	font-family: "Ubuntu-Bold";
+	font-size: 42px;
+	line-height: 42px;
+	color: #181818;
 }
 .background-block {
 	background-position: 50% 0;
@@ -1498,23 +1512,7 @@ button {
 				text-align: left;
 				color: #252525;
 				padding-bottom: 50px;
-			}
-				.main-content_top_h1 {
-					text-align: left;
-				}
-					.main-content_top_h1 h1 {
-						font-family: "Ubuntu-Medium";
-						font-size: 20px;
-						line-height: 55px;
-						text-transform: uppercase;
-						color: #a4b1bf;
-					}
-					.main-content_top_h1 h3 {
-						font-family: "Ubuntu-Bold";
-						font-size: 42px;
-						line-height: 42px;
-						color: #181818;
-					}				
+			}				
 				.p_services_menu {
 				width: 1190px;
 				margin-left: -15px;
@@ -2323,9 +2321,11 @@ button {
 .styles{
 	text-align: left;
 	color: #000000;
-	padding-top: 32px;
 	padding-bottom: 40px;
 }
+	.b-text h1,.b-text h2,.b-text h3,.b-text h4,.b-text h5,.b-text h6,.b-text a,.b-text p,.b-text ul {
+		max-width: 790px;
+	}
 	.b-text h1 {
 		font-family: "Ubuntu-Medium";
 		font-size: 20px;
@@ -2333,7 +2333,7 @@ button {
 		color: #a4b1bf;
 		text-transform: uppercase;
 	}
-	.b-text h4 {
+	.b-text h2 {
 		font-size: 29px;
 		line-height: 24px;
 		color: #171717;
@@ -2345,7 +2345,7 @@ button {
 		color: #0e0e0e;
 		margin-bottom: 38px;
 	}
-	.b-text h2 {
+	.b-text .h44 {
 		font-size: 42px;
 		line-height: 46px;
 		color: #181818;
@@ -2365,6 +2365,9 @@ button {
 		text-decoration: underline;
 		vertical-align: top;
 		float: left;
+	}
+	.b-text a:hover {
+		text-decoration: none;
 	}
 	.b-text a:before {
 		display: inline-block;
@@ -2434,8 +2437,8 @@ button {
 		    border-radius: 0 6px 0 0;
 		}				
 		.b-text td {
-			border-top:2px solid #e9e9e9;
-			border-right:2px solid #e9e9e9;
+			border-top:1px solid #e9e9e9;
+			border-right:1px solid #e9e9e9;
 		}
 		.b-text tr:nth-child(2) td {
 			border-top:0px solid #e9e9e9;
@@ -2458,6 +2461,9 @@ button {
 	.file {
 		position: relative;
 		margin: 0 48px 32px 0;
+	}
+	.file:hover a {
+		text-decoration: none;
 	}
 	.file img{
 		display: inline-block;

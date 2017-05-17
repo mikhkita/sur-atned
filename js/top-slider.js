@@ -11,7 +11,7 @@ $(document).ready(function(){
 		fade: true,
 		cssEase: 'linear',
 		asNavFor: '.back-slider',
-		prevArrow:false,
-		nextArrow:false		
+		prevArrow: '<div class="b-btn-prev"></div>',
+		nextArrow: '<div class="b-btn-next"></div>'			
 	});
 });

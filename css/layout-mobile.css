@@ -196,21 +196,23 @@ h1,h2,h3,h4,h5,h6{
 		line-height: 42px;
 		color: #181818;
 	}
-.b-head {}
+.b-head {
+}
 	.b-head .b-wide-block {
-			max-height: 191px;
+			max-height: 400px;
 	}
 			.header {
 				width: 100%;
-				height: 94px;
-				padding-top: 26px;	
+				height: auto;
+				padding: 10px 5% 10px;
+				box-sizing: border-box;
 			}
 				.logo {
 					background-position: 50% 50%;
 					background-image: url('../i/logo.png');
-					background-size: cover;				
+					background-size: cover;
 					height: 58px;
-					width: 243px;	
+					width: 243px;
 				}
 					.logo a {
 						display: block;
@@ -222,25 +224,17 @@ h1,h2,h3,h4,h5,h6{
 					.filial-addr {
 						font-family: "Ubuntu-Light";
 						text-align: left;
-						margin-left: 66px;
+						margin-left: 0;
 						position: relative;
 					}
 					.filials li:after {
-						content: ".";
-						font-size: 0;
-						box-sizing: border-box;
-						display: inline-block;
-						height: 48px;
-						width: 2px;
-						border:1px solid #e3e3e3;
-						position: absolute;
-						top: 5px;
-						right: -33px;
+						display: none;
 					}
 					.filials li:last-child:after {
 						display: none;
 					} 
 						.filial-addr a {
+							color: #ffffff;
 							font-size: 13px;
 							text-decoration: underline; */
 						}
@@ -262,7 +256,7 @@ h1,h2,h3,h4,h5,h6{
 						left: 30px;
 						top: 4px;
 					}
-				.search {
+				.search-mobile {
 					font-family: 'icomoon' !important;
 					speak: none;
 					font-size: 20px;
@@ -271,82 +265,56 @@ h1,h2,h3,h4,h5,h6{
 					font-variant: normal;
 					text-transform: none;
 					line-height: 1;
+					box-sizing: border-box;
 					border: 1px solid #e3e3e3;
-					border-radius: 52px;
+					border-radius: 100px;
 					overflow:hidden;
 					height: 54px;
 					width: 54px;
-					position: absolute;
-					right: 210px;
-					top: 6px;
+					position: relative;
+					right: 0;
+					top: 0;
+					margin: 7px 0 0 20px;
 					transition: width 0.4s ease;
 					cursor: pointer;
+					display: inline-block;
+					color: #74bc40;
+					background-color: #ffffff;
+					float: left;
 				}
-						.header .b-block .search.maxopacity { 
-							width: 675px;
-						}
-						.filials.maxopacity {
-							opacity: 0;
-						}
-					.search .open {
-						border: 2px solid #e3e3e3;
-						border-radius: 52px;
-						margin-top: -2px;
-						margin-right: -2px;
-						height: 54px;
-						width: 675px;
-						text-align: right;
-					}
-						.search .open .icon-search {
-							position: absolute;
-							top: 17px;
-							right: 17px;
-							content: "\e901";
-						}
-						.search .open .icon-search:before {
-  							
-						}
-							.search .open form {
-									text-align: right;
-									border-style: none;
-									width: 100%;
-								}							
-								.search .open .search-text {
-									font-size: 20px;
-									line-height: 50px;
-									border-style: none;
-									margin-left: 0;
-									display: inline-block;
-									height: 54px;
-									width: 615px;
-									padding: 0 0 0 24px;
-									margin: 0px;
-								}
-								.search .open .search-button {
-									margin-right: 20px;
-									display: none;
-								}
-
+				.search-mobile-link:before{
+					position: absolute;
+					top: 16px;
+					right: 16px;
+					content: "\e901";
+				}				
+				.search-mobile-link {
+					display: block;
+					width: auto;
+					height: 100%;
+					cursor: pointer;
+					z-index: 100;
+				}		
+					.search-mobile .open {
+						display: none;
+					}							
 				.callback  {
-					position: relative;
-					margin-top: 2px;
-					margin-right: 0px;
+					margin: 7px 0 0 11px;
+					margin-right: 0;
+					width: 52px;
+					height: 52px;
+					float: left !important;
 				}
 				.callback .callback-btn.onhover {
 				}		
 					.callback a {
-						width: 185px;
-						box-sizing: border-box;
+						width: auto;
+						/* box-sizing: initial; */
 						display: inline-block;
 						height: 52px;
 					}
 					.callback p {
-						position: absolute;
-						top: 20px;
-						border-bottom: 1px dashed #74bc40;
-						line-height: 18px;
-						left: 66px;
-						font-size: 15px;
+						display: none;
 					}
 					.callback p.onhover {
 						border-bottom: 0px;
@@ -356,8 +324,9 @@ h1,h2,h3,h4,h5,h6{
 						border-radius: 50%;
 						height: 48px;
 						width: 48px;
-						position: absolute;
-						top: 5px;
+						position: relative;
+						top: 0px;
+						margin-left: 0;
 				}
 					.callback .icon-callback {
 						content: "\e900";
@@ -375,65 +344,89 @@ h1,h2,h3,h4,h5,h6{
 					}
 					.callback .icon-callback.onhover {
 					}
-			.main-menu {
-				width: 100%;
-				height: 66px;
-				border-top: 2px solid #e5e5e5;
-				border-bottom: 3px solid #74bc40;
+			.mobile-menu {
+				width: 50%;
+				height: 100%;
+				position: fixed;
+				top: 0;
+				z-index: 200;
+				background-color: rgba(116,188,64,1);
+				padding: 0 0 0 30px;
+				float: left;
 			}
-				.main-menu .b-block {
-					/* overflow:hidden; */
-				}
-					.main-menu .b-block ul{
-						display: block;
-						float: left;
-					}
-					.main-menu li {
-						display: inline-block;
-						position: relative;
-						float: left;
-					}
-						.main-menu a {
-							font-size: 12px;
+			.mobile-menu .filials {
+				position: relative;
+			}
+			.mobile-menu-ul {
+				position: relative;
+				margin-bottom: 0;
+				width: 98%;
+			}
+			.mobile-menu-ul li {
+			margin-bottom: 3px;
+			}			
+			.filials li {
+				margin-bottom: 10px;
+				display: block;
+				float: initial !important;
+			}
+						.mobile-menu-ul>li>a {
+							font-size: 16px;
+							font-family: Ubuntu;
+							position: relative;
 							text-transform: uppercase;
+							text-align: left;
 							display: inline-block;
 							box-sizing: border-box;
-							height: 66px;
-							padding: 27px 45px 0;
-							/* margin-right: -1px; */
-							line-height: 14px;
+							padding: 10px;
+							height: auto;
+							width: 100%;
+							color: #ffffff;
+							background-color: rgba(255,255,255,0.1);
 						}
-						.main-menu li:hover>a {
-							transition: all 200ms ease;
-							-moz-transition:all 200ms ease;
-							-webkit-transition:all 200ms ease;								
+						.mobile-menu-ul .mmarrow:after {
+							content: "\e907";
+							font-family: 'icomoon' !important;
+							speak: none;
+							font-style: normal;
+							font-weight: normal;
+							font-variant: normal;
+							text-transform: none;
+							line-height: 1;
+							font-size: 11px;
+							color: #ffffff;
+							display: inline-block;
+							top: 17px;
+							right: 15px;
+							position: absolute;
 						}
-						.main-menu .header_dropdown_menu {
+						.header_dropdown_menu {
 							position: absolute;
 							visibility: hidden;
 							opacity: 0;
-							top: 66px;
+							top: 0;
+							left: 100%;
 							z-index: 99;
 						}
-						.main-menu .header_dropdown_menu ul {
+						.header_dropdown_menu ul {
 							float: initial;
 						}
-						.main-menu .header_dropdown_menu li {
+						.header_dropdown_menu li {
 							display: block;
 							position: initial;
 							width: 100%;
 						}
-						.main-menu .header_dropdown_menu a {
+						.header_dropdown_menu a {
 							text-align: left;
 							width: 100%;
 							padding: 27px 25px 0;
 							white-space: nowrap;
 						}
-						.main-menu .header_dropdown_menu li:hover a {
+						.header_dropdown_menu li:hover a {
 							width: 100%;
 							padding-left: 25px;
 						}						
-						.main-menu li:hover>.header_dropdown_menu {
+						.mobile-menu li:hover>.header_dropdown_menu {
 							opacity: 1;
 							visibility: visible;
 							box-shadow: 0px 6px 25px rgba(0,0,0,0.3);
@@ -442,13 +435,14 @@ h1,h2,h3,h4,h5,h6{
 							-webkit-transition:all 200ms ease;
 						}
 			.zapis-na-priem	{
+			float: right !important;
 			}
 				.b-block .zapis-na-priem a {
 					display: inline-block;
 					text-align: center;
 					/*margin: 0 auto;*/
-					width: 207px;
-					padding: 27px 0px 0px;
+					width: auto;
+					padding: 27px 15px 0px;
 				}
 				.b-block .zapis-na-priem a:hover {
 				}
@@ -477,14 +471,14 @@ h1,h2,h3,h4,h5,h6{
 			.major-slider .b-btn-prev {
 				display: block !important;
 				position: absolute;
-				left: 5%;
+				right: 80px;
 				bottom: 20px;
 				z-index: 2;
 			}
 			.major-slider .b-btn-next {
 				display: block !important;
 				position: absolute;
-				right: 5%;
+				right: 20px;
 				bottom: 20px;
 			}
 					.slider-btns {
@@ -595,28 +589,22 @@ h1,h2,h3,h4,h5,h6{
 						text-align: left;
 						margin-right: 0;
 						margin-left: 0;
-						padding: 5%;
+						padding: 0 5% 0;%%
 					}
-					.right-slider:before {
-						content: "о компании";
-						font-family: "Ubuntu-Medium";
-						font-size: 20px;
-						display: inline-block;
-						text-transform: uppercase;
-						/* margin-left: 9px; */
+					.about-right-slider-header {
+						font-size: 18px;
+						margin-left: 5%;
 						margin-top: 0;
-						position: absolute;
-						top: -5px;
 					}
 					.about-text-slide {
 						/* width: auto; */
 						}
 						.about-text-slide h2 {
 							font-family: "Ubuntu-Bold";
-							font-size: 42px;
-							line-height: 46px;
+							font-size: 30px;
+							line-height: 36px;
 							margin-top: 0;
-							margin-bottom: 39px;
+							margin-bottom: 15px;
 						}
 						.about-text-slide p {
 							font-family: "Ubuntu-Light";
@@ -649,14 +637,14 @@ h1,h2,h3,h4,h5,h6{
 				}
 				.services-menu li {
 					display: inline-block;
-					height: 110px;
+					height: 80px;
 					width: 45%;
-					min-width: 200px;
+					min-width: 149px;
 					max-width: 400px;
 					margin-right: 0;
 					float: left;
 					background: transparent;
-					border: 10px solid transparent;
+					border: 8px solid transparent;
 				}
 				.services-menu li:nth-child(2n) {
 					margin-right: 0px;
@@ -667,13 +655,13 @@ h1,h2,h3,h4,h5,h6{
 				}
 						.services-menu li button {
 							font-family: "Ubuntu";
-							font-size: 20px;
-							padding-left: 10%;
+							font-size: 18px;
+							padding-left: 0;
 							/* text-transform: uppercase; */
-							text-align: left;
+							text-align: center;
 							display: table-cell;
 							width: 100%;
-							height: 110px;
+							height: 100%;
 							line-height: 30px;
 							vertical-align: middle;
 							cursor:pointer;
@@ -781,7 +769,7 @@ h1,h2,h3,h4,h5,h6{
 
 	}
 		.reviews .b-wide-block {
-			padding: 50px 0 50px;
+			padding: 30px 0 50px;
 		}
 			.reviews .b-wide-block .b-block {
 				width: 95%;
@@ -789,21 +777,21 @@ h1,h2,h3,h4,h5,h6{
 			}
 				.reviews-header {
 					font-family: "Ubuntu-Bold";
-					font-size: 48px;
-					line-height: 55px;
+					font-size: 40px;
+					line-height: 40px;
 					text-align: left;
 					/* margin-top: 54px; */
-					margin-bottom: 38px;
+					margin-bottom: 10px;
 				}
 				.review-slide-block {
 					width: auto;
 					margin-left: 0;
-					margin-bottom: 40px;
+					margin-bottom: 60px;
 				}
 					.review-single {
 						width: auto;
 						margin-top: 18px;
-						margin-left: 50px;
+						margin-left: 0px;
 						margin-right: 0px;
 					}
 						.review-single-head {
@@ -816,24 +804,24 @@ h1,h2,h3,h4,h5,h6{
 								background-position: 50% 50%;
 								background-size: cover;
 								background-repeat: no-repeat;
-								height: 110px;
-								width: 110px;
+								height: 80px;
+								width: 80px;
 								border-radius: 55px;
 								overflow: hidden;
-								margin-left: -50px;
+								margin-left: 20px;
 							}
 							.review-single-name {
 								display: inline-block;
 								width: 31%;
 								text-align: left;
 								white-space: nowrap;
-								margin-top: 27px;
+								margin-top: 12px;
 								margin-left: 6%;
 								float: left;
 							}
 								.review-single-name h5{
 									font-family: "Ubuntu";
-									font-size: 19px;
+									font-size: 16px;
 									line-height: 28px;
 									text-transform: uppercase;
 									text-align: left;
@@ -841,7 +829,7 @@ h1,h2,h3,h4,h5,h6{
 								}
 								.review-single-name p{
 									font-family: "Ubuntu-Light";
-									font-size: 16px;
+									font-size: 15px;
 									line-height: 28px;
 									text-align: left;
 								}
@@ -851,16 +839,16 @@ h1,h2,h3,h4,h5,h6{
 							.review-btn {
 								display: inline-block;
 								text-align: right;
-								padding-top: 27px;
+								padding-top: 12px;
 								padding-right: 6%;
 								width: 175px;
 								float: right;
 							}
 					.review-single-text {
 						text-align: left;
-						padding: 0 45px 0px 45px;
+						padding: 0 20px 0px 20px;
 						margin-bottom: 30px;
-						overflow: hidden;						
+						overflow: hidden;
 					}
 						.review-single-text p {
 							overflow: hidden;
@@ -892,7 +880,7 @@ h1,h2,h3,h4,h5,h6{
 					}
 						.review-reply {
 							display: inline-block;
-							margin-left: 26%;
+							margin-left: 0;
 						}
 						.review-reply a{
 							font-family: "Ubuntu-Medium";
@@ -1092,9 +1080,9 @@ h1,h2,h3,h4,h5,h6{
 				text-align: left;
 			}
 				.footer-cont .b-block {
-				padding-top: 64px;
-				height: 334px;
-				padding-bottom: 100px;
+				height: auto;
+				padding: 20px 0;
+				margin: 0 5%;
 				}
 					.footer-columns {
 						/* padding-top: 64px; */
@@ -1121,10 +1109,12 @@ h1,h2,h3,h4,h5,h6{
 						}
 						.footer-logconts {
 							width: 255px;
-							margin-right: 12%; /*140px*/
+							margin-right: 5%; /*140px*/
 						}
 							.footer-logo {
 							margin-bottom: 26px;
+							width: 100%;
+							display: none;
 							}
 							.footer-logo-img {
 								background-position: 50% 50%;
@@ -1149,12 +1139,14 @@ h1,h2,h3,h4,h5,h6{
 								}
 						.footer-pages {
 							margin-right: 200px;
+							display: none;
 						}
 							.footer-pages ul {
 								margin-top: 18px;
 							}
 						.footer-services {
 							margin-right: 119px;
+							display: none;
 						}
 							.footer-services ul {
 								margin-top: 18px;
@@ -1165,17 +1157,17 @@ h1,h2,h3,h4,h5,h6{
 									margin-bottom: 8px;
 								}							
 							.footer-shedule h4 {
-								margin-bottom: 15px;
+								margin-bottom: 10px;
 							}
 							.footer-shedule h6 {
 								font-family: "Ubuntu-Medium";
 								font-size: 16px;
-								line-height: 40px;
+								line-height: 26px;
 							}
 			.footer-copyright {
 				position: absolute;
 				right: 0;
-				bottom: 40px;
+				bottom: 20px;
 				background-position: 50% 50%;
 				background-image: url("../i/copyright-redder.png");
 				background-size: cover;
@@ -1185,16 +1177,17 @@ h1,h2,h3,h4,h5,h6{
 				.footer-copyright a {
 					display: block;
 					height: 16px;
-					width: 93px;					
+					width: 93px;
 				}
 		.footer-sub {
+		margin: 0 5%;
 		}
 			.footer-sub p {
 			font-family: "Ubuntu-Light";
-			font-size: 25px;
-			line-height: 40px;
-			letter-spacing: 10px;
-			margin-top: 29px;
-			padding-bottom: 32px;
+			font-size: 20px;
+			line-height: 24px;
+			letter-spacing: 4px;
+			margin-top: 20px;
+			padding-bottom: 20px;
 			text-transform: uppercase;
 			}

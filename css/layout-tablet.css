@@ -606,28 +606,20 @@ button {
 						text-align: left;
 						margin-top: 0;
 					}
-					.right-slider:before {
-						content: "о компании";
-						font-family: "Ubuntu-Medium";
+					.about-right-slider-header {
 						font-size: 20px;
-						display: inline-block;
-						text-transform: uppercase;
-						/* margin-left: 9px; */
+						margin-left: 48px;
 						margin-top: 0;
-						position: absolute;
-						top: -5px;
 					}
 					.about-text-slide {
 						}
 						.about-text-slide h2 {
-							font-family: "Ubuntu-Bold";
 							font-size: 42px;
 							line-height: 46px;
-							margin-top: 30px;
+							margin-top: 10px;
 							margin-bottom: 13px;
 						}
 						.about-text-slide p {
-							font-family: "Ubuntu-Light";
 							font-size: 16px;
 							line-height: 24px;
 							margin-bottom: 22px;

@@ -796,6 +796,9 @@ button {
 							background-position: 50% 50%;
 							height: 496px;
 						}
+						.left-slide img {
+							width: 100%;
+						}
 						.left-slider .b-btn-prev {
 							position: absolute;
 							right: 104px;
@@ -865,17 +868,15 @@ button {
 						text-align: left;
 						margin-top: 0;
 					}
-					.right-slider:before {
-						content: "о компании";
+					.about-right-slider-header {
 						font-family: "Ubuntu-Medium";
 						font-size: 20px;
 						color: #a4b1bf;
 						display: inline-block;
 						text-transform: uppercase;
-						/* margin-left: 9px; */
+						margin-left: 48px;
 						margin-top: 0;
-						position: absolute;
-						top: -5px;
+						float: left
 					}
 					.about-text-slide {
 						}
@@ -884,7 +885,7 @@ button {
 							font-size: 42px;
 							line-height: 46px;
 							color: #181818;
-							margin-top: 32px;
+							margin-top: 10px;
 							margin-bottom: 39px;
 						}
 						.about-text-slide p {

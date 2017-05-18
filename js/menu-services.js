@@ -9,3 +9,6 @@ $('.services-text-container').addClass('hide').removeClass('show');
 $('.services-texts [data-id ='+dataVal+']').addClass('show').removeClass('hide');
 
 });
+if ($(window).width()<768) {
+	$('.services-menu ul li button').removeClass('active');
+}

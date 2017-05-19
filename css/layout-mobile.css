@@ -25,6 +25,8 @@ a{
 }
 p, ul, table {
 	font-family: "Ubuntu-Light";
+	display: block;
+	position: relative;
 }
 li{
 	list-style: none;
@@ -210,9 +212,12 @@ h1,h2,h3,h4,h5,h6{
 				.logo {
 					background-position: 50% 50%;
 					background-image: url('../i/logo.png');
-					background-size: cover;
+					background-size: 100%;
+					background-repeat: no-repeat;
 					height: 58px;
-					width: 243px;
+					max-width: 243px;
+					min-width: 120px;
+					width: 57%;
 				}
 					.logo a {
 						display: block;
@@ -256,6 +261,9 @@ h1,h2,h3,h4,h5,h6{
 						left: 30px;
 						top: 4px;
 					}
+				.search {
+					display: none;
+				}
 				.search-mobile {
 					font-family: 'icomoon' !important;
 					speak: none;
@@ -271,16 +279,15 @@ h1,h2,h3,h4,h5,h6{
 					overflow:hidden;
 					height: 54px;
 					width: 54px;
-					position: relative;
-					right: 0;
+					position: absolute;
+					right: 64px;
 					top: 0;
-					margin: 7px 0 0 20px;
+					margin: 7px 0 0 0px;
 					transition: width 0.4s ease;
 					cursor: pointer;
 					display: inline-block;
 					color: #74bc40;
 					background-color: #ffffff;
-					float: left;
 				}
 				.search-mobile-link:before{
 					position: absolute;
@@ -299,11 +306,13 @@ h1,h2,h3,h4,h5,h6{
 						display: none;
 					}							
 				.callback  {
-					margin: 7px 0 0 11px;
-					margin-right: 0;
+					display: inline-block;
+					position: absolute;
+					right: 0;
+					margin: 7px 0 0 10px;
 					width: 52px;
 					height: 52px;
-					float: left !important;
+					float: none !important;
 				}
 				.callback .callback-btn.onhover {
 				}		
@@ -344,15 +353,81 @@ h1,h2,h3,h4,h5,h6{
 					}
 					.callback .icon-callback.onhover {
 					}
+			.header .filials {
+				display: none;
+			}		
+			.b-head .main-menu .b-block>ul {
+				display: none;
+			}
+			.main-menu .b-block {
+				margin: 0 5%;
+			}
+			.mobile-menu-button {
+				display: initial;
+				min-width: 110px;
+				width: auto;
+				height: 66px;
+				cursor: pointer;
+				box-sizing: border-box;
+				padding: 21px 0 0 10px;
+				text-align: left;
+			}
+			.mobile-menu-button:hover {
+				background-color: #74bc40;
+			}								
+				.mobile-menu-button span {
+					font-family: "Ubuntu";
+					font-size: 16px;
+					text-transform: uppercase;
+					color: #74bc40;
+					display: inline-block;
+					position: absolute;
+				}
+				.mobile-menu-button:before {
+					content: "\e910";
+					font-family: 'icomoon' !important;
+					speak: none;
+					font-style: normal;
+					font-weight: normal;
+					font-variant: normal;
+					text-transform: none;
+					line-height: 1;
+					font-size: 22px;
+					color: #74bc40;
+					margin-right: 7px;
+				}	
+				.mobile-menu-button:hover span{
+					color: #ffffff;
+				}		
+				.mobile-menu-button:hover:before{
+					color: #ffffff;
+				}											
 			.mobile-menu {
-				width: 50%;
+				display: initial;
+				width: 57%;
+				opacity: 0;
+				visibility: hidden;
+				max-width: 200px;
 				height: 100%;
 				position: fixed;
-				top: 0;
+				top: 0px;
+				left: -57%;
 				z-index: 200;
 				background-color: rgba(116,188,64,1);
-				padding: 0 0 0 30px;
+				box-sizing: border-box;
+				padding: 10px 0 0 20px;
 				float: left;
+				transition: all 200ms ease;
+				-moz-transition:all 200ms ease;
+				-webkit-transition:all 200ms ease;
+			}
+			.visible {
+				opacity: 1;
+				left: 0;
+				visibility: visible;
+				transition: all 200ms ease;
+				-moz-transition:all 200ms ease;
+				-webkit-transition:all 200ms ease;
 			}
 			.mobile-menu .filials {
 				position: relative;
@@ -364,76 +439,87 @@ h1,h2,h3,h4,h5,h6{
 			}
 			.mobile-menu-ul li {
 			margin-bottom: 3px;
+			position: relative;
 			}			
 			.filials li {
 				margin-bottom: 10px;
 				display: block;
 				float: initial !important;
+				cursor: pointer;
 			}
-						.mobile-menu-ul>li>a {
-							font-size: 16px;
-							font-family: Ubuntu;
-							position: relative;
-							text-transform: uppercase;
-							text-align: left;
-							display: inline-block;
-							box-sizing: border-box;
-							padding: 10px;
-							height: auto;
-							width: 100%;
-							color: #ffffff;
-							background-color: rgba(255,255,255,0.1);
-						}
-						.mobile-menu-ul .mmarrow:after {
-							content: "\e907";
-							font-family: 'icomoon' !important;
-							speak: none;
-							font-style: normal;
-							font-weight: normal;
-							font-variant: normal;
-							text-transform: none;
-							line-height: 1;
-							font-size: 11px;
-							color: #ffffff;
-							display: inline-block;
-							top: 17px;
-							right: 15px;
-							position: absolute;
-						}
-						.header_dropdown_menu {
-							position: absolute;
-							visibility: hidden;
-							opacity: 0;
-							top: 0;
-							left: 100%;
-							z-index: 99;
-						}
-						.header_dropdown_menu ul {
-							float: initial;
-						}
-						.header_dropdown_menu li {
-							display: block;
-							position: initial;
-							width: 100%;
-						}
-						.header_dropdown_menu a {
-							text-align: left;
-							width: 100%;
-							padding: 27px 25px 0;
-							white-space: nowrap;
-						}
-						.header_dropdown_menu li:hover a {
-							width: 100%;
-							padding-left: 25px;
-						}						
-						.mobile-menu li:hover>.header_dropdown_menu {
-							opacity: 1;
-							visibility: visible;
-							box-shadow: 0px 6px 25px rgba(0,0,0,0.3);
-							transition: all 200ms ease;
-							-moz-transition:all 200ms ease;
-							-webkit-transition:all 200ms ease;
-						}
+			.filials li:hover a {
+				text-decoration: none;
+			}
+
+				.mobile-menu-ul li>a {
+					font-size: 16px;
+					font-family: Ubuntu;
+					position: relative;
+					text-transform: uppercase;
+					text-align: left;
+					display: inline-block;
+					box-sizing: border-box;
+					padding: 10px;
+					height: auto;
+					width: 100%;
+					color: #ffffff;
+					background-color: rgba(255,255,255,0.1);
+				}
+				.mobile-menu-ul .mmarrow:after {
+					content: "\e907";
+					font-family: 'icomoon' !important;
+					speak: none;
+					font-style: normal;
+					font-weight: normal;
+					font-variant: normal;
+					text-transform: none;
+					line-height: 1;
+					font-size: 11px;
+					color: #ffffff;
+					display: inline-block;
+					top: 17px;
+					right: 15px;
+					position: absolute;
+				}
+				.header_dropdown_menu {
+					position: absolute;
+					background-color: #74bc40;
+					visibility: hidden;
+					opacity: 0;
+					top: 0;
+					left: 100%;
+					z-index: 99;
+				}
+				.header_dropdown_menu ul {
+					float: initial;
+				}
+				.header_dropdown_menu li {
+					display: block;
+					position: initial;
+					width: 100%;
+				}
+				.header_dropdown_menu a {
+					text-align: left;
+					width: 100%;
+					padding: 27px 25px 0;
+					white-space: nowrap;
+				}
+				.header_dropdown_menu li:hover a {
+					width: 100%;
+					background-color: rgba(255,255,255,0.1);
+				}						
+				.mobile-menu li:hover>.header_dropdown_menu {
+					opacity: 1;
+					visibility: visible;
+					left: 91%;
+					box-shadow: 0px 6px 25px rgba(0,0,0,0.3);
+					transition: all 200ms ease;
+					-moz-transition:all 200ms ease;
+					-webkit-transition:all 200ms ease;
+				}
+				.mobile-menu-ul li:hover>a {
+					background-color: #68ae36;
+				}
 			.zapis-na-priem	{
 			float: right !important;
 			}
@@ -561,7 +647,7 @@ h1,h2,h3,h4,h5,h6{
 						}
 						.left-slider .b-btn-prev {
 							position: absolute;
-							right: 104px;
+							right: 80px;
 							bottom: -21px;
 							/* margin-top: -24px; */
 							z-index: 10;
@@ -572,7 +658,7 @@ h1,h2,h3,h4,h5,h6{
 						.left-slider .b-btn-next {
 							margin-top: -24px;
 							position: absolute;
-							right: 46px;
+							right: 20px;
 						}
 					.right-slider .slick-dots {
 						display: none !important;
@@ -625,7 +711,7 @@ h1,h2,h3,h4,h5,h6{
 			background-position: 50% 50%;
 			background-size: cover;
 			background-repeat: no-repeat;
-			padding: 50px 0 50px;
+			padding: 30px 0 30px;
 		}
 			.b-block {
 
@@ -637,7 +723,7 @@ h1,h2,h3,h4,h5,h6{
 				}
 				.services-menu li {
 					display: inline-block;
-					height: 80px;
+					height: 70px;
 					width: 45%;
 					min-width: 149px;
 					max-width: 400px;
@@ -655,7 +741,7 @@ h1,h2,h3,h4,h5,h6{
 				}
 						.services-menu li button {
 							font-family: "Ubuntu";
-							font-size: 18px;
+							font-size: 16px;
 							padding-left: 0;
 							/* text-transform: uppercase; */
 							text-align: center;
@@ -857,7 +943,7 @@ h1,h2,h3,h4,h5,h6{
 					.review-slide-block  .b-btn-prev {
 						position: absolute;
 						/* border: 1px solid #b9b9b9; */
-						right: 82px;
+						right: 80px;
 						bottom: -23px;
 						/* box-shadow: none; */
 						z-index: 10;
@@ -869,7 +955,7 @@ h1,h2,h3,h4,h5,h6{
 						/* border: 1px solid #b9b9b9; */
 						position: absolute;
 						/* box-shadow: none; */
-						right: 24px;
+						right: 20px;
 						bottom: -23px;
 					}					
 				.review-more {padding-bottom: 0px;}
@@ -908,7 +994,7 @@ h1,h2,h3,h4,h5,h6{
 						}
 					.review-single-full {
 						width: 95%;
-						padding: 40px !important;
+						padding: 20px !important;
 					}
 						.review-single-full .review-single-head {
 							display: table;
@@ -1108,8 +1194,8 @@ h1,h2,h3,h4,h5,h6{
 							line-height: 36px;
 						}
 						.footer-logconts {
-							width: 255px;
-							margin-right: 5%; /*140px*/
+							width: auto;
+							margin-right: 10px; /*140px*/
 						}
 							.footer-logo {
 							margin-bottom: 26px;
@@ -1184,10 +1270,10 @@ h1,h2,h3,h4,h5,h6{
 		}
 			.footer-sub p {
 			font-family: "Ubuntu-Light";
-			font-size: 20px;
-			line-height: 24px;
+			font-size: 17px;
+			line-height: 20px;
 			letter-spacing: 4px;
-			margin-top: 20px;
-			padding-bottom: 20px;
+			margin-top: 10px;
+			padding-bottom: 10px;
 			text-transform: uppercase;
 			}

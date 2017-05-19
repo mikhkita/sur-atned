@@ -3,38 +3,41 @@ $(document).ready(function(){
     var nowmonth= new Date().getMonth();
     var nowday= new Date().getDate();
     switch(nowmonth) {
-        case 0: nowmonth="Январь"
+        case 0: nowmonth="января"
         break;
-        case 1: nowmonth="Февраль"
+        case 1: nowmonth="февраля"
         break;
-        case 2: nowmonth="Март"
+        case 2: nowmonth="марта"
         break;
-        case 3: nowmonth="Апрель"
+        case 3: nowmonth="апреля"
         break;
-        case 4: nowmonth="Май"
+        case 4: nowmonth="мая"
         break;
-        case 5: nowmonth="Июнь"
+        case 5: nowmonth="июня"
         break;
-        case 6: nowmonth="Июль"
+        case 6: nowmonth="июля"
         break;
-        case 7: nowmonth="Август"
+        case 7: nowmonth="августа"
         break;
-        case 8: nowmonth="Сентябрь"
+        case 8: nowmonth="сентября"
         break;
-        case 9: nowmonth="Октябрь"
+        case 9: nowmonth="октября"
         break;
-        case 10: nowmonth="Ноябрь"
+        case 10: nowmonth="ноября"
         break;
-        case 11: nowmonth="Декабрь"
+        case 11: nowmonth="декабря"
         break;
     }
     $('#date').val(nowday+" "+nowmonth+" "+nowyear);
-    $("#date").datepicker({
+    $('#date').datepicker({
         dayNames: [ "Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота" ],
         dayNamesMin: [ "Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб" ],
         firstDay: 1,
         monthNames: [ "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" ],
-        dateFormat: "d MM yy"
+        monthNamesShort: ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"],
+        dateFormat: "d M yy",
+        prevText: "",
+        nextText: ""
     });
     $('#tel-2').mask("+7(999)999-99-99");
     $('#tel-3').mask("+7(999)999-99-99");	

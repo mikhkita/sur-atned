@@ -506,6 +506,7 @@ button {
 					position: relative;
 					margin-top: 2px;
 					margin-right: 0px;
+					width: 185px;
 				}
 				.callback .callback-btn.onhover {
 					background-color: #74bc40;
@@ -634,6 +635,7 @@ button {
 							-webkit-transition:all 200ms ease;
 						}
 			.zapis-na-priem	{
+				width: 207px;
 			}
 				.b-block .zapis-na-priem a {
 					display: inline-block;
@@ -2568,7 +2570,6 @@ button {
 	margin: 0px !important;
 	background: none !important;
 	padding: 0px !important;
-	margin-top: 83px !important;
 	overflow: visible !important;
 }
 .b-popup h3 {
@@ -2616,10 +2617,12 @@ button {
 	border: 1px solid #ffffff;
 	font-size: 22px;
 	color: #ffffff;
-	padding: 36px 40px 0px;
+	padding: 34px 40px 34px;
 	box-sizing: border-box;
+	line-height: 18px;
 	margin-top: 19px;
 	font-family: "Ubuntu-Light";
+	resize: none;
 }
 .b-popup .right {
 	float: right;
@@ -2808,7 +2811,6 @@ div.cs-skin-slide::before {
 .cs-skin-slide .cs-options {
 	background: transparent;
 	width: 100%;
-	padding: 1.9em 0;
 	top: 50%;
 	left: 50%;
 	-webkit-transform: translate3d(-50%,-50%,0);
@@ -2915,7 +2917,8 @@ div.cs-skin-slide::before {
 	float: left;
 }
 .time.cs-active::before {
-	transform: scale3d(2,3.5,1.1) !important;
+	-webkit-transform: scale3d(2,3,1.1);
+	transform: scale3d(2,3,1.1);
 }
 #b-popup-3 button {
 	margin-top: -9px;
@@ -2933,6 +2936,8 @@ div.cs-skin-slide::before {
 }
 .b-popup button:hover {
 	cursor: pointer;
+	background-color: rgba(255,255,255,0.8);
+	color: #74bc40;
 }
 .callback .morphing-btn-wrap {
 	text-align: left;
@@ -2955,10 +2960,10 @@ div.cs-skin-slide::before {
 	padding-left: 0;
 	padding-right: 0;
 	width: 52px !important;
-	-webkit-transition: width 0.3s 0.2s;
-	-moz-transition: width 0.3s 0.2s;
-	-o-transition: width 0.3s 0.2s;
-	transition: width 0.3s 0.2s;
+	-webkit-transition: width 0.01s;
+	-moz-transition: width 0.01s;
+	-o-transition: width 0.01s;
+	transition: width 0.01s;
 }
 .b-block .zapis-na-priem .morphing-btn_circle {
 	color: transparent;
@@ -2998,8 +3003,8 @@ div.cs-skin-slide::before {
 }
 .morphing-close {
 	position: fixed;
-	top: 5%;
-	right: 5%;
+	top: 30px;
+	right: 48px;
 	background-color: rgb(255, 255, 255);
 	text-indent: -9999px;
 	width: 43px;
@@ -3044,6 +3049,34 @@ div.cs-skin-slide::before {
 	-moz-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
+.ui-state-hover {
+	border: none !important;
+	background: none !important;
+	cursor: pointer;
+}
+.ui-datepicker-prev-hover {
+	top: 2px !important;
+	left: 2px !important;
+}
+.ui-datepicker-next-hover {
+	top: 2px !important;
+	right: 2px !important;
+}
+.ui-datepicker-calendar .ui-state-hover {
+	border: 1px solid #cccccc !important;
+}
+.ui-state-active {
+	background: #74bc40 !important;
+	border: 1px solid #4caf50 !important;
+}
+.ui-datepicker {
+	border-radius: 0px !important;
+	width: 458px !important;
+}
+.ui-icon {
+	background-image: none !important;
+}
+
 .icon-icon-zoom:before {
   content: "\e913";
 }

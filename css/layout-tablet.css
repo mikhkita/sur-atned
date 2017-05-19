@@ -404,12 +404,11 @@ button {
 						.main-menu li:hover a .header_dropdown_menu {						
 						}						
 			.zapis-na-priem	{
-				width: 217px;
+				width: auto;
 			}
 				.b-block .zapis-na-priem a {
 					display: inline-block;
 					text-align: center;
-					width: 217px;
 					padding: 27px 0px 0px;
 				}
 				.b-block .zapis-na-priem a:hover {
@@ -1602,7 +1601,9 @@ button {
 							width: 120px;
 							margin-bottom: 22px;
 						}
-	.p_about_b_clinics {padding: 30px 0 18px;}
+	.p_about_b_clinics {
+		padding: 30px 0 54px;
+	}
 		.b-block {
 
 		}

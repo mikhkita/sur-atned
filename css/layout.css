@@ -635,7 +635,7 @@ button {
 							-webkit-transition:all 200ms ease;
 						}
 			.zapis-na-priem	{
-				width: 207px;
+				width: auto;
 			}
 				.b-block .zapis-na-priem a {
 					display: inline-block;
@@ -643,7 +643,9 @@ button {
 					color: #ffffff;
 					text-align: center;
 					/*margin: 0 auto;*/
-					width: 207px;
+					min-width: 110px;
+					width: 217px;
+					max-width: 217px;
 					padding: 27px 0px 0px;
 				}
 				.b-block .zapis-na-priem a:hover {
@@ -2132,7 +2134,9 @@ button {
 							width: 120px;
 							margin-bottom: 22px;
 						}
-	.p_about_b_clinics {padding: 30px 0 18px;}
+	.p_about_b_clinics {
+		padding: 30px 0 54px;
+	}
 		.b-block {
 
 		}

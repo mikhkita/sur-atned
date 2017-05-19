@@ -310,6 +310,7 @@ button {
 					position: relative;
 					margin-top: 2px;
 					margin-right: 0px;
+					width: 127px;
 				}
 				.callback .callback-btn.onhover {
 				}		
@@ -403,13 +404,13 @@ button {
 						.main-menu li:hover a .header_dropdown_menu {						
 						}						
 			.zapis-na-priem	{
+				width: 217px;
 			}
 				.b-block .zapis-na-priem a {
 					display: inline-block;
 					text-align: center;
-					margin: 0 auto;
 					width: 217px;
-					padding: 26px 0;
+					padding: 27px 0px 0px;
 				}
 				.b-block .zapis-na-priem a:hover {
 				}

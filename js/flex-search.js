@@ -1,3 +1,11 @@
+
+// if ($(window).width()<768) {
+// 	$('.search').addClass('search-mobile');
+// 	$('.search').removeClass('search');
+// 	$('.search-mobile').append('<a class="search-mobile-link" href="search.html"></a>');
+// }
+
+//----------
 $('.search').click(function() {
 $('.header .b-block .filials').addClass("maxopacity");
 $('.header .b-block .search').addClass("maxopacity");

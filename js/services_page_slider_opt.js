@@ -31,7 +31,7 @@ $(document).ready(function mainf (){
 		if (pos>=menu_items) {pos=menu_items-1;}
 		var block = columns/next_it; // number of row
 		$( '.p_services_menu_item:eq('+pos+')' ).after( $('.footer .p_services_menu_info').clone().attr('data-nrow-block',block).attr('offset',$( '.p_services_menu_item:eq('+pos+')' ).offset().top));//'<div data-nrow='+block+' class="dummy-box"></div>' 
-		console.log('row - ' + columns + 'pos - ' + pos + 'block - ' + block)
+		// console.log('row - ' + columns + 'pos - ' + pos + 'block - ' + block)
 	}
 //---------------------- вставляем слайды в блоки
 	for (var blockToFill = 1; blockToFill <= block; blockToFill = blockToFill + 1 ) {
@@ -63,7 +63,6 @@ $(document).ready(function mainf (){
 		 if ($(this).parent().hasClass('active')) {
 		 	$('.p_services_menu_item').removeClass('active');
 		 	$(".p_services_menu_info").removeClass("serv_info_show");
-		 	console.log('hmmm')
 		 }
 		 else {
 			var dataEventVal = $(this).attr("data-eventblock");

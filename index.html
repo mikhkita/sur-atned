@@ -17,14 +17,14 @@
 	<link rel="stylesheet" href="js/fancybox-3.0/dist/jquery.fancybox.min.css" />
 
 	<link rel="stylesheet" media="screen and (min-width: 769px) and (max-width: 1240px)" href="css/layout-tablet.css" />
-	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 768px)" href="/bitrix/templates/main/css/layout-mobile.css" />
+	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 768px)" href="css/layout-mobile.css" />
 	
 
 	<meta name="viewport" content="width=1000">
 
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/fancybox-3.0/dist/jquery.fancybox.min.js"></script>
-	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&key=AIzaSyD6Sy5r7sWQAelSn-4mu2JtVptFkEQ03YI"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyD6Sy5r7sWQAelSn-4mu2JtVptFkEQ03YI"></script>
 	<script type="text/javascript" src="js/map-gmap.js"></script>
 	<script type="text/javascript" src="js/jssor.js"></script>
 	<script type="text/javascript" src="js/jssor.slider.js"></script>
@@ -46,11 +46,13 @@
 
 </head>
 <body>
+
 <!-- 	<ul class="ps-lines">
 		<li class="v" style="margin-left:-580px"></li>
 		<li class="v" style="margin-left:580px"></li>
 		<li class="v" ></li>
 	</ul> -->
+	<div class="mobile-menu"></div>
 	<div class="background-block"></div>
 	<div class="background-layer">
 		<div class="b-wide-block">
@@ -60,8 +62,8 @@
 	</div>	
 	<div class="b b-head clearfix">
 		<div class="b-wide-block">
-			<div class="header clearfix">
-				<div class="b-block">
+			<div class="header">
+				<div class="b-block clearfix">
 					<a href="#">
 						<div class="logo left"></div>
 					</a>
@@ -88,6 +90,9 @@
 							</form>
 						</div>						
 					</div>
+					<div class="search-mobile">
+						<a class="search-mobile-link" href="search.html"></a>
+					</div>					
 					<div class="callback right">
 						<a data-morphing class="btn" data-src="#b-popup-3" href="javascript:;">
 							<div class="callback-btn">
@@ -99,18 +104,19 @@
 				</div>
 			</div>
 			<div class="main-menu left">
-				<div class="b-block">
+				<div class="b-block clearfix">
+					<div class="mobile-menu-button left"><span>Меню</span></div>
 					<ul>
 						<li>
 							<a href="#">О нас</a>
 							<ul class="header_dropdown_menu">
 								<li><a href="#">Clinics</a></li>
-								<li><a href="#">Projects</a></li>
+								<li><a href="#">Projects Projects Projects</a></li>
 								<li><a href="#">Plans</a></li>								
 							</ul>
 						</li>
 						<li>
-							<a href="#">Услуги</a>
+							<a href="services.html">Услуги</a>
 							<ul class="header_dropdown_menu">
 								<li>
 									<a href="#">Услуги</a>
@@ -145,7 +151,7 @@
 							<a href="#">Контакты</a>
 						</li>
 						<li>
-							<a href="#">Врачи</a>
+							<a href="doctors.html">Врачи</a>
 						</li>
 					</ul>
 					<div class="zapis-na-priem left">
@@ -208,18 +214,23 @@
 		</div>
 		<div class="about-company clearfix">
 			<div class="b-wide-block">
-				<div class="b-block">
+				<div class="b-block clearfix">
 					<div class="about-align-cont">
 						<div class="left-slider left">
-							<div class="left-slide" style="background-image: url('./i/about-slide-01.jpg');">
+							<div class="left-slide" >
+								<img src="./i/about-slide-01.jpg" alt="">
 							</div>
-							<div class="left-slide" style="background-image: url('./i/about-slide-01.jpg');">
+							<div class="left-slide">
+								<img src="./i/about-slide-01.jpg" alt="">
 							</div>
-							<div class="left-slide" style="background-image: url('./i/about-slide-01.jpg');">
+							<div class="left-slide">
+								<img src="./i/about-slide-01.jpg" alt="">
 							</div>
-							<div class="left-slide" style="background-image: url('./i/about-slide-01.jpg');">
+							<div class="left-slide">
+								<img src="./i/about-slide-01.jpg" alt="">
 							</div>
 						</div>
+						<div class="about-right-slider-header">о компании</div>
 						<div class="right-slider left">
 							<div class="about-text-slide">
 								<div class="about-slide">
@@ -260,7 +271,7 @@
 		</div>
 		<div class="services clearfix">
 			<div class="b-wide-block">
-				<div class="b-block">
+				<div class="b-block clearfix">
 					<div class="services-texts">
 						<div data-id="1" class="services-text-container show">
 							<div class="services-text">
@@ -358,11 +369,23 @@
 									<h5>Валентина К.</h5>
 									<p>08.06.2016</p>
 								</div>
-								<div class="review-btn"><a class="b-btn" href="#">подробнее <div class="arrow"></div></a></div>
+								<div class="review-btn"><a class="b-btn" data-fancybox data-src="#review-single-popup-1" href="javascript:;">подробнее <div class="arrow"></div></a></div>
 							</div>
 							<div class="review-single-text clear">
-								<p>Хочу сказать большое спасибо клинике космодент, отдельное спасибо косметологу Ксении! Она профессионал своего дела, проходила курс биоревитализации, и делала губки! Очень довольна результатом! Несомненно самая лучшая клиника в Томске, теперь я ваш постоянный клиент!</p>
+								<p>Хочу сказать большое спасибо клинике космодент, отдельное спасибо косметологу Ксении! Она профессионал своего дела, проходила курс биоревитализации, и делала губки! Очень довольна результатом! Несомненно самая лучшая клиника в Томске, теперь я ваш постоянный клиент!Хочу сказать большое спасибо клинике космодент, отдельное спасибо косметологу Ксении! Она профессионал своего дела, проходила курс биоревитализации, и делала губки! Очень довольна результатом! Несомненно самая лучшая клиника в Томске, теперь я ваш постоянный клиент!</p>
 							</div>
+							<div class="review-single-full " style="display: none;" id="review-single-popup-1">
+								<div class="review-single-head">
+									<div class="review-single-phot left" style="background-image: url('./i/review-phot-01.jpg');"></div>
+									<div class="review-single-name left">
+										<h5>Валентина К.</h5>
+										<p>08.06.2016</p>
+									</div>
+								</div>
+								<div class="review-single-text clear">
+									<p>Хочу сказать большое спасибо клинике космодент, отдельное спасибо косметологу Ксении! Она профессионал своего дела, проходила курс биоревитализации, и делала губки! Очень довольна результатом! Несомненно самая лучшая клиника в Томске, теперь я ваш постоянный клиент!Хочу сказать большое спасибо клинике космодент, отдельное спасибо косметологу Ксении! Она профессионал своего дела, проходила курс биоревитализации, и делала губки! Очень довольна результатом! Несомненно самая лучшая клиника в Томске, теперь я ваш постоянный клиент!Хочу сказать большое спасибо клинике космодент, отдельное спасибо косметологу Ксении! Она профессионал своего дела, проходила курс биоревитализации, и делала губки! Очень довольна результатом! Несомненно самая лучшая клиника в Томске, теперь я ваш постоянный клиент!</p>
+								</div>
+							</div>							
 						</div>
 						<div class="review-single left">
 							<div class="review-single-head">
@@ -371,11 +394,23 @@
 									<h5>александр с.</h5>
 									<p>22.08.2016</p>
 								</div>
-								<div class="review-btn"><a class="b-btn" href="#">подробнее <div class="arrow"></div></a></div>
+								<div class="review-btn"><a class="b-btn" data-fancybox data-src="#review-single-popup-2" href="javascript:;">подробнее <div class="arrow"></div></a></div>
 							</div>
 							<div class="review-single-text clear">
 								<p>Радует, все. Заходя в клинику, чувствуешь себя хозяином жизни, поскольку интерьер - отличный. Далее, оборудование. Такого, действительно, в Томске не видела ни где. В Томске есть Европа. Специалисты. Вообще огромный поклон. Сколько тактичности, вежливости и терпения. </p>
 							</div>
+							<div class="review-single-full " style="display: none;" id="review-single-popup-2">
+								<div class="review-single-head">
+									<div class="review-single-phot left" style="background-image: url('./i/review-phot-02.jpg');"></div>
+									<div class="review-single-name left">
+										<h5>александр К.</h5>
+										<p>22.08.2016</p>
+									</div>
+								</div>
+								<div class="review-single-text clear">
+									<p>Радует, все. Заходя в клинику, чувствуешь себя хозяином жизни, поскольку интерьер - отличный. Далее, оборудование. Такого, действительно, в Томске не видела ни где. В Томске есть Европа. Специалисты. Вообще огромный поклон. Сколько тактичности, вежливости и терпения.Радует, все. Заходя в клинику, чувствуешь себя хозяином жизни, поскольку интерьер - отличный. Далее, оборудование. Такого, действительно, в Томске не видела ни где. В Томске есть Европа. Специалисты. Вообще огромный поклон. Сколько тактичности, вежливости и терпения.</p>
+								</div>
+							</div>								
 						</div>
 						<div class="review-single left">
 							<div class="review-single-head">
@@ -384,11 +419,23 @@
 									<h5>Валентина К.</h5>
 									<p>08.06.2016</p>
 								</div>
-								<div class="review-btn"><a class="b-btn" href="#">подробнее <div class="arrow"></div></a></div>
+								<div class="review-btn"><a class="b-btn" data-fancybox data-src="#review-single-popup-3" href="javascript:;">подробнее <div class="arrow"></div></a></div>
 							</div>
 							<div class="review-single-text clear">
 								<p>Хочу сказать большое спасибо клинике космодент, отдельное спасибо косметологу Ксении! Она профессионал своего дела, проходила курс биоревитализации, и делала губки! Очень довольна результатом! Несомненно самая лучшая клиника в Томске, теперь я ваш постоянный клиент!</p>
 							</div>
+							<div class="review-single-full " style="display: none;" id="review-single-popup-3">
+								<div class="review-single-head">
+									<div class="review-single-phot left" style="background-image: url('./i/review-phot-01.jpg');"></div>
+									<div class="review-single-name left">
+										<h5>Валентина К.</h5>
+										<p>08.06.2016</p>
+									</div>
+								</div>
+								<div class="review-single-text clear">
+									<p>Хочу сказать большое спасибо клинике космодент, отдельное спасибо косметологу Ксении! Она профессионал своего дела, проходила курс биоревитализации, и делала губки! Очень довольна результатом! Несомненно самая лучшая клиника в Томске, теперь я ваш постоянный клиент!Хочу сказать большое спасибо клинике космодент, отдельное спасибо косметологу Ксении! Она профессионал своего дела, проходила курс биоревитализации, и делала губки! Очень довольна результатом! Несомненно самая лучшая клиника в Томске, теперь я ваш постоянный клиент!Хочу сказать большое спасибо клинике космодент, отдельное спасибо косметологу Ксении! Она профессионал своего дела, проходила курс биоревитализации, и делала губки! Очень довольна результатом! Несомненно самая лучшая клиника в Томске, теперь я ваш постоянный клиент!</p>
+								</div>
+							</div>								
 						</div>
 						<div class="review-single left">
 							<div class="review-single-head">
@@ -397,11 +444,23 @@
 									<h5>Валентина К.</h5>
 									<p>08.06.2016</p>
 								</div>
-								<div class="review-btn"><a class="b-btn" href="#">подробнее <div class="arrow"></div></a></div>
+								<div class="review-btn"><a class="b-btn" data-fancybox data-src="#review-single-popup-4" href="javascript:;">подробнее <div class="arrow"></div></a></div>
 							</div>
 							<div class="review-single-text clear">
 								<p>Хочу сказать большое спасибо клинике космодент, отдельное спасибо косметологу Ксении! Она профессионал своего дела, проходила курс биоревитализации, и делала губки! Очень довольна результатом! Несомненно самая лучшая клиника в Томске, теперь я ваш постоянный клиент!</p>
 							</div>
+							<div class="review-single-full " style="display: none;" id="review-single-popup-4">
+								<div class="review-single-head">
+									<div class="review-single-phot left" style="background-image: url('./i/review-phot-01.jpg');"></div>
+									<div class="review-single-name left">
+										<h5>Валентина dК.</h5>
+										<p>08.06.2016</p>
+									</div>
+								</div>
+								<div class="review-single-text clear">
+									<p>Хочу сказать большое спасибо клинике космодент, отдельное спасибо косметологу Ксении! Она профессионал своего дела, проходила курс биоревитализации, и делала губки! Очень довольна результатом! Несомненно самая лучшая клиника в Томске, теперь я ваш постоянный клиент!Хочу сказать большое спасибо клинике космодент, отдельное спасибо косметологу Ксении! Она профессионал своего дела, проходила курс биоревитализации, и делала губки! Очень довольна результатом! Несомненно самая лучшая клиника в Томске, теперь я ваш постоянный клиент!Хочу сказать большое спасибо клинике космодент, отдельное спасибо косметологу Ксении! Она профессионал своего дела, проходила курс биоревитализации, и делала губки! Очень довольна результатом! Несомненно самая лучшая клиника в Томске, теперь я ваш постоянный клиент!</p>
+								</div>
+							</div>								
 						</div>												
 					</div>
 					<div class="review-more">
@@ -549,7 +608,7 @@
 	<div class="b footer clearfix">
 		<div class="footer-cont">
 			<div class="b-wide-block">
-				<div class="b-block">
+				<div class="b-block clearfix">
 					<div class="footer-columns">
 						<div class="footer-logconts left">
 							<div class="footer-logo">
@@ -640,6 +699,7 @@
 	<script type="text/javascript" src="js/menu-services.js"></script>
 	<script type="text/javascript" src="js/reviews-slider.js"></script>
 	<script type="text/javascript" src="js/map-cont-close.js"></script>
+	<script type="text/javascript" src="js/mobile-menu.js"></script>
 
 
 
@@ -713,7 +773,7 @@
 				</div>
 			</form>
 		</div>
-		<div class="b-popup" id="b-popup-2">
+		<div class="b-popup b-block" id="b-popup-2">
 			<h3>Запись на приём</h3>
 			<form action="kitsend.php" method="POST" id="b-form-2">
 				<div class="left">
@@ -764,7 +824,7 @@
 				</div>
 			</form>
 		</div>
-		<div class="b-popup" id="b-popup-3">
+		<div class="b-popup b-block" id="b-popup-3">
 			<h3>Заказать звонок</h3>
 			<form action="kitsend.php" method="POST" id="b-form-3">
 				<div class="left">

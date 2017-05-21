@@ -1,0 +1,227 @@
+/*practice page*/
+.b-wide-block {
+
+}
+	.b-block {
+
+	}
+		.p_practice {
+			text-align: left;
+			padding-bottom: 50px;
+		}
+			.p_practice_menu {
+				color: #181815;
+				/* width: 1188px; */
+			}
+				.p_practice_menu_item {
+					display: inline-block;
+					height: 365px;
+					width: 365px;
+					margin-right: 32px;
+					background-position: 50% 50%;
+					background-repeat: no-repeat;
+					background-size: cover;
+					overflow: hidden;
+					cursor: pointer;
+					float: left;
+					margin-bottom: 6px;
+					position: relative;
+				}
+				.p_practice_menu_item:nth-child(4n-1) {
+					margin-right: 0px;
+				}		
+					.p_practice_menu_vcard {
+						width: 100%;
+						padding: 24px 30px 26px 30px;
+						top: 271px;
+						background-color: rgba(116,188,64,0.9);
+						transition: all 300ms ease;
+						-moz-transition:all 300ms ease;
+						-webkit-transition:all 300ms ease;
+						box-sizing: border-box;
+						position: absolute;
+					}
+					.p_practice_menu_item:hover 	.p_practice_menu_vcard {
+						
+						transition: all 300ms ease;
+						-moz-transition:all 300ms ease;
+						-webkit-transition:all 300ms ease;
+					}									
+						.p_practice_menu_vcard h5{
+							text-transform: uppercase;
+							font-family: "Ubuntu-Bold";
+							font-size: 22px;
+							line-height: 26px;
+							color: #ffffff;
+						}
+						.p_practice_menu_vcard h6{
+							text-transform: uppercase;
+							font-family: "Ubuntu-Medium";
+							font-size: 16px;
+							line-height: 24px;
+							color: #ffffff;
+							margin-bottom: 20px;						
+						}											
+						.p_practice_menu_vcard p{
+							font-family: "Ubuntu-Light";
+							font-size: 16px;
+							line-height: 18px;
+							color: #ffffff;
+							opacity: 1;
+							transition: all 300ms ease;
+							-moz-transition:all 300ms ease;
+							-webkit-transition:all 300ms ease;								
+						}		
+						.p_practice_menu_item:hover 	.p_practice_menu_vcard p {
+							/*opacity: 1;*/
+							/*line-height: 18px;*/
+							transition: all 300ms ease;
+							-moz-transition:all 300ms ease;
+							-webkit-transition:all 300ms ease;
+						}																																				
+	.footer .p_practice_slider {
+		display: none;
+	}
+	.p_practice_slider {
+		text-align: left;
+		color: #181815;
+
+	}
+	.p_practice_slider_cont {
+		min-height: 0px;
+		height: 0px;
+		width: 1560px;
+		margin-top: -6px;
+		margin-left: -200px;
+		margin-bottom: 30px;
+		overflow: hidden;
+		display: inline-block;
+		transition: all 400ms ease;
+		-moz-transition:all 400ms ease;
+		-webkit-transition:all 400ms ease;
+	}	
+		.p_practice_slide {
+			position: relative;
+			transition: all 400ms ease;
+			-moz-transition:all 400ms ease;
+			-webkit-transition:all 400ms ease;			
+			width: 1560px;
+		}
+	.pract_info_show {
+		min-height: 600px;
+		height: initial;
+		visibility: visible;
+		transition: all 400ms ease;
+		-moz-transition:all 400ms ease;
+		-webkit-transition:all 400ms ease;
+	}					
+			.p_practice_menu_info_triangle {
+				position: absolute;
+				height: 31px;
+				width: 100%;
+				overflow: hidden;
+			}
+				.p_practice_menu_info_triangle_im {
+					position: absolute;
+					transition: all 300ms ease;
+					-moz-transition:all 400ms ease;
+					-webkit-transition:all 400ms ease;					
+					left: -579px;
+					height: 31px;
+					z-index: 10;
+					width: 2510px;
+					background-image: url('../i/services-info-triangle.png');
+					background-position: 50% 50%;
+					background-size: auto;
+					background-repeat: no-repeat;
+				}
+				.p_practice_menu .item_0 {
+					margin-left: -305px;
+				}
+				.p_practice_menu .item_1 {
+					margin-left: 95px;
+				}
+				.p_practice_menu .item_2 {
+					margin-left: 485px;
+				}				
+			.p_practice_slide_top {
+				position: relative;
+			}
+
+				.p_practice_slide_img {
+					background-repeat: no-repeat;
+					width: 100%;
+					height: 596px;
+					position: absolute;
+				}
+				.p_practice_slide_top .b-block {
+				height: 596px;
+				/* padding-top: 100px; */
+				}
+					.p_practice_slide_text {
+						padding-top: 111px;
+						width: 665px;
+					}
+						.p_practice_slide_text h4 {
+							line-height: 24px;
+							color: #ffffff;
+							font-size: 36px;
+							font-family: "Ubuntu-bold";
+							margin-bottom: 24px;
+						}
+						.p_practice_slide_text h5 {
+							font-family: "Ubuntu-medium";
+							font-size: 20px;
+							line-height: 20px;
+							text-transform: uppercase;
+							color: #7a7a7a;
+							margin-bottom: 31px;
+						}
+						.p_practice_slide_text p {
+							font-family: "Ubuntu-Light";
+							color: #ffffff;
+							margin-bottom: 50px;
+							font-size: 16px;
+							display: block;
+							width: 586px;
+						}
+						.p_practice_slide_text a {
+							font-family: "Ubuntu-medium";
+							font-size: 12px;
+						}
+						.p_practice_slide_btn {
+							padding-right: 25px;
+						}
+					.p_practice_slide_close_btn {
+						top: 54px;
+						right: 12px;
+						height: 29px;
+						width: 29px;
+					}
+					.p_practice_slide_close_btn:after {
+						font-size: 20px;
+						line-height: 30px;
+					}					
+			.p_practice_slide_bott {
+				padding: 54px 0 34px;
+				background-color: #f3f3f3;
+			}
+				.p_practice_slide_bott h6 {
+					font-family: "Ubuntu-Medium";
+					font-size: 18px;
+					margin-bottom: 22px;
+				}
+				.p_practice_slide_bott ul {
+					margin-bottom: 20px;
+				} 
+					.p_practice_slide_bott li {
+						list-style-type: disc;
+						list-style-position: inside;
+						font-family: "Ubuntu-Light";
+						font-size: 16px;
+						line-height: 30px;
+					}
+				.p_practice_menu .slick-dots {
+					display: none !important;
+				}							
+/*practice page*/

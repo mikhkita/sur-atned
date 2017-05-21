@@ -7,5 +7,8 @@ $('.services-image').addClass('hide').removeClass('show');
 $('.services-images [data-id ='+dataVal+']').addClass('show').removeClass('hide');
 $('.services-text-container').addClass('hide').removeClass('show');
 $('.services-texts [data-id ='+dataVal+']').addClass('show').removeClass('hide');
-  // alert('Вы нажали на элемент "foo"' + dataVal);
+
 });
+if ($(window).width()<768) {
+	$('.services-menu ul li button').removeClass('active');
+}

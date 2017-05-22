@@ -307,6 +307,11 @@ button {
 	opacity: 1 !important;
 	transition: opacity 0.25s ease;
 }
+.mobile {
+	display: none;
+}
+.notmobile {
+}
 .b-orange-butt{
 
 }
@@ -643,7 +648,7 @@ button {
 					color: #ffffff;
 					text-align: center;
 					/*margin: 0 auto;*/
-					min-width: 110px;
+					min-width: 66px;
 					width: 217px;
 					max-width: 217px;
 					padding: 27px 0px 0px;
@@ -918,6 +923,8 @@ button {
 			background-position: 50% 50%;
 			background-size: cover;
 			background-repeat: no-repeat; 
+			color: #181818;
+			text-align: left;
 		}
 			.b-block {
 

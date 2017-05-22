@@ -79,7 +79,6 @@ input.error,textarea.error{
 }
 .b-wide-block{
 	position: relative;
-	max-width: 1240px;
 	width: 100%;
 	min-width: 960px;
 	margin: 0px auto;

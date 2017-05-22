@@ -3085,9 +3085,27 @@ div.cs-skin-slide::before {
 	width: 458px !important;
 }
 .ui-icon {
-	background-image: none !important;
+	background: none !important;
 }
-
+.ui-datepicker-prev:before {
+	position: absolute;
+	content: '\e907';
+	font-family: 'icomoon';
+	font-size: 14px;
+	color: #74bc40;
+	top: 2px;
+	left: 10px;
+	transform: rotate(180deg);
+}
+.ui-datepicker-next:before {
+	position: absolute;
+	content: '\e907';
+	font-family: 'icomoon';
+	font-size: 14px;
+	color: #74bc40;
+	top: 2px;
+	right: 10px;
+}
 .icon-icon-zoom:before {
   content: "\e913";
 }

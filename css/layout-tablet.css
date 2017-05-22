@@ -1683,8 +1683,55 @@ button {
 .b-1{
 	
 }
-
-
+.b-popup .left {
+	width: 585px;
+}
+.b-popup .right {
+	width: 375px;
+}
+#tel-2 {
+	width: 233px;
+}
+.name {
+	margin-right: 20px;
+}
+.left textarea {
+	width: 555px;
+}
+.right label,
+.right input {
+	margin-left: 0px;
+}
+div.cs-skin-slide {
+	width: 375px;
+}
+div.cs-skin-slide::before {
+	width: 375px;
+}
+div.cs-select {
+	margin-left: 0px;
+}
+.right input {
+	width: 375px;
+}
+.time-section {
+	width: 210px;
+}
+.right .time {
+	width: 165px;
+}
+.time::before {
+	width: 165px !important;
+}
+.b-popup button {
+	width: 165px;
+}
+.ui-datepicker {
+	width: 368px !important;
+}
+#b-popup-3 .left {
+	width: 620px;
+}
 @media (-webkit-min-device-pixel-ratio: 1.5) {
 	.b-icon:before{
 	}

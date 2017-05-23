@@ -54,62 +54,54 @@
 		<li class="v" style="margin-left:580px"></li>
 		<li class="v" ></li>
 	</ul> -->
-	<div class="mobile-menu mobile" id="menu" >
-			<div class="main-menu left">
-				<div class="b-block clearfix">
-					<div class="mobile-menu-button left"><span>Меню</span></div>
-					<ul class="mobile-menu-ul">
-						<li>
-							<a href="#">О нас</a>
-							<ul class="header_dropdown_menu">
-								<li><a href="#">Clinics</a></li>
-								<li><a href="#">Projects Projects Projects</a></li>
-								<li><a href="#">Plans</a></li>								
-							</ul>
-						</li>
-						<li>
-							<a href="services.html">Услуги</a>
-							<ul class="header_dropdown_menu">
-								<li>
-									<a href="#">Услуги</a>
-								</li>
-								<li>
-									<a href="#">Акции</a>
-								</li>
-								<li>
-									<a href="#">FAQ</a>
-								</li>
-								<li>
-									<a href="#">Прайс-лист</a>
-								</li>
-								<li>
-									<a href="#">Контакты</a>
-								</li>
-								<li>
-									<a href="#">Врачи</a>
-								</li>								
-							</ul>							
-						</li>
-						<li>
-							<a href="#">Акции</a>
-						</li>
-						<li>
-							<a href="#">FAQ</a>
-						</li>
-						<li>
-							<a href="#">Прайс-лист</a>
-						</li>
-						<li>
-							<a href="#">Контакты</a>
-						</li>
-						<li>
-							<a href="doctors.html">Врачи</a>
-						</li>
+	<nav class="mobile-menu mobile" id="menu" >
+		<div class="b-block clearfix">
+			<ul class="filials left">
+				<li class="filial-addr left">
+					<a href="#">ул. Говорова, 34</a>
+					<p>+7 (3822) 62-22-92</p>									
+				</li>
+				<li class="filial-addr left">
+					<a href="#">ул. Иркутский тракт, 134</a>
+					<p>+7 (3822) 64-81-00</p>									
+				</li>					
+				<li class="filial-addr left">
+					<a href="#">ул. Первомайская, 97</a>
+					<p>+7 (3822) 20-76-76</p>									
+				</li>							
+			</ul>	
+			<h2>Меню</h2>					
+			<ul class="mobile-menu-ul">
+				<li>
+					<a href="#">О нас</a>
+					<ul class="header_dropdown_menu">
+						<li><a href="#">Clinics</a></li>
+						<li><a href="#">Projects Projects </a></li>
+						<li><a href="#">Plans</a></li>								
 					</ul>
-				</div>					
-			</div>	
-	</div>
-
+				</li>
+				<li>
+					<a href="services.html">Услуги</a>						
+				</li>
+				<li>
+					<a href="#">Акции</a>
+				</li>
+				<li>
+					<a href="#">FAQ</a>
+				</li>
+				<li>
+					<a href="#">Прайс-лист</a>
+				</li>
+				<li>
+					<a href="#">Контакты</a>
+				</li>
+				<li>
+					<a href="doctors.html">Врачи</a>
+				</li>
+			</ul>
+		</div>					
+	</nav>
+	<div id="panel" class="panel">
 	<div class="background-block"></div>
 	<div class="background-layer">
 		<div class="b-wide-block">
@@ -162,7 +154,7 @@
 			</div>
 			<div class="main-menu left">
 				<div class="b-block clearfix">
-					<div class="mobile-menu-button left" id="menu"><span>Меню</span></div>
+					<div class="mobile-menu-button toggle-button left" ><span>Меню</span></div>
 					<ul>
 						<li>
 							<a href="#">О нас</a>
@@ -749,7 +741,7 @@
 			<p>Имеются противопоказания.<br>Необходима консультация специалиста.</p>
 		</div>
 	</div>
-
+	</div>
 
 
 
@@ -765,19 +757,8 @@
 	<!-- <script type="text/javascript" src="js/mobile-menu.js"></script> -->
 	<script type="application/javascript" src="js/fastclick.js"></script>
 	<script type="application/javascript" src="js/slideout.js"></script>
-    <script>
-      var slideout = new Slideout({
-        'panel': document.getElementById('panel'),
-        'menu': document.getElementById('menu'),
-        'padding': 256,
-        'tolerance': 70
-      });
 
-      // Toggle button
-      document.querySelector('.mobile-menu-button').addEventListener('click', function() {
-        slideout.toggle();
-      });
-    </script>	
+
 
 
 

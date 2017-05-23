@@ -57,6 +57,10 @@ h1,h2,h3,h4,h5,h6{
 		opacity: 0.8;
 		z-index: 9999;
 	}
+.background-block {
+	background-image: none;
+	background-color: #ffffff;
+}	
 .fancybox-inner{
 	overflow: visible !important;
 }
@@ -229,7 +233,7 @@ h1,h2,h3,h4,h5,h6{
 						display: block;
 					}
 				.filials {
-				margin-top: 3px;
+				margin-top: 0px;
 				transition: opacity 0.25s ease;
 				}
 					.filial-addr {
@@ -246,15 +250,18 @@ h1,h2,h3,h4,h5,h6{
 					} 
 						.filial-addr a {
 							color: #ffffff;
-							font-size: 13px;
-							text-decoration: underline; */
+							font-size: 16px;
+							text-decoration: none; */
+							font-family:;
+							font-family: "Ubuntu-Medium";
 						}
 						.filial-addr a:hover {
 							text-decoration: none;
 						}
 						.filial-addr p {
-							font-size: 14px;
+							font-size: 16px;
 							line-height: 32px;
+							color: #ffffff;
 						}
 					.vertical-line {
 						background-position: 0 0;
@@ -417,23 +424,16 @@ h1,h2,h3,h4,h5,h6{
 					color: #74bc50;
 				}											
 			.mobile-menu {
-				display: initial;
-				width: 57%;
-				opacity: 0;
-				visibility: hidden;
-				max-width: 200px;
-				height: 100%;
-				position: fixed;
-				top: 0px;
-				left: -57%;
-				z-index: 200;
 				background-color: rgba(116,188,64,1);
 				box-sizing: border-box;
-				padding: 10px 0 0 20px;
-				float: left;
-				transition: all 200ms ease;
-				-moz-transition:all 200ms ease;
-				-webkit-transition:all 200ms ease;
+				padding-left: 10px;
+			}
+			.mobile-menu h2 {
+				font-family: "Ubuntu-Bold";
+				font-size: 36px;
+				line-height: 40px;
+				margin: 20px 0 20px 10px;
+				text-align: left;
 			}
 			.visible {
 				opacity: 1;
@@ -445,10 +445,12 @@ h1,h2,h3,h4,h5,h6{
 			}
 			.mobile-menu .filials {
 				position: relative;
+				text-align: right;
+				width: 92%;
 			}
 			.mobile-menu-ul {
 				position: relative;
-				margin-bottom: 0;
+				margin-bottom: 30px;
 				width: 98%;
 			}
 			.mobile-menu-ul li {
@@ -460,11 +462,11 @@ h1,h2,h3,h4,h5,h6{
 				display: block;
 				float: initial !important;
 				cursor: pointer;
+				text-align: right;
 			}
 			.filials li:hover a {
 				text-decoration: none;
 			}
-
 				.mobile-menu-ul li>a {
 					font-size: 16px;
 					font-family: Ubuntu;
@@ -477,29 +479,14 @@ h1,h2,h3,h4,h5,h6{
 					height: auto;
 					width: 100%;
 					color: #ffffff;
-					background-color: rgba(255,255,255,0.1);
-				}
-				.mobile-menu-ul .mmarrow:after {
-					content: "\e907";
-					font-family: 'icomoon' !important;
-					speak: none;
-					font-style: normal;
-					font-weight: normal;
-					font-variant: normal;
-					text-transform: none;
-					line-height: 1;
-					font-size: 11px;
-					color: #ffffff;
-					display: inline-block;
-					top: 17px;
-					right: 15px;
-					position: absolute;
+					border-bottom: 1px solid rgba(255,255,255,0.3);
 				}
 				.header_dropdown_menu {
-					position: absolute;
+					position: initial;
 					background-color: #74bc40;
-					visibility: hidden;
-					opacity: 0;
+					visibility: visible;
+					margin-top: 3px;
+					opacity: 1;
 					top: 0;
 					left: 100%;
 					z-index: 99;
@@ -518,20 +505,7 @@ h1,h2,h3,h4,h5,h6{
 					padding: 27px 25px 0;
 					white-space: nowrap;
 				}
-				.header_dropdown_menu li:hover a {
-					width: 100%;
-					background-color: rgba(255,255,255,0.1);
-				}						
-				.mobile-menu li:hover>.header_dropdown_menu {
-					opacity: 1;
-					visibility: visible;
-					left: 91%;
-					box-shadow: 0px 6px 25px rgba(0,0,0,0.3);
-					transition: all 200ms ease;
-					-moz-transition:all 200ms ease;
-					-webkit-transition:all 200ms ease;
-				}
-				.mobile-menu-ul li:hover>a {
+				.mobile-menu-ul>li a:hover {
 					background-color: #68ae36;
 				}
 			.zapis-na-priem	{
@@ -545,6 +519,7 @@ h1,h2,h3,h4,h5,h6{
 					width: auto;
 					padding: 23px 15px 0px;
 					text-transform: none;
+					height: 54px;
 				}
 				.b-block .zapis-na-priem a:hover {
 				}
@@ -1462,9 +1437,9 @@ body {
   position: fixed;
   top: 0;
   bottom: 0;
-  width: 256px;
+  width: 270px;
   min-height: 100vh;
-  overflow-y: scroll;
+  overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   z-index: 0;
   display: none;
@@ -1494,5 +1469,20 @@ body {
 
 .slideout-open .slideout-menu {
   display: block;
+}
+.panel:before {
+  content: '';
+  display: block;
+  background-color: rgba(0,0,0,0);
+  transition: background-color 0.5s ease-in-out;
+}
+
+.panel-open:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 99;
 }
 /*slideout-menu*/

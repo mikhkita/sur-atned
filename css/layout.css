@@ -2165,27 +2165,32 @@ button {
 					width: 368px;
 					margin: 0 12px;
 				}
-					.p_about_b_clinics_galary_windows a{
+					.p_about_b_clinics_galary_windows a	{
+						display: block;
+						height: 100%;
+						width: auto;
+					}			
+					.p_about_b_clinics_galary_windows  img{
 						display: block;
 						position: absolute;
-						background-size: 370px 370px;
-						background-position: 50% 50%;
-						background-repeat: no-repeat;
-						height: 393px;
-						width: 393px;
-						margin: -12px -12px;
+						height: 368px;
+						width: 368px;
+						margin: 0;
 						transition: all 200ms ease;
 						-moz-transition:all 200ms ease;
 						-webkit-transition:all 200ms ease;
 					}
-					.p_about_b_clinics_galary_windows a:hover{
-						background-size: 393px 393px;
+					.p_about_b_clinics_galary_windows:hover  img{
+						width: 393px;
+						height: 393px;
+						margin: -12px -12px;
 						transition: all 200ms ease;
 						-moz-transition:all 200ms ease;
 						-webkit-transition:all 200ms ease;
 					}	
 					.p_about_b_clinics_galary_windows a:after {
 						position: absolute;
+						visibility: hidden;
 						font-family: "icomoon";
 						font-size: 40px;
 						content: "\e913";
@@ -2197,7 +2202,8 @@ button {
 						-moz-transition:all 200ms ease;
 						-webkit-transition:all 200ms ease;						
 					}
-					.p_about_b_clinics_galary_windows a:hover:after {
+					.p_about_b_clinics_galary_windows a:hover:after  {
+						visibility: visible;
 						font-size: 60px;
 						opacity: 1;
 						transition: all 200ms ease;

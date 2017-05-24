@@ -813,46 +813,6 @@ h1,h2,h3,h4,h5,h6{
 						background-repeat: no-repeat;
 						opacity: 0;
 					}
-					.img_diagnostika {
-						background-image: url('../i/services-slide-01.png');
-						background-position: 100% 0%;
-						background-size: auto auto;						
-					}
-					.img_terapevt-stom {
-						background-image: url('../i/services-slide-02.png');
-						background-position: 100% 0%;
-						background-size: auto auto;						
-					}
-					.img_implantation {
-						background-image: url('../i/services-slide-01.png');
-						background-position: 100% 0%;
-						background-size: auto auto;						
-					}
-					.img_ortodontiya {
-						background-image: url('../i/services-slide-02.png');
-						background-position: 100% 0%;
-						background-size: auto auto;						
-					}
-					.img_estetic-stom {
-						background-image: url('../i/services-slide-01.png');
-						background-position: 100% 0%;
-						background-size: auto auto;						
-					}
-					.img_hirurgiya {
-						background-image: url('../i/services-slide-02.png');
-						background-position: 100% 0%;
-						background-size: auto auto;						
-					}
-					.img_ortopedia {
-						background-image: url('../i/services-slide-01.png');
-						background-position: 100% 0%;
-						background-size: auto auto;						
-					}
-					.img_gigiena {
-						background-image: url('../i/services-slide-02.png');
-						background-position: 100% 0%;
-						background-size: auto auto;						
-					}
 	.reviews {
 
 	}
@@ -1336,7 +1296,7 @@ h1,h2,h3,h4,h5,h6{
 								height: 0px;
 								content: '';
 					        }	
-								.p_about_b_about_stats_menu .active {
+								.p_about_b_about_stats_menu_item .active {
 									height: 28px;
 									border-bottom: 3px solid #74bc40;									
 								}					        				
@@ -1500,7 +1460,7 @@ body {
 
 				}
 					.p_about_b_about_text {
-						width: 390px;
+						width: 100%;
 						padding: 12px 0 0px 0;
 					}				
 						.p_about .main-content_top_h1 {
@@ -1517,7 +1477,7 @@ body {
 							}
 					.p_about_b_about_stats {
 						height: auto;
-						width: 665px;
+						width: 100%;
 						padding: 65px 0px;
 						color: #252525;
 					}
@@ -1612,7 +1572,7 @@ body {
 				}
 					.p_about_b_advantages_pluses_item {
 						display: inline-block;
-						width: 364px;
+						width: 100%;
 						margin-right: 0px;
 						padding: 13px 0 27px 0;
 						float: left;

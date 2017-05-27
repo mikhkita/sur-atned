@@ -39,8 +39,9 @@ $(document).ready(function(){
         prevText: "",
         nextText: ""
     });
-    $('#tel-2').mask("+7(999)999-99-99");
-    $('#tel-3').mask("+7(999)999-99-99");	
+    customHandlers["myFunc"] = function($form){
+        
+    }
     $(function() {
           [].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {   
              new SelectFx(el);
@@ -189,13 +190,12 @@ $(document).ready(function(){
             var pos    = $btn[0].getBoundingClientRect();
 
             $clone.css({
-                top       : pos.top  + $btn.outerHeight() * 0.5 - ( $btn.outerHeight() * scale * 0.5 ),
-                left      : pos.left + $btn.outerWidth()  * 0.5 - ( $btn.outerWidth()  * scale * 0.5 ),
-                width     : $btn.outerWidth()  * scale,
-                height    : $btn.outerHeight() * scale,
+                top       : pos.top  + $btn.outerHeight() * 0.5 - ( ($btn.outerHeight() * scale + 400) * 0.5 ),
+                left      : pos.left + $btn.outerWidth()  * 0.5 - ( ($btn.outerHeight() * scale + 400) * 0.5 ),
+                width     : $btn.outerWidth()  * scale + 400,
+                height    : $btn.outerHeight() * scale + 400,
                 transform : 'scale(' + 1 / scale + ')'
             });
-
             $clone.one("transitionend.fm webkitTransitionEnd.fm oTransitionEnd.fm MSTransitionEnd.fm", function(e) {
                 $(this).off(".fm");
 
@@ -726,4 +726,7 @@ $(document).ready(function(){
     //---fastclick
 });
 
+$(window).resize(function(){
+    $('.b-popup').width( $(window).width() - 17 );
+})
 

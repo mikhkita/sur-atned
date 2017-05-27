@@ -649,7 +649,7 @@ button {
 					color: #ffffff;
 					text-align: center;
 					/*margin: 0 auto;*/
-					min-width: 66px;
+					min-width: 54px;
 					width: 217px;
 					max-width: 217px;
 					padding: 27px 0px 0px;
@@ -2622,6 +2622,7 @@ button {
 	background: none;
 	border: none;
 	border-bottom: 2px solid #ffffff;
+	border-radius: none;
 	width: 297px;
 	padding-top: 19px;
 	padding-bottom: 9px;
@@ -2662,6 +2663,7 @@ button {
 	color: rgb(56,56,56);
 	margin-left: 30px;
 	border: none;
+	border-radius: none;
 	box-sizing: border-box;
 	padding-left: 35px;
 	margin-top: 20px;
@@ -3118,6 +3120,17 @@ div.cs-skin-slide::before {
 	color: #74bc40;
 	top: 2px;
 	right: 10px;
+}
+.b-popup {
+	animation: view 0.3s ease-in-out forwards;
+}
+@keyframes view {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 .icon-icon-zoom:before {
   content: "\e913";

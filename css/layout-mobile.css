@@ -23,9 +23,13 @@ a{
 	text-decoration: none;
 	color: #74bc40;
 }
-p, ul, table {
+p, ul {
 	font-family: "Ubuntu-Light";
 	display: block;
+	position: relative;
+}
+table {
+	font-family: "Ubuntu-Light";
 	position: relative;
 }
 li{
@@ -1164,10 +1168,10 @@ h1,h2,h3,h4,h5,h6{
 			text-transform: uppercase;
 			}
 .name, .phone {
-	margin-left: 10%;
+	margin-left: 5%;
 	display: block;
-	width: 80%;
-	margin-bottom: 20px;
+	width: 90%;
+	margin-bottom: 29px;
 }
 .left input{
 	width: 100%;
@@ -1185,47 +1189,57 @@ h1,h2,h3,h4,h5,h6{
 	width: auto;
 }
 div.cs-skin-slide {
-	width: 80%;
+	width: 90%;
 }
 div.cs-select {
 	margin: 0 auto;
 	margin-top: 19px;
 	margin-bottom: 29px;
-	margin-left: 10%;
+	margin-left: 5%;
 }
 div.cs-skin-slide::before {
 	width: 100%;
 }
 .date-inp {
-	width: 80%;
-	margin-left: 10%;
+	width: 90%;
+	margin-left: 5%;
 }
 .right input {
 	margin-left: 0px;
 	width: 100%;
 }
 .right label {
-	margin-left: 10%;
+	margin-left: 5%;
 }
 .b-popup button {
 	float: none;
-	margin-left: 10%;
-	width: 80%;
+	margin-left: 5%;
+	width: 90%;
 	margin-top: 0px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
+	font-size: 18px;
+	height: 74px;
+}
+.b-popup h3 {
+	font-size: 29px;
+	line-height: 29px;
+	margin-bottom: 29px;
+	margin-left: 5%;
+	margin-top: 29px;
 }
 .time-section {
 	float: none;
 	width: 100%;
 }
 .right .time {
-	width: 80%;
+	width: 90%;
 }
 .time::before {
 	width: 100% !important;
 }
 .b-popup {
 	width: 100%;
+	font-size: 16px;
 }
 .time.cs-active::before {
 	transform: scale3d(1.2,3,1.1);
@@ -1234,13 +1248,75 @@ div.cs-skin-slide::before {
 	transform: scale3d(1.1,2.7,1.1);
 }
 .ui-datepicker {
-	width: auto !important;
+	width: 87% !important;
+	box-sizing: border-box;
 }
 #b-popup-3 button {
 	margin-top: 0px;
 }
 .callback .morphing-btn-wrap {
-	min-width: 52px;
+	width: 52px !important;
+	overflow: hidden;
+}
+.b-block .zapis-na-priem .morphing-btn_circle {
+	width: 54px !important;
+}
+.cs-skin-slide > span {
+	height: 1.7em;
+}
+.cs-select > span::after, .cs-select .cs-selected span::after {
+	font-size: 18px;
+}
+.cs-skin-slide .cs-options li span {
+	padding: 0.8em 1em 0.8em 1em;
+	font-size: 16px;
+}
+div.cs-skin-slide {
+	font-size: 16px;
+}
+.date-inp .date-icon {
+	font-size: 18px;
+	top: 2em;
+}
+.left input {
+	font-size: 16px;
+}
+.right input {
+	height: 77px;
+	font-size: 16px;
+	padding-left: 25px;
+	margin-top: 10px;
+}
+.time .cs-options li:first-child span {
+	padding: 1em 22px !important;
+}
+.cs-select > span {
+	padding: 25px;
+}
+.date-icon::after {
+	font-size: 18px;
+}
+.time .cs-options {
+	width: 111%;
+	max-width: 250px;
+}
+div.cs-skin-slide::before {
+	height: 77px;
+}
+.morphing-close {
+	top: 23px;
+	right: 17px;
+}
+div.cs-select {
+	margin-top: 10px;
+}
+.b-popup {
+	animation: none;
+}
+.b-popup input.error {
+	border: none !important;
+	border-bottom: 1px solid #F00 !important;
+	box-shadow: none !important;
 }
 /*slideout-menu*/
 body {

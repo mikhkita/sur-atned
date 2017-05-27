@@ -7,7 +7,7 @@ body {
 	text-align: center;
 	font-family: 'Ubuntu';
 	font-size: 16px;
-	line-height: 24px;
+	line-height: 28px;
 	overflow-x: hidden;
 	-webkit-text-size-adjust: none;
 	color: #ffffff;
@@ -600,6 +600,7 @@ h1,h2,h3,h4,h5,h6{
 						font-size: 18px;
 						margin-left: 5%;
 						margin-top: 0;
+						margin-bottom: 10px;
 					}
 					.about-text-slide {
 						/* width: auto; */
@@ -1148,14 +1149,12 @@ h1,h2,h3,h4,h5,h6{
 				position: absolute;
 				right: 0;
 				bottom: 30px;
-				background-position: 50% 50%;
-				background-image: url("../i/copyright-Redder.png");
-				background-size: cover;
-				height: 16px;
-				width: 93px;
 				display: block;
 			}
 				.footer-copyright a {
+					background-image: url("../i/logo-redder-mobile.png");
+					background-position: 50% 50%;
+					background-size: 93px;
 					display: block;
 					height: 16px;
 					width: 93px;

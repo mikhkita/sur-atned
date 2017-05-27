@@ -1082,7 +1082,7 @@ button {
 								font-size: 16px;
 								line-height: 40px;
 							}
-			.footer-copyright {
+			/*.footer-copyright {
 				position: absolute;
 				right: 0;
 				bottom: 40px;
@@ -1095,7 +1095,7 @@ button {
 					display: block;
 					height: 16px;
 					width: 93px;					
-				}
+				}*/
 		.footer-sub {
 
 		}

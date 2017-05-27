@@ -338,14 +338,16 @@ h1,h2,h3,h4,h5,h6{
 				width: auto;
 				cursor: pointer;
 				box-sizing: border-box;
-				padding: 20px 0 16px;
+				padding: 20px 0 14px;
 				text-align: left;
 			}		
 				.mobile-menu-button span {
 					font-family: "Ubuntu";
 					font-size: 16px;
+					margin-top: 3px;
 					text-transform: none;
 					color: #74bc40;
+					line-height: 16px;
 					display: inline-block;
 					position: absolute;
 				}

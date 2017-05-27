@@ -738,7 +738,7 @@ h1,h2,h3,h4,h5,h6{
 			padding: 30px 0 40px;
 		}
 			.reviews .b-wide-block .b-block {
-				width: 95%;
+				width: 90%;
 				/*overflow: hidden;*/
 			}
 				.reviews-header {
@@ -1526,18 +1526,27 @@ body {
 			}
 				.p_doctors_menu_item {
 					display: inherit;
+					width: 100%;
+					height: auto;
 					max-height: 365px;
 					max-width: 365px;
 					margin: 0 auto 30px;
 					float: none;
 					position: relative;
-				}	
+				}
+					.p_doctors_menu_item img {
+						width: 100%;
+						height: auto;
+						display: inherit;
+					}	
 					.p_doctors_menu_vcard {
 						width: 100%;
-						padding: 24px 30px 26px 30px;
-						top: 271px;
+						padding: 15px 15px 15px 15px;
+						top: initial;
 						box-sizing: border-box;
 						position: absolute;
+						bottom: 0px;
+						background-color: rgba(116,188,64,0.8);
 					}
 					.p_doctors_menu_item:hover 	.p_doctors_menu_vcard {
 						
@@ -1551,7 +1560,7 @@ body {
 							text-transform: uppercase;
 							font-size: 16px;
 							line-height: 24px;
-							margin-bottom: 20px;						
+							margin-bottom: 6px;
 						}											
 						.p_doctors_menu_vcard p{
 							font-size: 16px;
@@ -1579,7 +1588,8 @@ body {
 	}	
 		.p_doctors_slide {
 			position: relative;
-			width: 1560px;
+			width: 95%;
+			padding: 0;
 		}
 	.doct_info_show {
 		min-height: 600px;
@@ -1590,6 +1600,7 @@ body {
 				position: absolute;
 				height: 31px;
 				width: 100%;
+				display: none;
 			}
 				.p_doctors_menu_info_triangle_im {
 					position: absolute;
@@ -1603,36 +1614,45 @@ body {
 			}
 				.p_doctors_slide_img {
 					width: 100%;
-					height: 596px;
-					position: absolute;
+					height: auto;
+					position: relative;
 				}
+					.p_doctors_slide_img img {
+						width: 100%;
+					}
 				.p_doctors_slide_top .b-block {
-				height: 596px;
+				height: auto;
+				width: 95%;
 				/* padding-top: 100px; */
 				}
 					.p_doctors_slide_text {
-						padding-top: 111px;
-						width: 665px;
+						padding-top: 30px;
+						width: 100%;
 					}
 						.p_doctors_slide_text h4 {
-							line-height: 24px;
+							line-height: 36px;
 							font-size: 36px;
 							margin-bottom: 24px;
+							color: #171717;
 						}
 						.p_doctors_slide_text h5 {
 							font-size: 20px;
 							line-height: 20px;
 							text-transform: uppercase;
 							margin-bottom: 31px;
+							color: #171717;
 						}
 						.p_doctors_slide_text p {
-							margin-bottom: 50px;
+							margin-bottom: 30px;
 							font-size: 16px;
 							display: block;
-							width: 586px;
+							width: 100%;
+							color: #171717;
 						}
 						.p_doctors_slide_text a {
 							font-size: 12px;
+							margin-bottom: 38px;
+							border: 1px solid #b9b9b9;
 						}
 						.p_doctors_slide_btn {
 							padding-right: 25px;
@@ -1642,13 +1662,16 @@ body {
 						right: 12px;
 						height: 29px;
 						width: 29px;
+						display: none;
 					}
 					.p_doctors_slide_close_btn:after {
 						font-size: 20px;
 						line-height: 30px;
 					}					
 			.p_doctors_slide_bott {
-				padding: 54px 0 34px;
+				box-sizing: border-box;
+				padding: 30px 5% 30px;
+				color: #000000;
 			}
 				.p_doctors_slide_bott h6 {
 					font-size: 18px;
@@ -1667,3 +1690,107 @@ body {
 					display: none !important;
 				}							
 /*doctors page*/
+/*practice page*/
+		.p_practice {
+			padding-bottom: 30px;
+			margin: 0 5%;
+		}
+			.p_practice_menu {
+				color: #181815;
+				margin: 0 auto;
+				width: 100%;
+			}
+				.p_practice_menu_item {
+					display: block;
+					height: 256px;
+					width: 365px;
+					cursor: pointer;
+					float: none;
+					margin: 0 auto 30px;
+					position: relative;
+				}
+				.p_practice_menu_item:nth-child(4n-1) {
+					margin-right: 0px;
+				}		
+					.p_practice_menu_vcard {
+						width: 100%;
+						padding: 24px 30px 26px 30px;
+						bottom: 0;
+						box-sizing: border-box;
+						position: absolute;
+					}									
+						.p_practice_menu_vcard h5{
+							line-height: 26px;
+							color: #ffffff;
+						}																																					
+	.footer .p_practice_slider {
+		display: none;
+	}
+	.p_practice_slider {
+		color: #181815;
+		padding: 0;
+		width: 90%;
+	}
+	.p_practice_slider_cont {
+		min-height: 0px;
+		height: 0px;
+		width: 1560px;
+		margin-top: -6px;
+		margin-left: -200px;
+		margin-bottom: 30px;
+		display: inline-block;
+	}	
+		.p_practice_slide {
+			position: relative;
+			width: initial;
+			padding: 0 5%;
+		}
+	.pract_info_show {
+		min-height: 600px;
+		height: initial;
+		visibility: visible;
+	}					
+			.p_practice_menu_info_triangle {
+				position: absolute;
+				height: 31px;
+				width: 100%;
+				display: none;
+			}
+				.p_practice_menu_info_triangle_im {
+					position: absolute;
+					left: -579px;
+					height: 31px;
+					z-index: 10;
+					width: 2510px;
+					display: none;
+				}
+				.p_practice_menu .item_0 {
+					margin-left: -305px;
+				}
+				.p_practice_menu .item_1 {
+					margin-left: 95px;
+				}
+				.p_practice_menu .item_2 {
+					margin-left: 485px;
+				}					
+			.p_practice_slide .b-block{
+				padding: 40px 0 30px;
+			}
+			.p_practice_slide .map-cont-close {
+			top: 65px;
+			right: 20px;
+			display: none;
+			}
+				.p_practice_slide_img {
+					width: 100%;
+				}
+				.p_practice_slide_details {
+					width: 100%;
+				}
+				.p_practice_slide_executor {
+					width: 100%;
+				}
+				.p_practice_menu .slick-dots {
+					display: none !important;
+				}							
+/*practice page*/

@@ -271,7 +271,6 @@ $(document).ready(function(){
         });
     });
 });
-/*$(window).resize(function(){
-    var pw = $('.b-popup').width();
-    $('.b-popup').width(pw);
-});*/
+$(window).resize(function(){
+    $('.b-popup').width( $(window).width() - 17 );
+})

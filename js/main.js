@@ -1034,6 +1034,6 @@ $(document).ready(function(){
     //---service page slider
 });
 
-$(window).resize(function(){
+/*$(window).resize(function(){
     $('.b-popup').width( $(window).width() - 17 );
-});
+});*/

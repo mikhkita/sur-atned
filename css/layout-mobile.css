@@ -1241,11 +1241,8 @@ div.cs-skin-slide::before {
 	width: 100%;
 	font-size: 16px;
 }
-.time.cs-active::before {
-	transform: scale3d(1.2,3,1.1);
-}
 .cs-skin-slide.cs-active::before {
-	transform: scale3d(1.1,2.7,1.1);
+	transform: scale3d(1.05,2.5,1.1);
 }
 .ui-datepicker {
 	width: 87% !important;
@@ -1288,7 +1285,7 @@ div.cs-skin-slide {
 	margin-top: 10px;
 }
 .time .cs-options li:first-child span {
-	padding: 1em 22px !important;
+	padding: 0.5em 22px !important;
 }
 .cs-select > span {
 	padding: 25px;

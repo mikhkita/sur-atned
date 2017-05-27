@@ -2839,7 +2839,7 @@ div.cs-skin-slide::before {
 	width: 330px;
 }
 .time .cs-options li span {
-	padding: 1em !important;
+	padding: 0.5em 1em !important;
 }
 .cs-skin-slide .cs-options li {
 	opacity: 0;
@@ -2918,7 +2918,7 @@ div.cs-skin-slide::before {
 	content: '';
 }
 .time .cs-options li:first-child span {
-	padding: 1em 29px !important;
+	padding: 0.5em 29px !important;
 }
 .right label {
 	margin-left: 29px;

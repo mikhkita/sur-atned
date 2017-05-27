@@ -271,3 +271,7 @@ $(document).ready(function(){
         });
     });
 });
+/*$(window).resize(function(){
+    var pw = $('.b-popup').width();
+    $('.b-popup').width(pw);
+});*/

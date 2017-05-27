@@ -71,7 +71,7 @@ body {
 	text-align: center;
 	font-family: 'Ubuntu';
 	font-size: 16px;
-	line-height: 28px;
+	line-height: 24px;
 	overflow-x: hidden;
 	-webkit-text-size-adjust: none;
 	color: #ffffff;
@@ -95,7 +95,6 @@ li{
 }
 h1,h2,h3,h4,h5,h6{
 	font-family: "Ubuntu-Bold";
-	font-weight: normal;
 }
 label.error{
 	display: none !important;
@@ -307,11 +306,6 @@ button {
 .show {
 	opacity: 1 !important;
 	transition: opacity 0.25s ease;
-}
-.mobile {
-	display: none;
-}
-.notmobile {
 }
 .b-orange-butt{
 
@@ -562,15 +556,9 @@ button {
 					.callback .icon-callback.onhover {
 						color: #f5f7f8;
 					}
-			.mobile-menu {
-				display: none;
-			}		
-			.mobile-menu-button {
-				display: none;
-			}		
 			.main-menu {
 				width: 100%;
-				min-height: 66px;
+				height: 66px;
 				border-top: 2px solid #e5e5e5;
 				border-bottom: 3px solid #74bc40;
 			}
@@ -641,7 +629,7 @@ button {
 							-webkit-transition:all 200ms ease;
 						}
 			.zapis-na-priem	{
-				width: auto;
+				width: 207px;
 			}
 				.b-block .zapis-na-priem a {
 					display: inline-block;
@@ -649,9 +637,7 @@ button {
 					color: #ffffff;
 					text-align: center;
 					/*margin: 0 auto;*/
-					min-width: 54px;
-					width: 217px;
-					max-width: 217px;
+					width: 207px;
 					padding: 27px 0px 0px;
 				}
 				.b-block .zapis-na-priem a:hover {
@@ -907,7 +893,7 @@ button {
 						.about-text-slide p {
 							font-family: "Ubuntu-Light";
 							font-size: 16px;
-							line-height: 28px;
+							line-height: 24px;
 							color: #171717;
 							margin-bottom: 36px;
 						}
@@ -924,8 +910,6 @@ button {
 			background-position: 50% 50%;
 			background-size: cover;
 			background-repeat: no-repeat; 
-			color: #181818;
-			text-align: left;
 		}
 			.b-block {
 
@@ -1102,7 +1086,6 @@ button {
 					.review-single {
 						background-color: #fafafa;
 						width: 519px;
-						height: auto;
 						margin-top: 18px;
 						margin-left: 80px;
 						margin-right: 0px; 
@@ -1498,17 +1481,15 @@ button {
 				right: 0;
 				bottom: 40px;
 				background-position: 50% 50%;
-				background-image: url("../i/logo-redder.png");
+				background-image: url("../i/copyright-redder.png");
 				background-size: cover;
-				background-size: 127px;
-				background-repeat: no-repeat;
-				height: 22px;
-				width: 127px;
+				height: 16px;
+				width: 93px;
 			}
 				.footer-copyright a {
 					display: block;
 					height: 16px;
-					width: 127px;
+					width: 93px;					
 				}
 		.footer-sub {
 		}
@@ -1518,9 +1499,9 @@ button {
 			line-height: 40px;
 			color: #dcdcdc;
 			letter-spacing: 10px;
-			padding: 30px 0;
+			margin-top: 29px;
+			padding-bottom: 32px;
 			text-transform: uppercase;
-			box-sizing: border-box;
 			}
 /*Адаптировал под таблеты*/
 
@@ -1728,7 +1709,7 @@ button {
 						font-family: "Ubuntu-Light";
 						color: #171717;
 						margin-bottom: 38px;
-						line-height: 28px;
+						line-height: 24px;
 					}
 					.p_services_menu_info_urls {
 						display: inline-block;
@@ -1775,7 +1756,7 @@ button {
 			}
 				.p_doctors_menu_item {
 					display: inline-block;
-					height: auto;
+					height: 365px;
 					width: 365px;
 					margin-right: 32px;
 					background-position: 50% 50%;
@@ -1786,11 +1767,6 @@ button {
 					float: left;
 					margin-bottom: 6px;
 					position: relative;
-				}
-				.p_doctors_menu_item img {
-					width: 100%;
-					height: auto;
-					display: inherit;
 				}
 				.p_doctors_menu_item:nth-child(4n-1) {
 					margin-right: 0px;
@@ -1823,7 +1799,7 @@ button {
 							text-transform: uppercase;
 							font-family: "Ubuntu-Medium";
 							font-size: 16px;
-							line-height: 28px;
+							line-height: 24px;
 							color: #ffffff;
 							margin-bottom: 20px;						
 						}											
@@ -2150,9 +2126,7 @@ button {
 							width: 120px;
 							margin-bottom: 22px;
 						}
-	.p_about_b_clinics {
-		padding: 30px 0 54px;
-	}
+	.p_about_b_clinics {padding: 30px 0 18px;}
 		.b-block {
 
 		}
@@ -2174,32 +2148,27 @@ button {
 					width: 368px;
 					margin: 0 12px;
 				}
-					.p_about_b_clinics_galary_windows a	{
-						display: block;
-						height: 100%;
-						width: auto;
-					}			
-					.p_about_b_clinics_galary_windows  img{
+					.p_about_b_clinics_galary_windows a{
 						display: block;
 						position: absolute;
-						height: 368px;
-						width: 368px;
-						margin: 0;
+						background-size: 370px 370px;
+						background-position: 50% 50%;
+						background-repeat: no-repeat;
+						height: 393px;
+						width: 393px;
+						margin: -12px -12px;
 						transition: all 200ms ease;
 						-moz-transition:all 200ms ease;
 						-webkit-transition:all 200ms ease;
 					}
-					.p_about_b_clinics_galary_windows:hover  img{
-						width: 393px;
-						height: 393px;
-						margin: -12px -12px;
+					.p_about_b_clinics_galary_windows a:hover{
+						background-size: 393px 393px;
 						transition: all 200ms ease;
 						-moz-transition:all 200ms ease;
 						-webkit-transition:all 200ms ease;
 					}	
 					.p_about_b_clinics_galary_windows a:after {
 						position: absolute;
-						visibility: hidden;
 						font-family: "icomoon";
 						font-size: 40px;
 						content: "\e913";
@@ -2211,8 +2180,7 @@ button {
 						-moz-transition:all 200ms ease;
 						-webkit-transition:all 200ms ease;						
 					}
-					.p_about_b_clinics_galary_windows a:hover:after  {
-						visibility: visible;
+					.p_about_b_clinics_galary_windows a:hover:after {
 						font-size: 60px;
 						opacity: 1;
 						transition: all 200ms ease;
@@ -2392,7 +2360,7 @@ button {
 	}
 	.b-text p {
 		font-size: 16px;
-		line-height: 28px;
+		line-height: 24px;
 		color: #171717;
 		margin-bottom: 44px;
 	}
@@ -2624,7 +2592,6 @@ button {
 	background: none;
 	border: none;
 	border-bottom: 2px solid #ffffff;
-	border-radius: none;
 	width: 297px;
 	padding-top: 19px;
 	padding-bottom: 9px;
@@ -2665,7 +2632,6 @@ button {
 	color: rgb(56,56,56);
 	margin-left: 30px;
 	border: none;
-	border-radius: none;
 	box-sizing: border-box;
 	padding-left: 35px;
 	margin-top: 20px;
@@ -3102,38 +3068,9 @@ div.cs-skin-slide::before {
 	width: 458px !important;
 }
 .ui-icon {
-	background: none !important;
+	background-image: none !important;
 }
-.ui-datepicker-prev:before {
-	position: absolute;
-	content: '\e907';
-	font-family: 'icomoon';
-	font-size: 14px;
-	color: #74bc40;
-	top: 2px;
-	left: 10px;
-	transform: rotate(180deg);
-}
-.ui-datepicker-next:before {
-	position: absolute;
-	content: '\e907';
-	font-family: 'icomoon';
-	font-size: 14px;
-	color: #74bc40;
-	top: 2px;
-	right: 10px;
-}
-.b-popup {
-	animation: view 0.3s ease-in-out forwards;
-}
-@keyframes view {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
+
 .icon-icon-zoom:before {
   content: "\e913";
 }
@@ -3199,9 +3136,6 @@ div.cs-skin-slide::before {
 @media (-webkit-min-device-pixel-ratio: 1.5) {
 	.b-icon:before{
 		background-image: url('../i/sprite@2x.png');
-	}
-	.footer-copyright {
-		background-image: url("../i/logo-redder@2x.png");
 	}
 }	
 @media screen and (max-width: 1250px){

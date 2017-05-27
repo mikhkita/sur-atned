@@ -1036,5 +1036,4 @@ $(document).ready(function(){
 
 $(window).resize(function(){
     $('.b-popup').width( $(window).width() - 17 );
-})
-
+});

@@ -307,6 +307,11 @@ button {
 	opacity: 1 !important;
 	transition: opacity 0.25s ease;
 }
+.mobile {
+	display: none;
+}
+.notmobile {
+}
 .b-orange-butt{
 
 }
@@ -556,9 +561,15 @@ button {
 					.callback .icon-callback.onhover {
 						color: #f5f7f8;
 					}
+			.mobile-menu {
+				display: none;
+			}		
+			.mobile-menu-button {
+				display: none;
+			}		
 			.main-menu {
 				width: 100%;
-				height: 66px;
+				min-height: 66px;
 				border-top: 2px solid #e5e5e5;
 				border-bottom: 3px solid #74bc40;
 			}
@@ -629,7 +640,7 @@ button {
 							-webkit-transition:all 200ms ease;
 						}
 			.zapis-na-priem	{
-				width: 207px;
+				width: auto;
 			}
 				.b-block .zapis-na-priem a {
 					display: inline-block;
@@ -637,7 +648,9 @@ button {
 					color: #ffffff;
 					text-align: center;
 					/*margin: 0 auto;*/
-					width: 207px;
+					min-width: 54px;
+					width: 217px;
+					max-width: 217px;
 					padding: 27px 0px 0px;
 				}
 				.b-block .zapis-na-priem a:hover {
@@ -910,6 +923,8 @@ button {
 			background-position: 50% 50%;
 			background-size: cover;
 			background-repeat: no-repeat; 
+			color: #181818;
+			text-align: left;
 		}
 			.b-block {
 
@@ -2126,7 +2141,9 @@ button {
 							width: 120px;
 							margin-bottom: 22px;
 						}
-	.p_about_b_clinics {padding: 30px 0 18px;}
+	.p_about_b_clinics {
+		padding: 30px 0 54px;
+	}
 		.b-block {
 
 		}
@@ -2148,27 +2165,32 @@ button {
 					width: 368px;
 					margin: 0 12px;
 				}
-					.p_about_b_clinics_galary_windows a{
+					.p_about_b_clinics_galary_windows a	{
+						display: block;
+						height: 100%;
+						width: auto;
+					}			
+					.p_about_b_clinics_galary_windows  img{
 						display: block;
 						position: absolute;
-						background-size: 370px 370px;
-						background-position: 50% 50%;
-						background-repeat: no-repeat;
-						height: 393px;
-						width: 393px;
-						margin: -12px -12px;
+						height: 368px;
+						width: 368px;
+						margin: 0;
 						transition: all 200ms ease;
 						-moz-transition:all 200ms ease;
 						-webkit-transition:all 200ms ease;
 					}
-					.p_about_b_clinics_galary_windows a:hover{
-						background-size: 393px 393px;
+					.p_about_b_clinics_galary_windows:hover  img{
+						width: 393px;
+						height: 393px;
+						margin: -12px -12px;
 						transition: all 200ms ease;
 						-moz-transition:all 200ms ease;
 						-webkit-transition:all 200ms ease;
 					}	
 					.p_about_b_clinics_galary_windows a:after {
 						position: absolute;
+						visibility: hidden;
 						font-family: "icomoon";
 						font-size: 40px;
 						content: "\e913";
@@ -2180,7 +2202,8 @@ button {
 						-moz-transition:all 200ms ease;
 						-webkit-transition:all 200ms ease;						
 					}
-					.p_about_b_clinics_galary_windows a:hover:after {
+					.p_about_b_clinics_galary_windows a:hover:after  {
+						visibility: visible;
 						font-size: 60px;
 						opacity: 1;
 						transition: all 200ms ease;
@@ -2592,6 +2615,7 @@ button {
 	background: none;
 	border: none;
 	border-bottom: 2px solid #ffffff;
+	border-radius: none;
 	width: 297px;
 	padding-top: 19px;
 	padding-bottom: 9px;
@@ -2632,6 +2656,7 @@ button {
 	color: rgb(56,56,56);
 	margin-left: 30px;
 	border: none;
+	border-radius: none;
 	box-sizing: border-box;
 	padding-left: 35px;
 	margin-top: 20px;
@@ -3068,9 +3093,38 @@ div.cs-skin-slide::before {
 	width: 458px !important;
 }
 .ui-icon {
-	background-image: none !important;
+	background: none !important;
 }
-
+.ui-datepicker-prev:before {
+	position: absolute;
+	content: '\e907';
+	font-family: 'icomoon';
+	font-size: 14px;
+	color: #74bc40;
+	top: 2px;
+	left: 10px;
+	transform: rotate(180deg);
+}
+.ui-datepicker-next:before {
+	position: absolute;
+	content: '\e907';
+	font-family: 'icomoon';
+	font-size: 14px;
+	color: #74bc40;
+	top: 2px;
+	right: 10px;
+}
+.b-popup {
+	animation: view 0.3s ease-in-out forwards;
+}
+@keyframes view {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
 .icon-icon-zoom:before {
   content: "\e913";
 }

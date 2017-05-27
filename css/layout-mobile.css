@@ -23,8 +23,14 @@ a{
 	text-decoration: none;
 	color: #74bc40;
 }
-p, ul, table {
+p, ul {
 	font-family: "Ubuntu-Light";
+	display: block;
+	position: relative;
+}
+table {
+	font-family: "Ubuntu-Light";
+	position: relative;
 }
 li{
 	list-style: none;
@@ -55,6 +61,10 @@ h1,h2,h3,h4,h5,h6{
 		opacity: 0.8;
 		z-index: 9999;
 	}
+.background-block {
+	background-image: none;
+	background-color: #ffffff;
+}	
 .fancybox-inner{
 	overflow: visible !important;
 }
@@ -62,12 +72,10 @@ h1,h2,h3,h4,h5,h6{
 	position: relative;
 }
 .b-wide-block{
-	position: relative;
 	max-width: 768px;
 	width: 100%;
 	min-width: 240px;
 	margin: 0px auto;
-	background-color: #FFF;
 }
 .b-block{
 	position: relative;
@@ -75,53 +83,23 @@ h1,h2,h3,h4,h5,h6{
 	margin: 0px auto;
 }
 .b-btn {
-	font-family: "Ubuntu-Light";
-	font-size: 12px;
-	text-transform: uppercase;
-	color: #74bc40;
-	display: inline-block;
-	border-radius: 28px;
-	height: 56px;
-	background-color: #ffffff;
-	padding: 0px 20px 0px 30px;
-	line-height: 57px;
-	cursor: pointer;
-	z-index: 200;
-
-	transition: all ease 200ms;
 }
 .b-btn:hover {
-	background-color: #74bc40 !important;
-	color: #ffffff;
-}
-.b-btn:hover .arrow {
 	background-color: #ffffff !important;
-}
-.b-btn:hover .arrow:after {
 	color: #74bc40;
 }
+.b-btn:hover .arrow {
+	background-color: #74bc40 !important;
+}
+.b-btn:hover .arrow:after {
+	color: #ffffff !important;
+}
 .arrow {
-	display: inline-block;
-	height: 20px;
-	position: relative;
-	top: -1px;
-	width: 20px;
-	border-radius: 50%;
-	background-color: #74bc40;
-	line-height: 20px;
-	/* padding-bottom: 4px; */
-	margin-left: 14px;
-	text-align: center !important;
 }
 .arrow:hover {
 	background-color: #74bc40;
 }			
 .arrow:after {
-	font-family: "icomoon";
-	font-size: 10px;
-	color: #ffffff;
-	content: "\e907";
-	margin-left: 2px;
 }
 /*.b-btn:hover {
 	color: #ffffff;
@@ -129,71 +107,50 @@ h1,h2,h3,h4,h5,h6{
 	border: 1px solid #74bc40;
 }*/
 .slick-list {
-	position: relative;
 }
 .b-btn-next {
 	display: inline-block;
-	height: 45px;
-	width: 45px;
-	border-radius: 50%;
-	border: none;
-	background-color: #ffffff;
-	box-shadow: 0px 3px 7px rgba(0,0,0,0.14);
-	font-family: "icomoon";
-	font-size: 16px;
-	color: #b9b9b9;
-	line-height: 46px;
-	cursor: pointer;
 }
 .b-btn-next:after{
-	content: "\e902";
-	margin-left: 2px;
 }
 .b-btn-next:hover {
-	background-color: #74bc40;
-	color: #ffffff;
-	border: 1px solid #74bc40 !important;
+	background-color: #ffffff;
+	color: #74bc40;
+	border: none !important;
 }
 .b-btn-prev {
-	display: inline-block;
-	height: 45px;
-	width: 45px;
-	border-radius: 50%;
-	border: none;
-	background-color: #ffffff;
-	box-shadow: 0px 3px 7px rgba(0,0,0,0.14);
-	font-family: "icomoon";
-	font-size: 16px;
-	color: #b9b9b9;
-	line-height: 46px;
-	content: "\e903";
-	cursor: pointer;
 }
 .b-btn-prev:after{
 	content: "\e903";
 	margin-right: 2px;
 }
 .b-btn-prev:hover {
-	background-color: #74bc40;
-	color: #ffffff;
-	border: 1px solid #74bc40 !important;
+	background-color: #ffffff;
+	color: #74bc40;
+	border: none !important;
+}
+.mobile {
+	display: initial;
+}
+.notmobile {
+	display: none !important;
 }
 .main-content_top_h1 {
 	margin-top: 30px;
-	margin-bottom: 54px;
+	margin-bottom: 30px;
 	text-align: left;
 }
 	.main-content_top_h1 h1 {
 		font-family: "Ubuntu-Medium";
 		font-size: 20px;
-		line-height: 55px;
+		line-height: 24px;
 		text-transform: uppercase;
 		color: #a4b1bf;
 	}
 	.main-content_top_h1 h2 {
 		font-family: "Ubuntu-Bold";
-		font-size: 42px;
-		line-height: 42px;
+		font-size: 30px;
+		line-height: 36px;
 		color: #181818;
 	}
 .b-head {
@@ -204,21 +161,24 @@ h1,h2,h3,h4,h5,h6{
 			.header {
 				width: 100%;
 				height: auto;
-				padding: 10px 5% 10px;
+				padding: 20px 5% 20px;
 				box-sizing: border-box;
 			}
 				.logo {
 					background-position: 50% 50%;
 					background-image: url('../i/logo.png');
-					background-size: cover;
+					background-size: 100%;
+					background-repeat: no-repeat;
 					height: 58px;
-					width: 243px;
+					max-width: 243px;
+					min-width: 120px;
+					width: 57%;
 				}
 					.logo a {
 						display: block;
 					}
 				.filials {
-				margin-top: 3px;
+				margin-top: 0px;
 				transition: opacity 0.25s ease;
 				}
 					.filial-addr {
@@ -235,15 +195,18 @@ h1,h2,h3,h4,h5,h6{
 					} 
 						.filial-addr a {
 							color: #ffffff;
-							font-size: 13px;
-							text-decoration: underline; */
+							font-size: 16px;
+							text-decoration: none; */
+							font-family:;
+							font-family: "Ubuntu-Medium";
 						}
 						.filial-addr a:hover {
 							text-decoration: none;
 						}
 						.filial-addr p {
-							font-size: 14px;
+							font-size: 16px;
 							line-height: 32px;
+							color: #ffffff;
 						}
 					.vertical-line {
 						background-position: 0 0;
@@ -256,6 +219,9 @@ h1,h2,h3,h4,h5,h6{
 						left: 30px;
 						top: 4px;
 					}
+				.search {
+					display: none;
+				}
 				.search-mobile {
 					font-family: 'icomoon' !important;
 					speak: none;
@@ -271,16 +237,15 @@ h1,h2,h3,h4,h5,h6{
 					overflow:hidden;
 					height: 54px;
 					width: 54px;
-					position: relative;
-					right: 0;
+					position: absolute;
+					right: 62px;
 					top: 0;
-					margin: 7px 0 0 20px;
+					margin: 3px 0 0 0px;
 					transition: width 0.4s ease;
 					cursor: pointer;
 					display: inline-block;
 					color: #74bc40;
 					background-color: #ffffff;
-					float: left;
 				}
 				.search-mobile-link:before{
 					position: absolute;
@@ -299,16 +264,20 @@ h1,h2,h3,h4,h5,h6{
 						display: none;
 					}							
 				.callback  {
-					margin: 7px 0 0 11px;
-					margin-right: 0;
+					display: inline-block;
+					position: absolute;
+					right: 0;
+					margin: 3px 0 0 0px;
 					width: 52px;
 					height: 52px;
-					float: left !important;
+					float: none !important;
 				}
 				.callback .callback-btn.onhover {
+					color: #74bc40;
+					background-color: transparent;
 				}		
 					.callback a {
-						width: auto;
+						min-width: 52px;
 						/* box-sizing: initial; */
 						display: inline-block;
 						height: 52px;
@@ -318,6 +287,7 @@ h1,h2,h3,h4,h5,h6{
 					}
 					.callback p.onhover {
 						border-bottom: 0px;
+						color: #74bc40;
 					}
 					.callback-btn {
 						border: 2px solid #74bc40;
@@ -343,106 +313,157 @@ h1,h2,h3,h4,h5,h6{
 						font-size: 20px;
 					}
 					.callback .icon-callback.onhover {
+						color: #74bc40;
 					}
+			.header .filials {
+				display: none;
+			}
+			.main-menu {
+				height: 54px;
+				min-height: 54px;
+			}	
+			.main-menu a {
+				height: 60px;
+			}					
+			.b-head .main-menu .b-block>ul {
+				display: none;
+			}
+			.main-menu .b-block {
+				margin: 0 0 0 5%;
+			}
+			.mobile-menu-button {
+				display: initial;
+				min-width: 110px;
+				width: auto;
+				height: 54px;
+				cursor: pointer;
+				box-sizing: border-box;
+				padding: 16px 0 0 0px;
+				text-align: left;
+			}		
+				.mobile-menu-button span {
+					font-family: "Ubuntu";
+					font-size: 16px;
+					text-transform: none;
+					color: #74bc40;
+					display: inline-block;
+					position: absolute;
+				}
+				.mobile-menu-button:before {
+					content: "\e910";
+					font-family: 'icomoon' !important;
+					speak: none;
+					font-style: normal;
+					font-weight: normal;
+					font-variant: normal;
+					text-transform: none;
+					line-height: 1;
+					font-size: 22px;
+					color: #74bc40;
+					margin-right: 15px;
+				}	
+				.mobile-menu-button:hover span{
+					color: #74bc50;
+				}		
+				.mobile-menu-button:hover:before{
+					color: #74bc50;
+				}											
 			.mobile-menu {
-				width: 50%;
-				height: 100%;
-				position: fixed;
-				top: 0;
-				z-index: 200;
 				background-color: rgba(116,188,64,1);
-				padding: 0 0 0 30px;
-				float: left;
+				box-sizing: border-box;
+				padding-left: 10px;
+			}
+			.mobile-menu h2 {
+				font-family: "Ubuntu-Bold";
+				font-size: 36px;
+				line-height: 40px;
+				margin: 20px 0 20px 10px;
+				text-align: left;
+			}
+			.visible {
+				opacity: 1;
+				left: 0;
+				visibility: visible;
+				transition: all 200ms ease;
+				-moz-transition:all 200ms ease;
+				-webkit-transition:all 200ms ease;
 			}
 			.mobile-menu .filials {
 				position: relative;
+				text-align: right;
+				width: 92%;
 			}
 			.mobile-menu-ul {
 				position: relative;
-				margin-bottom: 0;
+				margin-bottom: 30px;
 				width: 98%;
 			}
 			.mobile-menu-ul li {
 			margin-bottom: 3px;
+			position: relative;
 			}			
 			.filials li {
 				margin-bottom: 10px;
 				display: block;
 				float: initial !important;
+				cursor: pointer;
+				text-align: right;
 			}
-						.mobile-menu-ul>li>a {
-							font-size: 16px;
-							font-family: Ubuntu;
-							position: relative;
-							text-transform: uppercase;
-							text-align: left;
-							display: inline-block;
-							box-sizing: border-box;
-							padding: 10px;
-							height: auto;
-							width: 100%;
-							color: #ffffff;
-							background-color: rgba(255,255,255,0.1);
-						}
-						.mobile-menu-ul .mmarrow:after {
-							content: "\e907";
-							font-family: 'icomoon' !important;
-							speak: none;
-							font-style: normal;
-							font-weight: normal;
-							font-variant: normal;
-							text-transform: none;
-							line-height: 1;
-							font-size: 11px;
-							color: #ffffff;
-							display: inline-block;
-							top: 17px;
-							right: 15px;
-							position: absolute;
-						}
-						.header_dropdown_menu {
-							position: absolute;
-							visibility: hidden;
-							opacity: 0;
-							top: 0;
-							left: 100%;
-							z-index: 99;
-						}
-						.header_dropdown_menu ul {
-							float: initial;
-						}
-						.header_dropdown_menu li {
-							display: block;
-							position: initial;
-							width: 100%;
-						}
-						.header_dropdown_menu a {
-							text-align: left;
-							width: 100%;
-							padding: 27px 25px 0;
-							white-space: nowrap;
-						}
-						.header_dropdown_menu li:hover a {
-							width: 100%;
-							padding-left: 25px;
-						}						
-						.mobile-menu li:hover>.header_dropdown_menu {
-							opacity: 1;
-							visibility: visible;
-							box-shadow: 0px 6px 25px rgba(0,0,0,0.3);
-							transition: all 200ms ease;
-							-moz-transition:all 200ms ease;
-							-webkit-transition:all 200ms ease;
-						}
+			.filials li:hover a {
+				text-decoration: none;
+			}
+				.mobile-menu-ul li>a {
+					font-size: 16px;
+					font-family: Ubuntu;
+					position: relative;
+					text-transform: uppercase;
+					text-align: left;
+					display: inline-block;
+					box-sizing: border-box;
+					padding: 10px;
+					height: auto;
+					width: 100%;
+					color: #ffffff;
+					border-bottom: 1px solid rgba(255,255,255,0.3);
+				}
+				.header_dropdown_menu {
+					position: initial;
+					background-color: #74bc40;
+					visibility: visible;
+					margin-top: 3px;
+					opacity: 1;
+					top: 0;
+					left: 100%;
+					z-index: 99;
+				}
+				.header_dropdown_menu ul {
+					float: initial;
+				}
+				.header_dropdown_menu li {
+					display: block;
+					position: initial;
+					width: 100%;
+				}
+				.header_dropdown_menu a {
+					text-align: left;
+					width: 100%;
+					padding: 27px 25px 0;
+					white-space: nowrap;
+				}
+				.mobile-menu-ul>li a:hover {
+					background-color: #68ae36;
+				}
 			.zapis-na-priem	{
 			float: right !important;
 			}
 				.b-block .zapis-na-priem a {
-					display: inline-block;
+					font-size: 16px;
 					text-align: center;
 					/*margin: 0 auto;*/
 					width: auto;
-					padding: 27px 15px 0px;
+					padding: 23px 15px 0px;
+					text-transform: none;
+					height: 54px;
 				}
 				.b-block .zapis-na-priem a:hover {
 				}
@@ -459,10 +480,6 @@ h1,h2,h3,h4,h5,h6{
 				width: auto;
 			}
 				.back-slide {
-					background-position: 50% 50%;
-					background-size: cover;
-					background-repeat: no-repeat;
-					height: 438px;
 					width: auto;
 				}
 					.back-slider .slick-dots {
@@ -472,19 +489,16 @@ h1,h2,h3,h4,h5,h6{
 				display: block !important;
 				position: absolute;
 				right: 80px;
-				bottom: 20px;
+				bottom: 30px;
 				z-index: 2;
 			}
 			.major-slider .b-btn-next {
 				display: block !important;
 				position: absolute;
 				right: 20px;
-				bottom: 20px;
+				bottom: 30px;
 			}
 					.slider-btns {
-						position: absolute;
-						left: 50%;
-						margin-left: 200px;
 					}
 					.slider-btns:after {
 						width: 6px;
@@ -497,9 +511,6 @@ h1,h2,h3,h4,h5,h6{
 				display: none;
 			}
 				.front-slider {
-					height: 438px;
-					position: absolute;
-					top: 0;
 					left: 0;
 					margin-left: 0;
 					width: 100%;
@@ -507,30 +518,20 @@ h1,h2,h3,h4,h5,h6{
 				}
 					.front-slider-align {
 						display: table !important;
-						height: 370px;
-						z-index: 10;
 					}
 					.front-slide {
-						display: table-cell;
-						vertical-align: middle;
-						text-align: left;
 						padding: 5%;
 					}
 					.front-slide h2 {
-						font-family: "Ubuntu-Bold";
-						line-height: 40px;
-						width: 200px;
-						display: inline-block;
-						margin-bottom: 20px;
-						font-size: 32px;
+						line-height: 36px;
+						font-size: 24px;
 					}
 					.front-slide p {
-						font-family: "Ubuntu-Light";
-						line-height: 30px;
 						width: 90%;
-						margin-bottom: 36px;
 					}
 					.front-slide .b-btn:hover {
+						background-color: #ffffff !important;
+						color: #74bc40;
 					}
 	.about-company {
 
@@ -538,8 +539,8 @@ h1,h2,h3,h4,h5,h6{
 		.about-company .b-wide-block {
 		}
 			.about-company .b-wide-block .b-block {
-				padding-top: 50px;
-				padding-bottom: 50px;
+				padding-top: 3px;
+				padding-bottom: 40px;
 			}
 				.about-align-cont {
 					
@@ -548,7 +549,7 @@ h1,h2,h3,h4,h5,h6{
 						height: auto;
 						width: 100%;
 						position: relative;
-						margin-bottom: 40px;
+						margin-bottom: 32px;
 						float: none !important;
 					}
 						.left-slide {
@@ -561,7 +562,7 @@ h1,h2,h3,h4,h5,h6{
 						}
 						.left-slider .b-btn-prev {
 							position: absolute;
-							right: 104px;
+							right: 80px;
 							bottom: -21px;
 							/* margin-top: -24px; */
 							z-index: 10;
@@ -572,7 +573,7 @@ h1,h2,h3,h4,h5,h6{
 						.left-slider .b-btn-next {
 							margin-top: -24px;
 							position: absolute;
-							right: 46px;
+							right: 20px;
 						}
 					.right-slider .slick-dots {
 						display: none !important;
@@ -589,7 +590,9 @@ h1,h2,h3,h4,h5,h6{
 						text-align: left;
 						margin-right: 0;
 						margin-left: 0;
-						padding: 0 5% 0;%%
+						padding: 0 5% 0;
+						height: initial;
+						min-height: 100px;
 					}
 					.about-right-slider-header {
 						font-size: 18px;
@@ -601,8 +604,8 @@ h1,h2,h3,h4,h5,h6{
 						}
 						.about-text-slide h2 {
 							font-family: "Ubuntu-Bold";
-							font-size: 30px;
-							line-height: 36px;
+							font-size: 28px;
+							line-height: 34px;
 							margin-top: 0;
 							margin-bottom: 15px;
 						}
@@ -610,25 +613,28 @@ h1,h2,h3,h4,h5,h6{
 							font-family: "Ubuntu-Light";
 							font-size: 16px;
 							line-height: 24px;
-							margin-bottom: 36px;
+							margin-bottom: 28px;
 						}
 						.about-text-slide a {
 							border: 1px solid #e3e3e3;
 							line-height: 56px;
 						}		
 	.services {
-
 	}
+	.services h2 {
+	margin-bottom: 20px;
+	font-size: 28px;
+	}	
 		.services .b-wide-block {
 			height: auto;
 			background-image: url("../i/services-bgrnd.jpg");
 			background-position: 50% 50%;
 			background-size: cover;
 			background-repeat: no-repeat;
-			padding: 50px 0 50px;
+			padding: 40px 0 40px;
 		}
-			.b-block {
-
+			.services .b-block {
+				width: 90%;
 			}
 				.services-menu {
 					position: relative;
@@ -637,32 +643,36 @@ h1,h2,h3,h4,h5,h6{
 				}
 				.services-menu li {
 					display: inline-block;
-					height: 80px;
-					width: 45%;
-					min-width: 149px;
+					height: 70px;
+					width: 48%;
+					min-width: 140px;
 					max-width: 400px;
-					margin-right: 0;
+					margin-right: 0px;
+					margin-bottom: 8px;
 					float: left;
 					background: transparent;
-					border: 8px solid transparent;
+					/*border: 8px solid transparent;*/
 				}
-				.services-menu li:nth-child(2n) {
-					margin-right: 0px;
-					margin-bottom: 0;
+				.services-menu li:nth-child(1n) {
+					margin-right: 4%;
+					margin-bottom: 8px;
 				}
 				.services-menu li:nth-child(8) {
 					margin-right: 0px;
-				}
+				}			
+				.services-menu li:nth-child(even) {
+					margin-right: 0px;
+				}					
 						.services-menu li button {
 							font-family: "Ubuntu";
-							font-size: 18px;
-							padding-left: 0;
+							font-size: 16px;
+							padding: 7%;
 							/* text-transform: uppercase; */
-							text-align: center;
+							/*text-align: left;*/
 							display: table-cell;
 							width: 100%;
 							height: 100%;
-							line-height: 30px;
+							line-height: 21px;
 							vertical-align: middle;
 							cursor:pointer;
 							transition: all 250ms ease;
@@ -725,51 +735,11 @@ h1,h2,h3,h4,h5,h6{
 						background-repeat: no-repeat;
 						opacity: 0;
 					}
-					.img_diagnostika {
-						background-image: url('../i/services-slide-01.png');
-						background-position: 100% 0%;
-						background-size: auto auto;						
-					}
-					.img_terapevt-stom {
-						background-image: url('../i/services-slide-02.png');
-						background-position: 100% 0%;
-						background-size: auto auto;						
-					}
-					.img_implantation {
-						background-image: url('../i/services-slide-01.png');
-						background-position: 100% 0%;
-						background-size: auto auto;						
-					}
-					.img_ortodontiya {
-						background-image: url('../i/services-slide-02.png');
-						background-position: 100% 0%;
-						background-size: auto auto;						
-					}
-					.img_estetic-stom {
-						background-image: url('../i/services-slide-01.png');
-						background-position: 100% 0%;
-						background-size: auto auto;						
-					}
-					.img_hirurgiya {
-						background-image: url('../i/services-slide-02.png');
-						background-position: 100% 0%;
-						background-size: auto auto;						
-					}
-					.img_ortopedia {
-						background-image: url('../i/services-slide-01.png');
-						background-position: 100% 0%;
-						background-size: auto auto;						
-					}
-					.img_gigiena {
-						background-image: url('../i/services-slide-02.png');
-						background-position: 100% 0%;
-						background-size: auto auto;						
-					}
 	.reviews {
 
 	}
 		.reviews .b-wide-block {
-			padding: 30px 0 50px;
+			padding: 30px 0 40px;
 		}
 			.reviews .b-wide-block .b-block {
 				width: 95%;
@@ -777,20 +747,20 @@ h1,h2,h3,h4,h5,h6{
 			}
 				.reviews-header {
 					font-family: "Ubuntu-Bold";
-					font-size: 40px;
+					font-size: 28px;
 					line-height: 40px;
 					text-align: left;
 					/* margin-top: 54px; */
-					margin-bottom: 10px;
+					margin-bottom: 0px;
 				}
 				.review-slide-block {
 					width: auto;
 					margin-left: 0;
-					margin-bottom: 60px;
+					margin-bottom: 40px;
 				}
 					.review-single {
 						width: auto;
-						margin-top: 18px;
+						margin-top: 24px;
 						margin-left: 0px;
 						margin-right: 0px;
 					}
@@ -798,7 +768,7 @@ h1,h2,h3,h4,h5,h6{
 							display: inline-block;
 							width: 100%;
 							margin-top: 30px;
-							margin-bottom: 26px;
+							margin-bottom: 16px;
 						}
 							.review-single-phot {
 								background-position: 50% 50%;
@@ -844,10 +814,16 @@ h1,h2,h3,h4,h5,h6{
 								width: 175px;
 								float: right;
 							}
+								.review-more-mobile {
+									display: inline-block;
+									width: 100%;
+									text-align: left;
+									text-decoration: underline;
+								}							
 					.review-single-text {
 						text-align: left;
 						padding: 0 20px 0px 20px;
-						margin-bottom: 30px;
+						margin-bottom: 40px;
 						overflow: hidden;
 					}
 						.review-single-text p {
@@ -857,7 +833,7 @@ h1,h2,h3,h4,h5,h6{
 					.review-slide-block  .b-btn-prev {
 						position: absolute;
 						/* border: 1px solid #b9b9b9; */
-						right: 82px;
+						right: 80px;
 						bottom: -23px;
 						/* box-shadow: none; */
 						z-index: 10;
@@ -869,13 +845,13 @@ h1,h2,h3,h4,h5,h6{
 						/* border: 1px solid #b9b9b9; */
 						position: absolute;
 						/* box-shadow: none; */
-						right: 24px;
+						right: 20px;
 						bottom: -23px;
 					}					
 				.review-more {padding-bottom: 0px;}
 					.review-more-cont {
-						/* margin: 0 auto; */
-						/* width: 300px; */
+						margin: 0 auto;
+						width: 300px;
 						text-align: left;
 					}
 						.review-reply {
@@ -888,6 +864,7 @@ h1,h2,h3,h4,h5,h6{
 							padding-right: 30px;
 						}
 						.review-reply a:hover {
+							color: #ffffff;						
 						}
 						.review-reply .b-btn:after {
 							display: none;							
@@ -908,13 +885,13 @@ h1,h2,h3,h4,h5,h6{
 						}
 					.review-single-full {
 						width: 95%;
-						padding: 40px !important;
+						padding: 40px 30px 40px!important;
 					}
 						.review-single-full .review-single-head {
 							display: table;
 							width: 100%;
 							margin-top: 0px;
-							margin-bottom: 26px;
+							margin-bottom: 10px;
 						}
 							.review-single-full .review-single-phot {
 								background-position: 50% 50%;
@@ -956,15 +933,16 @@ h1,h2,h3,h4,h5,h6{
 			.map-cont {
 				position: absolute;
 				display: block;
-				height: 240px;
-				width: 80%;
-				max-width: 400px;
-				left: initial;
-				right: 5%;
+				box-sizing: border-box;
+				height: auto;
+				width: 90%;
+				max-width: 100%;
+				left: 5%;
+				/* right: 0; */
 				margin-left: initial;
 				margin: 0 auto;
-				padding: 15px;
-				top: 15px;
+				padding: 26px 8%;
+				top: 20px;
 				text-align: left;
 				box-shadow: 0px 2px 6px #b9b9b9;
 			}
@@ -1004,19 +982,19 @@ h1,h2,h3,h4,h5,h6{
 					}
 						.map-cont-head h5 {
 							font-family: "Ubuntu-Medium";
-							font-size: 18px;
+							font-size: 24px;
 							line-height: 30px;
 						}
 						.map-cont-head p {
-							font-family: "Ubuntu-Medium";
-							font-size: 13px;
-							line-height: 13px;
+							font-family: "Ubuntu";
+							font-size: 14px;
+							line-height: 20px;
 							text-transform: uppercase;
 						}				
 						.map-cont-addr {
 							display: inline-block;
-							margin-right: 5px;
-							width: 50%;
+							margin-right: 0;
+							width: 100%;
 						}
 							.map-cont-addr ul li:nth-child(1) p:before{
 								font-family: "icomoon";
@@ -1038,13 +1016,13 @@ h1,h2,h3,h4,h5,h6{
 							}												
 							.map-cont-addr h5 {
 								font-family: "Ubuntu-Medium";
-								font-size: 15px;
-								line-height: 29px;
+								font-size: 20px;
+								line-height: 36px;
 							}
 							.map-cont-addr p {
 								font-family: "Ubuntu-Light";
-								font-size: 12px;
-								line-height: 30px;
+								font-size: 16px;
+								line-height: 26px;
 							}						
 						.map-cont-shedule {
 							font-family: "Ubuntu-Medium";
@@ -1081,7 +1059,7 @@ h1,h2,h3,h4,h5,h6{
 			}
 				.footer-cont .b-block {
 				height: auto;
-				padding: 20px 0;
+				padding: 30px 0 40px;
 				margin: 0 5%;
 				}
 					.footer-columns {
@@ -1105,21 +1083,18 @@ h1,h2,h3,h4,h5,h6{
 						.footer-columns p {
 							font-family: "Ubuntu-Light";
 							font-size: 14px;
-							line-height: 36px;
+							line-height: 26px;
 						}
 						.footer-logconts {
-							width: 255px;
-							margin-right: 5%; /*140px*/
+							width: auto;
+							margin-right: 6%; /*140px*/
 						}
 							.footer-logo {
 							margin-bottom: 26px;
 							width: 100%;
 							display: none;
 							}
-							.footer-logo-img {
-								background-position: 50% 50%;
-								background-image: url("../i/logo-footer.png");
-								background-size: cover;				
+							.footer-logo-img {			
 								height: 61px;
 								width: 255px;	
 							}
@@ -1129,13 +1104,13 @@ h1,h2,h3,h4,h5,h6{
 							.footer-contacts {
 							}	
 								.footer-contacts h4 {
-									margin-bottom: 14px;
+									margin-bottom: 16px;
 								}							
 								.footer-contacts p {
-									line-height: 29px;
+									line-height: 26px;
 								}					
 								.footer-contacts li {
-									margin-bottom: 11px;
+									margin-bottom: 10px;
 								}
 						.footer-pages {
 							margin-right: 200px;
@@ -1152,12 +1127,13 @@ h1,h2,h3,h4,h5,h6{
 								margin-top: 18px;
 							}
 						.footer-shedule {
+							width: auto;
 							}							
 							.footer-shedule li {
-									margin-bottom: 8px;
+									margin-bottom: 10px;
 								}							
 							.footer-shedule h4 {
-								margin-bottom: 10px;
+								margin-bottom: 16px;
 							}
 							.footer-shedule h6 {
 								font-family: "Ubuntu-Medium";
@@ -1169,7 +1145,7 @@ h1,h2,h3,h4,h5,h6{
 				right: 0;
 				bottom: 20px;
 				background-position: 50% 50%;
-				background-image: url("../i/copyright-redder.png");
+				background-image: url("../i/copyright-Redder.png");
 				background-size: cover;
 				height: 16px;
 				width: 93px;
@@ -1184,10 +1160,586 @@ h1,h2,h3,h4,h5,h6{
 		}
 			.footer-sub p {
 			font-family: "Ubuntu-Light";
-			font-size: 20px;
-			line-height: 24px;
+			font-size: 14px;
+			line-height: 20px;
 			letter-spacing: 4px;
 			margin-top: 20px;
 			padding-bottom: 20px;
 			text-transform: uppercase;
 			}
+.name, .phone {
+	margin-left: 5%;
+	display: block;
+	width: 90%;
+	margin-bottom: 29px;
+}
+.left input{
+	width: 100%;
+}
+.b-popup .left {
+	float: none !important;
+	width: auto;
+	margin: 0 auto;
+}
+.textblock {
+	display: none;
+}
+.b-popup .right {
+	float: none !important;
+	width: auto;
+}
+div.cs-skin-slide {
+	width: 90%;
+}
+div.cs-select {
+	margin: 0 auto;
+	margin-top: 19px;
+	margin-bottom: 29px;
+	margin-left: 5%;
+}
+div.cs-skin-slide::before {
+	width: 100%;
+}
+.date-inp {
+	width: 90%;
+	margin-left: 5%;
+}
+.right input {
+	margin-left: 0px;
+	width: 100%;
+}
+.right label {
+	margin-left: 5%;
+}
+.b-popup button {
+	float: none;
+	margin-left: 5%;
+	width: 90%;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	font-size: 18px;
+	height: 74px;
+}
+.b-popup h3 {
+	font-size: 29px;
+	line-height: 29px;
+	margin-bottom: 29px;
+	margin-left: 5%;
+	margin-top: 29px;
+}
+.time-section {
+	float: none;
+	width: 100%;
+}
+.right .time {
+	width: 90%;
+}
+.time::before {
+	width: 100% !important;
+}
+.b-popup {
+	width: 100%;
+	font-size: 16px;
+}
+.time.cs-active::before {
+	transform: scale3d(1.2,3,1.1);
+}
+.cs-skin-slide.cs-active::before {
+	transform: scale3d(1.1,2.7,1.1);
+}
+.ui-datepicker {
+	width: 87% !important;
+	box-sizing: border-box;
+}
+#b-popup-3 button {
+	margin-top: 0px;
+}
+.callback .morphing-btn-wrap {
+	width: 52px !important;
+	overflow: hidden;
+}
+.b-block .zapis-na-priem .morphing-btn_circle {
+	width: 54px !important;
+}
+.cs-skin-slide > span {
+	height: 1.7em;
+}
+.cs-select > span::after, .cs-select .cs-selected span::after {
+	font-size: 18px;
+}
+.cs-skin-slide .cs-options li span {
+	padding: 0.8em 1em 0.8em 1em;
+	font-size: 16px;
+}
+div.cs-skin-slide {
+	font-size: 16px;
+}
+.date-inp .date-icon {
+	font-size: 18px;
+	top: 2em;
+}
+.left input {
+	font-size: 16px;
+}
+.right input {
+	height: 77px;
+	font-size: 16px;
+	padding-left: 25px;
+	margin-top: 10px;
+}
+.time .cs-options li:first-child span {
+	padding: 1em 22px !important;
+}
+.cs-select > span {
+	padding: 25px;
+}
+.date-icon::after {
+	font-size: 18px;
+}
+.time .cs-options {
+	width: 111%;
+	max-width: 250px;
+}
+div.cs-skin-slide::before {
+	height: 77px;
+}
+.morphing-close {
+	top: 23px;
+	right: 17px;
+}
+div.cs-select {
+	margin-top: 10px;
+}
+.b-popup {
+	animation: none;
+}
+.b-popup input.error {
+	border: none !important;
+	border-bottom: 1px solid #F00 !important;
+	box-shadow: none !important;
+}
+/*slideout-menu*/
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.slideout-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 270px;
+  min-height: 100vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  z-index: 0;
+  display: none;
+}
+
+.slideout-menu-left {
+  left: 0;
+}
+
+.slideout-menu-right {
+  right: 0;
+}
+
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+  will-change: transform;
+  background-color: #FFF; /* A background-color is required */
+  min-height: 100vh;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
+}
+.panel:before {
+  content: '';
+  display: block;
+  background-color: rgba(0,0,0,0);
+  transition: background-color 0.5s ease-in-out;
+}
+
+.panel-open:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 99;
+}
+/*slideout-menu*/
+/*about page begin*/
+	.p_about {
+	}
+	.p_about .b-block {
+		margin: 0 5% 0;
+	}
+	.p_about p{
+	}
+					.p_about_b_about_text {
+						width: 100%;
+						padding: 0;
+						margin: 30px 0 35px 0;
+					}				
+						.p_about .main-content_top_h1 {
+							margin-bottom: 30px;
+						}
+							.p_about_b_about_text p{
+								margin-bottom: 31px;
+							}
+
+							.p_about .p_about_btn {
+								border: 1px solid #e3e3e3;
+								padding-right: 30px;
+							}
+					.p_about_b_about_stats {
+						height: auto;
+						width: 100%;
+						padding: 0;
+						margin-bottom: 40px;
+					}
+						.p_about_b_about_stats_menu {
+							border-bottom: 3px solid #e3e3e3;
+							margin-bottom: 21px;
+						}
+							.p_about_b_about_stats_menu ul {
+								zoom:1;
+							}
+					        .p_about_b_about_stats_menu ul:after {
+								width: 100%;
+								height: 0px;
+								visibility: hidden;
+								content: '';
+					        }	
+								.p_about_b_about_stats_menu .active {
+									height: 28px;
+									border-bottom: 3px solid #74bc40;									
+								}					        				
+								.p_about_b_about_stats_menu_item {
+									height: 28px;
+									border-bottom: 3px solid transparent;
+									vertical-align: top;
+									zoom : 1;*/
+									transition: all 250ms ease;
+									-moz-transition:all 250ms ease;
+									-webkit-transition:all 250ms ease;									
+								}
+								.p_about_b_about_stats_menu_item:hover {
+									height: 28px;
+									border-bottom: 3px solid #74bc40;
+								}	
+									.p_about_b_about_stats_menu_item span {
+									}							
+						.p_about_b_about_stats_graphic {
+								
+						}
+							.p_about_b_about_stats_graphic_progressbar {
+								position: relative;
+								width: 0px;
+								height: 71px;
+								transition: all 250ms ease;
+								-moz-transition:all 350ms ease;
+								-webkit-transition:all 350ms ease;
+							}
+							.p_about_b_about_stats_graphic_progressbar .start {
+								position: absolute;
+							}
+							.p_about_b_about_stats_graphic_progressbar .start {
+								margin-left: 20px;
+							}
+							.p_about_b_about_stats_graphic_progressbar .end {
+								position: absolute;
+								right: 20px;
+							}
+		.p_about_b_advantages h4 {
+			margin-bottom: 23px;
+			font-size: 24px;
+		}
+			.p_about_b_advantages .b-block {
+				padding: 20px 0 20px;
+			}
+				.p_about_b_advantages_header {
+				}
+				.p_about_b_advantages_pluses {
+					width: 100%;
+				}
+					.p_about_b_advantages_pluses_item {
+						width: 100%;
+						margin-right: 0px;
+						padding: 13px 0 27px 0;
+						float: left;
+						}
+						.p_about_b_advantages_pluses_item_img {
+							background-size: auto auto;
+							background-position: 50% 50%;
+							background-repeat: no-repeat;
+							height: 120px;
+							width: 120px;
+							margin-bottom: 22px;
+						}
+	.p_about_b_clinics {
+		padding: 20px 0 10px;
+	}
+				.p_about_b_clinics_header h3 {
+					margin-bottom: 48px;
+				}
+			.p_about_b_clinics_galary {
+				width: auto;
+				margin-left: 0;
+			}
+				.p_about_b_clinics_galary_windows {
+					position: relative;
+					height: auto;
+					width: auto;
+					margin: 0px 0 30px 0px;
+					margin: 0px auto 30px;
+				}
+					.p_about_b_clinics_galary_windows img {
+						width: 100%;
+						max-width: 368px;
+						height: auto;
+						position: relative;
+					}
+					.p_about_b_clinics_galary_windows a{
+						display: block;
+						position: relative;
+						background-size: 100% auto;
+						background-position: 50% 50%;
+						background-repeat: no-repeat;
+						height: auto;
+						width: 100%;
+						margin: 0;
+					}	
+					.p_about_b_clinics_galary_windows:hover img {
+						width: 100%;
+						max-width: 368px;
+						height: auto;
+						position: relative;
+						margin: 0px;
+					}
+					.p_about_b_clinics_galary_windows a:after {
+						position: absolute;
+						visibility: visible;
+						content: "\e913";
+						bottom: 40px;
+						right: 20px;
+						opacity: 1;
+						font-size: 60px;
+					}				
+					.p_about_b_clinics_galary_windows p {
+						position: absolute;
+						left: 26px;
+						top: 25px;
+					}
+/*about page end*/
+/*reviews page*/
+.p_reviews {
+	padding-bottom: 20px;
+	margin: 0 5%;
+}
+	.p_reviews-single {
+		width: 100%;
+		padding: 30px;
+		margin: 0 0 30px;
+	}
+	.p_reviews-single:nth-child(2n) {
+		margin: 0 0px 30px 0;
+	}	
+		.p_reviews-single-head {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+			.p_reviews-single-phot {
+				height: 80px;
+				width: 80px;
+			}
+			.p_reviews-single-name {
+				margin: 15px 0 0 15px;
+			}
+				.p_reviews-single-name h5{
+					font-size: 16px;
+					line-height: 28px;
+					letter-spacing: 1px;
+				}
+				.p_reviews-single-name p{
+					font-size: 16px;
+					line-height: 22px;
+				}
+			.p_reviews-single-head .b-btn {
+			}
+			.p_reviews-btn {
+				width: 175px;
+				margin-top: 27px;
+			}
+		.p_reviews-single-text p {
+			max-height: 145px;
+		}
+/*reviews page*/
+/*doctors page*/
+.b-wide-block {
+
+}
+	.b-block {
+
+	}
+		.p_doctors {
+			text-align: left;
+			padding-bottom: 50px;
+			margin: 0 5%;
+		}
+			.p_doctors_menu {
+				width: 100%;
+				margin: 0 auto;
+			}
+				.p_doctors_menu_item {
+					display: inherit;
+					max-height: 365px;
+					max-width: 365px;
+					margin: 0 auto 30px;
+					float: none;
+					position: relative;
+				}	
+					.p_doctors_menu_vcard {
+						width: 100%;
+						padding: 24px 30px 26px 30px;
+						top: 271px;
+						box-sizing: border-box;
+						position: absolute;
+					}
+					.p_doctors_menu_item:hover 	.p_doctors_menu_vcard {
+						
+					}									
+						.p_doctors_menu_vcard h5{
+							text-transform: uppercase;
+							font-size: 22px;
+							line-height: 26px;
+						}
+						.p_doctors_menu_vcard h6{
+							text-transform: uppercase;
+							font-size: 16px;
+							line-height: 24px;
+							margin-bottom: 20px;						
+						}											
+						.p_doctors_menu_vcard p{
+							font-size: 16px;
+							line-height: 18px;
+							opacity: 1;
+						}		
+						.p_doctors_menu_item:hover 	.p_doctors_menu_vcard p {
+							/*opacity: 1;*/
+							/*line-height: 18px;*/
+						}																																				
+	.footer .p_doctors_slider {
+		display: none;
+	}
+	.p_doctors_slider {
+		text-align: left;
+	}
+	.p_doctors_slider_cont {
+		min-height: 0px;
+		height: 0px;
+		width: 1560px;
+		margin-top: -6px;
+		margin-left: -200px;
+		margin-bottom: 30px;
+		display: inline-block;
+	}	
+		.p_doctors_slide {
+			position: relative;
+			width: 1560px;
+		}
+	.doct_info_show {
+		min-height: 600px;
+		height: initial;
+		visibility: visible;
+	}					
+			.p_doctors_menu_info_triangle {
+				position: absolute;
+				height: 31px;
+				width: 100%;
+			}
+				.p_doctors_menu_info_triangle_im {
+					position: absolute;
+					left: -579px;
+					height: 31px;
+					z-index: 10;
+					width: 2510px;
+				}		
+			.p_doctors_slide_top {
+				position: relative;
+			}
+				.p_doctors_slide_img {
+					width: 100%;
+					height: 596px;
+					position: absolute;
+				}
+				.p_doctors_slide_top .b-block {
+				height: 596px;
+				/* padding-top: 100px; */
+				}
+					.p_doctors_slide_text {
+						padding-top: 111px;
+						width: 665px;
+					}
+						.p_doctors_slide_text h4 {
+							line-height: 24px;
+							font-size: 36px;
+							margin-bottom: 24px;
+						}
+						.p_doctors_slide_text h5 {
+							font-size: 20px;
+							line-height: 20px;
+							text-transform: uppercase;
+							margin-bottom: 31px;
+						}
+						.p_doctors_slide_text p {
+							margin-bottom: 50px;
+							font-size: 16px;
+							display: block;
+							width: 586px;
+						}
+						.p_doctors_slide_text a {
+							font-size: 12px;
+						}
+						.p_doctors_slide_btn {
+							padding-right: 25px;
+						}
+					.p_doctors_slide_close_btn {
+						top: 54px;
+						right: 12px;
+						height: 29px;
+						width: 29px;
+					}
+					.p_doctors_slide_close_btn:after {
+						font-size: 20px;
+						line-height: 30px;
+					}					
+			.p_doctors_slide_bott {
+				padding: 54px 0 34px;
+			}
+				.p_doctors_slide_bott h6 {
+					font-size: 18px;
+					margin-bottom: 22px;
+				}
+				.p_doctors_slide_bott ul {
+					margin-bottom: 20px;
+				} 
+					.p_doctors_slide_bott li {
+						list-style-type: disc;
+						list-style-position: inside;
+						font-size: 16px;
+						line-height: 30px;
+					}
+				.p_doctors_menu .slick-dots {
+					display: none !important;
+				}							
+/*doctors page*/

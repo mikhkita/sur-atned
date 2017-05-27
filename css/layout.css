@@ -3112,6 +3112,17 @@ div.cs-skin-slide::before {
 	top: 2px;
 	right: 10px;
 }
+.b-popup {
+	animation: view 0.5s ease-in-out forwards;
+}
+@keyframes view {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
 .icon-icon-zoom:before {
   content: "\e913";
 }

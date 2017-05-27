@@ -1164,9 +1164,9 @@ h1,h2,h3,h4,h5,h6{
 			text-transform: uppercase;
 			}
 .name, .phone {
-	margin-left: 10%;
+	margin-left: 5%;
 	display: block;
-	width: 80%;
+	width: 90%;
 	margin-bottom: 20px;
 }
 .left input{
@@ -1185,47 +1185,57 @@ h1,h2,h3,h4,h5,h6{
 	width: auto;
 }
 div.cs-skin-slide {
-	width: 80%;
+	width: 90%;
 }
 div.cs-select {
 	margin: 0 auto;
 	margin-top: 19px;
 	margin-bottom: 29px;
-	margin-left: 10%;
+	margin-left: 5%;
 }
 div.cs-skin-slide::before {
 	width: 100%;
 }
 .date-inp {
-	width: 80%;
-	margin-left: 10%;
+	width: 90%;
+	margin-left: 5%;
 }
 .right input {
 	margin-left: 0px;
 	width: 100%;
 }
 .right label {
-	margin-left: 10%;
+	margin-left: 5%;
 }
 .b-popup button {
 	float: none;
-	margin-left: 10%;
-	width: 80%;
+	margin-left: 5%;
+	width: 90%;
 	margin-top: 0px;
 	margin-bottom: 10px;
+	font-size: 18px;
+	height: 74px;
+}
+.b-popup h3 {
+	font-size: 29px;
+	line-height: 29px;
+	margin-bottom: 29px;
+	margin-left: 5%;
+	margin-top: 29px;
 }
 .time-section {
 	float: none;
 	width: 100%;
 }
 .right .time {
-	width: 80%;
+	width: 90%;
 }
 .time::before {
 	width: 100% !important;
 }
 .b-popup {
 	width: 100%;
+	font-size: 14px;
 }
 .time.cs-active::before {
 	transform: scale3d(1.2,3,1.1);
@@ -1245,6 +1255,47 @@ div.cs-skin-slide::before {
 }
 .b-block .zapis-na-priem .morphing-btn_circle {
 	width: 54px !important;
+}
+.cs-skin-slide > span {
+	height: 1.7em;
+}
+.cs-select > span::after, .cs-select .cs-selected span::after {
+	font-size: 18px;
+}
+.cs-skin-slide .cs-options li span {
+	padding: 0.8em 1em 0.8em 0em;
+	font-size: 14px;
+}
+div.cs-skin-slide {
+	font-size: 14px;
+}
+.date-inp .date-icon {
+	font-size: 18px;
+	top: 45px;
+}
+.left input {
+	font-size: 14px;
+}
+.right input {
+	height: 74px;
+	font-size: 14px;
+	padding-left: 25px;
+}
+.time .cs-options li:first-child span {
+	padding: 1em 18px !important;
+}
+.cs-select > span {
+	padding: 25px;
+}
+.date-icon::after {
+	font-size: 18px;
+}
+.time .cs-options {
+	width: 111%;
+	max-width: 240px;
+}
+div.cs-skin-slide::before {
+	height: 74px;
 }
 /*slideout-menu*/
 body {

@@ -417,6 +417,7 @@ $(document).ready(function(){
     //---top-slider on index page
     //---about-slider on index page
         $('.left-slider').slick({
+            dots: true,
             asNavFor: '.right-slider',
             prevArrow: '<div class="b-btn-prev"></div>',
             nextArrow: '<div class="b-btn-next"></div>',
@@ -424,7 +425,6 @@ $(document).ready(function(){
             
         });
         $('.right-slider').slick({
-            dots: true,
             fade: true,
             speed: 500,
             fade: true,

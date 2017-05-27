@@ -71,7 +71,7 @@ body {
 	text-align: center;
 	font-family: 'Ubuntu';
 	font-size: 16px;
-	line-height: 28px;
+	line-height: 24px;
 	overflow-x: hidden;
 	-webkit-text-size-adjust: none;
 	color: #ffffff;
@@ -95,7 +95,6 @@ li{
 }
 h1,h2,h3,h4,h5,h6{
 	font-family: "Ubuntu-Bold";
-	font-weight: normal;
 }
 label.error{
 	display: none !important;
@@ -830,21 +829,21 @@ button {
 							position: absolute;
 							right: 46px;
 						}
-					.right-slider .slick-dots {
+					.left-slider .slick-dots {
 						z-index: 9999;
 						position: absolute;
 						bottom: 0;
-						left: -3px;
-						margin-bottom: -116px;
+						right: -120px;
+						margin-bottom: 0;
 						background-color: transparent;
 					}
-						.right-slider .slick-dots li{
+						.left-slider .slick-dots li{
 							width: 19px;
 							height: 19px;
 							font-size: 0px;
 							display: inline-block;
 						}
-							.right-slider .slick-dots li button {
+							.left-slider .slick-dots li button {
 								width: 18px;
 								height: 18px;
 								background-color: transparent;
@@ -852,7 +851,7 @@ button {
 								font-size: 0px;
 								cursor: pointer;
 							}
-							.right-slider .slick-dots li button:after {
+							.left-slider .slick-dots li button:after {
 								display: inline-block;
 								content: ".";
 								width: 8px;
@@ -863,13 +862,13 @@ button {
 								border: none;
 								margin-top: 0px;
 							}
-							.right-slider .slick-dots li:hover button:after {
+							.left-slider .slick-dots li:hover button:after {
 								background-color: #989898;
 							}
-							.right-slider .slick-dots .slick-active button:after{
+							.left-slider .slick-dots .slick-active button:after{
 								background-color: #74bc40; 
 							}
-							.right-slider .slick-dots .slick-active button:hover:after{
+							.left-slider .slick-dots .slick-active button:hover:after{
 								background-color: #74bc40; 
 							}							
 					.right-slider .b-btn-prev { 
@@ -907,7 +906,7 @@ button {
 						.about-text-slide p {
 							font-family: "Ubuntu-Light";
 							font-size: 16px;
-							line-height: 28px;
+							line-height: 24px;
 							color: #171717;
 							margin-bottom: 36px;
 						}
@@ -1102,7 +1101,6 @@ button {
 					.review-single {
 						background-color: #fafafa;
 						width: 519px;
-						height: auto;
 						margin-top: 18px;
 						margin-left: 80px;
 						margin-right: 0px; 
@@ -1505,17 +1503,15 @@ button {
 				right: 0;
 				bottom: 40px;
 				background-position: 50% 50%;
-				background-image: url("../i/logo-redder.png");
+				background-image: url("../i/copyright-redder.png");
 				background-size: cover;
-				background-size: 127px;
-				background-repeat: no-repeat;
-				height: 22px;
-				width: 127px;
+				height: 16px;
+				width: 93px;
 			}
 				.footer-copyright a {
 					display: block;
 					height: 16px;
-					width: 127px;
+					width: 93px;					
 				}
 		.footer-sub {
 		}
@@ -1525,9 +1521,9 @@ button {
 			line-height: 40px;
 			color: #dcdcdc;
 			letter-spacing: 10px;
-			padding: 30px 0;
+			margin-top: 29px;
+			padding-bottom: 32px;
 			text-transform: uppercase;
-			box-sizing: border-box;
 			}
 /*Адаптировал под таблеты*/
 
@@ -1735,7 +1731,7 @@ button {
 						font-family: "Ubuntu-Light";
 						color: #171717;
 						margin-bottom: 38px;
-						line-height: 28px;
+						line-height: 24px;
 					}
 					.p_services_menu_info_urls {
 						display: inline-block;
@@ -1782,7 +1778,7 @@ button {
 			}
 				.p_doctors_menu_item {
 					display: inline-block;
-					height: auto;
+					height: 365px;
 					width: 365px;
 					margin-right: 32px;
 					background-position: 50% 50%;
@@ -1793,11 +1789,6 @@ button {
 					float: left;
 					margin-bottom: 6px;
 					position: relative;
-				}
-				.p_doctors_menu_item img {
-					width: 100%;
-					height: auto;
-					display: inherit;
 				}
 				.p_doctors_menu_item:nth-child(4n-1) {
 					margin-right: 0px;
@@ -1830,7 +1821,7 @@ button {
 							text-transform: uppercase;
 							font-family: "Ubuntu-Medium";
 							font-size: 16px;
-							line-height: 28px;
+							line-height: 24px;
 							color: #ffffff;
 							margin-bottom: 20px;						
 						}											
@@ -2399,7 +2390,7 @@ button {
 	}
 	.b-text p {
 		font-size: 16px;
-		line-height: 28px;
+		line-height: 24px;
 		color: #171717;
 		margin-bottom: 44px;
 	}
@@ -2855,7 +2846,7 @@ div.cs-skin-slide::before {
 	width: 330px;
 }
 .time .cs-options li span {
-	padding: 1em !important;
+	padding: 0.5em 1em !important;
 }
 .cs-skin-slide .cs-options li {
 	opacity: 0;
@@ -2934,7 +2925,7 @@ div.cs-skin-slide::before {
 	content: '';
 }
 .time .cs-options li:first-child span {
-	padding: 1em 29px !important;
+	padding: 0.5em 29px !important;
 }
 .right label {
 	margin-left: 29px;
@@ -3206,9 +3197,6 @@ div.cs-skin-slide::before {
 @media (-webkit-min-device-pixel-ratio: 1.5) {
 	.b-icon:before{
 		background-image: url('../i/sprite@2x.png');
-	}
-	.footer-copyright {
-		background-image: url("../i/logo-redder@2x.png");
 	}
 }	
 @media screen and (max-width: 1250px){

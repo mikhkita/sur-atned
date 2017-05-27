@@ -302,7 +302,7 @@ $(document).ready(function(){
     );
     //---callback-btn-hover-func   
     //---gmap-map
-    if (window.location.toString().indexOf('index.html')>0) {
+    if ($('.map').length) {
 
         function initialize() {
                 if ($(window).width()<768) {
@@ -482,7 +482,7 @@ $(document).ready(function(){
     }); 
     //---mapcontclose  
     //---page-about-progressbar
-    if (window.location.toString().indexOf('about.html')>0) 
+    if ($('.p_about_b_about').length) 
         {
             function mainfprogress (){
                 var pcs = $('.p_about_b_about_stats_graphic_progressbar').length;
@@ -535,7 +535,7 @@ $(document).ready(function(){
         }
     //---page-about-progressbar   
     //---doctors-page-slider
-    if (window.location.toString().indexOf('doctors.html')>0)
+    if ($('.p_doctors').length)
         {
             function mainfdoc () {     
                 var menu_items = $('.p_doctors_menu_item').length;
@@ -721,7 +721,7 @@ $(document).ready(function(){
         }
     //---doctors-page-slider  
     //---practice-page-slider 
-    if (window.location.toString().indexOf('practice.html')>0)
+    if ($(".p_practice").length)
         {
         function mainf () {
             var menu_items = $('.p_practice_menu_item').length;
@@ -911,7 +911,7 @@ $(document).ready(function(){
     }, false); 
     //---fastclick
     //---service page slider
-    if (window.location.toString().indexOf('services.html')>0)
+    if ($('.p_services').length)
         {
         function mainfserv (){
             var menu_items = $('.p_services_menu_item').length;

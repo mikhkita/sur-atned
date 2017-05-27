@@ -420,19 +420,15 @@ $(document).ready(function(){
             dots: true,
             asNavFor: '.right-slider',
             prevArrow: '<div class="b-btn-prev"></div>',
-            nextArrow: '<div class="b-btn-next"></div>',
-            adaptiveHeight: true
-            
+            nextArrow: '<div class="b-btn-next"></div>'
         });
         $('.right-slider').slick({
-            fade: true,
             speed: 500,
-            fade: true,
+            //fade: true,
             cssEase: 'linear',
             asNavFor: '.left-slider',
             prevArrow: false,
-            nextArrow: false,
-            adaptiveHeight: true
+            nextArrow: false
         });
     //---about-slider on index page
     //---menu services index page

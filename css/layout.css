@@ -830,21 +830,21 @@ button {
 							position: absolute;
 							right: 46px;
 						}
-					.right-slider .slick-dots {
+					.left-slider .slick-dots {
 						z-index: 9999;
 						position: absolute;
 						bottom: 0;
-						left: -3px;
-						margin-bottom: -116px;
+						right: -120px;
+						margin-bottom: 0;
 						background-color: transparent;
 					}
-						.right-slider .slick-dots li{
+						.left-slider .slick-dots li{
 							width: 19px;
 							height: 19px;
 							font-size: 0px;
 							display: inline-block;
 						}
-							.right-slider .slick-dots li button {
+							.left-slider .slick-dots li button {
 								width: 18px;
 								height: 18px;
 								background-color: transparent;
@@ -852,7 +852,7 @@ button {
 								font-size: 0px;
 								cursor: pointer;
 							}
-							.right-slider .slick-dots li button:after {
+							.left-slider .slick-dots li button:after {
 								display: inline-block;
 								content: ".";
 								width: 8px;
@@ -863,13 +863,13 @@ button {
 								border: none;
 								margin-top: 0px;
 							}
-							.right-slider .slick-dots li:hover button:after {
+							.left-slider .slick-dots li:hover button:after {
 								background-color: #989898;
 							}
-							.right-slider .slick-dots .slick-active button:after{
+							.left-slider .slick-dots .slick-active button:after{
 								background-color: #74bc40; 
 							}
-							.right-slider .slick-dots .slick-active button:hover:after{
+							.left-slider .slick-dots .slick-active button:hover:after{
 								background-color: #74bc40; 
 							}							
 					.right-slider .b-btn-prev { 

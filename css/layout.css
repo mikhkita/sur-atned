@@ -71,7 +71,7 @@ body {
 	text-align: center;
 	font-family: 'Ubuntu';
 	font-size: 16px;
-	line-height: 24px;
+	line-height: 28px;
 	overflow-x: hidden;
 	-webkit-text-size-adjust: none;
 	color: #ffffff;
@@ -906,7 +906,7 @@ button {
 						.about-text-slide p {
 							font-family: "Ubuntu-Light";
 							font-size: 16px;
-							line-height: 24px;
+							line-height: 28px;
 							color: #171717;
 							margin-bottom: 36px;
 						}
@@ -1496,15 +1496,17 @@ button {
 				right: 0;
 				bottom: 40px;
 				background-position: 50% 50%;
-				background-image: url("../i/copyright-redder.png");
+				background-image: url("../i/logo-redder.png");
 				background-size: cover;
-				height: 16px;
-				width: 93px;
+				background-size: 127px;
+				background-repeat: no-repeat;
+				height: 22px;
+				width: 127px;
 			}
 				.footer-copyright a {
 					display: block;
 					height: 16px;
-					width: 93px;					
+					width: 127px;
 				}
 		.footer-sub {
 		}
@@ -1724,7 +1726,7 @@ button {
 						font-family: "Ubuntu-Light";
 						color: #171717;
 						margin-bottom: 38px;
-						line-height: 24px;
+						line-height: 28px;
 					}
 					.p_services_menu_info_urls {
 						display: inline-block;
@@ -1814,7 +1816,7 @@ button {
 							text-transform: uppercase;
 							font-family: "Ubuntu-Medium";
 							font-size: 16px;
-							line-height: 24px;
+							line-height: 28px;
 							color: #ffffff;
 							margin-bottom: 20px;						
 						}											
@@ -2383,7 +2385,7 @@ button {
 	}
 	.b-text p {
 		font-size: 16px;
-		line-height: 24px;
+		line-height: 28px;
 		color: #171717;
 		margin-bottom: 44px;
 	}
@@ -3190,6 +3192,9 @@ div.cs-skin-slide::before {
 @media (-webkit-min-device-pixel-ratio: 1.5) {
 	.b-icon:before{
 		background-image: url('../i/sprite@2x.png');
+	}
+	.footer-copyright {
+		background-image: url("../i/logo-redder@2x.png");
 	}
 }	
 @media screen and (max-width: 1250px){

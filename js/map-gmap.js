@@ -91,3 +91,7 @@ function initialize() {
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
+
+window.addEventListener('load', function() {
+    new FastClick(document.body);
+}, false);

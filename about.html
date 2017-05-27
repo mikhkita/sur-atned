@@ -17,8 +17,7 @@
 	<link rel="stylesheet" media="screen and (min-width: 769px) and (max-width: 1240px)" href="css/layout-tablet.css" />
 	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 768px)" href="css/layout-mobile.css" />
 	
-
-	<meta name="viewport" content="width=1000">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
@@ -128,7 +127,7 @@
 		<div class="p_about">
 			<div class="b-wide-block">
 				<div class="p_about_b_about">
-					<div class="b-block">
+					<div class="b-block clearfix">
 						<div class="p_about_b_about_text left">
 							<div class="main-content_top_h1">
 								<h1 >О компании</h1>
@@ -219,16 +218,22 @@
 						</div>
 						<div class="p_about_b_clinics_galary">
 						<div class="p_about_b_clinics_galary_windows">
-							<a data-fancybox="gallery" style="background-image: url('./i/stomatolog.jpg');" href="./i/stomatolog.jpg" ></a>
-							<p>Ул. Говорова, 34</p>
+							<a data-fancybox="gallery" href="./i/stomatolog.jpg">
+								<img src="./i/stomatolog.jpg" alt="">
+								<p>Ул. Говорова, 34</p>							
+							</a>
 						</div>
 						<div class="p_about_b_clinics_galary_windows">
-							<a data-fancybox="gallery" style="background-image: url('./i/diagnostika-zubov.jpg');" href="./i/diagnostika-zubov.jpg" ></a>
-							<p>Ул. Иркутский тракт, 134</p>
+							<a data-fancybox="gallery" href="./i/diagnostika-zubov.jpg" >
+								<img src="./i/diagnostika-zubov.jpg" alt="">
+								<p>Ул. Иркутский тракт, 134</p>
+							</a>
 						</div>
 						<div class="p_about_b_clinics_galary_windows">
-							<a data-fancybox="gallery" style="background-image: url('./i/abou-galary-3.jpg');" href="./i/abou-galary-3.jpg" ></a>
-							<p>Ул. Первомайская, 97</p>
+							<a data-fancybox="gallery" href="./i/abou-galary-3.jpg" >
+							<img src="./i/abou-galary-3.jpg" alt="">
+								<p>Ул. Первомайская, 97</p>
+							</a>
 						</div>
 						</div>
 					</div>
@@ -239,8 +244,8 @@
 	<div class="b footer clearfix">
 		<div class="footer-cont">
 			<div class="b-wide-block">
-				<div class="b-block">
-					<div class="footer-columns">
+				<div class="b-block clearfix">
+					<div class="footer-columns clearfix">
 						<div class="footer-logconts left">
 							<div class="footer-logo">
 								<a href="#">
@@ -251,15 +256,15 @@
 								<h4>Контакты</h4>
 								<ul>
 									<li>
-										<p>Томск, ул. Говорова, 34</p>
+										<p>ул. Говорова, 34</p>
 										<p>(3822) 62-22-92</p>
 									</li>
 									<li>
-										<p>Томск, Иркутский тракт, 134</p>
+										<p>Иркутский тракт, 134</p>
 										<p>(3822) 64-81-00</p>
 									</li>
 									<li>
-										<p>Томск, ул. Первомайская, 97</p>
+										<p>ул. Первомайская, 97</p>
 										<p>(3822) 20-76-76</p>
 									</li>
 								</ul>
@@ -317,13 +322,14 @@
 		</div>
 		<div class="footer-sub">
 			<p>Имеются противопоказания.<br>Необходима консультация специалиста.</p>
-		</div>									
+		</div>
 	</div>
 
 	<script type="text/javascript" src="js/about-progress-bar.js"></script>
 	<script type="text/javascript" src="js/flex-search.js"></script>
 	<script type="text/javascript" src="js/onhover-btn.js"></script>
 	<script type="text/javascript" src="js/mobile-menu.js"></script>
+	<script type="application/javascript" src="js/fastclick.js"></script>
 
 
 	<div style="display:none;">

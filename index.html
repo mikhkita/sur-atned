@@ -6,6 +6,8 @@
 	<meta name="servicesiption" content=''>
 	<meta name="format-detection" content="telephone=no">
 
+	<meta name="format-detection" content="telephone=no">
+
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
 	<link rel="stylesheet" href="css/reset.css" type="text/css">
@@ -21,7 +23,7 @@
 	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 768px)" href="css/layout-mobile.css" />
 	
 
-	<meta name="viewport" content="width=1000">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/fancybox-3.0/dist/jquery.fancybox.min.js"></script>
@@ -53,7 +55,54 @@
 		<li class="v" style="margin-left:580px"></li>
 		<li class="v" ></li>
 	</ul> -->
-	<div class="mobile-menu"></div>
+	<nav class="mobile-menu mobile" id="menu" >
+		<div class="b-block clearfix">
+			<ul class="filials left">
+				<li class="filial-addr left">
+					<a href="#">ул. Говорова, 34</a>
+					<p>+7 (3822) 62-22-92</p>									
+				</li>
+				<li class="filial-addr left">
+					<a href="#">ул. Иркутский тракт, 134</a>
+					<p>+7 (3822) 64-81-00</p>									
+				</li>					
+				<li class="filial-addr left">
+					<a href="#">ул. Первомайская, 97</a>
+					<p>+7 (3822) 20-76-76</p>									
+				</li>							
+			</ul>	
+			<h2>Меню</h2>					
+			<ul class="mobile-menu-ul">
+				<li>
+					<a href="#">О нас</a>
+					<ul class="header_dropdown_menu">
+						<li><a href="#">Clinics</a></li>
+						<li><a href="#">Projects Projects </a></li>
+						<li><a href="#">Plans</a></li>								
+					</ul>
+				</li>
+				<li>
+					<a href="services.html">Услуги</a>						
+				</li>
+				<li>
+					<a href="#">Акции</a>
+				</li>
+				<li>
+					<a href="#">FAQ</a>
+				</li>
+				<li>
+					<a href="#">Прайс-лист</a>
+				</li>
+				<li>
+					<a href="#">Контакты</a>
+				</li>
+				<li>
+					<a href="doctors.html">Врачи</a>
+				</li>
+			</ul>
+		</div>					
+	</nav>
+	<div id="panel" class="panel">
 	<div class="background-block"></div>
 	<div class="background-layer">
 		<div class="b-wide-block">
@@ -106,7 +155,7 @@
 			</div>
 			<div class="main-menu left">
 				<div class="b-block clearfix">
-					<div class="mobile-menu-button left"><span>Меню</span></div>
+					<div class="mobile-menu-button toggle-button left" ><span>Меню</span></div>
 					<ul>
 						<li>
 							<a href="#">О нас</a>
@@ -156,7 +205,7 @@
 						</li>
 					</ul>
 					<div class="zapis-na-priem left">
-						<a data-morphing class="btn" data-src="#b-popup-2" href="javascript:;">записаться на прием</a>
+						<a data-morphing class="btn" data-src="#b-popup-2" href="javascript:;">Записаться на прием</a>
 					</div>
 				</div>					
 			</div>							
@@ -273,6 +322,9 @@
 		<div class="services clearfix">
 			<div class="b-wide-block">
 				<div class="b-block clearfix">
+					<div class="mobile">
+						<h2>Услуги</h2>
+					</div>				
 					<div class="services-texts">
 						<div data-id="1" class="services-text-container show">
 							<div class="services-text">
@@ -370,10 +422,11 @@
 									<h5>Валентина К.</h5>
 									<p>08.06.2016</p>
 								</div>
-								<div class="review-btn"><a class="b-btn" data-fancybox data-src="#review-single-popup-1" href="javascript:;">подробнее <div class="arrow"></div></a></div>
+								<div class="review-btn notmobile"><a class="b-btn" data-fancybox data-src="#review-single-popup-1" href="javascript:;">подробнее <div class="arrow"></div></a></div>
 							</div>
 							<div class="review-single-text clear">
 								<p>Хочу сказать большое спасибо клинике космодент, отдельное спасибо косметологу Ксении! Она профессионал своего дела, проходила курс биоревитализации, и делала губки! Очень довольна результатом! Несомненно самая лучшая клиника в Томске, теперь я ваш постоянный клиент!Хочу сказать большое спасибо клинике космодент, отдельное спасибо косметологу Ксении! Она профессионал своего дела, проходила курс биоревитализации, и делала губки! Очень довольна результатом! Несомненно самая лучшая клиника в Томске, теперь я ваш постоянный клиент!</p>
+								<div class="mobile"><a class="review-more-mobile" data-fancybox data-src="#review-single-popup-1" href="javascript:;">Подробнее...</a></div>								
 							</div>
 							<div class="review-single-full " style="display: none;" id="review-single-popup-1">
 								<div class="review-single-head">
@@ -395,7 +448,7 @@
 									<h5>александр с.</h5>
 									<p>22.08.2016</p>
 								</div>
-								<div class="review-btn"><a class="b-btn" data-fancybox data-src="#review-single-popup-2" href="javascript:;">подробнее <div class="arrow"></div></a></div>
+								<div class="review-btn notmobile"><a class="b-btn" data-fancybox data-src="#review-single-popup-2" href="javascript:;">подробнее <div class="arrow"></div></a></div>
 							</div>
 							<div class="review-single-text clear">
 								<p>Радует, все. Заходя в клинику, чувствуешь себя хозяином жизни, поскольку интерьер - отличный. Далее, оборудование. Такого, действительно, в Томске не видела ни где. В Томске есть Европа. Специалисты. Вообще огромный поклон. Сколько тактичности, вежливости и терпения. </p>
@@ -420,7 +473,7 @@
 									<h5>Валентина К.</h5>
 									<p>08.06.2016</p>
 								</div>
-								<div class="review-btn"><a class="b-btn" data-fancybox data-src="#review-single-popup-3" href="javascript:;">подробнее <div class="arrow"></div></a></div>
+								<div class="review-btn notmobile"><a class="b-btn" data-fancybox data-src="#review-single-popup-3" href="javascript:;">подробнее <div class="arrow"></div></a></div>
 							</div>
 							<div class="review-single-text clear">
 								<p>Хочу сказать большое спасибо клинике космодент, отдельное спасибо косметологу Ксении! Она профессионал своего дела, проходила курс биоревитализации, и делала губки! Очень довольна результатом! Несомненно самая лучшая клиника в Томске, теперь я ваш постоянный клиент!</p>
@@ -445,7 +498,7 @@
 									<h5>Валентина К.</h5>
 									<p>08.06.2016</p>
 								</div>
-								<div class="review-btn"><a class="b-btn" data-fancybox data-src="#review-single-popup-4" href="javascript:;">подробнее <div class="arrow"></div></a></div>
+								<div class="review-btn notmobile"><a class="b-btn" data-fancybox data-src="#review-single-popup-4" href="javascript:;">подробнее <div class="arrow"></div></a></div>
 							</div>
 							<div class="review-single-text clear">
 								<p>Хочу сказать большое спасибо клинике космодент, отдельное спасибо косметологу Ксении! Она профессионал своего дела, проходила курс биоревитализации, и делала губки! Очень довольна результатом! Несомненно самая лучшая клиника в Томске, теперь я ваш постоянный клиент!</p>
@@ -500,7 +553,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="map-cont-shedule left">
+						<div class="map-cont-shedule notmobile left">
 							<ul>
 								<h5>График работы</h5>
 								<li>
@@ -541,7 +594,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="map-cont-shedule left">
+						<div class="map-cont-shedule notmobile left">
 							<ul>
 								<h5>График работы</h5>
 								<li>
@@ -582,7 +635,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="map-cont-shedule left">
+						<div class="map-cont-shedule notmobile left">
 							<ul>
 								<h5>График работы</h5>
 								<li>
@@ -610,7 +663,7 @@
 		<div class="footer-cont">
 			<div class="b-wide-block">
 				<div class="b-block clearfix">
-					<div class="footer-columns">
+					<div class="footer-columns clearfix">
 						<div class="footer-logconts left">
 							<div class="footer-logo">
 								<a href="#">
@@ -621,15 +674,15 @@
 								<h4>Контакты</h4>
 								<ul>
 									<li>
-										<p>Томск, ул. Говорова, 34</p>
+										<p>ул. Говорова, 34</p>
 										<p>(3822) 62-22-92</p>
 									</li>
 									<li>
-										<p>Томск, Иркутский тракт, 134</p>
+										<p>Иркутский тракт, 134</p>
 										<p>(3822) 64-81-00</p>
 									</li>
 									<li>
-										<p>Томск, ул. Первомайская, 97</p>
+										<p>ул. Первомайская, 97</p>
 										<p>(3822) 20-76-76</p>
 									</li>
 								</ul>
@@ -689,10 +742,11 @@
 			<p>Имеются противопоказания.<br>Необходима консультация специалиста.</p>
 		</div>
 	</div>
+	</div>
 
 
 
-
+	
 	<script type="text/javascript" src="js/flex-search.js"></script>
 	<script type="text/javascript" src="js/onhover-btn.js"></script>
 	<script type="text/javascript" src="js/top-slider.js"></script>
@@ -700,7 +754,11 @@
 	<script type="text/javascript" src="js/menu-services.js"></script>
 	<script type="text/javascript" src="js/reviews-slider.js"></script>
 	<script type="text/javascript" src="js/map-cont-close.js"></script>
-	<script type="text/javascript" src="js/mobile-menu.js"></script>
+	<!-- <script type="text/javascript" src="js/mobile-menu.js"></script> -->
+	<script type="application/javascript" src="js/fastclick.js"></script>
+	<script type="application/javascript" src="js/slideout.js"></script>
+
+
 
 
 

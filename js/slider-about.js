@@ -2,7 +2,8 @@ $(document).ready(function(){
 	$('.left-slider').slick({
 		asNavFor: '.right-slider',
 		prevArrow: '<div class="b-btn-prev"></div>',
-		nextArrow: '<div class="b-btn-next"></div>'
+		nextArrow: '<div class="b-btn-next"></div>',
+		adaptiveHeight: true
 		
 	});
 	$('.right-slider').slick({
@@ -13,6 +14,7 @@ $(document).ready(function(){
 		cssEase: 'linear',
 		asNavFor: '.left-slider',
 		prevArrow: false,
-		nextArrow: false
+		nextArrow: false,
+		adaptiveHeight: true
 	});
 });

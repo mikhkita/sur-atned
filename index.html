@@ -834,15 +834,15 @@
 		</div>
 		<div class="b-popup b-block" id="b-popup-2">
 			<h3>Запись на приём</h3>
-			<form action="kitsend.php" method="POST" id="b-form-2">
+			<form action="kitsend.php" data-afterAjax="myFunc" method="POST" id="b-form-2">
 				<div class="left">
 					<div class="name">
-						<label for="name-2">УКАЖИТЕ ВАШЕ ФИО</label><br>
-						<input type="text" id="name-2" name="name" placeholder="Иван Иванович Иванов">
+						<label for="name-2">УКАЖИТЕ ВАШЕ ФИО *</label><br>
+						<input type="text" id="name-2" name="name" placeholder="Иван Иванович Иванов" required>
 					</div>
 					<div class="phone">
-						<label for="tel-2">УКАЖИТЕ ВАШ ТЕЛЕФОН</label><br>
-						<input type="text" id="tel-2" name="phone" placeholder="+7(999)333-22-11">
+						<label for="tel-2">УКАЖИТЕ ВАШ ТЕЛЕФОН *</label><br>
+						<input type="text" id="tel-2" name="phone" placeholder="+7 (___) ___-__-__" required>
 					</div>
 					<div class="textblock">
 						<label for="sim">ЖАЛОБЫ И СИМПТОМЫ</label>
@@ -851,7 +851,7 @@
 				</div>
 				<div class="right">
 					<section>
-						<label for="clin">ВЫБЕРИТЕ КЛИНИКУ</label><br>
+						<label for="clin">ВЫБЕРИТЕ КЛИНИКУ *</label><br>
 						<select class="hospital cs-select cs-skin-slide" name="clin" id="clin">
 							<option>ул. Говорова, 34</option>
 							<option>ул. Иркутский тракт, 134</option>
@@ -879,7 +879,8 @@
 							<option value="16:00">16:00</option>
 						</select>
 					</section>
-					<button>записаться</button>
+					<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
+					<button type="submit" class="ajax">записаться</button>
 				</div>
 			</form>
 		</div>

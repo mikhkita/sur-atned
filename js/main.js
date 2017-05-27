@@ -39,8 +39,9 @@ $(document).ready(function(){
         prevText: "",
         nextText: ""
     });
-    $('#tel-2').mask("+7(999)999-99-99");
-    $('#tel-3').mask("+7(999)999-99-99");	
+    customHandlers["myFunc"] = function($form){
+        
+    }
     $(function() {
           [].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {   
              new SelectFx(el);

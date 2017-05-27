@@ -1368,7 +1368,14 @@ button {
 								font-size: 14px;
 								line-height: 35px;
 								color: #202020;						
-							}						
+							}	
+							.fancybox-close-small:focus:after{
+								outline: none;
+							}	
+							.fancybox-close-small{
+								right: 10px;
+								top: 10px;
+							}				
 						.map-cont-shedule {
 							font-family: "Ubuntu-Medium";
 							font-size: 14px;

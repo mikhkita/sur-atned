@@ -394,14 +394,17 @@ h1,h2,h3,h4,h5,h6{
 				position: relative;
 				text-align: right;
 				width: 92%;
+				margin: 20px 0 20px 10px;
+				float: none !important;
 			}
 			.mobile-menu-ul {
 				position: relative;
 				margin-bottom: 30px;
-				width: 98%;
+				width: 106%;
+				margin-left: -10px;
 			}
 			.mobile-menu-ul li {
-			margin-bottom: 3px;
+			margin-bottom: 0px;
 			position: relative;
 			}			
 			.filials li {
@@ -409,7 +412,8 @@ h1,h2,h3,h4,h5,h6{
 				display: block;
 				float: initial !important;
 				cursor: pointer;
-				text-align: right;
+				text-align: left;
+				float: none !important;
 			}
 			.filials li:hover a {
 				text-decoration: none;
@@ -423,16 +427,17 @@ h1,h2,h3,h4,h5,h6{
 					display: inline-block;
 					box-sizing: border-box;
 					padding: 10px;
+					padding-left: 20px;
 					height: auto;
 					width: 100%;
 					color: #ffffff;
-					border-bottom: 1px solid rgba(255,255,255,0.3);
+					border-bottom: 1px solid rgba(255,255,255,0.2);
 				}
 				.header_dropdown_menu {
 					position: initial;
 					background-color: #74bc40;
 					visibility: visible;
-					margin-top: 3px;
+					margin-top: 0px;
 					opacity: 1;
 					top: 0;
 					left: 100%;

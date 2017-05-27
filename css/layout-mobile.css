@@ -1240,7 +1240,11 @@ div.cs-skin-slide::before {
 	margin-top: 0px;
 }
 .callback .morphing-btn-wrap {
-	min-width: 52px;
+	width: 52px !important;
+	overflow: hidden;
+}
+.b-block .zapis-na-priem .morphing-btn_circle {
+	width: 54px !important;
 }
 /*slideout-menu*/
 body {

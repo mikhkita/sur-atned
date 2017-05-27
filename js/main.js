@@ -195,7 +195,6 @@ $(document).ready(function(){
                 height    : $btn.outerHeight() * scale,
                 transform : 'scale(' + 1 / scale + ')'
             });
-
             $clone.one("transitionend.fm webkitTransitionEnd.fm oTransitionEnd.fm MSTransitionEnd.fm", function(e) {
                 $(this).off(".fm");
 

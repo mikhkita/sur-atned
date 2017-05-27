@@ -18,10 +18,10 @@
 	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 768px)" href="css/layout-mobile.css" />
 	
 
-	<meta name="viewport" content="width=1000">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="js/fancybox-3.0/dist/jquery.fancybox.min.js"></script>
 	<script type="text/javascript" src="js/jssor.js"></script>
 	<script type="text/javascript" src="js/jssor.slider.js"></script>
 	<script type="text/javascript" src="js/TweenMax.min.js"></script>
@@ -36,6 +36,9 @@
 	<script type="text/javascript" src="js/device.js"></script>
 	<script type="text/javascript" src="js/KitSend.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/classie.js"></script>
+	<script type="text/javascript" src="js/selectFx.js"></script>	
 	
 
 </head>
@@ -133,42 +136,48 @@
 						<h2>Наши специалисты</h2>
 					</div>
 					<div class="p_doctors_menu clearfix">
-						<div class="p_doctors_menu_item doc-1" style="background-image: url('./i/doctor-1.jpg');"  data-mdbtn="1" data-fancybox data-src="#doc-1" href="javascript:;">
+						<div class="p_doctors_menu_item doc-1" data-mdbtn="1">
+							<img src="./i/doctor-1.jpg" alt="">
 							<div class="p_doctors_menu_vcard">
 								<h5>иванов</h5>
 								<h6>иван иванович</h6>
 								<p>Хирург-стоматолог, имплантолог, пародонтолог Хирург-стоматолог, имплантолог, пародонтолог</p>
 							</div>
 						</div>
-						<div class="p_doctors_menu_item doc-2" style="background-image: url('./i/doctor-2.jpg');"  data-mdbtn="2">
+						<div class="p_doctors_menu_item doc-2" data-mdbtn="2">
+							<img src="./i/doctor-2.jpg" alt="">
 							<div class="p_doctors_menu_vcard">
 								<h5>иванов</h5>
 								<h6>иван иванович</h6>
 								<p>Хирург-стоматолог, имплантолог, пародонтолог</p>
 							</div>
 						</div>
-						<div class="p_doctors_menu_item doc-3" style="background-image: url('./i/doctor-3.jpg');"  data-mdbtn="3">
+						<div class="p_doctors_menu_item doc-3" data-mdbtn="3">
+							<img src="./i/doctor-3.jpg" alt="">
 							<div class="p_doctors_menu_vcard">
 								<h5>Куркина</h5>
 								<h6>Елена Евгеньевна</h6>
 								<p>Хирург-стоматолог, имплантолог, пародонтолог</p>
 							</div>
 						</div>
-						<div class="p_doctors_menu_item doc-4" style="background-image: url('./i/doctor-4.jpg');"  data-mdbtn="4">
+						<div class="p_doctors_menu_item doc-4" data-mdbtn="4">
+							<img src="./i/doctor-4.jpg" alt="">
 							<div class="p_doctors_menu_vcard">
 								<h5>Куркина</h5>
 								<h6>Елена Евгеньевна</h6>
 								<p>Хирург-стоматолог, имплантолог, пародонтолог</p>
 							</div>
 						</div>
-						<div class="p_doctors_menu_item doc-5" style="background-image: url('./i/doctor-5.jpg');"  data-mdbtn="5">
+						<div class="p_doctors_menu_item doc-5" data-mdbtn="5">
+							<img src="./i/doctor-5.jpg" alt="">
 							<div class="p_doctors_menu_vcard">
 								<h5>Куркина</h5>
 								<h6>Елена Евгеньевна</h6>
 								<p>Хирург-стоматолог, имплантолог, пародонтолог</p>
 							</div>
 						</div>
-						<div class="p_doctors_menu_item doc-6" style="background-image: url('./i/doctor-6.jpg');"  data-mdbtn="6">
+						<div class="p_doctors_menu_item doc-6" data-mdbtn="6">
+							<img src="./i/doctor-6.jpg" alt="">
 							<div class="p_doctors_menu_vcard">
 								<h5>Куркина</h5>
 								<h6>Елена Евгеньевна</h6>
@@ -269,8 +278,11 @@
 						<div class="p_doctors_menu_info_triangle_im"></div>
 					</div>				
 					<div class="p_doctors_slide_top">
-						<div class="p_doctors_slide_img" style="background-image: url('./i/doctor-orig-1.jpg'); background-position: 50% 50%; background-size: auto;"></div>
-						<div class="b-block">
+						<div class="p_doctors_slide_img notmobile" style="background-image: url('./i/doctor-orig-1.jpg'); background-position: 50% 50%; background-size: auto;"></div>
+						<div class="p_doctors_slide_img mobile">
+							<img src="./i/doctor-1.jpg" alt="">
+						</div>						
+						<div class="b-block clearfix">
 							<div class="p_doctors_slide_text right">
 								<h4>Ивано Иван Иванович</h4>
 								<h5>стоматолог - терапевт</h5>
@@ -311,8 +323,11 @@
 						<div class="p_doctors_menu_info_triangle_im"></div>
 					</div>				
 					<div class="p_doctors_slide_top">
-						<div class="p_doctors_slide_img" style="background-image: url('./i/doctor-orig-1.jpg'); background-position: 50% 50%; background-size: auto;"></div>
-						<div class="b-block">
+						<div class="p_doctors_slide_img notmobile" style="background-image: url('./i/doctor-orig-1.jpg'); background-position: 50% 50%; background-size: auto;"></div>
+						<div class="p_doctors_slide_img mobile">
+							<img src="./i/doctor-2.jpg" alt="">
+						</div>							
+						<div class="b-block clearfix">
 							<div class="p_doctors_slide_text right">
 								<h4>Иoано Иoан Иoанович</h4>
 								<h5>стоматолог - терапевт</h5>
@@ -354,7 +369,7 @@
 					</div>				
 					<div class="p_doctors_slide_top">
 						<div class="p_doctors_slide_img" style="background-image: url('./i/doctor-orig-1.jpg'); background-position: 50% 50%; background-size: auto;"></div>
-						<div class="b-block">
+						<div class="b-block clearfix">
 							<div class="p_doctors_slide_text right">
 								<h4>Иoано Иoан Иoанович</h4>
 								<h5>стоматолог - терапевт</h5>
@@ -396,7 +411,7 @@
 					</div>				
 					<div class="p_doctors_slide_top">
 						<div class="p_doctors_slide_img" style="background-image: url('./i/doctor-orig-1.jpg'); background-position: 50% 50%; background-size: auto;"></div>
-						<div class="b-block">
+						<div class="b-block clearfix">
 							<div class="p_doctors_slide_text right">
 								<h4>Иoано Иoан Иoанович</h4>
 								<h5>стоматолог - терапевт</h5>
@@ -438,7 +453,7 @@
 					</div>				
 					<div class="p_doctors_slide_top">
 						<div class="p_doctors_slide_img" style="background-image: url('./i/doctor-orig-1.jpg'); background-position: 50% 50%; background-size: auto;"></div>
-						<div class="b-block">
+						<div class="b-block clearfix">
 							<div class="p_doctors_slide_text right">
 								<h4>Иoано Иoан Иoанович</h4>
 								<h5>стоматолог - терапевт</h5>
@@ -480,7 +495,7 @@
 					</div>				
 					<div class="p_doctors_slide_top">
 						<div class="p_doctors_slide_img" style="background-image: url('./i/doctor-orig-1.jpg'); background-position: 50% 50%; background-size: auto;"></div>
-						<div class="b-block">
+						<div class="b-block clearfix">
 							<div class="p_doctors_slide_text right">
 								<h4>Иoано Иoан Иoанович</h4>
 								<h5>стоматолог - терапевт</h5>
@@ -514,11 +529,6 @@
 			</div>	
 			<div class="p_doctors_slider"></div>									
 	</div>
-
-<script type="text/javascript" src="js/doctors_page_opt.js"></script>
-<script type="text/javascript" src="js/flex-search.js"></script>
-<script type="text/javascript" src="js/onhover-btn.js"></script>
-
 
 	<div style="display:none;">
 		<a href="#b-popup-error" class="b-error-link fancy" style="display:none;"></a>

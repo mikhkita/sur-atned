@@ -20,7 +20,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="js/fancybox-3.0/dist/jquery.fancybox.min.js"></script>
 	<script type="text/javascript" src="js/jssor.js"></script>
 	<script type="text/javascript" src="js/jssor.slider.js"></script>
 	<script type="text/javascript" src="js/TweenMax.min.js"></script>
@@ -35,6 +35,9 @@
 	<script type="text/javascript" src="js/device.js"></script>
 	<script type="text/javascript" src="js/KitSend.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/classie.js"></script>
+	<script type="text/javascript" src="js/selectFx.js"></script>	
 	
 
 </head>
@@ -53,8 +56,8 @@
 	</div>		
 	<div class="b b-head clearfix">
 		<div class="b-wide-block">
-			<div class="header clearfix">
-				<div class="b-block">
+			<div class="header">
+				<div class="b-block clearfix">
 					<a href="#">
 						<div class="logo left"></div>
 					</a>
@@ -76,13 +79,16 @@
 						<div class="open right">
 							<div class="icon-search right"></div>
 							<form action="#" class="left">
-								<input type="text" class="search-text left">
+								<input type="text" placeholder="Поиск по сайту" class="search-text left">
 								<input type="submit" value="" class="search-button right">
 							</form>
 						</div>						
 					</div>
+					<div class="search-mobile">
+						<a class="search-mobile-link" href="search.html"></a>
+					</div>					
 					<div class="callback right">
-						<a href="#">
+						<a data-morphing class="btn" data-src="#b-popup-3" href="javascript:;">
 							<div class="callback-btn">
 								<div class="icon-callback"></div>						
 							</div>
@@ -92,13 +98,39 @@
 				</div>
 			</div>
 			<div class="main-menu left">
-				<div class="b-block">
+				<div class="b-block clearfix">
+					<div class="mobile-menu-button toggle-button left" ><span>Меню</span></div>
 					<ul>
 						<li>
 							<a href="#">О нас</a>
+							<ul class="header_dropdown_menu">
+								<li><a href="#">Clinics</a></li>
+								<li><a href="#">Projects Projects Projects</a></li>
+								<li><a href="#">Plans</a></li>								
+							</ul>
 						</li>
 						<li>
-							<a href="#">Услуги</a>
+							<a href="services.html">Услуги</a>
+							<ul class="header_dropdown_menu">
+								<li>
+									<a href="#">Услуги</a>
+								</li>
+								<li>
+									<a href="#">Акции</a>
+								</li>
+								<li>
+									<a href="#">FAQ</a>
+								</li>
+								<li>
+									<a href="#">Прайс-лист</a>
+								</li>
+								<li>
+									<a href="#">Контакты</a>
+								</li>
+								<li>
+									<a href="#">Врачи</a>
+								</li>								
+							</ul>							
 						</li>
 						<li>
 							<a href="#">Акции</a>
@@ -113,11 +145,11 @@
 							<a href="#">Контакты</a>
 						</li>
 						<li>
-							<a href="#">Врачи</a>
+							<a href="doctors.html">Врачи</a>
 						</li>
 					</ul>
-					<div class="zapis-na-priem right">
-						<a href="#">записаться на прием</a>
+					<div class="zapis-na-priem left">
+						<a data-morphing class="btn" data-src="#b-popup-2" href="javascript:;">Записаться на прием</a>
 					</div>
 				</div>					
 			</div>							
@@ -325,10 +357,6 @@
 		</div>
 	</div>
 
-	<script type="text/javascript" src="js/about-progress-bar.js"></script>
-	<script type="text/javascript" src="js/flex-search.js"></script>
-	<script type="text/javascript" src="js/onhover-btn.js"></script>
-	<script type="text/javascript" src="js/mobile-menu.js"></script>
 	<script type="application/javascript" src="js/fastclick.js"></script>
 
 

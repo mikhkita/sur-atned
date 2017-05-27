@@ -1278,7 +1278,7 @@ button {
 				margin-left: 0;
 			}
 				.p_doctors_menu_item {
-					height: 300px;
+					height: auto;
 					width: 300px;
 					margin-right: 30px;
 					margin-bottom: 6px;

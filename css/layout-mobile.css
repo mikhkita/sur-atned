@@ -1297,7 +1297,10 @@ div.cs-skin-slide {
 div.cs-skin-slide::before {
 	height: 74px;
 }
-
+.morphing-close {
+	top: 5px;
+	right: 17px;
+}
 /*slideout-menu*/
 body {
   width: 100%;

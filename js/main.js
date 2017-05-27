@@ -189,10 +189,10 @@ $(document).ready(function(){
             var pos    = $btn[0].getBoundingClientRect();
 
             $clone.css({
-                top       : pos.top  + $btn.outerHeight() * 0.5 - ( $btn.outerHeight() * scale * 0.5 ),
-                left      : pos.left + $btn.outerWidth()  * 0.5 - ( $btn.outerWidth()  * scale * 0.5 ),
-                width     : $btn.outerWidth()  * scale,
-                height    : $btn.outerHeight() * scale,
+                top       : pos.top  + $btn.outerHeight() * 0.5 - ( ($btn.outerHeight() * scale + 400) * 0.5 ),
+                left      : pos.left + $btn.outerWidth()  * 0.5 - ( ($btn.outerHeight() * scale + 400) * 0.5 ),
+                width     : $btn.outerWidth()  * scale + 400,
+                height    : $btn.outerHeight() * scale + 400,
                 transform : 'scale(' + 1 / scale + ')'
             });
             $clone.one("transitionend.fm webkitTransitionEnd.fm oTransitionEnd.fm MSTransitionEnd.fm", function(e) {

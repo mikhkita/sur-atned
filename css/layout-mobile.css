@@ -319,26 +319,26 @@ h1,h2,h3,h4,h5,h6{
 				display: none;
 			}
 			.main-menu {
-				height: 54px;
-				min-height: 54px;
+				height: auto;
+				min-height: auto;
+				border-bottom: 2px solid #73ab45;
 			}	
 			.main-menu a {
 				height: 60px;
 			}					
-			.b-head .main-menu .b-block>ul {
+			.b-head .main-menu .b-block ul {
 				display: none;
 			}
 			.main-menu .b-block {
 				margin: 0 0 0 5%;
 			}
 			.mobile-menu-button {
-				display: initial;
+				display: block;
 				min-width: 110px;
 				width: auto;
-				height: 54px;
 				cursor: pointer;
 				box-sizing: border-box;
-				padding: 16px 0 0 0px;
+				padding: 20px 0 16px;
 				text-align: left;
 			}		
 				.mobile-menu-button span {
@@ -461,9 +461,11 @@ h1,h2,h3,h4,h5,h6{
 					text-align: center;
 					/*margin: 0 auto;*/
 					width: auto;
-					padding: 23px 15px 0px;
+					padding: 25px 30px 24px;
+					white-space: nowrap;
 					text-transform: none;
-					height: 54px;
+					max-width: 1000px;
+					height: auto;
 				}
 				.b-block .zapis-na-priem a:hover {
 				}
@@ -612,7 +614,7 @@ h1,h2,h3,h4,h5,h6{
 						.about-text-slide p {
 							font-family: "Ubuntu-Light";
 							font-size: 16px;
-							line-height: 24px;
+							line-height: 28px;
 							margin-bottom: 28px;
 						}
 						.about-text-slide a {
@@ -627,7 +629,8 @@ h1,h2,h3,h4,h5,h6{
 	}	
 		.services .b-wide-block {
 			height: auto;
-			background-image: url("../i/services-bgrnd.jpg");
+			background-image: none;
+			background-color: #fafafa;
 			background-position: 50% 50%;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -643,7 +646,7 @@ h1,h2,h3,h4,h5,h6{
 				}
 				.services-menu li {
 					display: inline-block;
-					height: 70px;
+					height: 80px;
 					width: 48%;
 					min-width: 140px;
 					max-width: 400px;
@@ -655,7 +658,7 @@ h1,h2,h3,h4,h5,h6{
 				}
 				.services-menu li:nth-child(1n) {
 					margin-right: 4%;
-					margin-bottom: 8px;
+					margin-bottom: 15px;
 				}
 				.services-menu li:nth-child(8) {
 					margin-right: 0px;
@@ -666,13 +669,13 @@ h1,h2,h3,h4,h5,h6{
 						.services-menu li button {
 							font-family: "Ubuntu";
 							font-size: 16px;
-							padding: 7%;
+							padding: 3% 9%;
 							/* text-transform: uppercase; */
 							/*text-align: left;*/
 							display: table-cell;
 							width: 100%;
 							height: 100%;
-							line-height: 21px;
+							line-height: 24px;
 							vertical-align: middle;
 							cursor:pointer;
 							transition: all 250ms ease;
@@ -738,10 +741,10 @@ h1,h2,h3,h4,h5,h6{
 	.reviews {}
 		.reviews .b-wide-block {
 			padding: 30px 0 40px;
-			background-color: #fafafa;
+			background-color: #FFF;
 		}
 			.reviews .b-wide-block .b-block {
-				width: 95%;
+				width: 90%;
 				/*overflow: hidden;*/
 			}
 				.reviews-header {
@@ -1059,7 +1062,7 @@ h1,h2,h3,h4,h5,h6{
 			}
 				.footer-cont .b-block {
 				height: auto;
-				padding: 30px 0 40px;
+				padding: 30px 0 60px;
 				margin: 0 5%;
 				}
 					.footer-columns {
@@ -1088,6 +1091,7 @@ h1,h2,h3,h4,h5,h6{
 						.footer-logconts {
 							width: auto;
 							margin-right: 6%; /*140px*/
+							float: right !important;
 						}
 							.footer-logo {
 							margin-bottom: 26px;
@@ -1143,12 +1147,13 @@ h1,h2,h3,h4,h5,h6{
 			.footer-copyright {
 				position: absolute;
 				right: 0;
-				bottom: 20px;
+				bottom: 30px;
 				background-position: 50% 50%;
 				background-image: url("../i/copyright-Redder.png");
 				background-size: cover;
 				height: 16px;
 				width: 93px;
+				display: block;
 			}
 				.footer-copyright a {
 					display: block;
@@ -1160,10 +1165,10 @@ h1,h2,h3,h4,h5,h6{
 		}
 			.footer-sub p {
 			font-family: "Ubuntu-Light";
-			font-size: 14px;
+			font-size: 16px;
 			line-height: 20px;
-			letter-spacing: 4px;
-			margin-top: 20px;
+			letter-spacing: 2px;
+			padding-top: 20px;
 			padding-bottom: 20px;
 			text-transform: uppercase;
 			}
@@ -1740,3 +1745,15 @@ body {
 					display: none !important;
 				}							
 /*doctors page*/
+@media screen and (max-width: 360px){
+	.b-block .zapis-na-priem a {
+		font-size: 16px;
+		padding: 25px 15px 24px;
+	}
+	.footer-sub p{
+		font-size: 14px;
+	}
+	.footer-columns h4{
+		font-size: 16px;
+	}
+}

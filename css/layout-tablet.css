@@ -1097,14 +1097,13 @@ button {
 					width: 93px;					
 				}
 		.footer-sub {
-			height: 136px;
+
 		}
 			.footer-sub p {
 			font-family: "Ubuntu-Light";
 			font-size: 25px;
 			line-height: 40px;
 			letter-spacing: 10px;
-			margin-top: 29px;
 			}
 /*Адаптировал под таблеты*/
 

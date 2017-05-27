@@ -344,6 +344,8 @@ button {
 		color: #181818;
 	}
 .background-block {
+	top: 0px;
+	left: 0px;
 	background-position: 50% 0;
 	background-image: url('../i/slide-blur-01.jpg');
 	background-size: 100%;
@@ -660,6 +662,8 @@ button {
 
 }
 	.major-slider {
+		height: 438px;
+    	overflow: hidden;
 	}
 		.main-content .b-wide-block{
 		}
@@ -1521,7 +1525,7 @@ button {
 			line-height: 40px;
 			color: #dcdcdc;
 			letter-spacing: 10px;
-			margin-top: 29px;
+			padding-top: 29px;
 			padding-bottom: 32px;
 			text-transform: uppercase;
 			}

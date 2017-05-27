@@ -1313,6 +1313,11 @@ div.cs-select {
 .b-popup {
 	animation: none;
 }
+.b-popup input.error {
+	border: none !important;
+	border-bottom: 1px solid #F00 !important;
+	box-shadow: none !important;
+}
 /*slideout-menu*/
 body {
   width: 100%;

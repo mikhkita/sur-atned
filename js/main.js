@@ -1009,6 +1009,7 @@ $(document).ready(function(){
                     }   
                     setTimeout(scrlClose, 0);           
             });
+        }
             var winsize = $(window).width();
             window.onresize = resizes;  
             function resizes () {
@@ -1024,7 +1025,7 @@ $(document).ready(function(){
                         mainfserv();
                     }
                 }
-        }
+        
         mainfserv();
     }
     //---service page slider

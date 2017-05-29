@@ -10,7 +10,7 @@ body {
 	text-align: center;
 	font-family: 'Ubuntu';
 	font-size: 16px;
-	line-height: 24px;
+	line-height: 28px;
 	overflow-x: hidden;
 	-webkit-text-size-adjust: none;
 }
@@ -613,14 +613,14 @@ button {
 					.about-text-slide {
 						}
 						.about-text-slide h2 {
-							font-size: 42px;
-							line-height: 46px;
+							font-size: 39px;
+							line-height: 44px;
 							margin-top: 10px;
 							margin-bottom: 13px;
 						}
 						.about-text-slide p {
 							font-size: 16px;
-							line-height: 24px;
+							line-height: 28px;
 							margin-bottom: 22px;
 						}
 						.about-text-slide a {
@@ -1243,7 +1243,7 @@ button {
 					}
 					.p_services_menu_info_text p{
 						margin-bottom: 38px;
-						line-height: 24px;
+						line-height: 28px;
 					}
 					.p_services_menu_info_urls {
 						width: 500px;
@@ -1297,7 +1297,10 @@ button {
 						}											
 						.p_doctors_menu_vcard p{
 							font-size: 16px;
-						}																															
+						}		
+	.left-slider .slick-dots{
+		display: none !important;
+	}																													
 	.footer .p_doctors_slider {
 	}
 	.p_doctors_slider {
@@ -1723,12 +1726,26 @@ div.cs-select {
 }
 .b-popup button {
 	width: 165px;
+	margin-top: 42px;
 }
 .ui-datepicker {
 	width: 368px !important;
 }
 #b-popup-3 .left {
 	width: 620px;
+}
+.div-cal {
+	left: 0px;
+	width: 375px;
+	top: 44px;
+}
+.date-div {
+	width: 100%;
+	top: 44px;
+	left: 0px;
+}
+.cs-select > span {
+	padding: 34px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5) {
 	.b-icon:before{

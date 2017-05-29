@@ -379,7 +379,7 @@ h1,h2,h3,h4,h5,h6{
 				font-family: "Ubuntu-Bold";
 				font-size: 36px;
 				line-height: 40px;
-				margin: 20px 0 20px 10px;
+				margin: 30px 0 20px 10px;
 				text-align: left;
 			}
 			.visible {
@@ -394,14 +394,15 @@ h1,h2,h3,h4,h5,h6{
 				position: relative;
 				text-align: right;
 				width: 92%;
-				margin: 20px 0 20px 10px;
+				margin: 20px 0 40px 10px;
 				float: none !important;
 			}
 			.mobile-menu-ul {
 				position: relative;
 				margin-bottom: 30px;
-				width: 106%;
+				width: calc(100% + 10px);
 				margin-left: -10px;
+				border-top: 1px solid rgba(255,255,255,0.2);
 			}
 			.mobile-menu-ul li {
 			margin-bottom: 0px;
@@ -552,7 +553,7 @@ h1,h2,h3,h4,h5,h6{
 				padding-bottom: 40px;
 			}
 				.about-align-cont {
-					
+					margin-bottom: 0px;
 				}
 					.left-slider {
 						height: auto;
@@ -1255,10 +1256,6 @@ div.cs-skin-slide::before {
 .cs-skin-slide.cs-active::before {
 	transform: scale3d(1.05,2.5,1.1);
 }
-.ui-datepicker {
-	width: 87% !important;
-	box-sizing: border-box;
-}
 #b-popup-3 button {
 	margin-top: 0px;
 }
@@ -1284,7 +1281,7 @@ div.cs-skin-slide {
 }
 .date-inp .date-icon {
 	font-size: 18px;
-	top: 2em;
+	top: 3.4em;
 }
 .left input {
 	font-size: 16px;
@@ -1325,6 +1322,86 @@ div.cs-select {
 	border: none !important;
 	border-bottom: 1px solid #F00 !important;
 	box-shadow: none !important;
+}
+.div-cal {
+	width: 100%;
+	top: -170px;
+	left: 0px;
+}
+.ui-datepicker {
+	width: 100% !important;
+	box-sizing: border-box;
+}
+.b-thanks h3 {
+	font-size: 29px;
+}
+.b-thanks h4 {
+	font-size: 16px;
+}
+.b-orange-butt {
+	font-size: 16px;
+}
+.date-div {
+	width: 100%;
+	top: 38px;
+	left: 0px;
+	height: 77px;
+}
+.time-section label {
+	position: static;
+}
+.date-inp label {
+	margin-left: 0px;
+}
+@media screen and (min-width: 550px) and (max-width: 768px){
+	.name, .phone {
+		display: inline-block;
+		width: 42.5%;
+	}
+	.name {
+		margin-right: 0px;
+	}
+	.right section {
+		display: inline-block;
+		width: 50%;
+	}
+	.right label {
+		margin-left: 10%;
+	}
+	div.cs-select {
+		margin-left: 10%;
+	}
+	div.cs-skin-slide {
+		width: 85%;
+	}
+	.right .time-section {
+		float: left;
+	}
+	.right .time {
+		width: 85%;
+	}
+	.b-popup button {
+		width: 42.5%;
+		margin-top: 38px;
+		float: right;
+		margin-right: 5%;
+		margin-left: 0px;
+	}
+	.date-inp {
+		display: inline-block;
+		width: 42.5%;
+		margin-left: 2.5%;
+		vertical-align: top;
+	}
+	.date-inp label {
+		margin-left: 0px;
+	}
+	#b-popup-3 button {
+		float: none;
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 0%;
+	}
 }
 /*slideout-menu*/
 body {
@@ -1749,7 +1826,10 @@ body {
 					}
 				.p_doctors_menu .slick-dots {
 					display: none !important;
-				}							
+				}		
+				.left-slider .slick-dots{
+					display: none !important;
+				}					
 /*doctors page*/
 /*Страница услуг*/
 .main-content {

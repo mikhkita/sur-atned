@@ -1,4 +1,30 @@
 $(document).ready(function(){
+    var isDesktop = isTablet = isMobile = false; 
+    function resizeMain(){
+       if( typeof( window.innerWidth ) == 'number' ) {
+            myWidth = window.innerWidth;
+            myHeight = window.innerHeight;
+        } else if( document.documentElement && ( document.documentElement.clientWidth || 
+        document.documentElement.clientHeight ) ) {
+            myWidth = document.documentElement.clientWidth;
+            myHeight = document.documentElement.clientHeight;
+        } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+            myWidth = document.body.clientWidth;
+            myHeight = document.body.clientHeight;
+        }
+        isDesktop = isTablet = isMobile = false; 
+
+        if( myWidth > 1240 ){ 
+            isDesktop = true; 
+        } else if( myWidth > 768 ){ 
+            isTablet = true; 
+        } else{ 
+            isMobile = true; 
+        } 
+    }
+    $(window).resize(resizeMain);
+    resizeMain();
+
     var nowyear= new Date().getFullYear();
     var nowmonth= new Date().getMonth();
     var nowday= new Date().getDate();
@@ -29,7 +55,7 @@ $(document).ready(function(){
         break;
     }
     $('#date').val(nowday+" "+nowmonth+" "+nowyear);
-    $('#date').datepicker({
+    $('.div-cal').datepicker({
         dayNames: [ "Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота" ],
         dayNamesMin: [ "Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб" ],
         firstDay: 1,
@@ -37,11 +63,13 @@ $(document).ready(function(){
         monthNamesShort: ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"],
         dateFormat: "d M yy",
         prevText: "",
-        nextText: ""
+        nextText: "",
+        onSelect: function(dateText){
+            $('#date').val(dateText);
+            $('.div-cal').removeClass("open-cal");
+        }
     });
-    customHandlers["myFunc"] = function($form){
-        
-    }
+    customHandlers["myFunc"] = function($form){}
     $(function() {
           [].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {   
              new SelectFx(el);
@@ -424,7 +452,8 @@ $(document).ready(function(){
             cssEase: 'linear',
             asNavFor: '.left-slider',
             prevArrow: false,
-            nextArrow: false
+            nextArrow: false,
+            adaptiveHeight: isMobile
         });
     //---about-slider on index page
     //---menu services index page
@@ -1032,6 +1061,17 @@ $(document).ready(function(){
 
 });
 
-/*$(window).resize(function(){
-    $('.b-popup').width( $(window).width() - 17 );
-});*/
+$(function(){
+    $(document).click( function(event){
+        if ( $(event.target).closest(".date-div").length ) {
+            return;
+        } else {
+            if ( $(event.target).closest("a,tr,.ui-datepicker-title,.ui-datepicker-calendar").length ) return;
+            $('.div-cal').removeClass("open-cal");
+            event.stopPropagation();
+        }
+    });
+    $('.date-div').click(function(){
+        $('.div-cal').addClass("open-cal");
+    });
+});

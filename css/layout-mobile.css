@@ -379,7 +379,7 @@ h1,h2,h3,h4,h5,h6{
 				font-family: "Ubuntu-Bold";
 				font-size: 36px;
 				line-height: 40px;
-				margin: 20px 0 20px 10px;
+				margin: 30px 0 20px 10px;
 				text-align: left;
 			}
 			.visible {
@@ -394,14 +394,15 @@ h1,h2,h3,h4,h5,h6{
 				position: relative;
 				text-align: right;
 				width: 92%;
-				margin: 20px 0 20px 10px;
+				margin: 20px 0 40px 10px;
 				float: none !important;
 			}
 			.mobile-menu-ul {
 				position: relative;
 				margin-bottom: 30px;
-				width: 106%;
+				width: calc(100% + 10px);
 				margin-left: -10px;
+				border-top: 1px solid rgba(255,255,255,0.2);
 			}
 			.mobile-menu-ul li {
 			margin-bottom: 0px;
@@ -1749,7 +1750,10 @@ body {
 					}
 				.p_doctors_menu .slick-dots {
 					display: none !important;
-				}							
+				}		
+				.left-slider .slick-dots{
+					display: none !important;
+				}					
 /*doctors page*/
 @media screen and (max-width: 360px){
 	.b-block .zapis-na-priem a {

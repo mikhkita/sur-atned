@@ -1,4 +1,30 @@
 $(document).ready(function(){
+    var isDesktop = isTablet = isMobile = false; 
+    function resizeMain(){
+       if( typeof( window.innerWidth ) == 'number' ) {
+            myWidth = window.innerWidth;
+            myHeight = window.innerHeight;
+        } else if( document.documentElement && ( document.documentElement.clientWidth || 
+        document.documentElement.clientHeight ) ) {
+            myWidth = document.documentElement.clientWidth;
+            myHeight = document.documentElement.clientHeight;
+        } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+            myWidth = document.body.clientWidth;
+            myHeight = document.body.clientHeight;
+        }
+        isDesktop = isTablet = isMobile = false; 
+
+        if( myWidth > 1240 ){ 
+            isDesktop = true; 
+        } else if( myWidth > 768 ){ 
+            isTablet = true; 
+        } else{ 
+            isMobile = true; 
+        } 
+    }
+    $(window).resize(resizeMain);
+    resizeMain();
+
     var nowyear= new Date().getFullYear();
     var nowmonth= new Date().getMonth();
     var nowday= new Date().getDate();
@@ -424,7 +450,8 @@ $(document).ready(function(){
             cssEase: 'linear',
             asNavFor: '.left-slider',
             prevArrow: false,
-            nextArrow: false
+            nextArrow: false,
+            adaptiveHeight: isMobile
         });
     //---about-slider on index page
     //---menu services index page

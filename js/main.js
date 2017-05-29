@@ -458,8 +458,8 @@ $(document).ready(function(){
             prevArrow: '<div class="b-btn-prev"></div>'
         });
     var winsize = $(window).width();
-    window.onresize = resizes;  
-    function resizes () {
+    window.onresize = resizesrev;  
+    function resizesrev () {
         if (
             (($(window).width()<768) && (winsize>=768))||(($(window).width()>768) && (winsize<768))
             ) { 
@@ -857,8 +857,8 @@ $(document).ready(function(){
         }
             //------------------ 
             var winsize = $(window).width();
-            window.onresize = resizes;  
-            function resizes () {
+            window.onresize = resizespract;  
+            function resizespract () {
                 if (
                     (($(window).width()<1241) && (winsize>=1241))||(($(window).width()>1241) && (winsize<1241))
                     ) { 
@@ -936,7 +936,7 @@ $(document).ready(function(){
                 var pos = columns - 1;
                 if (pos>=menu_items) {pos=menu_items-1;}
                 var block = columns/next_it; // number of row
-                $( '.p_services_menu_item:eq('+pos+')' ).after( $('.footer .p_services_menu_info').clone().attr('data-nrow-block',block).attr('offset',$( '.p_services_menu_item:eq('+pos+')' ).offset().top));//'<div data-nrow='+block+' class="dummy-box"></div>' 
+                $( '.p_services_menu_item:eq('+pos+')' ).after( $('.p_services_menu_info_container .p_services_menu_info').clone().attr('data-nrow-block',block).attr('offset',$( '.p_services_menu_item:eq('+pos+')' ).offset().top));//'<div data-nrow='+block+' class="dummy-box"></div>' 
                 // console.log('row - ' + columns + 'pos - ' + pos + 'block - ' + block)
             }
             //---------------------- вставляем слайды в блоки
@@ -947,7 +947,7 @@ $(document).ready(function(){
                 }
                 var cnt = 0;
                 for ( columnToFill; columnToFill <= next_it*blockToFill; columnToFill = columnToFill + 1) {
-                    $('.footer [data-slide-id='+columnToFill+']' ).clone().appendTo( $('[data-nrow-block='+blockToFill+'] .b-block .p_services_menu_info_slider').attr('data-nslider',blockToFill));
+                    $('.p_services_menu_info_slider [data-slide-id='+columnToFill+']' ).clone().appendTo( $('[data-nrow-block='+blockToFill+'] .b-block .p_services_menu_info_slider').attr('data-nslider',blockToFill));
                     $('[data-msbtn='+columnToFill+'] a').attr('data-eventBlock',blockToFill);
                     //$('[data-msbtn='+columnToFill+'] a span').attr('data-eventBlock',blockToFill);
                     $('[data-msbtn='+columnToFill+'] a').attr('data-sldots',cnt);   
@@ -1006,11 +1006,11 @@ $(document).ready(function(){
                     setTimeout(scrlClose, 0);           
             });
         }
-            var winsize = $(window).width();
+            var winsizeserv = $(window).width();
             window.onresize = resizes;  
             function resizes () {
                 if (
-                    (($(window).width()<1241) && (winsize>=1241))||(($(window).width()>1241) && (winsize<1241))
+                    (($(window).width()<1241) && (winsizeserv>=1241) && (($(window).width())>768))||(($(window).width()>1241) && (winsizeserv<1241) && (($(window).width())>768))
                     ) 
                     {   
                         $('.p_services_menu .p_services_menu_info').remove();
@@ -1019,12 +1019,17 @@ $(document).ready(function(){
                         $('.p_services_menu_item').removeClass('active');
                         $(".p_services_menu_info").removeClass("serv_info_show");   
                         mainfserv();
+                        winsizeserv = $(window).width();
                     }
+                    winsizeserv = $(window).width();
                 }
-        
-        mainfserv();
+        if ($(window).width()>768) {mainfserv();}
     }
     //---service page slider
+    //---service page accordion mobile
+    $( "#accordion" ).accordion();
+    //---service page accordion mobile
+
 });
 
 /*$(window).resize(function(){

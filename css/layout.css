@@ -207,8 +207,14 @@ button {
 	line-height: 57px;
 	cursor: pointer;
 	z-index: 200;
-
-	transition: all ease 200ms;
+	transition: color ease 200ms;
+	-o-transition: color ease 200ms;
+	-moz-transition: color ease 200ms;
+	-webkit-transition: color ease 200ms;
+	transition: background-color ease 200ms;
+	-o-transition: background-color ease 200ms;
+	-moz-transition: background-color ease 200ms;
+	-webkit-transition: background-color ease 200ms;
 }
 .b-btn:hover {
 	background-color: #74bc40 !important;
@@ -306,6 +312,9 @@ button {
 .show {
 	opacity: 1 !important;
 	transition: opacity 0.25s ease;
+	-o-transition: opacity 0.25s ease;
+	-moz-transition: opacity 0.25s ease;
+	-webkit-transition: opacity 0.25s ease;
 }
 .mobile {
 	display: none;
@@ -392,6 +401,9 @@ button {
 				.filials {
 				margin-top: 3px;
 				transition: opacity 0.25s ease;
+				-o-transition: opacity 0.25s ease;
+				-moz-transition: opacity 0.25s ease;
+				-webkit-transition: opacity 0.25s ease;
 				}
 					.filial-addr {
 						font-family: "Ubuntu-Light";
@@ -459,6 +471,9 @@ button {
 					right: 210px;
 					top: 6px;
 					transition: width 0.4s ease;
+					-o-transition: width 0.4s ease;
+					-moz-transition: width 0.4s ease;
+					-webkit-transition: width 0.4s ease;
 					cursor: pointer;
 				}
 						.header .b-block .search.maxopacity { 
@@ -602,9 +617,14 @@ button {
 						.main-menu li:hover>a {
 							background-color: #74bc40;
 							color: #ffffff;
-							transition: all 200ms ease;
-							-moz-transition:all 200ms ease;
-							-webkit-transition:all 200ms ease;								
+							transition: color 200ms ease;
+							-o-transition: color 200ms ease;
+							-moz-transition:color 200ms ease;
+							-webkit-transition:color 200ms ease;
+							transition: background-color 200ms ease;
+							-o-transition: background-color 200ms ease;
+							-moz-transition:background-color 200ms ease;
+							-webkit-transition:background-color 200ms ease;															
 						}
 						.main-menu .header_dropdown_menu {
 							position: absolute;
@@ -637,9 +657,10 @@ button {
 							opacity: 1;
 							visibility: visible;
 							box-shadow: 0px 6px 25px rgba(0,0,0,0.3);
-							transition: all 200ms ease;
-							-moz-transition:all 200ms ease;
-							-webkit-transition:all 200ms ease;
+							transition: opacity 200ms ease;
+							-o-transition: opacity 200ms ease;
+							-moz-transition:opacity 200ms ease;
+							-webkit-transition:opacity 200ms ease;
 						}
 			.zapis-na-priem	{
 				width: auto;

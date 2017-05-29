@@ -1751,6 +1751,40 @@ body {
 					display: none !important;
 				}							
 /*doctors page*/
+/*Страница услуг*/
+.main-content {
+
+}
+	.b-wide-block {
+
+	}
+		.b-block {
+
+		}
+			.p_services {
+			margin: 0 5%;
+			}				
+				.p_services_mobile_menu {
+				}
+					.p_services_mobile_menu .ui-state-active {
+						color: #ffffff !important                                                                  ;
+					}
+					.p_services_mobile_menu h3{
+					padding: 15px;
+					font-size: 20px;
+					font-family: "Ubuntu";
+					text-transform: uppercase;
+					}
+					.p_services_mobile_menu h3:before{
+					display: inline-block;
+					font-size: 40px;
+					}					
+					.p_services_mobile_menu div{
+					}
+					.p_services_mobile_menu a{
+					display: inherit;
+					}																	
+/*страница услуг*/
 @media screen and (max-width: 360px){
 	.b-block .zapis-na-priem a {
 		font-size: 16px;

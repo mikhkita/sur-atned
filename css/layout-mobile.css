@@ -1838,7 +1838,7 @@ body {
 
 		}
 			.p_services {
-			margin: 0 5%;
+			/* margin: 0 5%; */
 			}				
 				.p_services_mobile_menu {
 				}
@@ -1846,20 +1846,36 @@ body {
 						color: #ffffff !important                                                                  ;
 					}
 					.p_services_mobile_menu h3{
+					display: table;
 					padding: 15px;
 					font-size: 20px;
 					font-family: "Ubuntu";
 					text-transform: uppercase;
+					box-sizing: border-box;
+					width: 100%;
 					}
+						.p_services_mobile_menu h3 span{
+							display: table-cell;vertical-align: middle;padding-left: 4px;
+						}
 					.p_services_mobile_menu h3:before{
-					display: inline-block;
+					display: table-cell;
 					font-size: 40px;
+					vertical-align: middle;
+					width: 1px;
 					}					
 					.p_services_mobile_menu div{
+					padding: 20px 0 10px 20px;
 					}
 					.p_services_mobile_menu a{
 					display: inherit;
-					}																	
+					font-family: "Ubuntu-Light";
+					font-size: 22px;
+					line-height: 26px;
+					margin-bottom: 20px;
+					}					
+					.p_services_mobile_menu a:hover{
+						text-decoration: underline;
+					}																		
 /*страница услуг*/
 @media screen and (max-width: 360px){
 	.b-block .zapis-na-priem a {

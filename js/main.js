@@ -1056,7 +1056,11 @@ $(document).ready(function(){
     }
     //---service page slider
     //---service page accordion mobile
-    $( "#accordion" ).accordion();
+    $( "#accordion" ).accordion({
+        collapsible: true,
+        active: false,
+        icons: false
+    });
     //---service page accordion mobile
 
 });

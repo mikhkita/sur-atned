@@ -384,7 +384,7 @@ button {
 							box-sizing: border-box;
 							float: left;
 							height: 66px;
-							padding: 26px 30px 0;
+							padding: 26px 28px 0;
 							line-height: 14px;
 						}
 						.main-menu a:hover {
@@ -404,6 +404,7 @@ button {
 						}						
 			.zapis-na-priem	{
 				width: auto;
+				height: 69px;
 			}
 				.b-block .zapis-na-priem a {
 					display: inline-block;
@@ -1641,8 +1642,8 @@ button {
 					}					
 /*about page end*/
 /*reviews page*/
-.p_reviews {
-	padding-bottom: 50px;
+.p_reviews-block{
+	/*padding-bottom: 50px;*/
 }
 	.p_reviews-single {
 		width: 465px;

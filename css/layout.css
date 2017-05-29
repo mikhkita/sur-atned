@@ -74,7 +74,7 @@ body {
 	line-height: 28px;
 	overflow-x: hidden;
 	-webkit-text-size-adjust: none;
-	color: #ffffff;
+	color: #1f1f1f;
 }
 body {
 	background-position: 50% 0;
@@ -118,6 +118,30 @@ input.error,textarea.error{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+div.modern-page-navigation{
+	text-align: left;
+}
+a.modern-page-previous,
+a.modern-page-next{
+	display: none;
+}
+div.modern-page-navigation a{
+	border: 0px;
+	text-decoration: underline;
+}
+div.modern-page-navigation span.modern-page-first{
+	margin-left: 10px;
+}
+div.modern-page-navigation a:hover{
+	text-decoration: none;
+}
+span.modern-page-current{
+	border: 0px;
+	background-color: #74bc40;
+	padding: 10px 15px !important;
+	color: #FFF;
+}
+
 .ps-lines{
 
 }
@@ -327,7 +351,7 @@ button {
 	background-color: rgba(24,182,0,0.4);
 }
 .main-content_top_h1 {
-	margin-top: 30px;
+	padding-top: 30px;
 	margin-bottom: 54px;
 	text-align: left;
 }
@@ -494,9 +518,9 @@ button {
 									width: 100%;
 								}							
 								.search .open .search-text {
-									font-size: 20px;
+									font-size: 16px;
 									line-height: 50px;
-									color: #656565;
+									color: rgb(56,56,56);
 									border-style: none;
 									margin-left: 0;
 									display: inline-block;
@@ -596,7 +620,7 @@ button {
 							box-sizing: border-box;
 							background-color: #ffffff;
 							height: 66px;
-							padding: 27px 45px 0;
+							padding: 27px 43px 0;
 							/* margin-right: -1px; */
 							line-height: 14px;
 							-webkit-transition: all 150ms ease-out;
@@ -656,13 +680,16 @@ button {
 					text-align: center;
 					/*margin: 0 auto;*/
 					min-width: 54px;
-					width: 217px;
-					max-width: 217px;
+					width: 218px;
+					max-width: 218px;
 					padding: 27px 0px 0px;
 				}
 				.b-block .zapis-na-priem a:hover {
 					background-color: #68ae36;
 				}
+.b-content{
+	padding-bottom: 70px;
+}
 .main-content {
 
 }
@@ -787,11 +814,13 @@ button {
 						display: inline-block;
 						margin-bottom: 20px;
 						font-size: 32px;
+						color: #FFF;
 					}
 					.front-slide p {
 						font-family: "Ubuntu-Light";
 						line-height: 28px;
 						width: 440px;
+						color: #FFF;
 						margin-bottom: 36px;
 					}
 					.front-slide .b-btn:hover {
@@ -1514,6 +1543,7 @@ button {
 				.footer-copyright a {
 					background-position: 50% 50%;
 					background-image: url("../i/logo-redder.png");
+					background-repeat: no-repeat;
 					background-size: 127px;
 					height: 22px;
 					display: block;
@@ -2519,8 +2549,8 @@ button {
 	}			
 /*b-text*/
 /*reviews page*/
-.p_reviews {
-	padding-bottom: 50px;
+.p_reviews-block{
+	/*padding-bottom: 50px;*/
 }
 	.p_reviews-single {
 		background-color: #fafafa;
@@ -2637,8 +2667,12 @@ button {
 	color: #ffffff;
 	font-family: "Ubuntu-Light";
 }
-.left input::-webkit-input-placeholder,
-.left textarea::-webkit-input-placeholder {
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color: rgba(0,0,0, 0.4);
+}
+.b-popup input::-webkit-input-placeholder,
+.b-popup textarea::-webkit-input-placeholder {
 	color: rgba(255,255,255, 0.4);
 }
 

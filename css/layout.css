@@ -2736,7 +2736,7 @@ div.cs-select:focus {
 	display: block;
 	position: relative;
 	cursor: pointer;
-	padding: 34px;
+	padding: 31px 34px;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -2818,7 +2818,6 @@ div.cs-skin-slide::before {
 	transform: scale3d(1.1,2.5,1.1);
 }
 .cs-skin-slide > span {
-	height: 1em;
 	-webkit-transition: text-indent 0.3s, opacity 0.3s;
 	transition: text-indent 0.3s, opacity 0.3s;
 }

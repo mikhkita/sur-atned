@@ -55,7 +55,7 @@ $(document).ready(function(){
         break;
     }
     $('#date').val(nowday+" "+nowmonth+" "+nowyear);
-    $('#date').datepicker({
+    $('.div-cal').datepicker({
         dayNames: [ "Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота" ],
         dayNamesMin: [ "Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб" ],
         firstDay: 1,
@@ -63,11 +63,13 @@ $(document).ready(function(){
         monthNamesShort: ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"],
         dateFormat: "d M yy",
         prevText: "",
-        nextText: ""
+        nextText: "",
+        onSelect: function(dateText){
+            $('#date').val(dateText);
+            $('.div-cal').removeClass("open-cal");
+        }
     });
-    customHandlers["myFunc"] = function($form){
-        
-    }
+    customHandlers["myFunc"] = function($form){}
     $(function() {
           [].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {   
              new SelectFx(el);
@@ -1054,6 +1056,17 @@ $(document).ready(function(){
     //---service page slider
 });
 
-/*$(window).resize(function(){
-    $('.b-popup').width( $(window).width() - 17 );
-});*/
+$(function(){
+    $(document).click( function(event){
+        if ( $(event.target).closest(".date-div").length ) {
+            return;
+        } else {
+            if ( $(event.target).closest("a,tr,.ui-datepicker-title,.ui-datepicker-calendar").length ) return;
+            $('.div-cal').removeClass("open-cal");
+            event.stopPropagation();
+        }
+    });
+    $('.date-div').click(function(){
+        $('.div-cal').addClass("open-cal");
+    });
+});

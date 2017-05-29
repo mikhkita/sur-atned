@@ -841,13 +841,15 @@
 							<option>ул. Первомайская, 97</option>
 						</select>
 					</section>
-					<label for="date">ВЫБЕРИТЕ ЖЕЛАЕМУЮ ДАТУ</label><br>
 					<div class="date-inp">
+						<label for="date">ВЫБЕРИТЕ ЖЕЛАЕМУЮ ДАТУ</label><br>
 						<div class="date-icon"></div>
 						<input type="text" name="date" id="date">
+						<div class="date-div"></div>
+						<div class="div-cal"></div>
 					</div>
-					<label for="time">ВЫБЕРИТЕ ЖЕЛАЕМОЕ ВРЕМЯ</label><br>
 					<section class="time-section">
+						<label for="time">ВЫБЕРИТЕ ЖЕЛАЕМОЕ ВРЕМЯ</label><br>
 						<select class="time cs-select cs-skin-slide" name="time" id="time">
 							<option value="9:00">9:00</option>
 							<option value="13:00">13:00</option>
@@ -869,26 +871,27 @@
 		</div>
 		<div class="b-popup b-block" id="b-popup-3">
 			<h3>Заказать звонок</h3>
-			<form action="kitsend.php" method="POST" id="b-form-3">
+			<form action="kitsend.php" data-afterAjax="myFunc" method="POST" id="b-form-3">
 				<div class="left">
 					<div class="name">
-						<label for="name-3">УКАЖИТЕ ВАШЕ ФИО</label><br>
-						<input type="text" id="name-3" name="name" placeholder="Иван Иванович Иванов">
+						<label for="name-3">УКАЖИТЕ ВАШЕ ФИО *</label><br>
+						<input type="text" id="name-3" name="name" placeholder="Иван Иванович Иванов" required>
 					</div>
 					<div class="phone">
-						<label for="tel-3">УКАЖИТЕ ВАШ ТЕЛЕФОН</label><br>
-						<input type="text" id="tel-3" name="phone" placeholder="+7(999)333-22-11">
+						<label for="tel-3">УКАЖИТЕ ВАШ ТЕЛЕФОН *</label><br>
+						<input type="text" id="tel-3" name="phone" placeholder="+7(999)333-22-11" required>
 					</div>
 				</div>
-				<button>записаться</button>
+				<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
+				<button type="submit" class="ajax">записаться</button>
 			</form>
 		</div>
-		<div class="b-thanks b-popup" id="b-popup-success">
+		<div class="b-thanks b-block" id="b-popup-success">
 			<h3>Спасибо!</h3>
 			<h4>Ваша заявка успешно отправлена.<br/>Наш менеджер свяжется с Вами в течение часа.</h4>
 			<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
 		</div>
-		<div class="b-thanks b-popup" id="b-popup-error">
+		<div class="b-thanks b-block" id="b-popup-error">
 			<h3>Ошибка отправки!</h3>
 			<h4>Приносим свои извинения. Пожалуйста, попробуйте отправить Вашу заявку позже.</h4>
 			<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">

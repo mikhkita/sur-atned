@@ -211,7 +211,6 @@ button {
 					}
 				.filials {
 				margin-top: 3px;
-				transition: opacity 0.25s ease;
 				margin-top: 4px;
 				}
 					.filial-addr {
@@ -895,7 +894,6 @@ button {
 				padding: 34px 40px 0;
 				top: 90px;
 				text-align: left;
-				transition: opacity 0.25s ease;
 			}
 			.map-cont-close {
 				height: 24px;

@@ -1523,7 +1523,6 @@ button {
 								padding-right: 30px;
 							}
 					.p_about_b_about_stats {
-						/* height: 100px; */
 						width: 550px;
 						padding: 65px 0px;
 					}
@@ -1542,18 +1541,16 @@ button {
 					        }	
 								.p_about_b_about_stats_menu .active {
 									height: 28px;
-									border-bottom: 3px solid #74bc40;									
 								}					        				
 								.p_about_b_about_stats_menu_item {
 									cursor: pointer;
 									height: 28px;
 									border-bottom: 3px solid transparent;
 									line-height: normal;
-									zoom : 1;*/
+									zoom : 1;
 								}
 								.p_about_b_about_stats_menu_item:hover {
 									height: 28px;
-									border-bottom: 3px solid #74bc40;
 								}	
 									.p_about_b_about_stats_menu_item span {
 										line-height: 20px;

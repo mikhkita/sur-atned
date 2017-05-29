@@ -1886,10 +1886,10 @@ button {
 						padding: 24px 30px 26px 30px;
 						top: 271px;
 						background-color: rgba(116,188,64,0.9);
-						transition: all 300ms ease;
-						-o-transition: all 300ms ease;
-						-moz-transition:all 300ms ease;
-						-webkit-transition:all 300ms ease;
+						transition: top 300ms ease;
+						-o-transition: top 300ms ease;
+						-moz-transition:top 300ms ease;
+						-webkit-transition:top 300ms ease;
 						box-sizing: border-box;
 						position: absolute;
 					}
@@ -1915,17 +1915,9 @@ button {
 							font-size: 16px;
 							line-height: 18px;
 							color: #ffffff;
-							opacity: 1;
-							transition: all 300ms ease;
-							-moz-transition:all 300ms ease;
-							-webkit-transition:all 300ms ease;								
+							opacity: 1;							
 						}		
 						.p_doctors_menu_item:hover 	.p_doctors_menu_vcard p {
-							/*opacity: 1;*/
-							/*line-height: 18px;*/
-							transition: all 300ms ease;
-							-moz-transition:all 300ms ease;
-							-webkit-transition:all 300ms ease;
 						}																																				
 	.footer .p_doctors_slider {
 		display: none;
@@ -1944,24 +1936,19 @@ button {
 		margin-bottom: 30px;
 		overflow: hidden;
 		display: inline-block;
-		transition: all 400ms ease;
-		-moz-transition:all 400ms ease;
-		-webkit-transition:all 400ms ease;
+		transition: min-height 400ms ease;
+		-o-transition: min-height 400ms ease;
+		-moz-transition:min-height 400ms ease;
+		-webkit-transition:min-height 400ms ease;
 	}	
 		.p_doctors_slide {
-			position: relative;
-			transition: all 400ms ease;
-			-moz-transition:all 400ms ease;
-			-webkit-transition:all 400ms ease;			
+			position: relative;	
 			width: 1560px;
 		}
 	.doct_info_show {
 		min-height: 600px;
 		height: initial;
 		visibility: visible;
-		transition: all 400ms ease;
-		-moz-transition:all 400ms ease;
-		-webkit-transition:all 400ms ease;
 	}					
 			.p_doctors_menu_info_triangle {
 				position: absolute;
@@ -1971,9 +1958,10 @@ button {
 			}
 				.p_doctors_menu_info_triangle_im {
 					position: absolute;
-					transition: all 300ms ease;
-					-moz-transition:all 400ms ease;
-					-webkit-transition:all 400ms ease;					
+					transition: margin-left 300ms ease;
+					-o-transition: margin-left 300ms ease;
+					-moz-transition:margin-left 400ms ease;
+					-webkit-transition:margin-left 400ms ease;					
 					left: -579px;
 					height: 31px;
 					z-index: 10;
@@ -2150,9 +2138,14 @@ button {
 									vertical-align: top;
 									/*display : inline;
 									zoom : 1;*/
-									transition: all 250ms ease;
-									-moz-transition:all 250ms ease;
-									-webkit-transition:all 250ms ease;									
+									transition: color 250ms ease;
+									-o-transition: color 250ms ease;
+									-moz-transition:color 250ms ease;
+									-webkit-transition:color 250ms ease;		
+									transition: border-color 250ms ease;
+									-o-transition: border-color 250ms ease;
+									-moz-transition:border-color 250ms ease;
+									-webkit-transition:border-color 250ms ease;																	
 								}
 								.p_about_b_about_stats_menu_item:hover {
 									color: #000000;
@@ -2171,9 +2164,10 @@ button {
 								width: 0px;
 								height: 71px;
 								background-color: #74bc40;
-								transition: all 250ms ease;
-								-moz-transition:all 350ms ease;
-								-webkit-transition:all 350ms ease;
+								transition: width 250ms ease;
+								-o-transition: width 250ms ease;
+								-moz-transition:width 350ms ease;
+								-webkit-transition:width 350ms ease;
 							}
 							.p_about_b_about_stats_graphic_progressbar .start {
 								position: absolute;
@@ -2270,16 +2264,14 @@ button {
 						width: 368px;
 						margin: 0;
 						transition: all 200ms ease;
+						-o-transition: all 200ms ease;
 						-moz-transition:all 200ms ease;
-						-webkit-transition:all 200ms ease;
+						-webkit-transition:all 200ms ease;												
 					}
 					.p_about_b_clinics_galary_windows:hover  img{
 						width: 393px;
 						height: 393px;
 						margin: -12px -12px;
-						transition: all 200ms ease;
-						-moz-transition:all 200ms ease;
-						-webkit-transition:all 200ms ease;
 					}	
 					.p_about_b_clinics_galary_windows a:after {
 						position: absolute;
@@ -2291,17 +2283,27 @@ button {
 						bottom: 60px;
 						right: 40px;
 						opacity: 0;
-						transition: all 200ms ease;
-						-moz-transition:all 200ms ease;
-						-webkit-transition:all 200ms ease;						
+						transition: opacity 200ms ease;
+						-o-transition: opacity 200ms ease;
+						-moz-transition:opacity 200ms ease;
+						-webkit-transition:opacity 200ms ease;
+						transition: font-size 200ms ease;
+						-o-transition: font-size 200ms ease;
+						-moz-transition:font-size 200ms ease;
+						-webkit-transition:font-size 200ms ease;												
 					}
 					.p_about_b_clinics_galary_windows a:hover:after  {
 						visibility: visible;
 						font-size: 60px;
-						opacity: 1;
-						transition: all 200ms ease;
-						-moz-transition:all 200ms ease;
-						-webkit-transition:all 200ms ease;	
+						opacity: 1;	
+						transition: opacity 200ms ease;
+						-o-transition: opacity 200ms ease;
+						-moz-transition:opacity 200ms ease;
+						-webkit-transition:opacity 200ms ease;
+						transition: font-size 200ms ease;
+						-o-transition: font-size 200ms ease;
+						-moz-transition:font-size 200ms ease;
+						-webkit-transition:font-size 200ms ease;											
 					}					
 					.p_about_b_clinics_galary_windows p {
 						font-family: "Ubuntu-Medium";

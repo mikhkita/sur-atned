@@ -1256,10 +1256,6 @@ div.cs-skin-slide::before {
 .cs-skin-slide.cs-active::before {
 	transform: scale3d(1.05,2.5,1.1);
 }
-.ui-datepicker {
-	width: 87% !important;
-	box-sizing: border-box;
-}
 #b-popup-3 button {
 	margin-top: 0px;
 }
@@ -1285,7 +1281,7 @@ div.cs-skin-slide {
 }
 .date-inp .date-icon {
 	font-size: 18px;
-	top: 2em;
+	top: 3.4em;
 }
 .left input {
 	font-size: 16px;
@@ -1326,6 +1322,86 @@ div.cs-select {
 	border: none !important;
 	border-bottom: 1px solid #F00 !important;
 	box-shadow: none !important;
+}
+.div-cal {
+	width: 100%;
+	top: -170px;
+	left: 0px;
+}
+.ui-datepicker {
+	width: 100% !important;
+	box-sizing: border-box;
+}
+.b-thanks h3 {
+	font-size: 29px;
+}
+.b-thanks h4 {
+	font-size: 16px;
+}
+.b-orange-butt {
+	font-size: 16px;
+}
+.date-div {
+	width: 100%;
+	top: 38px;
+	left: 0px;
+	height: 77px;
+}
+.time-section label {
+	position: static;
+}
+.date-inp label {
+	margin-left: 0px;
+}
+@media screen and (min-width: 550px) and (max-width: 768px){
+	.name, .phone {
+		display: inline-block;
+		width: 42.5%;
+	}
+	.name {
+		margin-right: 0px;
+	}
+	.right section {
+		display: inline-block;
+		width: 50%;
+	}
+	.right label {
+		margin-left: 10%;
+	}
+	div.cs-select {
+		margin-left: 10%;
+	}
+	div.cs-skin-slide {
+		width: 85%;
+	}
+	.right .time-section {
+		float: left;
+	}
+	.right .time {
+		width: 85%;
+	}
+	.b-popup button {
+		width: 42.5%;
+		margin-top: 38px;
+		float: right;
+		margin-right: 5%;
+		margin-left: 0px;
+	}
+	.date-inp {
+		display: inline-block;
+		width: 42.5%;
+		margin-left: 2.5%;
+		vertical-align: top;
+	}
+	.date-inp label {
+		margin-left: 0px;
+	}
+	#b-popup-3 button {
+		float: none;
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 0%;
+	}
 }
 /*slideout-menu*/
 body {

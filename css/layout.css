@@ -232,14 +232,10 @@ button {
 	line-height: 57px;
 	cursor: pointer;
 	z-index: 200;
-	transition: color ease 200ms;
-	-o-transition: color ease 200ms;
-	-moz-transition: color ease 200ms;
-	-webkit-transition: color ease 200ms;
-	transition: background-color ease 200ms;
-	-o-transition: background-color ease 200ms;
-	-moz-transition: background-color ease 200ms;
-	-webkit-transition: background-color ease 200ms;
+	transition: color ease 200ms, background-color ease 200ms;
+	-o-transition: color ease 200ms, background-color ease 200ms;
+	-moz-transition: color ease 200ms, background-color ease 200ms;
+	-webkit-transition: color ease 200ms, background-color ease 200ms;
 }
 .b-btn:hover {
 	background-color: #74bc40 !important;
@@ -647,14 +643,10 @@ button {
 						.main-menu li:hover>a {
 							background-color: #74bc40;
 							color: #ffffff;
-							transition: color 200ms ease;
-							-o-transition: color 200ms ease;
-							-moz-transition:color 200ms ease;
-							-webkit-transition:color 200ms ease;
-							transition: background-color 200ms ease;
-							-o-transition: background-color 200ms ease;
-							-moz-transition:background-color 200ms ease;
-							-webkit-transition:background-color 200ms ease;															
+							transition: color 200ms ease, background-color 200ms ease; 
+							-o-transition: color 200ms ease, background-color 200ms ease; 
+							-moz-transition:color 200ms ease, background-color 200ms ease; 
+							-webkit-transition:color 200ms ease, background-color 200ms ease; 							
 						}
 						.main-menu .header_dropdown_menu {
 							position: absolute;
@@ -1029,26 +1021,18 @@ button {
 							vertical-align: middle;
 							background-color: transparent;
 							cursor:pointer;
-							transition: color 250ms ease;
-							-o-transition: color 250ms ease;
-							-moz-transition: color 250ms ease;
-							-webkit-transition: color 250ms ease;
-							transition: background-color 250ms ease;
-							-o-transition: background-color 250ms ease;
-							-moz-transition: background-color 250ms ease;
-							-webkit-transition: background-color 250ms ease;							
+							transition: color 250ms ease, background-color 250ms ease;
+							-o-transition: color 250ms ease, background-color 250ms ease;
+							-moz-transition: color 250ms ease, background-color 250ms ease;
+							-webkit-transition: color 250ms ease, background-color 250ms ease;
 						}
 						.services-menu li button:hover {
 							color: #74bc40;
 							background-color: rgba(255,255,255, 0.9);	
-							transition: color 250ms ease;
-							-o-transition: color 250ms ease;
-							-moz-transition: color 250ms ease;
-							-webkit-transition: color 250ms ease;
-							transition: background-color 250ms ease;
-							-o-transition: background-color 250ms ease;
-							-moz-transition: background-color 250ms ease;
-							-webkit-transition: background-color 250ms ease;										
+							transition: color 250ms ease, background-color 250ms ease;
+							-o-transition: color 250ms ease, background-color 250ms ease;
+							-moz-transition: color 250ms ease, background-color 250ms ease;
+							-webkit-transition: color 250ms ease, background-color 250ms ease;				
 						}
 						.services-menu li button:active {
 							color: #ffffff;
@@ -1057,14 +1041,10 @@ button {
 						#services_menu .active {
 							color: #ffffff !important;
 							background-color: rgba(113,113,113, 0.5)!important;
-							transition: color 250ms ease;
-							-o-transition: color 250ms ease;
-							-moz-transition: color 250ms ease;
-							-webkit-transition: color 250ms ease;
-							transition: background-color 250ms ease;
-							-o-transition: background-color 250ms ease;
-							-moz-transition: background-color 250ms ease;
-							-webkit-transition: background-color 250ms ease;							
+							transition: color 250ms ease, background-color 250ms ease;
+							-o-transition: color 250ms ease, background-color 250ms ease;
+							-moz-transition: color 250ms ease, background-color 250ms ease;
+							-webkit-transition: color 250ms ease, background-color 250ms ease;	
 						}		
 						#services_menu .active:hover{
 							background-color: rgba(113,113,113, 0.8)!important;
@@ -1661,14 +1641,10 @@ button {
 							width: 267px;
 							cursor: pointer;
 							vertical-align: bottom;
-							transition: color 200ms ease;
-							-o-transition: color 200ms ease;
-							-moz-transition:color 200ms ease;
-							-webkit-transition:color 200ms ease;
-							transition: background-color 200ms ease;
-							-o-transition: background-color 200ms ease;
-							-moz-transition:background-color 200ms ease;
-							-webkit-transition:background-color 200ms ease;							
+							transition: color 200ms ease, background-color 200ms ease;
+							-o-transition: color 200ms ease, background-color 200ms ease;
+							-moz-transition:color 200ms ease, background-color 200ms ease;
+							-webkit-transition:color 200ms ease, background-color 200ms ease;
 						}
 						.p_services_menu_item a:hover span {
 							color: #74bc40;
@@ -1718,17 +1694,17 @@ button {
 					background-image: url('../i/services-info-bgnd.png');
 					background-position: 50% 50%;
 					background-size: cover;
-					background-repeat: no-repeat;
-					transition: min-height 300ms ease;
-					-o-transition: min-height 300ms ease;
-					-moz-transition:min-height 300ms ease;
-					-webkit-transition:min-height 300ms ease;					
+					background-repeat: no-repeat;				
 					width: 1560px;
 					min-height: 0px;
 					height: 0px;
 					margin-left: -185px;
 					visibility: visible;
 					top: -25px;
+					transition: min-height 300ms ease;
+					-o-transition: min-height 300ms ease;
+					-moz-transition:min-height 300ms ease;
+					-webkit-transition:min-height 300ms ease;						
 				}
 				.serv_info_show {
 					min-height: 537px;
@@ -1759,18 +1735,11 @@ button {
 					line-height: 30px;
 				}				
 				.p_services_menu_info_triangle {
-					/* display: block; */
 					height: 31px;
 					width: 100%;
-					/* margin-bottom: 66px; */
 					overflow: hidden;
 				}
-				.p_services_menu_info_triangle_im {
-					/* position: absolute; */
-					transition: margin-left 300ms ease;
-					-o-transition: margin-left 300ms ease;
-					-moz-transition:margin-left 300ms ease;
-					-webkit-transition:margin-left 300ms ease;					
+				.p_services_menu_info_triangle_im {					
 					margin-left: -933px;
 					height: 31px;
 					width: 2500px;
@@ -1778,6 +1747,10 @@ button {
 					background-position: 50% 50%;
 					background-size: cover;
 					background-repeat: no-repeat;
+					transition: margin-left 300ms ease;
+					-o-transition: margin-left 300ms ease;
+					-moz-transition:margin-left 300ms ease;
+					-webkit-transition:margin-left 300ms ease;					
 				}
 				.item_0 {
 					margin-left: -930px;
@@ -1886,12 +1859,12 @@ button {
 						padding: 24px 30px 26px 30px;
 						top: 271px;
 						background-color: rgba(116,188,64,0.9);
+						box-sizing: border-box;
+						position: absolute;
 						transition: top 300ms ease;
 						-o-transition: top 300ms ease;
 						-moz-transition:top 300ms ease;
-						-webkit-transition:top 300ms ease;
-						box-sizing: border-box;
-						position: absolute;
+						-webkit-transition:top 300ms ease;						
 					}
 					.p_doctors_menu_item:hover 	.p_doctors_menu_vcard {
 					}									
@@ -2138,14 +2111,10 @@ button {
 									vertical-align: top;
 									/*display : inline;
 									zoom : 1;*/
-									transition: color 250ms ease;
-									-o-transition: color 250ms ease;
-									-moz-transition:color 250ms ease;
-									-webkit-transition:color 250ms ease;		
-									transition: border-color 250ms ease;
-									-o-transition: border-color 250ms ease;
-									-moz-transition:border-color 250ms ease;
-									-webkit-transition:border-color 250ms ease;																	
+									transition: color 250ms ease, border-color 250ms ease;
+									-o-transition: color 250ms ease, border-color 250ms ease;
+									-moz-transition:color 250ms ease, border-color 250ms ease;
+									-webkit-transition:color 250ms ease, border-color 250ms ease;											
 								}
 								.p_about_b_about_stats_menu_item:hover {
 									color: #000000;
@@ -2282,27 +2251,19 @@ button {
 						bottom: 60px;
 						right: 40px;
 						opacity: 0;
-						transition: opacity 200ms ease;
-						-o-transition: opacity 200ms ease;
-						-moz-transition:opacity 200ms ease;
-						-webkit-transition:opacity 200ms ease;
-						transition: font-size 200ms ease;
-						-o-transition: font-size 200ms ease;
-						-moz-transition:font-size 200ms ease;
-						-webkit-transition:font-size 200ms ease;												
+						transition: opacity 200ms ease, font-size 200ms ease;
+						-o-transition: opacity 200ms ease, font-size 200ms ease;
+						-moz-transition:opacity 200ms ease, font-size 200ms ease;
+						-webkit-transition:opacity 200ms ease, font-size 200ms ease;							
 					}
 					.p_about_b_clinics_galary_windows a:hover:after  {
 						visibility: visible;
 						font-size: 60px;
 						opacity: 1;	
-						transition: opacity 200ms ease;
-						-o-transition: opacity 200ms ease;
-						-moz-transition:opacity 200ms ease;
-						-webkit-transition:opacity 200ms ease;
-						transition: font-size 200ms ease;
-						-o-transition: font-size 200ms ease;
-						-moz-transition:font-size 200ms ease;
-						-webkit-transition:font-size 200ms ease;											
+						transition: opacity 200ms ease, font-size 200ms ease;
+						-o-transition: opacity 200ms ease, font-size 200ms ease;
+						-moz-transition:opacity 200ms ease, font-size 200ms ease;
+						-webkit-transition:opacity 200ms ease, font-size 200ms ease;					
 					}					
 					.p_about_b_clinics_galary_windows p {
 						font-family: "Ubuntu-Medium";
@@ -2345,9 +2306,6 @@ button {
 						padding: 24px 30px 26px 30px;
 						bottom: 0;
 						background-color: rgba(116,188,64,0.9);
-						transition: all 300ms ease;
-						-moz-transition:all 300ms ease;
-						-webkit-transition:all 300ms ease;
 						box-sizing: border-box;
 						position: absolute;
 					}									
@@ -2374,25 +2332,20 @@ button {
 		margin-bottom: 30px;
 		overflow: hidden;
 		display: inline-block;
-		transition: all 400ms ease;
-		-moz-transition:all 400ms ease;
-		-webkit-transition:all 400ms ease;
+		transition: min-height 400ms ease;
+		-o-transition: min-height 400ms ease;
+		-moz-transition:min-height 400ms ease;
+		-webkit-transition:min-height 400ms ease;
 	}	
 		.p_practice_slide {
 			position: relative;
-			background-color: #f3f3f3;
-			transition: all 400ms ease;
-			-moz-transition:all 400ms ease;
-			-webkit-transition:all 400ms ease;			
+			background-color: #f3f3f3;		
 			width: 1560px;
 		}
 	.pract_info_show {
 		min-height: 600px;
 		height: initial;
 		visibility: visible;
-		transition: all 400ms ease;
-		-moz-transition:all 400ms ease;
-		-webkit-transition:all 400ms ease;
 	}					
 			.p_practice_menu_info_triangle {
 				position: absolute;
@@ -2402,9 +2355,10 @@ button {
 			}
 				.p_practice_menu_info_triangle_im {
 					position: absolute;
-					transition: all 300ms ease;
-					-moz-transition:all 400ms ease;
-					-webkit-transition:all 400ms ease;					
+					transition: margin-left 300ms ease;
+					-o-transition: margin-left 300ms ease;
+					-moz-transition:margin-left 400ms ease;
+					-webkit-transition:margin-left 400ms ease;					
 					left: -579px;
 					height: 31px;
 					z-index: 10;

@@ -342,6 +342,11 @@ button {
 }
 .notmobile {
 }
+.tablet {
+	display: none;
+}
+.nottablet {
+}
 .b-orange-butt{
 
 }
@@ -2601,6 +2606,12 @@ button {
 					color: #cccccc;
 					text-align: left;
 				}
+					.review-more-mobile {
+						display: inline-block;
+						width: 100%;
+						text-align: left;
+						text-decoration: underline;
+					}					
 			.p_reviews-single-head .b-btn {
 				border: 1px solid #e3e3e3;
 				background-color: transparent;

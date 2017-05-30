@@ -824,13 +824,7 @@ h1,h2,h3,h4,h5,h6{
 								padding-right: 6%;
 								width: 175px;
 								float: right;
-							}
-								.review-more-mobile {
-									display: inline-block;
-									width: 100%;
-									text-align: left;
-									text-decoration: underline;
-								}							
+							}						
 					.review-single-text {
 						text-align: left;
 						padding: 0 20px 0px 20px;

@@ -184,6 +184,12 @@ button {
 }
 .hide {
 }
+.tablet {
+	display: initial;
+}
+.nottablet {
+	display: none;
+}
 .b-orange-butt{
 
 }

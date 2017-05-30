@@ -2575,6 +2575,7 @@ button {
 		.p_reviews-single-head {
 			width: 100%;
 			margin-bottom: 30px;
+			display: table;
 		}
 			.p_reviews-single-phot {
 				background-position: 50% 50%;
@@ -2584,11 +2585,17 @@ button {
 				width: 110px;
 				border-radius: 55px;
 				overflow: hidden;
+				display: table-cell;
+				vertical-align: middle;
+				float: none !important;
 			}
 			.p_reviews-single-name {
-				display: inline-block;
+				display: table-cell;
 				text-align: left;
-				margin: 27px 0 0 27px;
+				margin: 0;
+				padding-left: 27px;
+				vertical-align: middle;
+				float: none !important;
 			}
 				.p_reviews-single-name h5{
 					font-family: "Ubuntu";
@@ -2617,10 +2624,13 @@ button {
 				background-color: transparent;
 			}
 			.p_reviews-btn {
-				display: inline-block;
+				display: table-cell;
 				text-align: right;
 				width: 175px;
-				margin-top: 27px;
+				margin-top: 0;
+				padding-right: 0;
+				vertical-align: middle;
+				float: none !important;
 			}
 	.p_reviews-single-text {
 		color: #1f1f1f;

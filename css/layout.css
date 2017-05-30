@@ -1844,7 +1844,7 @@ button {
 			}
 				.p_doctors_menu_item {
 					display: inline-block;
-					height: 365px;
+					height: auto;
 					width: 365px;
 					margin-right: 32px;
 					background-position: 50% 50%;
@@ -1856,6 +1856,11 @@ button {
 					margin-bottom: 6px;
 					position: relative;
 				}
+				.p_doctors_menu_item img {
+					width: 100%;
+					height: auto;
+					display: inherit;
+				}				
 				.p_doctors_menu_item:nth-child(4n-1) {
 					margin-right: 0px;
 				}		

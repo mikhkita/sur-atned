@@ -1632,20 +1632,29 @@ body {
 		margin: 0 0px 30px 0;
 	}	
 		.p_reviews-single-head {
+			display: table;
 			width: 100%;
 			margin-bottom: 20px;
 		}
 			.p_reviews-single-phot {
+				display: table-cell;
 				height: 80px;
 				width: 80px;
+				vertical-align: middle;
+				float: none !important;
 			}
 			.p_reviews-single-name {
-				margin: 15px 0 0 15px;
+				margin: 0;
+				display: table-cell;
+				vertical-align: middle;
+				padding-left: 15px;
+				float: none !important;
 			}
 				.p_reviews-single-name h5{
 					font-size: 16px;
 					line-height: 28px;
-					letter-spacing: 1px;
+					letter-spacing: initial;
+					word-wrap: normal;
 				}
 				.p_reviews-single-name p{
 					font-size: 16px;

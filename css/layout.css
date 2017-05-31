@@ -2353,6 +2353,29 @@ button {
 			background-color: #f3f3f3;		
 			width: 1560px;
 		}
+		.p_practice_slide_top {
+			margin-bottom: 20px;
+		}
+			.p_practice_slide h2 {
+				font-size: 40px;
+				margin-bottom: 34px;
+			}
+			.p_practice_slide h3 {
+				font-size: 18px;
+				font-family: Ubuntu-Medium;
+				margin-bottom: 10px;
+			}
+			.p_practice_slide h4 {
+				font-size: 29px;
+				margin-bottom: 23px;
+			}						
+			.p_practice_slide p {
+				
+			}	
+			.p_practice_slide img {
+				margin-bottom: 24px;
+				width: 100%;
+			}					
 	.pract_info_show {
 		min-height: 600px;
 		height: initial;
@@ -2389,7 +2412,7 @@ button {
 					margin-left: 485px;
 				}					
 			.p_practice_slide .b-block{
-				padding: 79px 0 34px;
+				padding: 102px 0 34px;
 			}
 			.p_practice_slide .map-cont-close {
 			top: 65px;
@@ -2406,9 +2429,14 @@ button {
 					width: 565px;
 				}
 				.p_practice_slide_details {
-					width: 750px;
+					width: 865px;
 				}
-				.p_practice_slide_executor {width: 368px;}
+				.p_practice_slide_executor {
+					width: 270px;
+				}
+				.p_practice_slide_executor img {
+					
+				}				
 				.p_practice_menu .slick-dots {
 					display: none !important;
 				}							

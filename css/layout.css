@@ -1844,7 +1844,7 @@ button {
 			}
 				.p_doctors_menu_item {
 					display: inline-block;
-					height: auto;
+					height: 365px;
 					width: 365px;
 					margin-right: 32px;
 					background-position: 50% 50%;
@@ -2394,7 +2394,14 @@ button {
 			.p_practice_slide .map-cont-close {
 			top: 65px;
 			right: 20px;
+			width: 29px;
+			height: 29px;
 			}
+			.p_practice_slide .map-cont-close:after {
+				line-height: 30px;
+				font-size: 19px;
+			}
+
 				.p_practice_slide_img {
 					width: 565px;
 				}

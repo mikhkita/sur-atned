@@ -791,7 +791,8 @@ $(document).ready(function(){
                 var pos = columns - 1;
                 if (pos>=menu_items) {pos=menu_items-1;}
                 var block = columns/next_it; // number of row
-                $( '.p_practice_menu_item:eq('+pos+')' ).after( $('.footer .p_practice_slider_cont').clone().attr('data-nrow-block',block).attr('offset',$( '.p_practice_menu_item:eq('+pos+')' ).offset().top+$( '.p_practice_menu_item:eq('+pos+')' ).height()));//'<div data-nrow='+block+' class="dummy-box"></div>' 
+                var tmpoffset = $( '.p_practice_menu_item:eq('+pos+')' ).offset().top+$( '.p_practice_menu_item:eq('+pos+')' ).height();
+                $( '.p_practice_menu_item:eq('+pos+')' ).after( '<div data-nrow-block='+block+' offset='+tmpoffset+' class="p_practice_slider_cont"></div>');//'<div data-nrow='+block+' class="dummy-box"></div>' 
                 // console.log('row - ' + columns + 'pos - ' + pos + 'block - ' + block)
             }
             //---------------------- вставляем слайды в блоки
@@ -924,7 +925,7 @@ $(document).ready(function(){
                     $(".p_practice_menu_item .p_practice_slider").remove();
                     $('.p_practice_menu_item').unwrap(".doctwrap");
                     $('.p_practice_slider_cont .slick-initialized').remove();
-                    $('.p_practice_slider').css('display','initial');
+                    $('.p_practice_slider').css('display','none');
                     mainf();
                 }                       
             }    

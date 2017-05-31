@@ -1669,16 +1669,13 @@ body {
 				margin: 0 auto;
 			}
 				.doctwrap {
-					display: inline-block;				
+					display: inline-block;
+					margin: 0 2%;
 				}
 				.p_doctors_menu_item {
 					display: inherit;
-					width: 100%;
-					height: auto;
 					max-height: 300px;
-					min-height: 250px;
 					max-width: 300px;
-					min-width: 250px;
 					margin: 0 auto 30px;
 					float: none;
 					position: relative;
@@ -1850,7 +1847,7 @@ body {
 				.p_practice_menu_item {
 					display: block;
 					max-height: 256px;
-					max-width: 365px;
+					max-width: 300px;
 					cursor: pointer;
 					float: none;
 					margin: 0 auto 30px;

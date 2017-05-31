@@ -2236,25 +2236,28 @@ button {
 						height: 100%;
 						width: auto;
 					}			
-					.p_about_b_clinics_galary_windows  img{
+					.p_about_b_clinics_galary_windows .img{
 						display: block;
 						position: absolute;
+						background-position: 100% 50%;
+						background-size: cover;
 						height: 368px;
 						width: 368px;
 						margin: 0;
-						transition: all 200ms ease;
-						-o-transition: all 200ms ease;
-						-moz-transition:all 200ms ease;
-						-webkit-transition:all 200ms ease;												
+						transition: transform 200ms ease;
+						-o-transition: transform 200ms ease;
+						-moz-transition: transform 200ms ease;
+						-webkit-transition: transform 200ms ease;
 					}
-					.p_about_b_clinics_galary_windows:hover  img{
-						width: 393px;
-						height: 393px;
-						margin: -12px -12px;
+					.p_about_b_clinics_galary_windows:hover .img{
+						-webkit-transform: scale(1.1);
+						   -moz-transform: scale(1.1);
+						    -ms-transform: scale(1.1);
+						   	 -o-transform: scale(1.1);
+								transform: scale(1.1);
 					}	
 					.p_about_b_clinics_galary_windows a:after {
 						position: absolute;
-						visibility: hidden;
 						font-family: "icomoon";
 						font-size: 40px;
 						content: "\e913";
@@ -2268,7 +2271,6 @@ button {
 						-webkit-transition:opacity 200ms ease, font-size 200ms ease;							
 					}
 					.p_about_b_clinics_galary_windows a:hover:after  {
-						visibility: visible;
 						font-size: 60px;
 						opacity: 1;	
 						transition: opacity 200ms ease, font-size 200ms ease;
@@ -2283,7 +2285,7 @@ button {
 						color: #ffffff;
 						position: absolute;
 						left: 26px;
-						top: 25px;
+						bottom: 25px;
 					}
 /*about page end*/
 /*practice page*/

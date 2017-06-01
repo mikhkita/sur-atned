@@ -1927,6 +1927,12 @@ body {
 				.p_practice_slide_img {
 					width: 100%;
 				}
+					.p_practice_slide_img_before {
+					}
+					.p_practice_slide_img_after {
+					}
+					.p_practice_slide_img_executor {
+					}				
 				.p_practice_slide_details {
 					width: 100%;
 				}

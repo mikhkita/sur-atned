@@ -1490,16 +1490,22 @@ body {
 								content: '';
 					        }	
 								.p_about_b_about_stats_menu .active {
-									height: 28px;							
+									height: 28px;
+									border-bottom: 0px;
+									color: #74bc40;
+									margin-bottom: 0px;
 								}					        				
 								.p_about_b_about_stats_menu_item {
 									height: 28px;
-									border-bottom: 3px solid transparent;
+									margin-bottom: 0px;
+									border-bottom: 0px;
 									vertical-align: top;
-									zoom : 1;*/								
+									zoom : 1;							
 								}
 								.p_about_b_about_stats_menu_item:hover {
 									height: 28px;
+									border-bottom: 0px;
+									margin-bottom: 0px;
 								}	
 									.p_about_b_about_stats_menu_item span {
 									}							
@@ -1554,20 +1560,22 @@ body {
 					margin-bottom: 48px;
 				}
 			.p_about_b_clinics_galary {
-				width: auto;
+				width: 100%;
 				margin-left: 0;
 			}
 				.p_about_b_clinics_galary_windows {
 					position: relative;
 					height: auto;
-					width: auto;
+					width: 48%;
 					margin: 0px 0 30px 0px;
-					margin: 0px auto 30px;
+					margin-right: 3%;
 				}
-					.p_about_b_clinics_galary_windows img {
+				.p_about_b_clinics_galary_windows:nth-child(2n){
+					margin-right: 0px;
+				}
+					.p_about_b_clinics_galary_windows .img {
 						width: 100%;
-						max-width: 368px;
-						height: auto;
+						height: 250px;
 						position: relative;
 					}
 					.p_about_b_clinics_galary_windows a{
@@ -1580,13 +1588,13 @@ body {
 						width: 100%;
 						margin: 0;
 					}	
-					.p_about_b_clinics_galary_windows:hover img {
+					/*.p_about_b_clinics_galary_windows:hover .img {
 						width: 100%;
 						max-width: 368px;
 						height: auto;
 						position: relative;
 						margin: 0px;
-					}
+					}*/
 					.p_about_b_clinics_galary_windows a:after {
 						position: absolute;
 						visibility: visible;
@@ -1594,12 +1602,12 @@ body {
 						bottom: 40px;
 						right: 20px;
 						opacity: 1;
-						font-size: 60px;
+						font-size: 30px;
 					}				
 					.p_about_b_clinics_galary_windows p {
 						position: absolute;
 						left: 26px;
-						top: 25px;
+						bottom: 25px;
 					}
 /*about page end*/
 /*reviews page*/
@@ -2003,5 +2011,15 @@ body {
 	}
 	.footer-columns h4{
 		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.p_about_b_clinics_galary_windows {
+		width: 100%;
+		margin-right: 0px;
+	}
+	.p_about_b_clinics_galary_windows .img {
+		height: 300px;
 	}
 }

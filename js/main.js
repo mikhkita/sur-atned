@@ -605,7 +605,7 @@ $(document).ready(function(){
                     var pos = columns - 1;
                     if (pos>=menu_items) {pos=menu_items-1;}
                     var block = columns/next_it; // number of row
-                    $( '.p_doctors_menu_item:eq('+pos+')' ).after( $('.footer .p_doctors_slider_cont').clone().attr('data-nrow-block',block).attr('offset',$( '.p_doctors_menu_item:eq('+pos+')' ).offset().top+$( '.p_doctors_menu_item:eq('+pos+')' ).height()));//'<div data-nrow='+block+' class="dummy-box"></div>' 
+                    $( '.p_doctors_menu_item:eq('+pos+')' ).after( $('.hidden .p_doctors_slider_cont').clone().attr('data-nrow-block',block).attr('offset',$( '.p_doctors_menu_item:eq('+pos+')' ).offset().top+$( '.p_doctors_menu_item:eq('+pos+')' ).height()));//'<div data-nrow='+block+' class="dummy-box"></div>' 
                     // console.log('row - ' + columns + 'pos - ' + pos + 'block - ' + block)
                 }
                 //---------------------- вставляем слайды в блоки
@@ -616,7 +616,7 @@ $(document).ready(function(){
                         }
                     var cnt = 0;
                     for ( columnToFill; columnToFill <= next_it*blockToFill; columnToFill = columnToFill + 1) {
-                        $('.footer [data-slide-id='+columnToFill+']' ).clone().appendTo( $('[data-nrow-block='+blockToFill+']').attr('data-nslider',blockToFill));
+                        $('.hidden [data-slide-id='+columnToFill+']' ).clone().appendTo( $('[data-nrow-block='+blockToFill+']').attr('data-nslider',blockToFill));
                         $('[data-mdbtn='+columnToFill+']').attr('data-eventBlock',blockToFill);
                         //$('[data-msbtn='+columnToFill+'] a span').attr('data-eventBlock',blockToFill);
                         $('[data-mdbtn='+columnToFill+']').attr('data-sldots',cnt); 
@@ -803,7 +803,7 @@ $(document).ready(function(){
                 }
                 var cnt = 0;
                 for ( columnToFill; columnToFill <= next_it*blockToFill; columnToFill = columnToFill + 1) {
-                    $('.footer [data-slide-id='+columnToFill+']' ).clone().appendTo( $('[data-nrow-block='+blockToFill+']').attr('data-nslider',blockToFill));
+                    $('.hidden [data-slide-id='+columnToFill+']' ).clone().appendTo( $('[data-nrow-block='+blockToFill+']').attr('data-nslider',blockToFill));
                     $('[data-mdbtn='+columnToFill+']').attr('data-eventBlock',blockToFill);
                     //$('[data-msbtn='+columnToFill+'] a span').attr('data-eventBlock',blockToFill);
                     $('[data-mdbtn='+columnToFill+']').attr('data-sldots',cnt); 

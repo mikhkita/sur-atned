@@ -1306,7 +1306,7 @@ button {
 	.left-slider .slick-dots{
 		display: none !important;
 	}																													
-	.footer .p_doctors_slider {
+	.hidden .p_doctors_slider {
 	}
 	.p_doctors_slider {
 		text-align: left;
@@ -1399,7 +1399,7 @@ button {
 			.p_doctors_slide_bott {
 				padding: 54px 0 34px;
 			}
-				.p_doctors_slide_bott h6 {
+				.p_doctors_slide_bott h3 {
 					font-size: 18px;
 					margin-bottom: 22px;
 				}
@@ -1441,7 +1441,7 @@ button {
 						.p_practice_menu_vcard h5{
 							line-height: 26px;
 						}																																					
-	.footer .p_practice_slider {
+	.hidden .p_practice_slider {
 	}
 	.p_practice_slider {
 	}

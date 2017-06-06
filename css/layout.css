@@ -3104,7 +3104,7 @@ div.cs-skin-slide::before {
 	display: inline-block;
 	position: relative;
 }
-.morphing-btn {
+.zapis-na-priem .morphing-btn {
 	-webkit-transition: color 0.3s 0.2s, width 0.3s 0.2s, border-radius 0.3s 0.2s, margin-left 0.3s 0.2s;
 	-moz-transition: color 0.3s 0.2s, width 0.3s 0.2s, border-radius 0.3s 0.2s, margin-left 0.3s 0.2s;
 	-o-transition: color 0.3s 0.2s, width 0.3s 0.2s, border-radius 0.3s 0.2s, margin-left 0.3s 0.2s;
@@ -3112,6 +3112,26 @@ div.cs-skin-slide::before {
 	white-space: nowrap;
 	will-change: width, color;
 	transform: translate3d(0, 0, 0);
+}
+.p_doctors_slide_text .morphing-btn {
+	-webkit-transition: color 0.3s 0.2s, width 0.3s 0.2s, border-radius 0.3s 0.2s, padding 0.3s 0.2s;
+	-moz-transition: color 0.3s 0.2s, width 0.3s 0.2s, border-radius 0.3s 0.2s, padding 0.3s 0.2s;
+	-o-transition: color 0.3s 0.2s, width 0.3s 0.2s, border-radius 0.3s 0.2s, padding 0.3s 0.2s;
+	transition: color 0.3s 0.2s, width 0.3s 0.2s, border-radius 0.3s 0.2s, padding 0.3s 0.2s;
+	white-space: nowrap;
+	will-change: width, color;
+	transform: translate3d(0, 0, 0);
+}
+.p_doctors_slide_text .morphing-btn .arrow {
+	visibility: visible;
+	-webkit-transition-property: visibility;
+	-moz-transition-property: visibility;
+	-o-transition-property: visibility;
+	transition-property: visibility;
+	-webkit-transition-delay: 0.5s;
+	-moz-transition-delay: 0.5s;
+	-o-transition-delay: 0.5s;
+	transition-delay: 0.5s;
 }
 .b-block .callback .morphing-btn_circle {
 	padding-left: 0;
@@ -3129,10 +3149,30 @@ div.cs-skin-slide::before {
 	border-radius: 33px;
 	width: 66px !important; /* Override inline style rule */
 	margin-left: 70.5px;
-	-webkit-transition: color 0.3s 0.2s, border-radius 0.3s 0.2s, margin-left 0.3s 0.2s, width 0.3s 0.2s;
-	-moz-transition: color 0.3s 0.2s, border-radius 0.3s 0.2s, margin-left 0.3s 0.2s, width 0.3s 0.2s;
-	-o-transition: color 0.3s 0.2s, border-radius 0.3s 0.2s, margin-left 0.3s 0.2s, width 0.3s 0.2s;
-	transition: color 0.3s 0.2s, border-radius 0.3s 0.2s, margin-left 0.3s 0.2s, width 0.3s 0.2s;
+	-webkit-transition: border-radius 0.3s 0.2s, margin-left 0.3s 0.2s, width 0.3s 0.2s;
+	-moz-transition: border-radius 0.3s 0.2s, margin-left 0.3s 0.2s, width 0.3s 0.2s;
+	-o-transition: border-radius 0.3s 0.2s, margin-left 0.3s 0.2s, width 0.3s 0.2s;
+	transition: border-radius 0.3s 0.2s, margin-left 0.3s 0.2s, width 0.3s 0.2s;
+}
+
+.p_doctors_slide_text .morphing-btn_circle {
+	color: transparent !important;
+	padding-left: 0;
+	padding-right: 0;
+	width: 56px !important;
+	background-color: #74bc40 !important;
+	-webkit-transition: border-radius 0.3s 0.2s, width 0.3s 0.2s, padding 0.3s 0.2s;
+	-moz-transition: border-radius 0.3s 0.2s, width 0.3s 0.2s, padding 0.3s 0.2s;
+	-o-transition: border-radius 0.3s 0.2s, width 0.3s 0.2s, padding 0.3s 0.2s;
+	transition: border-radius 0.3s 0.2s, width 0.3s 0.2s, padding 0.3s 0.2s;
+}
+
+.p_doctors_slide_text .morphing-btn_circle .arrow {
+	visibility: hidden;
+	-webkit-transition-delay: 0s;
+	-moz-transition-delay: 0s;
+	-o-transition-delay: 0s;
+	transition-delay: 0s;
 }
 
 .morphing-btn-clone {

@@ -1935,6 +1935,12 @@ body {
 				.p_practice_slide_img {
 					width: 100%;
 				}
+					.p_practice_slide_img_before {
+					}
+					.p_practice_slide_img_after {
+					}
+					.p_practice_slide_img_executor {
+					}				
 				.p_practice_slide_details {
 					width: 100%;
 				}
@@ -1998,7 +2004,7 @@ body {
 @media screen and (max-width: 360px){
 	.b-block .zapis-na-priem a {
 		font-size: 16px;
-		padding: 25px 15px 24px;
+		padding: 25px 15px 0px;
 	}
 	.footer-sub p{
 		font-size: 14px;

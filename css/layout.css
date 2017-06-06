@@ -2302,9 +2302,9 @@ button {
 					height: 256px;
 					width: 365px;
 					margin-right: 32px;
-					background-position: 50% 0;
+					background-position: 50% 50%;
 					background-repeat: no-repeat;
-					background-size: 100%;
+					background-size: cover;
 					overflow: hidden;
 					cursor: pointer;
 					float: left;
@@ -2430,14 +2430,35 @@ button {
 				.p_practice_slide_img {
 					width: 565px;
 				}
+					.p_practice_slide_img_before {
+						background-position: 50% 50%;
+						background-repeat: no-repeat;
+						background-size: cover;
+						width: 100%;
+						height: 300px;
+						margin-bottom: 24px;
+					}
+					.p_practice_slide_img_after {
+						background-position: 50% 50%;
+						background-repeat: no-repeat;
+						background-size: cover;
+						width: 100%;
+						height: 300px;
+						margin-bottom: 24px;
+					}
+					.p_practice_slide_img_executor {
+						background-position: 50% 50%;
+						background-repeat: no-repeat;
+						background-size: cover;
+						width: 100%;
+						height: 250px;
+						margin-bottom: 24px;
+					}
 				.p_practice_slide_details {
 					width: 865px;
 				}
 				.p_practice_slide_executor {
 					width: 270px;
-				}
-				.p_practice_slide_executor img {
-					
 				}				
 				.p_practice_menu .slick-dots {
 					display: none !important;

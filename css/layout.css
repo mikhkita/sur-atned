@@ -187,7 +187,11 @@ span.modern-page-current{
 	margin: 0px auto;
 	background-color: #FFF;
 }
+.grey-back{
+	background-color: #fafafa;
+}
 .b-block{
+	text-align: left;
 	position: relative;
 	width: 1160px;
 	margin: 0px auto;
@@ -289,6 +293,7 @@ button {
 	font-family: "icomoon";
 	font-size: 16px;
 	color: #b9b9b9;
+	text-align: center;
 	line-height: 46px;
 	cursor: pointer;
 }
@@ -302,6 +307,7 @@ button {
 	border: 1px solid #74bc40 !important;
 }
 .b-btn-prev {
+	text-align: center;
 	display: inline-block;
 	height: 45px;
 	width: 45px;
@@ -2482,27 +2488,27 @@ button {
 	}
 	.b-text h2 {
 		font-size: 29px;
-		line-height: 24px;
+		line-height: 40px;
 		color: #171717;
-		margin-bottom: 31px;
+		margin-bottom: 10px;
 	}
 	.b-text h3 {
 		font-size: 18px;
-		line-height: 18px;
+		line-height: 30px;
 		color: #0e0e0e;
-		margin-bottom: 38px;
+		margin-bottom: 10px;
 	}
 	.b-text .h44 {
 		font-size: 42px;
 		line-height: 46px;
 		color: #181818;
-		margin-bottom: 34px;
+		margin-bottom: 10px;
 	}
 	.b-text p {
 		font-size: 16px;
 		line-height: 28px;
 		color: #171717;
-		margin-bottom: 44px;
+		/* margin-bottom: 44px; */
 	}
 	.b-text a {
 		font-family: "Ubuntu-Light";
@@ -2534,15 +2540,16 @@ button {
 		width: inherit;
 	}
 	.b-text ul {
-		margin-bottom: 34px;
+		/* margin-bottom: 34px; */
 	}
 	.b-text li {
-		line-height: 36px;
+		line-height: 28px;
 	}		
 	.b-text li:before {
 		content: "\25CF";
 		display: inline-block;
 		width: 14px;
+		margin-right: 15px;
 	}
 	.b-text img {
 		margin-bottom: 42px;
@@ -3414,6 +3421,52 @@ input.error {
 .icon-search:before {
   content: "\e901";
 }
+.link{
+	text-decoration: underline;
+}
+	.link:hover{
+		text-decoration: none;
+	}
+.actions{
+
+}
+	.actions li{
+		background-color: #fafafa;
+		margin-bottom: 30px;
+		position: relative;
+		margin-left: 100px;	
+		min-height: 250px;
+	}
+		.actions li .img{
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			left: -100px;
+			top: 50%;
+			margin-top: -100px;
+			border-radius: 100px;
+			background-position: 50% 50%;
+			background-size: cover;
+		}
+		.actions li .text{
+			padding: 50px;
+			padding-left: 150px;
+			width: 100%;
+			box-sizing: border-box;
+		}
+			.actions li .text div{
+
+			}
+				.actions li .text h3{
+					font-size: 22px;
+					margin-bottom: 15px;
+				}
+				.actions li .text p{
+					margin-bottom: 15px;
+				}
+				.actions li .text .link{
+
+				}
 
 
 @media (-webkit-min-device-pixel-ratio: 1.5) {

@@ -1999,7 +1999,35 @@ body {
 					}					
 					.p_services_mobile_menu a:hover{
 						text-decoration: underline;
-					}																		
+					}	
+.actions{
+
+}
+	.actions li{
+		margin-bottom: 30px;
+		margin-left: 0px;	
+		min-height: 0px;
+	}
+		.actions li .img{
+			display: none;
+		}
+		.actions li .text{
+			padding: 30px;
+			width: 100%;
+		}
+			.actions li .text div{
+
+			}
+				.actions li .text h3{
+					font-size: 22px;
+					margin-bottom: 15px;
+				}
+				.actions li .text p{
+					margin-bottom: 15px;
+				}
+				.actions li .text .link{
+
+				}																	
 /*страница услуг*/
 @media screen and (max-width: 360px){
 	.b-block .zapis-na-priem a {

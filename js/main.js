@@ -802,7 +802,7 @@ $(document).ready(function(){
                 }
                 var cnt = 0;
                 for ( columnToFill; columnToFill <= next_it*blockToFill; columnToFill = columnToFill + 1) {
-                    $('.hidden [data-slide-id='+columnToFill+']' ).clone().appendTo( $('[data-nrow-block='+blockToFill+']').attr('data-nslider',blockToFill));
+                    $(' [data-slide-id='+columnToFill+']' ).clone().appendTo( $('[data-nrow-block='+blockToFill+']').attr('data-nslider',blockToFill));
                     $('[data-mdbtn='+columnToFill+']').attr('data-eventBlock',blockToFill);
                     //$('[data-msbtn='+columnToFill+'] a span').attr('data-eventBlock',blockToFill);
                     $('[data-mdbtn='+columnToFill+']').attr('data-sldots',cnt); 

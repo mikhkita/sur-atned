@@ -55,6 +55,7 @@ $(document).ready(function(){
         break;
     }
     $('#date').val(nowday+" "+nowmonth+" "+nowyear);
+    $('#date-2').val(nowday+" "+nowmonth+" "+nowyear);
     $('.div-cal').datepicker({
         dayNames: [ "Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота" ],
         dayNamesMin: [ "Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб" ],
@@ -66,6 +67,7 @@ $(document).ready(function(){
         nextText: "",
         onSelect: function(dateText){
             $('#date').val(dateText);
+            $('#date-2').val(dateText)
             $('.div-cal').removeClass("open-cal");
         }
     });
@@ -665,8 +667,8 @@ $(document).ready(function(){
                         $('[data-nrow-block='+dataEventVal+']').addClass("doct_info_show");
 
                         function scrll () {  
-                            var actscrll = $('.active').attr('data-eventblock')
-                            var offs = $('[data-nrow-block='+actscrll+']').attr('offset')
+                            var actscrll = $('.active').attr('data-eventblock');
+                            var offs = $('[data-nrow-block='+actscrll+']').attr('offset');
                             //var offs = $('.p_doctors_menu_item:eq('+actButt+')').offset().top; 
                             $('html, body').animate({
                                 scrollTop: offs
@@ -677,16 +679,20 @@ $(document).ready(function(){
                 });
 
                 $('.map-cont-close').click(function() {
-                    $('.p_doctors_menu_item').removeClass('active');
-                    $(".p_doctors_slider_cont").removeClass("doct_info_show");
+                    var actscrll = $('.active').attr('data-eventblock');
+                    var offsc = Number($('[data-nrow-block='+actscrll+']').attr('offset'))-($('[data-eventblock='+actscrll+']').height());
                         function scrlClose () {  
                             //var offs = $('.p_doctors_menu_item:eq('+actButt+')').offset().top; 
-                            var offsc = $('[data-eventblock="1"]').offset().top;
+                            //var offsc = $('.active').offset().top;
+                            console.log(offsc,actscrll);
                             $('html, body').animate({
                                 scrollTop: offsc
                             }, 400);
                         }   
-                        setTimeout(scrlClose, 0);   
+                        
+                        setTimeout(scrlClose, 0);  
+                    $('.p_doctors_menu_item').removeClass('active');
+                    $(".p_doctors_slider_cont").removeClass("doct_info_show");                         
                 });
                 winsize = window.innerWidth;
             }
@@ -864,16 +870,19 @@ $(document).ready(function(){
             });
 
             $('.map-cont-close').click(function() {
-                $('.p_practice_menu_item').removeClass('active');
-                $(".p_practice_slider_cont").removeClass("pract_info_show");
+                var actscrll = $('.active').attr('data-eventblock');
+                var offsc = Number($('[data-nrow-block='+actscrll+']').attr('offset'))-($('[data-eventblock='+actscrll+']').height());                
                     function scrlClose () {  
                         //var offs = $('.p_practice_menu_item:eq('+actButt+')').offset().top; 
-                        var offsc = $('[data-eventblock="1"]').offset().top;
+                        //var offsc = $('[data-eventblock="1"]').offset().top;
                         $('html, body').animate({
                             scrollTop: offsc
                         }, 400);
+                        console.log(actscrll,offsc);
                     }   
-                    setTimeout(scrlClose, 0);   
+                    setTimeout(scrlClose, 0);  
+                $('.p_practice_menu_item').removeClass('active');
+                $(".p_practice_slider_cont").removeClass("pract_info_show");                     
             });
             winsize = window.innerWidth;
         }
@@ -1098,5 +1107,152 @@ $(function(){
     });
     $('.date-div').click(function(){
         $('.div-cal').addClass("open-cal");
+    });
+    $('.p_doctors_menu').on('afterChange',function(event,slick,currentSlide){
+        var Morph = function( $btn, opts ) {
+
+            this.opts = opts;
+
+            this._init( $btn );
+
+        }
+
+        Morph.prototype._init = function( $btn ) {
+            var that = this;
+
+            that.$btn = $btn.width( $btn.width() ).addClass('morphing-btn');
+
+            // Add wrapping element and set initial width used for positioning
+            $btn.wrap(function() {
+                var $wrap = $('<div class="morphing-btn-wrap"></div>');
+
+                $wrap.width( $(this).outerWidth( true ) );
+
+                return $wrap;
+            });
+
+            that.$clone = $('<div />')
+                .hide()
+                .addClass('morphing-btn-clone')
+                .insertAfter( $btn );
+
+            $btn.on('click', function(e) {
+                e.preventDefault();
+
+                that.open();
+            });
+        };
+
+        Morph.prototype.open = function() {
+          var that = this;
+
+          if ( that.$btn.hasClass('morphing-btn_circle') ) {
+            return;
+          }
+
+          // First, animate button to the circle
+            that.$btn.one("transitionend.fm webkitTransitionEnd.fm oTransitionEnd.fm MSTransitionEnd.fm", function(e) {
+
+                // if ( e.originalEvent.propertyName !== 'width' ) {
+                //     return;
+                // }
+
+                $(this).off(".fm");
+
+                that._animate();
+
+            });
+
+            that.$btn.width( that.$btn.width() ).addClass('morphing-btn_circle');
+
+        };
+
+        Morph.prototype._animate = function() {
+            var that   = this;
+            var $btn   = that.$btn;
+            var $clone = that.$clone;
+            var scale  = this._retrieveScale( $btn );
+            var pos    = $btn[0].getBoundingClientRect();
+
+            $clone.css({
+                top       : pos.top  + $btn.outerHeight() * 0.5 -   (($btn.outerHeight() * scale + 3000) * 0.5 ) + 1000,
+                left      : pos.left + $btn.outerWidth()  * 0.5 -   (($btn.outerHeight() * scale + 3000) * 0.5 ),
+                width     : $btn.outerWidth()  * scale +3000,
+                height    : $btn.outerHeight() * scale +3000,
+                transform : 'scale(' + 1 / scale + ')'
+            });
+            $clone.one("transitionend.fm webkitTransitionEnd.fm oTransitionEnd.fm MSTransitionEnd.fm", function(e) {
+                $(this).off(".fm");
+
+                // Open fancyBox
+                $.fancybox.open({ src : $btn.data('src') || $btn.attr('href') }, $.extend({}, that.opts, {
+                    infobar  : false,
+                    buttons  : false,
+                    smallBtn : false,
+                    touch    : false,
+                    closeClickOutside : false,
+                    modal : true,
+                    onInit : function( instance ) {
+                        instance.$refs.slider_wrap.append('<button class="morphing-close" data-fancybox-close>X</button>');
+                        instance.$refs.bg.remove();
+                    },
+                    afterClose : function() {
+                        that.close();
+                    }
+                }));
+
+            });
+
+            // Trigger expanding of the cloned element
+            $clone.show().addClass('morphing-btn-clone_visible');
+
+        };
+
+        Morph.prototype.close = function() {
+            var that   = this;
+            var $btn   = that.$btn;
+            var $clone = that.$clone;
+            var scale  = that._retrieveScale( $btn );
+            var pos    = $btn[0].getBoundingClientRect();
+
+            $clone.css({
+                top       : pos.top  + $btn.outerHeight() * 0.5 -  ( ($btn.outerHeight() * scale + 3000) * 0.5 ) + 1000,
+                left      : pos.left + $btn.outerWidth()  * 0.5  - ( ($btn.outerHeight() * scale + 3000) * 0.5 ),
+                width     : $btn.outerWidth()  * scale +3000,
+                height    : $btn.outerHeight() * scale +3000,
+                transform : 'scale(' +  1 / scale  + ')'
+            });
+
+            $clone.one('transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd', function(e) {
+                $clone.hide();
+
+                $btn.removeClass('morphing-btn_circle');
+            });
+
+            $clone.removeClass('morphing-btn-clone_visible');
+        };
+
+        Morph.prototype._retrieveScale = function( $btn ) {
+            var rez = Math.max( $(window).height() * 2 / $btn.height() , $(window).width() * 2 / $btn.width() );
+
+            return rez;
+        };
+
+        $.fn.fancyMorph = function( opts ) {
+            this.each(function() {
+                var $this = $(this);
+
+                if ( !$this.data('morph') ) {
+                    $this.data('morph', new Morph( $this, opts ));
+                }
+
+            });
+
+            return this;
+        };
+
+        $("[data-morph]").fancyMorph({
+            hash : 'morph'
+        });
     });
 });

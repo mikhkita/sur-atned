@@ -2497,7 +2497,7 @@ button {
 			}
 			.p_practice_slide .map-cont-close:after {
 				line-height: 30px;
-				font-size: 19px;
+				font-size: 20px;
 			}
 
 				.p_practice_slide_img {
@@ -3223,14 +3223,22 @@ div.cs-skin-slide::before {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
+.p_doctors_slider_cont .morphing-btn-clone {
+	opacity: 0;
+	-webkit-transition: opacity 0.01s ease-in-out;
+	-moz-transition: opacity 0.01s ease-in-out;
+	-o-transition: opacity 0.01s ease-in-out;
+	transition: opacity 0.01s ease-in-out;
+}
 
 .morphing-btn-clone_visible {
 	-webkit-transform : scale(1) !important;
 	-moz-transform : scale(1)  !important;
-	-ms-transform : scale(1) !important;
 	-o-transform : scale(1)  !important;
 	transform : scale(1) !important;
-
+}
+.p_doctors_slider_cont .morphing-btn-clone_visible {
+	opacity: 1 !important;
 }
 .morphing-close {
 	position: fixed;

@@ -475,7 +475,6 @@ $(document).ready(function(){
         var how_many_slides = 0;
         if ($(window).width()<768) {
             how_many_slides = 1;
-            console.log ('oops', $(window).width())
         }
         else {
             how_many_slides = 2;
@@ -705,7 +704,7 @@ $(document).ready(function(){
                 if (
                     ((window.innerWidth<1241) && (winsize>=1241))||((window.innerWidth>1241) && (winsize<1241))
                     ) { 
-                    $('.p_doctors .p_doctors_slider_cont').remove();
+                    $('.p_doctors .p_doctors_menu .p_doctors_slider_cont').remove();
                     $('.map-cont-close').off( "click" );
                     $('.p_doctors_menu_item').off( "click" );
                     $('.p_doctors_menu_item').removeClass('active');
@@ -716,7 +715,7 @@ $(document).ready(function(){
                 if (
                     ((window.innerWidth<768) && (winsize>=768))
                     ) { 
-                    $('.p_doctors .p_doctors_slider_cont').remove();
+                    $('.p_doctors .p_doctors_menu .p_doctors_slider_cont').remove();
                     $( ".p_doctors_menu_item" ).off( "mouseenter mouseleave" );
                     $('.map-cont-close').off( "click" );
                     $('.p_doctors_menu_item').off( "click" );
@@ -730,7 +729,7 @@ $(document).ready(function(){
                         //----------mobile-----------
                 }
                 if ((window.innerWidth>768) && (winsize<768)) {
-                    $('.p_doctors .p_doctors_slider_cont').remove();
+                    $('.p_doctors .p_doctors_menu .p_doctors_slider_cont').remove();
                     $( ".p_doctors_menu_item" ).off( "mouseenter mouseleave" );
                     $('.map-cont-close').off( "click" );
                     $('.p_doctors_menu_item').off( "click" );
@@ -803,7 +802,7 @@ $(document).ready(function(){
                 }
                 var cnt = 0;
                 for ( columnToFill; columnToFill <= next_it*blockToFill; columnToFill = columnToFill + 1) {
-                    $('.hidden [data-slide-id='+columnToFill+']' ).clone().appendTo( $('[data-nrow-block='+blockToFill+']').attr('data-nslider',blockToFill));
+                    $(' [data-slide-id='+columnToFill+']' ).clone().appendTo( $('[data-nrow-block='+blockToFill+']').attr('data-nslider',blockToFill));
                     $('[data-mdbtn='+columnToFill+']').attr('data-eventBlock',blockToFill);
                     //$('[data-msbtn='+columnToFill+'] a span').attr('data-eventBlock',blockToFill);
                     $('[data-mdbtn='+columnToFill+']').attr('data-sldots',cnt); 

@@ -656,8 +656,8 @@ $(document).ready(function(){
                         $('[data-nrow-block='+dataEventVal+']').addClass("doct_info_show");
 
                         function scrll () {  
-                            var actscrll = $('.active').attr('data-eventblock')
-                            var offs = $('[data-nrow-block='+actscrll+']').attr('offset')
+                            var actscrll = $('.active').attr('data-eventblock');
+                            var offs = $('[data-nrow-block='+actscrll+']').attr('offset');
                             //var offs = $('.p_doctors_menu_item:eq('+actButt+')').offset().top; 
                             $('html, body').animate({
                                 scrollTop: offs
@@ -668,16 +668,20 @@ $(document).ready(function(){
                 });
 
                 $('.map-cont-close').click(function() {
-                    $('.p_doctors_menu_item').removeClass('active');
-                    $(".p_doctors_slider_cont").removeClass("doct_info_show");
+                    var actscrll = $('.active').attr('data-eventblock');
+                    var offsc = Number($('[data-nrow-block='+actscrll+']').attr('offset'))-($('[data-eventblock='+actscrll+']').height());
                         function scrlClose () {  
                             //var offs = $('.p_doctors_menu_item:eq('+actButt+')').offset().top; 
-                            var offsc = $('[data-eventblock="1"]').offset().top;
+                            //var offsc = $('.active').offset().top;
+                            console.log(offsc,actscrll);
                             $('html, body').animate({
                                 scrollTop: offsc
                             }, 400);
                         }   
-                        setTimeout(scrlClose, 0);   
+                        
+                        setTimeout(scrlClose, 0);  
+                    $('.p_doctors_menu_item').removeClass('active');
+                    $(".p_doctors_slider_cont").removeClass("doct_info_show");                         
                 });
                 winsize = window.innerWidth;
             }
@@ -855,16 +859,19 @@ $(document).ready(function(){
             });
 
             $('.map-cont-close').click(function() {
-                $('.p_practice_menu_item').removeClass('active');
-                $(".p_practice_slider_cont").removeClass("pract_info_show");
+                var actscrll = $('.active').attr('data-eventblock');
+                var offsc = Number($('[data-nrow-block='+actscrll+']').attr('offset'))-($('[data-eventblock='+actscrll+']').height());                
                     function scrlClose () {  
                         //var offs = $('.p_practice_menu_item:eq('+actButt+')').offset().top; 
-                        var offsc = $('[data-eventblock="1"]').offset().top;
+                        //var offsc = $('[data-eventblock="1"]').offset().top;
                         $('html, body').animate({
                             scrollTop: offsc
                         }, 400);
+                        console.log(actscrll,offsc);
                     }   
-                    setTimeout(scrlClose, 0);   
+                    setTimeout(scrlClose, 0);  
+                $('.p_practice_menu_item').removeClass('active');
+                $(".p_practice_slider_cont").removeClass("pract_info_show");                     
             });
             winsize = window.innerWidth;
         }

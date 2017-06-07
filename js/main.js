@@ -91,6 +91,15 @@ $(document).ready(function(){
     $(window).resize(resize);
     resize();
 
+    if( !isMobile && $('.stick').length) {
+        $(window).on('load', function(){
+            $(".stick").stick_in_parent({
+                offset_top: 25
+            });  
+        });
+       
+    }
+
     $.fn.placeholder = function() {
         if(typeof document.createElement("input").placeholder == 'undefined') {
             $('[placeholder]').focus(function() {

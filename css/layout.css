@@ -343,6 +343,9 @@ button {
 	-moz-transition: opacity 0.25s ease;
 	-webkit-transition: opacity 0.25s ease;
 }
+.services-text-container.show{
+	z-index: 100;
+}
 .mobile {
 	display: none;
 }
@@ -1022,6 +1025,7 @@ button {
 							font-family: "Ubuntu";
 							font-size: 20px;
 							padding-left: 34px;
+							padding-right: 34px;
 							/* text-transform: uppercase; */
 							text-align: left;
 							color: #282828;
@@ -1092,6 +1096,36 @@ button {
 						.services-text p {
 							font-family: "Ubuntu-Light";
 							color: #171717;
+							margin-bottom: 20px;
+						}
+						.services-text a{
+							text-decoration: underline;
+							font-family: "Ubuntu-Light";
+							position: relative;
+						}
+							.services-text a:hover{
+								text-decoration: none;
+							}
+							.services-text a:after{
+								position: absolute;
+							    content: "→";
+							    font-size: inherit;
+							    line-height: 20px;
+							    right: -20px;
+							    top: 50%;
+							    margin-top: -9px;
+							}
+					a.link{
+						position: relative;
+					}
+						a.link:after{
+							position: absolute;
+						    content: "→";
+						    font-size: inherit;
+						    line-height: 20px;
+						    right: -20px;
+						    top: 50%;
+						    margin-top: -9px;
 						}
 					.services-text .show {
 						opacity: 1;
@@ -1114,44 +1148,44 @@ button {
 						opacity: 0;
 					}
 					.img_diagnostika {
-						background-image: url('../i/services-slide-01.png');
-						background-position: 100% 0%;
-						background-size: auto auto;						
+						background-image: url('../i/services/diag.png');
+						width: 677px;
+						height: 603px;
+						top: 0px;
+						right: 0px;
 					}
 					.img_terapevt-stom {
-						background-image: url('../i/services-slide-02.png');
-						background-position: 100% 0%;
-						background-size: auto auto;						
+						background-image: url('../i/services-slide-02.png');		
 					}
 					.img_implantation {
-						background-image: url('../i/services-slide-01.png');
-						background-position: 100% 0%;
-						background-size: auto auto;						
+						background-image: url('../i/services/implant.png');						
+						width: 729px;
+						height: 503px;
+						top: 50px;
+						right: -30px;
 					}
 					.img_ortodontiya {
-						background-image: url('../i/services-slide-02.png');
-						background-position: 100% 0%;
-						background-size: auto auto;						
+						background-image: url('../i/services/breket.png');
+						width: 695px;
+						height: 477px;
+						top: 50px;
+						right: 0px;
 					}
 					.img_estetic-stom {
 						background-image: url('../i/services-slide-01.png');
-						background-position: 100% 0%;
-						background-size: auto auto;						
 					}
-					.img_hirurgiya {
+					.img_child {
 						background-image: url('../i/services-slide-02.png');
-						background-position: 100% 0%;
-						background-size: auto auto;						
 					}
 					.img_ortopedia {
 						background-image: url('../i/services-slide-01.png');
-						background-position: 100% 0%;
-						background-size: auto auto;						
 					}
 					.img_gigiena {
-						background-image: url('../i/services-slide-02.png');
-						background-position: 100% 0%;
-						background-size: auto auto;						
+						background-image: url('../i/services/prof.png');					
+						width: 668px;
+						height: 597px;
+						top: 30px;
+						right: 0px;
 					}
 	.reviews {
 
@@ -1595,6 +1629,7 @@ button {
 					width: 127px;				
 				}
 		.footer-sub {
+			text-align: center;
 		}
 			.footer-sub p {
 			font-family: "Ubuntu-Light";
@@ -1608,7 +1643,39 @@ button {
 			text-transform: uppercase;
 			}
 /*Адаптировал под таблеты*/
+.b-action{
 
+}
+	.b-stick{
+		height: 300px;	
+		width: 300px;
+	}
+		.b-action-img{
+			width: 300px;
+			height: 300px;
+			background-position: 50% 50%;
+			background-size: cover;
+			border-radius: 250px;
+		}
+	.b-action-text{
+		width: calc(100% - 350px);
+	}
+.b-back-link{
+	padding-top: 60px;
+}
+	.b-back-link a{
+		position: relative;
+		margin-left: 20px;
+	}
+		.b-back-link a:before {
+		    position: absolute;
+		    content: "←";
+		    font-size: inherit;
+		    line-height: 20px;
+		    left: -20px;
+		    top: 50%;
+		    margin-top: -10px;
+		}
 /*Страница услуг*/
 .main-content {
 
@@ -2335,7 +2402,7 @@ button {
 							line-height: 26px;
 							color: #ffffff;
 						}																																					
-	.p_practice_slider {
+	.hidden .p_practice_slider {
 		display: none;
 	}
 	.p_practice_slider {
@@ -2522,7 +2589,7 @@ button {
 	.b-text a:hover {
 		text-decoration: none;
 	}
-	.b-text a:before {
+	/*.b-text a:before {
 		display: inline-block;
 		position: absolute;
 		content: ".";
@@ -2531,7 +2598,7 @@ button {
 		width: 270px;
 		height: 55px;
 		left: 0;
-	}	
+	}	*/
 	.b-text .file p{
 		font-size: 16px;
 		line-height: 26px;
@@ -3111,7 +3178,7 @@ div.cs-skin-slide::before {
 	display: inline-block;
 	position: relative;
 }
-.zapis-na-priem .morphing-btn {
+.morphing-btn {
 	-webkit-transition: color 0.3s 0.2s, width 0.3s 0.2s, border-radius 0.3s 0.2s, margin-left 0.3s 0.2s;
 	-moz-transition: color 0.3s 0.2s, width 0.3s 0.2s, border-radius 0.3s 0.2s, margin-left 0.3s 0.2s;
 	-o-transition: color 0.3s 0.2s, width 0.3s 0.2s, border-radius 0.3s 0.2s, margin-left 0.3s 0.2s;
@@ -3119,26 +3186,6 @@ div.cs-skin-slide::before {
 	white-space: nowrap;
 	will-change: width, color;
 	transform: translate3d(0, 0, 0);
-}
-.p_doctors_slide_text .morphing-btn {
-	-webkit-transition: color 0.3s 0.2s, width 0.3s 0.2s, border-radius 0.3s 0.2s, padding 0.3s 0.2s;
-	-moz-transition: color 0.3s 0.2s, width 0.3s 0.2s, border-radius 0.3s 0.2s, padding 0.3s 0.2s;
-	-o-transition: color 0.3s 0.2s, width 0.3s 0.2s, border-radius 0.3s 0.2s, padding 0.3s 0.2s;
-	transition: color 0.3s 0.2s, width 0.3s 0.2s, border-radius 0.3s 0.2s, padding 0.3s 0.2s;
-	white-space: nowrap;
-	will-change: width, color;
-	transform: translate3d(0, 0, 0);
-}
-.p_doctors_slide_text .morphing-btn .arrow {
-	visibility: visible;
-	-webkit-transition-property: visibility;
-	-moz-transition-property: visibility;
-	-o-transition-property: visibility;
-	transition-property: visibility;
-	-webkit-transition-delay: 0.5s;
-	-moz-transition-delay: 0.5s;
-	-o-transition-delay: 0.5s;
-	transition-delay: 0.5s;
 }
 .b-block .callback .morphing-btn_circle {
 	padding-left: 0;
@@ -3156,30 +3203,10 @@ div.cs-skin-slide::before {
 	border-radius: 33px;
 	width: 66px !important; /* Override inline style rule */
 	margin-left: 70.5px;
-	-webkit-transition: border-radius 0.3s 0.2s, margin-left 0.3s 0.2s, width 0.3s 0.2s;
-	-moz-transition: border-radius 0.3s 0.2s, margin-left 0.3s 0.2s, width 0.3s 0.2s;
-	-o-transition: border-radius 0.3s 0.2s, margin-left 0.3s 0.2s, width 0.3s 0.2s;
-	transition: border-radius 0.3s 0.2s, margin-left 0.3s 0.2s, width 0.3s 0.2s;
-}
-
-.p_doctors_slide_text .morphing-btn_circle {
-	color: transparent !important;
-	padding-left: 0;
-	padding-right: 0;
-	width: 56px !important;
-	background-color: #74bc40 !important;
-	-webkit-transition: border-radius 0.3s 0.2s, width 0.3s 0.2s, padding 0.3s 0.2s;
-	-moz-transition: border-radius 0.3s 0.2s, width 0.3s 0.2s, padding 0.3s 0.2s;
-	-o-transition: border-radius 0.3s 0.2s, width 0.3s 0.2s, padding 0.3s 0.2s;
-	transition: border-radius 0.3s 0.2s, width 0.3s 0.2s, padding 0.3s 0.2s;
-}
-
-.p_doctors_slide_text .morphing-btn_circle .arrow {
-	visibility: hidden;
-	-webkit-transition-delay: 0s;
-	-moz-transition-delay: 0s;
-	-o-transition-delay: 0s;
-	transition-delay: 0s;
+	-webkit-transition: color 0.3s 0.2s, border-radius 0.3s 0.2s, margin-left 0.3s 0.2s, width 0.3s 0.2s;
+	-moz-transition: color 0.3s 0.2s, border-radius 0.3s 0.2s, margin-left 0.3s 0.2s, width 0.3s 0.2s;
+	-o-transition: color 0.3s 0.2s, border-radius 0.3s 0.2s, margin-left 0.3s 0.2s, width 0.3s 0.2s;
+	transition: color 0.3s 0.2s, border-radius 0.3s 0.2s, margin-left 0.3s 0.2s, width 0.3s 0.2s;
 }
 
 .morphing-btn-clone {

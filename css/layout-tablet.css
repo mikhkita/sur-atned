@@ -1111,7 +1111,23 @@ button {
 			letter-spacing: 10px;
 			}
 /*Адаптировал под таблеты*/
+.b-action{
 
+}
+	.b-stick{
+		height: 200px;	
+		width: 200px;
+	}
+		.b-action-img{
+			width: 200px;
+			height: 200px;
+			background-position: 50% 50%;
+			background-size: cover;
+			border-radius: 250px;
+		}
+	.b-action-text{
+		width: calc(100% - 250px);
+	}
 /*Страница услуг*/
 .main-content {
 

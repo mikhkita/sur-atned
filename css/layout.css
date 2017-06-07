@@ -3120,26 +3120,7 @@ div.cs-skin-slide::before {
 	will-change: width, color;
 	transform: translate3d(0, 0, 0);
 }
-.p_doctors_slide_text .morphing-btn {
-	-webkit-transition: width 0.3s 0.2s, border-radius 0.3s 0.2s, padding 0.3s 0.2s;
-	-moz-transition: width 0.3s 0.2s, border-radius 0.3s 0.2s, padding 0.3s 0.2s;
-	-o-transition: width 0.3s 0.2s, border-radius 0.3s 0.2s, padding 0.3s 0.2s;
-	transition: width 0.3s 0.2s, border-radius 0.3s 0.2s, padding 0.3s 0.2s;
-	white-space: nowrap;
-	will-change: width, color;
-	transform: translate3d(0, 0, 0);
-}
-.p_doctors_slide_text .morphing-btn .arrow {
-	visibility: visible;
-	-webkit-transition-property: visibility;
-	-moz-transition-property: visibility;
-	-o-transition-property: visibility;
-	transition-property: visibility;
-	-webkit-transition-delay: 0.5s;
-	-moz-transition-delay: 0.5s;
-	-o-transition-delay: 0.5s;
-	transition-delay: 0.5s;
-}
+
 .b-block .callback .morphing-btn_circle {
 	padding-left: 0;
 	padding-right: 0;
@@ -3161,26 +3142,12 @@ div.cs-skin-slide::before {
 	-o-transition: border-radius 0.3s 0.2s, margin-left 0.3s 0.2s, width 0.3s 0.2s;
 	transition: border-radius 0.3s 0.2s, margin-left 0.3s 0.2s, width 0.3s 0.2s;
 }
-
-.p_doctors_slide_text .morphing-btn_circle {
-	color: transparent !important;
-	padding-left: 0;
-	padding-right: 0;
-	width: 56px !important;
-	background-color: #74bc40 !important;
-	-webkit-transition: border-radius 0.3s 0.2s, width 0.3s 0.2s, padding 0.3s 0.2s;
-	-moz-transition: border-radius 0.3s 0.2s, width 0.3s 0.2s, padding 0.3s 0.2s;
-	-o-transition: border-radius 0.3s 0.2s, width 0.3s 0.2s, padding 0.3s 0.2s;
-	transition: border-radius 0.3s 0.2s, width 0.3s 0.2s, padding 0.3s 0.2s;
-}
-
-.p_doctors_slide_text .morphing-btn_circle .arrow {
-	visibility: hidden;
-	-webkit-transition-delay: 0s;
-	-moz-transition-delay: 0s;
-	-o-transition-delay: 0s;
-	transition-delay: 0s;
-}
+/*.p_doctors_slider_cont .morphing-btn_circle {
+	-webkit-transition: width 0.01s;
+	-moz-transition: width 0.01s;
+	-o-transition: width 0.01s;
+	transition: width 0.01s;
+}*/
 
 .morphing-btn-clone {
 	position: fixed;
@@ -3196,14 +3163,22 @@ div.cs-skin-slide::before {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
+.p_doctors_slider_cont .morphing-btn-clone {
+	opacity: 0;
+	-webkit-transition: opacity 0.01s ease-in-out;
+	-moz-transition: opacity 0.01s ease-in-out;
+	-o-transition: opacity 0.01s ease-in-out;
+	transition: opacity 0.01s ease-in-out;
+}
 
 .morphing-btn-clone_visible {
 	-webkit-transform : scale(1) !important;
 	-moz-transform : scale(1)  !important;
-	-ms-transform : scale(1) !important;
 	-o-transform : scale(1)  !important;
 	transform : scale(1) !important;
-
+}
+.p_doctors_slider_cont .morphing-btn-clone_visible {
+	opacity: 1 !important;
 }
 .morphing-close {
 	position: fixed;

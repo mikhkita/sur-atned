@@ -3114,10 +3114,10 @@ div.cs-skin-slide::before {
 	transform: translate3d(0, 0, 0);
 }
 .p_doctors_slide_text .morphing-btn {
-	-webkit-transition: color 0.3s 0.2s, width 0.3s 0.2s, border-radius 0.3s 0.2s, padding 0.3s 0.2s;
-	-moz-transition: color 0.3s 0.2s, width 0.3s 0.2s, border-radius 0.3s 0.2s, padding 0.3s 0.2s;
-	-o-transition: color 0.3s 0.2s, width 0.3s 0.2s, border-radius 0.3s 0.2s, padding 0.3s 0.2s;
-	transition: color 0.3s 0.2s, width 0.3s 0.2s, border-radius 0.3s 0.2s, padding 0.3s 0.2s;
+	-webkit-transition: width 0.3s 0.2s, border-radius 0.3s 0.2s, padding 0.3s 0.2s;
+	-moz-transition: width 0.3s 0.2s, border-radius 0.3s 0.2s, padding 0.3s 0.2s;
+	-o-transition: width 0.3s 0.2s, border-radius 0.3s 0.2s, padding 0.3s 0.2s;
+	transition: width 0.3s 0.2s, border-radius 0.3s 0.2s, padding 0.3s 0.2s;
 	white-space: nowrap;
 	will-change: width, color;
 	transform: translate3d(0, 0, 0);

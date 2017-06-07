@@ -1091,4 +1091,7 @@ $(function(){
     $('.date-div').click(function(){
         $('.div-cal').addClass("open-cal");
     });
+    if ($('.p-doctors_slider_cont').hasClass("doct_info_show")) {
+        
+    }
 });

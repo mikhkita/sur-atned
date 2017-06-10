@@ -481,6 +481,7 @@ $(document).ready(function(){
         $('.services-menu ul li button').removeClass('active');
     }   
     //---menu services index page
+
     //---reviews slider index page
     function mainfrev(){
         var how_many_slides = 0;
@@ -496,6 +497,15 @@ $(document).ready(function(){
             nextArrow: '<div class="b-btn-next"></div>',
             prevArrow: '<div class="b-btn-prev"></div>'
         });
+        //---menu services index page mobile
+        if ($('.services').length) {
+            $( "#accordion" ).accordion({
+                collapsible: true,
+                active: false,
+                icons: false
+            });
+            }   
+        //---menu services index page mobile         
     var winsize = $(window).width();
     window.onresize = resizesrev;  
     function resizesrev () {
@@ -1014,6 +1024,10 @@ $(document).ready(function(){
             //----------  slider drop bottom rules
             $('.p_services_menu_item a').click(function() {
                  if ($(this).parent().hasClass('active')) {
+                    function hashdel () {  
+                        history.pushState('', document.title, window.location.pathname);
+                    }
+                    setTimeout(hashdel, 100);                    
                     $('.p_services_menu_item').removeClass('active');
                     $(".p_services_menu_info").removeClass("serv_info_show");
                  }
@@ -1032,7 +1046,8 @@ $(document).ready(function(){
                     $('[data-nrow-block='+dataEventVal+']').addClass("serv_info_show");
                     function scrll () {  
                         var actscrll = $('.active a').attr('data-eventblock')
-                        var offs = $('[data-nrow-block='+actscrll+']').attr('offset')                   
+                        var offs = $('[data-nrow-block='+actscrll+']').attr('offset')  
+                        console.log(offs);                 
                         $('html, body').animate({
                             scrollTop: offs
                         }, 300);
@@ -1041,6 +1056,7 @@ $(document).ready(function(){
                 }
             });
             $('.map-cont-close').click(function() {
+                history.pushState('', document.title, window.location.pathname);
                 $('.p_services_menu_item').removeClass('active');
                 $(".p_services_menu_info").removeClass("serv_info_show");
                     function scrlClose () {  
@@ -1068,18 +1084,18 @@ $(document).ready(function(){
                         mainfserv();
                         winsizeserv = $(window).width();
                     }
-                    winsizeserv = $(window).width();
+                    winsizeserv = $(window).width();                 
                 }
         if ($(window).width()>768) {mainfserv();}
-    }
-    //---service page slider
     //---service page accordion mobile
     $( "#accordion" ).accordion({
         collapsible: true,
         active: false,
         icons: false
     });
-    //---service page accordion mobile
+    //---service page accordion mobile    
+    }
+    //---service page slider
     // $(".p_services .p_services_menu").on("click","a", function (event) {
     //     event.preventDefault();
     //     var id  = $(this).attr('href'),

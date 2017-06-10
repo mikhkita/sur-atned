@@ -1781,14 +1781,13 @@ button {
 					top: -25px;
 					transition: min-height 300ms ease;
 					-o-transition: min-height 300ms ease;
-					-moz-transition:min-height 300ms ease;
-					-webkit-transition:min-height 300ms ease;						
+					-moz-transition: min-height 300ms ease;
+					-webkit-transition: min-height 300ms ease;						
 				}
 				.serv_info_show {
 					min-height: 537px;
-					height: initial;
 					margin-bottom: 0px;
-					visibility: visible;				
+					visibility: visible;			
 				}
 				.p_services_menu .slick-dots {
 					display: none !important;

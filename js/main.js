@@ -1105,9 +1105,9 @@ $(document).ready(function(){
                     setTimeout(hashdel, 100);   
                     //$('.p_services_menu_info_triangle_im').removeClass('item_1').removeClass('item_2').removeClass('item_3').removeClass('item_0');       
                     //$('.p_services_menu_info_triangle_im').css('margin-left','auto');
+                    $(".p_services_menu_info").removeClass("serv_info_show"); 
                     if ($('.slick-current').attr('data-slick-index') == currentCell) {
-                        $('.p_services_menu_item').removeClass('active');
-                        $(".p_services_menu_info").removeClass("serv_info_show");                        
+                        $('.p_services_menu_item').removeClass('active');                       
                     }
                  }
                  else { 

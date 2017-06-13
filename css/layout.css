@@ -358,6 +358,12 @@ button {
 	margin: 0 15px;
 	background-color: rgba(24,182,0,0.4);
 }
+.no-transition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
 .main-content_top_h1 {
 	padding-top: 42px;
 	margin-bottom: 20px;
@@ -1857,14 +1863,13 @@ button {
 					top: -25px;
 					transition: min-height 300ms ease;
 					-o-transition: min-height 300ms ease;
-					-moz-transition:min-height 300ms ease;
-					-webkit-transition:min-height 300ms ease;						
+					-moz-transition: min-height 300ms ease;
+					-webkit-transition: min-height 300ms ease;						
 				}
 				.serv_info_show {
 					min-height: 537px;
-					height: initial;
 					margin-bottom: 0px;
-					visibility: visible;				
+					visibility: visible;			
 				}
 				.p_services_menu .slick-dots {
 					display: none !important;
@@ -1893,18 +1898,19 @@ button {
 					width: 100%;
 					overflow: hidden;
 				}
-				.p_services_menu_info_triangle_im {					
-					margin-left: -933px;
+				.p_services_menu_info_triangle_im {	
+					margin-left: initial;
+					/*margin-left: -933px;*/
 					height: 31px;
 					width: 2500px;
 					background-image: url('../i/services-info-triangle.png');
 					background-position: 50% 50%;
 					background-size: cover;
 					background-repeat: no-repeat;
-					transition: margin-left 300ms ease;
+/*					transition: margin-left 300ms ease;
 					-o-transition: margin-left 300ms ease;
 					-moz-transition:margin-left 300ms ease;
-					-webkit-transition:margin-left 300ms ease;					
+					-webkit-transition:margin-left 300ms ease;	*/				
 				}
 				.item_0 {
 					margin-left: -930px;

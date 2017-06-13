@@ -1678,12 +1678,23 @@ body {
 			}
 				.doctwrap {
 					display: inline-block;
-					margin: 0 2%;
+				}
+				.onecol {
+					width: 100%;
+					max-width: 500px;
+				}
+				.twocol {
+					max-width: 315px;
+					width: 47%;
+				}
+				.twocol:nth-child(2n-1) {
+					margin-right: 5%;
 				}
 				.p_doctors_menu_item {
 					display: inherit;
-					max-height: 300px;
-					max-width: 300px;
+					max-height: 1000px;
+					max-width: 1000px;
+					width: 100%;
 					margin: 0 auto 30px;
 					float: none;
 					position: relative;
@@ -1854,8 +1865,9 @@ body {
 			}
 				.p_practice_menu_item {
 					display: block;
-					max-height: 256px;
-					max-width: 300px;
+					max-height: 1000px;
+					max-width: 1000px;
+					width: 100%;
 					cursor: pointer;
 					float: none;
 					margin: 0 auto 30px;
@@ -1967,38 +1979,40 @@ body {
 				.p_services_mobile_menu {
 				}
 					.p_services_mobile_menu .ui-state-active {
-						color: #ffffff !important                                                                  ;
+						color: #ffffff !important;                                                                  ;
 					}
 					.p_services_mobile_menu h3{
-					display: table;
-					padding: 15px;
-					font-size: 20px;
-					font-family: "Ubuntu";
-					text-transform: uppercase;
-					box-sizing: border-box;
-					width: 100%;
+					margin: none !important;
+					border: none !important;
+					display: table !important;
+					padding: 15px !important;
+					font-size: 20px !important;
+					font-family: "Ubuntu" !important;
+					text-transform: uppercase !important;
+					box-sizing: border-box !important;
+					width: 100% !important;
 					}
 						.p_services_mobile_menu h3 span{
-							display: table-cell;vertical-align: middle;padding-left: 4px;
+							display: table-cell;vertical-align: middle;padding-left: 4px !important;
 						}
 					.p_services_mobile_menu h3:before{
-					display: table-cell;
-					font-size: 40px;
-					vertical-align: middle;
-					width: 1px;
+					display: table-cell !important;
+					font-size: 40px !important;
+					vertical-align: middle !important;
+					width: 1px !important;
 					}					
 					.p_services_mobile_menu div{
-					padding: 20px 0 10px 20px;
+					padding: 20px 0 10px 20px !important;
 					}
 					.p_services_mobile_menu a{
-					display: inherit;
-					font-family: "Ubuntu-Light";
-					font-size: 22px;
-					line-height: 26px;
-					margin-bottom: 20px;
+					display: inherit !important;
+					font-family: "Ubuntu-Light" !important;
+					font-size: 22px !important;
+					line-height: 26px !important;
+					margin-bottom: 20px !important;
 					}					
 					.p_services_mobile_menu a:hover{
-						text-decoration: underline;
+						text-decoration: underline !important;
 					}	
 .actions{
 

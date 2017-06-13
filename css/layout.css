@@ -1837,19 +1837,19 @@ button {
 					-webkit-transition:margin-left 300ms ease;	*/				
 				}
 				.item_0 {
-					margin-left: -930px !important;
+					margin-left: -930px;
 					margin-top: 0px;
 				}
 				.item_1 {
-					margin-left: -636px !important;
+					margin-left: -636px;
 					margin-top: 0px;
 				}
 				.item_2 {
-					margin-left: -336px !important;
+					margin-left: -336px;
 					margin-top: 0px;
 				}
 				.item_3 {
-					margin-left: -40px !important;
+					margin-left: -40px;
 					margin-top: 0px;
 				}												
 					.p_services_menu_info_img {

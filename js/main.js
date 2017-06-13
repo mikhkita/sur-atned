@@ -1179,12 +1179,6 @@ $(document).ready(function(){
         //---service page accordion mobile    
     }
     //---service page slider
-    // $(".p_services .p_services_menu").on("click","a", function (event) {
-    //     event.preventDefault();
-    //     var id  = $(this).attr('href'),
-    //         top = $(id).offset().top;
-    //     $('body,html').animate({scrollTop: top}, 1500);
-    // });
     var currentlocation = window.location.href;
     var startposition = currentlocation.indexOf("#");
     if (startposition>0) {

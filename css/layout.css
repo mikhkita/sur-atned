@@ -381,7 +381,7 @@ button {
 		font-size: 42px;
 		line-height: 50px;
 		color: #181818;
-		max-width: calc(100% - 400px);
+		max-width: 790px;
 	}
 .background-block {
 	top: 0px;
@@ -467,7 +467,7 @@ button {
 						.filial-addr a {
 							font-size: 13px;
 							color: #73bb40;
-							text-decoration: underline; */
+							/*text-decoration: underline;*/
 						}
 						.filial-addr a:hover {
 							text-decoration: none;
@@ -649,11 +649,11 @@ button {
 							padding: 27px 43px 0;
 							/* margin-right: -1px; */
 							line-height: 14px;
-							-webkit-transition: color 150ms ease-out;
-							   -moz-transition: color 150ms ease-out;
-							    -ms-transition: color 150ms ease-out;
-							   	 -o-transition: color 150ms ease-out;
-									transition: color 150ms ease-out;
+							-webkit-transition: color 150ms ease-out, background-color 150ms ease-out;
+							   -moz-transition: color 150ms ease-out, background-color 150ms ease-out;
+							    -ms-transition: color 150ms ease-out, background-color 150ms ease-out;
+							   	 -o-transition: color 150ms ease-out, background-color 150ms ease-out;
+									transition: color 150ms ease-out, background-color 150ms ease-out;
 						}
 						.main-menu li:hover>a {
 							background-color: #74bc40;
@@ -668,6 +668,7 @@ button {
 							visibility: hidden;
 							opacity: 0;
 							top: 66px;
+							min-width: 200px;
 							z-index: 99;
 							-webkit-transition: opacity 300ms ease-out;
 							   -moz-transition: opacity 300ms ease-out;
@@ -1628,7 +1629,7 @@ button {
 						}
 						.footer-logconts {
 							width: 255px;
-							margin-right: 11%; /*140px*/
+							margin-right: 9%; /*140px*/
 						}
 							.footer-logo {
 							margin-bottom: 26px;
@@ -1656,13 +1657,13 @@ button {
 									margin-bottom: 11px;
 								}
 						.footer-pages {
-							margin-right: 200px;
+							margin-right: 208px;
 						}
 							.footer-pages ul {
 								margin-top: 18px;
 							}
 						.footer-services {
-							margin-right: 119px;
+							margin-right: 126px;
 						}
 							.footer-services ul {
 								margin-top: 18px;
@@ -1743,16 +1744,6 @@ button {
 		    top: 50%;
 		    margin-top: -10px;
 		}
-
-.b-service{
-
-}
-	.b-service-text{
-		width: calc(100% - 400px);
-	}
-	.b-service-actions{
-		width: 350px;
-	}
 /*Страница услуг*/
 .main-content {
 
@@ -1856,20 +1847,21 @@ button {
 					background-size: cover;
 					background-repeat: no-repeat;				
 					width: 1560px;
-					min-height: 0px;
-					height: 0px;
+					max-height: 0px;
+					height: 0;
 					margin-left: -185px;
 					visibility: visible;
 					top: -25px;
-					transition: min-height 300ms ease;
-					-o-transition: min-height 300ms ease;
-					-moz-transition: min-height 300ms ease;
-					-webkit-transition: min-height 300ms ease;						
+					transition: max-height 300ms ease, height 300ms ease;
+					-o-transition: max-height 300ms ease, height 300ms ease;
+					-moz-transition: max-height 300ms ease, height 300ms ease;
+					-webkit-transition: max-height 300ms ease, height 300ms ease;
 				}
 				.serv_info_show {
-					min-height: 537px;
+					max-height: 1080px; 
 					margin-bottom: 0px;
-					visibility: visible;			
+					visibility: visible;
+					height: auto;
 				}
 				.p_services_menu .slick-dots {
 					display: none !important;
@@ -1956,7 +1948,7 @@ button {
 					}
 					.p_services_menu_info_urls {
 						display: inline-block;
-						width: 600px;
+						width: 610px;
 						margin-bottom: 50px;
 						background-color: transparent;
 					}					
@@ -1968,7 +1960,6 @@ button {
 						line-height: 19px;
 						color: #757575 !important;
 						width: 162px;
-						height: 40px;
 						margin-bottom: 26px;
 						margin-right: 38px;
 						background-color: transparent !important;
@@ -1978,8 +1969,8 @@ button {
 						background-color: transparent !important;
 					}
 					.p_services_menu_info_urls li{
-						float: left;
-						
+						display: inline-block;
+						vertical-align: top;
 					}					
 /*конец Страница услуг*/
 /*doctors page*/
@@ -2131,6 +2122,8 @@ button {
 					background-repeat: no-repeat;
 					width: 100%;
 					height: 596px;
+					background-position: 50% 50%; 
+					background-size: 100%;
 					position: absolute;
 				}
 				.p_doctors_slide_top .b-block {
@@ -2138,11 +2131,11 @@ button {
 				/* padding-top: 100px; */
 				}
 					.p_doctors_slide_text {
-						padding-top: 111px;
+						padding-top: 100px;
 						width: 665px;
 					}
 						.p_doctors_slide_text h4 {
-							line-height: 24px;
+							line-height: 36px;
 							color: #ffffff;
 							font-size: 36px;
 							font-family: "Ubuntu-bold";
@@ -2156,20 +2149,31 @@ button {
 							color: #7a7a7a;
 							margin-bottom: 31px;
 						}
-						.p_doctors_slide_text p {
+						/*.p_doctors_slide_text p {
 							font-family: "Ubuntu-Light";
 							color: #ffffff;
 							margin-bottom: 50px;
 							font-size: 16px;
 							display: block;
 							width: 586px;
-						}
+						}*/
 						.p_doctors_slide_text a {
 							font-family: "Ubuntu-medium";
 							font-size: 12px;
 						}
 						.p_doctors_slide_btn {
 							padding-right: 25px;
+						}
+						.p_doctors_slide_text .b-text{
+							max-width: 500px;
+						}
+						.p_doctors_slide_text .b-text,
+						.p_doctors_slide_text .b-text h2,
+						.p_doctors_slide_text .b-text h3,
+						.p_doctors_slide_text .b-text p,
+						.p_doctors_slide_text .b-text a,
+						.p_doctors_slide_text .b-text li{
+							color: #FFF;
 						}
 					.p_doctors_slide_close_btn {
 						top: 54px;
@@ -2182,10 +2186,10 @@ button {
 						line-height: 30px;
 					}					
 			.p_doctors_slide_bott {
-				padding: 54px 0 34px;
+				padding: 45px 0 55px;
 				background-color: #f3f3f3;
 			}
-				.p_doctors_slide_bott h3 {
+				/*.p_doctors_slide_bott h3 {
 					font-family: "Ubuntu-Medium";
 					font-size: 18px;
 					margin-bottom: 22px;
@@ -2199,7 +2203,7 @@ button {
 						font-family: "Ubuntu-Light";
 						font-size: 16px;
 						line-height: 30px;
-					}
+					}*/
 				.p_doctors_menu .slick-dots {
 					display: none !important;
 				}							
@@ -2706,12 +2710,17 @@ button {
 	}
 	.b-text li {
 		line-height: 28px;
+		position: relative;
+		padding-left: 30px;
 	}		
 	.b-text li:before {
 		content: "\25CF";
 		display: inline-block;
 		width: 14px;
 		margin-right: 15px;
+		position: absolute;
+		left: 0px;
+		top: 0px;
 	}
 	.b-text img {
 		margin-top: 25px;
@@ -3630,6 +3639,70 @@ input.error {
 				}
 				.actions li .text .link{
 
+				}
+.b-service{
+
+}
+	.b-service-text{
+		width: calc(100% - 400px);
+	}
+	.b-service-actions{
+		width: 350px;
+	}
+		.b-service-actions h2{
+			margin-bottom: 30px !important;
+			margin-top: 15px;
+		}
+		.b-other-actions{
+
+		}
+			.b-other-actions li{
+				margin-bottom: 20px;
+				display: table;
+			}
+				.b-other-actions li a{
+					color: #0e0e0e;
+					text-decoration: none;
+				}
+					.b-other-actions li a:hover{
+						text-decoration: underline;
+					}
+			.b-other-actions li:before{
+				display: none !important
+			}
+				.b-other-actions .b-img-cont{
+					display: table-cell;
+					vertical-align: middle;
+				}
+					.b-other-actions .b-img{
+						border-radius: 100px;
+						width: 80px;
+						height: 80px;
+						background-position: 50% 50%;
+						background-size: cover;
+						display: block;
+						-webkit-transition: transform 150ms ease-out;
+						   -moz-transition: transform 150ms ease-out;
+						    -ms-transition: transform 150ms ease-out;
+						   	 -o-transition: transform 150ms ease-out;
+								transition: transform 150ms ease-out;
+					}
+					.b-other-actions a:hover .b-img{
+						-webkit-transform: scale(1.1);
+						   -moz-transform: scale(1.1);
+						    -ms-transform: scale(1.1);
+						   	 -o-transform: scale(1.1);
+								transform: scale(1.1);
+					}
+				.b-other-actions h3{
+					display: table-cell;
+					width: 250px;
+					margin-top: 0px !important;
+					margin-bottom: 0px !important;
+					box-sizing: border-box;
+					padding-left: 30px;
+					padding-bottom: 6px;
+					vertical-align: middle;
 				}
 
 

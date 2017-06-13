@@ -128,7 +128,7 @@ $(document).ready(function(){
     }
     $.fn.placeholder();
     
-	// var myPlace = new google.maps.LatLng(55.754407, 37.625151);
+    // var myPlace = new google.maps.LatLng(55.754407, 37.625151);
  //    var myOptions = {
  //        zoom: 16,
  //        center: myPlace,
@@ -140,10 +140,10 @@ $(document).ready(function(){
  //    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions); 
 
  //    var marker = new google.maps.Marker({
-	//     position: myPlace,
-	//     map: map,
-	//     title: "Ярмарка вакансий и стажировок"
-	// });
+    //     position: myPlace,
+    //     map: map,
+    //     title: "Ярмарка вакансий и стажировок"
+    // });
 
     //  var options = {
     //     $AutoPlay: true,                                
@@ -672,12 +672,12 @@ $(document).ready(function(){
                 }
                 //----------  slider drop bottom rules
                 $('.p_doctors_menu_item').click(function() {
-                     if ($(this).hasClass('active')) {
+                    if ($(this).hasClass('active')) {
                         $('.p_doctors_menu_item').removeClass('active');
                         $(".p_doctors_slider_cont").removeClass("doct_info_show");
                         // console.log('closed must be');
-                     }
-                     else {         
+                    }
+                    else {         
                         var dataEventVal = $(this).attr("data-eventblock");
                         var actButt = $(this).attr('data-mdbtn');
                         actButt = actButt-1;
@@ -692,7 +692,7 @@ $(document).ready(function(){
                         $('[data-nrow-block='+dataEventVal+']').addClass("doct_info_show");
 
                         function scrll () {  
-                            var actscrll = $('.active').attr('data-eventblock');
+                            var actscrll = $('.p_doctors_menu_item.active').attr('data-eventblock');
                             var offs = $('[data-nrow-block='+actscrll+']').attr('offset');
                             //var offs = $('.p_doctors_menu_item:eq('+actButt+')').offset().top; 
                             $('html, body').animate({
@@ -704,7 +704,7 @@ $(document).ready(function(){
                 });
 
                 $('.map-cont-close').click(function() {
-                    var actscrll = $('.active').attr('data-eventblock');
+                    var actscrll = $('.p_doctors_menu_item.active').attr('data-eventblock');
                     var offsc = Number($('[data-nrow-block='+actscrll+']').attr('offset'))-($('[data-eventblock='+actscrll+']').height());
                         function scrlClose () {  
                             //var offs = $('.p_doctors_menu_item:eq('+actButt+')').offset().top; 
@@ -745,7 +745,7 @@ $(document).ready(function(){
                 if (
                     ((window.innerWidth<1241) && (winsize>=1241))||((window.innerWidth>1241) && (winsize<1241))
                     ) { 
-                    $('.p_doctors .p_doctors_menu .p_doctors_slider_cont').remove();
+                    $('.p_doctors_menu .p_doctors_slider_cont').remove();
                     $('.map-cont-close').off( "click" );
                     $('.p_doctors_menu_item').off( "click" );
                     $('.p_doctors_menu_item').removeClass('active');
@@ -756,7 +756,7 @@ $(document).ready(function(){
                 if (
                     ((window.innerWidth<769) && (winsize>=769))
                     ) { 
-                    $('.p_doctors .p_doctors_menu .p_doctors_slider_cont').remove();
+                    $('.p_doctors_menu .p_doctors_slider_cont').remove();
                     $( ".p_doctors_menu_item" ).off( "mouseenter mouseleave" );
                     $('.map-cont-close').off( "click" );
                     $('.p_doctors_menu_item').off( "click" );
@@ -784,7 +784,7 @@ $(document).ready(function(){
                         winsize = window.innerWidth;
                 }                               
                 if ((window.innerWidth>768) && (winsize<768)) {
-                    $('.p_doctors .p_doctors_menu .p_doctors_slider_cont').remove();
+                    $('.p_doctors_menu .p_doctors_slider_cont').remove();
                     $( ".p_doctors_menu_item" ).off( "mouseenter mouseleave" );
                     $('.map-cont-close').off( "click" );
                     $('.p_doctors_menu_item').off( "click" );
@@ -1082,16 +1082,15 @@ $(document).ready(function(){
             };
             //----------  slider drop bottom rules
             $(".p_services_menu_item").on("click","a", function (event) {
-                    if ($(this).parent().hasClass('active')) {
-                    var id  = $(this).attr('href'),
+                if ($(this).parent().hasClass('active')) {
+                    var id = $(this).attr('href'),
                     //узнаем высоту от начала страницы до блока на который ссылается якорь
-                    top = Number($('[data-nrow-block='+$('.active a').attr('data-eventblock')+']').attr('offset'));
+                    top = Number($('[data-nrow-block='+$('.p_services_menu_item.active a').attr('data-eventblock')+']').attr('offset'))+$('.p_services_menu_item.active').height();
                     //анимируем переход на расстояние - top
                     $('body,html').animate({scrollTop: top}, 400);
-                    }
-                    else {
-                    }
-                });                           
+                }
+                // return false;
+            });                           
             $('.p_services_menu_item a').click(function() {
                 var dataEventVal = $(this).attr("data-eventblock");
                 var actButt = $(this).parent().attr('data-msbtn');

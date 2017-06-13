@@ -637,7 +637,7 @@ button {
 
 	}
 		.services .b-wide-block {
-			height: 738px;
+			height: 788px;
 			background-position: 50% 50%;
 			background-size: cover;
 		}
@@ -647,7 +647,7 @@ button {
 				.services-menu {
 					position: absolute;
 					/* bottom: 0px; */
-					margin-top: 412px;
+					margin-top: 452px;
 				}
 				.services-menu li {
 					display: inline-block;
@@ -690,7 +690,7 @@ button {
 				.services-text-container {
 					position: absolute;
 					display: table;
-					height: 398px;
+					height: 450px;
 					width: 370px;
 				}
 					.services-text {
@@ -715,14 +715,60 @@ button {
 					top: 0;
 					right: 0;
 				}
-					.services-image {
-						position: absolute;
-						top: 0;
-						right: 0;
-						width: 596px;
-						height: 520px;
-						background-position: 50% 50%;
-						background-size: cover;
+					.services-image{
+						background-size: contain;
+						background-repeat: no-repeat;
+						background-position: 50% 0%;
+					}
+					.img_diagnostika {
+						background-image: url('../i/services/diagn.png');
+						width: 380px;
+						height: 567px;
+						top: 50px;
+						right: 90px;
+					}
+					.img_terapevt,
+					.img_ortopedia {
+						background-image: url('../i/services/diag.png');
+						width: 600px;
+						height: 603px;
+						top: 0px;
+						right: -40px;
+					}
+					.img_implant {
+						background-image: url('../i/services/implant.png');						
+						width: 650px;
+						height: 503px;
+						top: 50px;
+						right: -30px;
+					}
+					.img_ortodontia {
+						background-image: url('../i/services/breket.png');
+						width: 560px;
+						height: 477px;
+						top: 50px;
+						right: 0px;
+					}
+					.img_estet {
+						background-image: url('../i/services/estet.png');
+						width: 380px;
+						height: 602px;
+						top: 30px;
+						right: 100px;
+					}
+					.img_child {
+						background-image: url('../i/services/detskaya.png');
+						width: 440px;
+						height: 536px;
+						top: 50px;
+						right: 100px;
+					}
+					.img_gigiena {
+						background-image: url('../i/services/prof.png');					
+						width: 540px;
+						height: 597px;
+						top: 50px;
+						right: 50px;
 					}
 					.services-images .show {
 					}
@@ -918,7 +964,7 @@ button {
 				font-family: "icomoon";
 				font-size: 15px;
 				content: "\e906";
-				margin-left: 5px;
+				margin-left: 2px;
 				line-height: 25px;
 			}
 			.map-cont-close:hover:after {
@@ -1163,10 +1209,10 @@ button {
 					}		
 						.p_services_menu_item a {
 							font-size: 20px;
-							line-height: 24px;
-							padding: 25px 34px 32px 40px;
+							line-height: 30px;
+							padding: 25px 38px 32px 36px;
 							box-sizing: border-box;
-							height: 200px;
+							height: 210px;
 							width: 300px;
 							cursor: pointer;
 							vertical-align: bottom;
@@ -1220,7 +1266,7 @@ button {
 				}
 				.services_slide_close_btn:after {
 					font-size: 20px;
-					line-height: 29px;
+					line-height: 30px;
 				}				
 				.p_services_menu_info_triangle {
 					height: 31px;

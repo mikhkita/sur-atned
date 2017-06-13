@@ -954,7 +954,7 @@ $(document).ready(function(){
     }, false); 
     //---fastclick
     //---service page slider
-    if ($('.p_services').length)
+    if ($('.p_services_menu_info_container').length)
         {
         function mainfserv (){
             var menu_items = $('.p_services_menu_item').length;

@@ -51,17 +51,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: '../fonts/ProximaNova-Semibold';
-  src: url('../fonts/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),  
-  url('../fonts/ProximaNova-Semibold.otf')  format('opentype'),
-	     url('../fonts/ProximaNova-Semibold.woff') format('woff'), 
-	     url('../fonts/ProximaNova-Semibold.ttf')  format('truetype'), 
-	     url('../fonts/ProximaNova-Semibold.svg#ProximaNova-Semibold') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
 html,
 body {
 	position: relative;
@@ -77,10 +66,10 @@ body {
 	color: #1f1f1f;
 }
 body {
-	background-position: 50% 0;
-	background-image: url('../i/body-bgnd.jpg');
-	background-size: auto;
-	background-repeat: repeat-y;
+	/*background-position: 50% 0;*/
+	/*background-image: url('../i/body-bgnd.jpg');*/
+	/*background-size: auto;*/
+	/*background-repeat: repeat-y;*/
 }
 
 a{
@@ -93,7 +82,7 @@ p, ul, table {
 li{
 	list-style: none;
 }
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6,b{
 	font-family: "Ubuntu-Bold";
 	font-weight: normal;
 }
@@ -371,7 +360,7 @@ button {
 }
 .main-content_top_h1 {
 	padding-top: 42px;
-	margin-bottom: 54px;
+	margin-bottom: 20px;
 	text-align: left;
 }
 	.main-content_top_h1 h1 {
@@ -384,15 +373,16 @@ button {
 	.main-content_top_h1 h2 {
 		font-family: "Ubuntu-Bold";
 		font-size: 42px;
-		line-height: 42px;
+		line-height: 50px;
 		color: #181818;
+		max-width: calc(100% - 400px);
 	}
 .background-block {
 	top: 0px;
 	left: 0px;
 	background-position: 50% 0;
 	background-image: url('../i/slide-blur-01.jpg');
-	background-size: 100%;
+	background-size: cover;
 	background-repeat: repeat-y;	
 	position: fixed;
 	width: 100%;
@@ -415,6 +405,11 @@ button {
 		}
 .b-head {}
 	.b-head .b-wide-block {
+		-webkit-transform: none;
+		   -moz-transform: none;
+		    -ms-transform: none;
+		   	 -o-transform: none;
+				transform: none;
 			max-height: 191px;
 	}
 			.header {
@@ -426,9 +421,9 @@ button {
 				.logo {
 					background-position: 50% 50%;
 					background-image: url('../i/logo.png');
-					background-size: cover;				
+					background-size: 242px;				
 					height: 58px;
-					width: 243px;	
+					width: 242px;	
 				}
 					.logo a {
 						display: block;
@@ -985,14 +980,14 @@ button {
 							line-height: 56px;
 						}		
 	.services {
-
+		overflow: hidden;
 	}
 		.services .b-wide-block {
-			height: 738px;
+			height: 760px;
 			background-image: url("../i/services-bgrnd.jpg");
 			background-position: 50% 50%;
 			background-size: cover;
-			background-repeat: no-repeat; 
+			background-repeat: no-repeat;
 			color: #181818;
 			text-align: left;
 		}
@@ -1002,7 +997,7 @@ button {
 				.services-menu {
 					position: absolute;
 					/* bottom: 0px; */
-					margin-top: 412px;
+					margin-top: 430px;
 				}
 				.services-menu li {
 					display: inline-block;
@@ -1076,7 +1071,7 @@ button {
 				.services-text-container {
 					position: absolute;
 					display: table;
-					height: 398px;
+					height: 430px;
 					width: 450px;
 					opacity: 0;
 				}
@@ -1147,46 +1142,111 @@ button {
 						background-repeat: no-repeat;
 						opacity: 0;
 					}
+					.p_services_menu_info_slider .services-image{
+						opacity: 1;
+						background-size: contain;
+					}
 					.img_diagnostika {
+						background-image: url('../i/services/diagn.png');
+						width: 437px;
+						height: 567px;
+						top: 50px;
+						right: 90px;
+					}
+					.img_terapevt,
+					.img_ortopedia {
 						background-image: url('../i/services/diag.png');
 						width: 677px;
 						height: 603px;
 						top: 0px;
 						right: 0px;
 					}
-					.img_terapevt-stom {
-						background-image: url('../i/services-slide-02.png');		
-					}
-					.img_implantation {
+					.img_implant {
 						background-image: url('../i/services/implant.png');						
 						width: 729px;
 						height: 503px;
 						top: 50px;
 						right: -30px;
 					}
-					.img_ortodontiya {
+					.img_ortodontia {
 						background-image: url('../i/services/breket.png');
 						width: 695px;
 						height: 477px;
 						top: 50px;
 						right: 0px;
 					}
-					.img_estetic-stom {
-						background-image: url('../i/services-slide-01.png');
+					.img_estet {
+						background-image: url('../i/services/estet.png');
+						width: 420px;
+						height: 602px;
+						top: 30px;
+						right: 100px;
 					}
 					.img_child {
-						background-image: url('../i/services-slide-02.png');
-					}
-					.img_ortopedia {
-						background-image: url('../i/services-slide-01.png');
+						background-image: url('../i/services/detskaya.png');
+						width: 490px;
+						height: 536px;
+						top: 50px;
+						right: 100px;
 					}
 					.img_gigiena {
 						background-image: url('../i/services/prof.png');					
-						width: 668px;
+						width: 630px;
+						background-size: 630px;
 						height: 597px;
-						top: 30px;
-						right: 0px;
+						top: 50px;
+						right: 50px;
 					}
+						.p_services_menu_info_slider .img_diagnostika {
+							background-image: url('../i/services/diagn.png');
+							width: 340px;
+							height: 567px;
+							top: 50px;
+							right: 90px;
+						}
+						.p_services_menu_info_slider .img_terapevt,
+						.p_services_menu_info_slider .img_ortopedia {
+							background-image: url('../i/services/diag.png');
+							width: 610px;
+							height: 603px;
+							top: 0px;
+							right: 0px;
+						}
+						.p_services_menu_info_slider .img_implant {
+							background-image: url('../i/services/implant.png');						
+							width: 650px;
+							height: 503px;
+							top: 90px;
+							right: -30px;
+						}
+						.p_services_menu_info_slider .img_ortodontia {
+							background-image: url('../i/services/breket.png');
+							width: 580px;
+							height: 477px;
+							top: 80px;
+							right: 0px;
+						}
+						.p_services_menu_info_slider .img_estet {
+							background-image: url('../i/services/estet.png');
+							width: 350px;
+							height: 602px;
+							top: 30px;
+							right: 130px;
+						}
+						.p_services_menu_info_slider .img_child {
+							background-image: url('../i/services/detskaya.png');
+							width: 440px;
+							height: 536px;
+							top: 50px;
+							right: 100px;
+						}
+						.p_services_menu_info_slider .img_gigiena {
+							background-image: url('../i/services/prof.png');					
+							width: 550px;
+							height: 597px;
+							top: 50px;
+							right: 50px;
+						}
 	.reviews {
 
 	}
@@ -1407,6 +1467,7 @@ button {
 				top: 33px;
 				right: 35px;
 				cursor: pointer;
+				text-align: center;
 			}
 			.map-cont-close:hover {
 				background-color: #74bc40;
@@ -1417,7 +1478,7 @@ button {
 				font-size: 15px;
 				color: #b9b9b9;
 				content: "\e906";
-				margin-left: 5px;
+				margin-left: 2px;
 				line-height: 25px;
 			}
 			.map-cont-close:hover:after {
@@ -1561,7 +1622,7 @@ button {
 						}
 						.footer-logconts {
 							width: 255px;
-							margin-right: 12%; /*140px*/
+							margin-right: 11%; /*140px*/
 						}
 							.footer-logo {
 							margin-bottom: 26px;
@@ -1569,9 +1630,9 @@ button {
 							.footer-logo-img {
 								background-position: 50% 50%;
 								background-image: url("../i/logo-footer.png");
-								background-size: cover;				
-								height: 61px;
-								width: 255px;	
+								background-size: 242px;				
+								height: 58px;
+								width: 242px;	
 							}
 								.footer-logo-img a {
 									display: block;
@@ -1676,12 +1737,26 @@ button {
 		    top: 50%;
 		    margin-top: -10px;
 		}
+
+.b-service{
+
+}
+	.b-service-text{
+		width: calc(100% - 400px);
+	}
+	.b-service-actions{
+		width: 350px;
+	}
 /*Страница услуг*/
 .main-content {
 
 }
-	.b-wide-block {
-
+	.main-content .b-wide-block {
+		-webkit-transform: none;
+		   -moz-transform: none;
+		    -ms-transform: none;
+		   	 -o-transform: none;
+				transform: none;
 	}
 		.b-block {
 
@@ -1695,6 +1770,7 @@ button {
 				width: 1190px;
 				margin-left: -15px;
 				line-height: 0px; /* bag margin */
+				margin-top: 55px;
 				}
 					.p_services_menu_item{
 						display: inline-block;
@@ -1709,13 +1785,13 @@ button {
 						.p_services_menu_item a {
 							font-family: "Ubuntu-Medium";
 							font-size: 20px;
-							line-height: 24px;
+							line-height: 30px;
 							text-transform: uppercase;
 							color: #282828;
 							display: table-cell;
-							padding: 28px 34px 32px 40px;
+							padding: 28px 38px 32px 36px;
 							box-sizing: border-box;
-							height: 200px;
+							height: 210px;
 							width: 267px;
 							cursor: pointer;
 							vertical-align: bottom;
@@ -1875,7 +1951,7 @@ button {
 					.p_services_menu_info_urls {
 						display: inline-block;
 						width: 600px;
-						margin-bottom: 30px;
+						margin-bottom: 50px;
 						background-color: transparent;
 					}					
 					.p_services_menu_info_urls a{
@@ -1885,10 +1961,10 @@ button {
 						text-decoration: underline;
 						line-height: 19px;
 						color: #757575 !important;
-						width: 154px;
+						width: 162px;
 						height: 40px;
 						margin-bottom: 26px;
-						margin-right: 44px;
+						margin-right: 38px;
 						background-color: transparent !important;
 					}
 					.p_services_menu_info_urls a:hover {
@@ -1902,7 +1978,11 @@ button {
 /*конец Страница услуг*/
 /*doctors page*/
 .b-wide-block {
-
+	-webkit-transform: translate3d(0, 0, 0);
+	   -moz-transform: translate3d(0, 0, 0);
+	    -ms-transform: translate3d(0, 0, 0);
+	   	 -o-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
 }
 	.b-block {
 
@@ -1913,6 +1993,7 @@ button {
 		}
 			.p_doctors_menu {
 				color: #181815;
+				margin-top: 55px;
 				/* width: 1188px; */
 			}
 				.p_doctors_menu_item {
@@ -2257,7 +2338,7 @@ button {
 				padding: 30px 0 30px;
 			}
 				.p_about_b_advantages_header {
-					display: inline-block;
+					display: block;
 				}
 				.p_about_b_advantages_pluses {
 					width: 100%;
@@ -2497,7 +2578,7 @@ button {
 			}
 			.p_practice_slide .map-cont-close:after {
 				line-height: 30px;
-				font-size: 20px;
+				font-size: 19px;
 			}
 
 				.p_practice_slide_img {
@@ -2543,6 +2624,9 @@ button {
 	color: #000000;
 	padding-bottom: 40px;
 }
+.b-text{
+	font-family: "Ubuntu-Light";
+}
 	.b-text h1,.b-text h2,.b-text h3,.b-text h4,.b-text h5,.b-text h6,.b-text a,.b-text p,.b-text ul {
 		max-width: 790px;
 	}
@@ -2555,6 +2639,7 @@ button {
 	}
 	.b-text h2 {
 		font-size: 29px;
+		margin-top: 30px;
 		line-height: 40px;
 		color: #171717;
 		margin-bottom: 10px;
@@ -2563,7 +2648,14 @@ button {
 		font-size: 18px;
 		line-height: 30px;
 		color: #0e0e0e;
+		margin-top: 20px;
 		margin-bottom: 10px;
+	}
+	.b-text img + h3{
+		margin-top: 0px;
+	}
+	.b-text img + h2{
+		margin-top: 10px;
 	}
 	.b-text .h44 {
 		font-size: 42px;
@@ -2580,15 +2672,12 @@ button {
 	.b-text a {
 		font-family: "Ubuntu-Light";
 		font-size: 16px;
-		line-height: 18px;
 		color: #72bb40;
 		text-decoration: underline;
-		vertical-align: top;
-		float: left;
 	}
-	.b-text a:hover {
-		text-decoration: none;
-	}
+		.b-text a:hover {
+			text-decoration: none;
+		}
 	/*.b-text a:before {
 		display: inline-block;
 		position: absolute;
@@ -2619,12 +2708,12 @@ button {
 		margin-right: 15px;
 	}
 	.b-text img {
-		margin-bottom: 42px;
+		margin-top: 25px;
 		width: 100%;
+		margin-bottom: 20px;
 	}
 	.b-text .table {
-		/* margin-top: 20px; */
-		margin-bottom: 38px;
+		margin-top: 10px;
 		display: inline-block;
 	}
 	.b-text .table {
@@ -2681,9 +2770,9 @@ button {
 		}
 	.file {
 		position: relative;
-		margin: 0 48px 32px 0;
+		margin: 10px 40px 10px 0;
 	}
-	.file:hover a {
+	.file a:hover {
 		text-decoration: none;
 	}
 	.file img{
@@ -2692,12 +2781,14 @@ button {
 		width: 43px;
 		margin-right: 15px;
 		margin-bottom: 0px !important;
+		margin-top: 0px;
 		float: left;
 	}			
 /*b-text*/
 /*reviews page*/
 .p_reviews-block{
 	/*padding-bottom: 50px;*/
+	margin-top: 55px;
 }
 	.p_reviews-single {
 		background-color: #fafafa;
@@ -3223,22 +3314,14 @@ div.cs-skin-slide::before {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
-.p_doctors_slider_cont .morphing-btn-clone {
-	opacity: 0;
-	-webkit-transition: opacity 0.01s ease-in-out;
-	-moz-transition: opacity 0.01s ease-in-out;
-	-o-transition: opacity 0.01s ease-in-out;
-	transition: opacity 0.01s ease-in-out;
-}
 
 .morphing-btn-clone_visible {
 	-webkit-transform : scale(1) !important;
 	-moz-transform : scale(1)  !important;
+	-ms-transform : scale(1) !important;
 	-o-transform : scale(1)  !important;
 	transform : scale(1) !important;
-}
-.p_doctors_slider_cont .morphing-btn-clone_visible {
-	opacity: 1 !important;
+
 }
 .morphing-close {
 	position: fixed;
@@ -3448,25 +3531,25 @@ input.error {
 .icon-time-selection:before {
   content: "\e912";
 }
-.icon-childrens:before {
+.icon-child:before {
   content: "\e908";
 }
-.icon-diagnostic:before {
+.icon-diagnostika:before {
   content: "\e909";
 }
-.icon-estetic:before {
+.icon-estet:before {
   content: "\e90a";
 }
-.icon-orthodontic:before {
+.icon-ortodontia:before {
   content: "\e90b";
 }
-.icon-orthopedic:before {
+.icon-ortopedia:before {
   content: "\e90c";
 }
-.icon-profgigiena:before {
+.icon-gigiena:before {
   content: "\e90d";
 }
-.icon-surgery:before {
+.icon-implant:before {
   content: "\e90e";
 }
 .icon-terapevt:before {
@@ -3503,7 +3586,7 @@ input.error {
 		text-decoration: none;
 	}
 .actions{
-
+	margin-top: 55px;
 }
 	.actions li{
 		background-color: #fafafa;
@@ -3550,6 +3633,10 @@ input.error {
 	}
 	.footer-copyright a {
 		background-image: url("../i/logo-redder@2x.png");		
+	}
+	.logo,
+	.footer-logo-img{
+		background-image: url('../i/logo@2x.png');
 	}
 }	
 @media screen and (max-width: 1250px){

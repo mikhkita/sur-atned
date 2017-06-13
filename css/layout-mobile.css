@@ -134,7 +134,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .main-content_top_h1 {
 	padding-top: 35px;
-	margin-bottom: 35px;
+	margin-bottom: 5px;
 	text-align: left;
 }
 	.main-content_top_h1 h1 {
@@ -2028,6 +2028,15 @@ body {
 				.actions li .text .link{
 
 				}																	
+.b-service{
+
+}
+	.b-service-text{
+		width: 100%;
+	}
+	.b-service-actions{
+		width: 100%;
+	}
 /*страница услуг*/
 @media screen and (max-width: 360px){
 	.b-block .zapis-na-priem a {

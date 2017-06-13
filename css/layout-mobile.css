@@ -1678,12 +1678,23 @@ body {
 			}
 				.doctwrap {
 					display: inline-block;
-					margin: 0 2%;
+				}
+				.onecol {
+					width: 100%;
+					max-width: 500px;
+				}
+				.twocol {
+					max-width: 315px;
+					width: 47%;
+				}
+				.twocol:nth-child(2n-1) {
+					margin-right: 5%;
 				}
 				.p_doctors_menu_item {
 					display: inherit;
-					max-height: 300px;
-					max-width: 300px;
+					max-height: 1000px;
+					max-width: 1000px;
+					width: 100%;
 					margin: 0 auto 30px;
 					float: none;
 					position: relative;
@@ -1854,8 +1865,9 @@ body {
 			}
 				.p_practice_menu_item {
 					display: block;
-					max-height: 256px;
-					max-width: 300px;
+					max-height: 1000px;
+					max-width: 1000px;
+					width: 100%;
 					cursor: pointer;
 					float: none;
 					margin: 0 auto 30px;

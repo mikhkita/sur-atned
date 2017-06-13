@@ -578,7 +578,22 @@ $(document).ready(function(){
             }
             mainfprogress();
         }
-    //---page-about-progressbar   
+    //---page-about-progressbar 
+    //-- docs and practs mobile menu item sizer func 
+    if (($('.p_doctors').length)||($('.p_practice').length)) {
+        function menusizer (menu_item,winsize) {
+            if (winsize>500) {
+                menu_item.addClass('twocol');
+                menu_item.removeClass('onecol');
+            }
+            else {
+                menu_item.addClass('onecol');
+                menu_item.removeClass('twocol');
+            }
+            winsize = window.innerWidth;
+        }; 
+    };
+    //-- docs and practs mobile menu item sizer func 
     //---doctors-page-slider
     if ($('.p_doctors').length)
         {
@@ -721,6 +736,7 @@ $(document).ready(function(){
             }
             else {
                 mainfdocMobile();
+                menusizer($('.doctwrap'),window.innerWidth);
             }
             //------------------ 
             winsize = window.innerWidth;
@@ -738,7 +754,7 @@ $(document).ready(function(){
                     mainfdoc();
                 }
                 if (
-                    ((window.innerWidth<768) && (winsize>=768))
+                    ((window.innerWidth<769) && (winsize>=769))
                     ) { 
                     $('.p_doctors .p_doctors_menu .p_doctors_slider_cont').remove();
                     $( ".p_doctors_menu_item" ).off( "mouseenter mouseleave" );
@@ -752,7 +768,21 @@ $(document).ready(function(){
                         //----------mobile-----------
                         mainfdocMobile();
                         //----------mobile-----------
+                        menusizer($('.doctwrap'),769);
                 }
+                var menuSizerWidth = 500;
+                if (
+                    ((window.innerWidth<menuSizerWidth) && (winsize>=menuSizerWidth))
+                    ) { 
+                        menusizer($('.doctwrap'),menuSizerWidth);
+                        winsize = window.innerWidth;
+                }   
+                if (
+                    ((window.innerWidth>menuSizerWidth) && (winsize<menuSizerWidth))
+                    ) { 
+                        menusizer($('.doctwrap'),760);
+                        winsize = window.innerWidth;
+                }                               
                 if ((window.innerWidth>768) && (winsize<768)) {
                     $('.p_doctors .p_doctors_menu .p_doctors_slider_cont').remove();
                     $( ".p_doctors_menu_item" ).off( "mouseenter mouseleave" );
@@ -764,6 +794,8 @@ $(document).ready(function(){
                     $('.p_doctors_menu_item').unwrap(".doctwrap");
                     $('.p_doctors_slider_cont .slick-initialized').remove();
                     $('.p_doctors_slide').css('display','initial');
+                    $('.p_doctors_menu_item').removeClass('onecol');
+                    $('.p_doctors_menu_item').removeClass('twocol');
                     mainfdoc();
                 }
             }  
@@ -911,6 +943,7 @@ $(document).ready(function(){
         }
         else {
             mainfMobile();
+            menusizer($('.doctwrap'),window.innerWidth);
         }
             //------------------ 
             var winsize = window.innerWidth;
@@ -941,7 +974,21 @@ $(document).ready(function(){
                         //----------mobile-----------
                         mainfMobile();
                         //----------mobile-----------
+                        menusizer($('.doctwrap'),769);
                 }
+                var menuSizerWidth = 500;
+                if (
+                    ((window.innerWidth<menuSizerWidth) && (winsize>=menuSizerWidth))
+                    ) { 
+                        menusizer($('.doctwrap'),menuSizerWidth);
+                        winsize = window.innerWidth;
+                }   
+                if (
+                    ((window.innerWidth>menuSizerWidth) && (winsize<menuSizerWidth))
+                    ) { 
+                        menusizer($('.doctwrap'),760);
+                        winsize = window.innerWidth;
+                }                 
                 if ((window.innerWidth>768) && (winsize<768)) {
                     $('.p_practice_menu .p_practice_slider_cont').remove();
                     $( ".p_practice_menu_item" ).off( "mouseenter mouseleave" );
@@ -953,6 +1000,8 @@ $(document).ready(function(){
                     $('.p_practice_menu_item').unwrap(".doctwrap");
                     $('.p_practice_slider_cont .slick-initialized').remove();
                     $('.p_practice_slider').css('display','none');
+                    $('.p_doctors_menu_item').removeClass('onecol');
+                    $('.p_doctors_menu_item').removeClass('twocol');                    
                     mainf();
                 }                       
             }    

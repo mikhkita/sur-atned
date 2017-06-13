@@ -580,7 +580,7 @@ $(document).ready(function(){
         }
     //---page-about-progressbar 
     //-- docs and practs mobile menu item sizer func 
-    if (($('.p_doctors').length)||($('.p_practice').length)) {
+    if (($('.p_doctors_menu').length)||($('.p_practice_menu').length)) {
         function menusizer (menu_item,winsize) {
             if (winsize>500) {
                 menu_item.addClass('twocol');
@@ -595,7 +595,7 @@ $(document).ready(function(){
     };
     //-- docs and practs mobile menu item sizer func 
     //---doctors-page-slider
-    if ($('.p_doctors').length)
+    if ($('.p_doctors_menu').length)
         {
             function mainfdoc () {     
                 var menu_items = $('.p_doctors_menu_item').length;
@@ -802,7 +802,7 @@ $(document).ready(function(){
         }
     //---doctors-page-slider  
     //---practice-page-slider 
-    if ($(".p_practice").length)
+    if ($(".p_practice_menu").length)
         {
         function mainf () {
             var menu_items = $('.p_practice_menu_item').length;
@@ -900,7 +900,7 @@ $(document).ready(function(){
                     $('[data-nrow-block='+dataEventVal+']').addClass("pract_info_show");
 
                     function scrll () {  
-                        var actscrll = $('.active').attr('data-eventblock')
+                        var actscrll = $('.p_practice_menu_item.active').attr('data-eventblock')
                         var offs = $('[data-nrow-block='+actscrll+']').attr('offset')
                         //var offs = $('.p_practice_menu_item:eq('+actButt+')').offset().top; 
                         $('html, body').animate({
@@ -912,7 +912,7 @@ $(document).ready(function(){
             });
 
             $('.map-cont-close').click(function() {
-                var actscrll = $('.active').attr('data-eventblock');
+                var actscrll = $('.p_practice_menu_item.active').attr('data-eventblock');
                 var offsc = Number($('[data-nrow-block='+actscrll+']').attr('offset'))-($('[data-eventblock='+actscrll+']').height());                
                     function scrlClose () {  
                         //var offs = $('.p_practice_menu_item:eq('+actButt+')').offset().top; 

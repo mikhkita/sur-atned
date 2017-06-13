@@ -365,7 +365,7 @@ button {
   -o-transition: none !important;
 }
 .main-content_top_h1 {
-	padding-top: 42px;
+	padding-top: 32px;
 	margin-bottom: 20px;
 	text-align: left;
 }
@@ -1488,6 +1488,10 @@ button {
 				margin-left: 2px;
 				line-height: 25px;
 			}
+			.map-cont .map-cont-close:after {
+			position: relative;
+			top: -1px;
+			}
 			.map-cont-close:hover:after {
 				color: #ffffff;
 			}
@@ -2146,7 +2150,7 @@ button {
 							font-size: 20px;
 							line-height: 20px;
 							text-transform: uppercase;
-							color: #7a7a7a;
+							color: rgba(0,0,0,0.25);
 							margin-bottom: 31px;
 						}
 						/*.p_doctors_slide_text p {
@@ -2372,7 +2376,7 @@ button {
 							margin-bottom: 22px;
 						}
 	.p_about_b_clinics {
-		padding: 30px 0 54px;
+		padding: 30px 0 64px;
 	}
 		.b-block {
 

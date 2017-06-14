@@ -676,8 +676,15 @@ $(document).ready(function(){
                         $('.p_doctors_menu_item').removeClass('active');
                         $(".p_doctors_slider_cont").removeClass("doct_info_show");
                         // console.log('closed must be');
+                        function hashdel () {  
+                            history.pushState('', document.title, window.location.pathname);
+                        }
+                        setTimeout(hashdel, 100);                         
                     }
-                    else {         
+                    else { 
+                        var hashdoc = $(this).attr('id');
+                        console.log(hashdoc);
+                        location.hash = '#' + hashdoc;       
                         var dataEventVal = $(this).attr("data-eventblock");
                         var actButt = $(this).attr('data-mdbtn');
                         actButt = actButt-1;
@@ -704,6 +711,7 @@ $(document).ready(function(){
                 });
 
                 $('.map-cont-close').click(function() {
+                    history.pushState('', document.title, window.location.pathname);
                     var actscrll = $('.p_doctors_menu_item.active').attr('data-eventblock');
                     var offsc = Number($('[data-nrow-block='+actscrll+']').attr('offset'))-($('[data-eventblock='+actscrll+']').height());
                         function scrlClose () {  
@@ -799,6 +807,13 @@ $(document).ready(function(){
                     mainfdoc();
                 }
             }  
+            var currentlocation = window.location.href;
+            var startposition = currentlocation.indexOf("#");
+            if (startposition>0) {
+                var resultword = currentlocation.substring(startposition);
+                console.log(resultword);
+                $(''+resultword+'').click();
+            }             
         }
     //---doctors-page-slider  
     //---practice-page-slider 
@@ -1175,15 +1190,16 @@ $(document).ready(function(){
             active: false,
             icons: false
         });
-        //---service page accordion mobile    
+        //---service page accordion mobile 
+        var currentlocation = window.location.href;
+        var startposition = currentlocation.indexOf("#");
+        if (startposition>0) {
+            var resultword = currentlocation.substring(startposition);
+            $(''+resultword +' a').click();
+        }           
     }
     //---service page slider
-    var currentlocation = window.location.href;
-    var startposition = currentlocation.indexOf("#");
-    if (startposition>0) {
-        var resultword = currentlocation.substring(startposition);
-        $(''+resultword +' a').click();
-    }
+
 
 });
 

@@ -167,7 +167,7 @@ $(document).ready(function(){
 				},
 				complete: function(){
 					$this.find(".ajax").removeAttr("onclick");
-					// $this.find("input[type=text],textarea").val("");
+					$this.find("input[type=text],input[type=phone],input[type=email],textarea").val("");
 				}
 			});
   		}else{

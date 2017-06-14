@@ -1,3 +1,11 @@
+function authCallback(result){
+    if( result && result != "false" ){
+        $(".b-user-data .b-name").html(result);
+        $(".b-review-auth-butt").hide();
+        $(".b-review-write-butt").show().click();
+    }
+}
+
 $(document).ready(function(){
     var isDesktop = isTablet = isMobile = false; 
     function resizeMain(){
@@ -127,6 +135,36 @@ $(document).ready(function(){
         }
     }
     $.fn.placeholder();
+
+    $("body").on("click", ".b-review-logout", function(){
+        $.fancybox.close();
+
+        $.ajax({
+            type: "GET",
+            url: $(this).attr("href"),
+            success: function(msg){
+                $.fancybox.close();
+                $(".b-review-auth-butt").show();
+                $(".b-review-write-butt").hide();
+                $(".b-for-auth").html(msg);
+                setTimeout(function(){
+                    $(".b-review-auth-butt").click();
+                },300);
+            },
+            error: function(){
+                $.fancybox.close();
+                setTimeout(function(){
+                    $(".b-review-auth-butt").click();
+                },300);
+            }
+        });
+
+        return false;
+    });
+
+    $("body").on("click", ".b-auth-button", function(){
+        $.fancybox.close();
+    });
     
     // var myPlace = new google.maps.LatLng(55.754407, 37.625151);
  //    var myOptions = {

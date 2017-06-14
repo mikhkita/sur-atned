@@ -93,6 +93,10 @@ input.error,textarea.error{
 	border: 1px solid #F00 !important;
 	box-shadow: 0 0px 0px 1px #F00;
 }
+textarea.error{
+	border: 2px solid #F00 !important;
+	box-shadow: none;
+}
 [class^="icon-"]:before, [class*=" icon-"]:before{
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
@@ -1715,12 +1719,11 @@ button {
 			text-transform: uppercase;
 			}
 /*Адаптировал под таблеты*/
-.b-action{
-
-}
+.b-action{/* padding-top: 20px; */}
 	.b-stick{
-		height: 300px;	
+		height: 300px;
 		width: 300px;
+		padding-top: 20px;
 	}
 		.b-action-img{
 			width: 300px;
@@ -2412,10 +2415,10 @@ button {
 						height: 368px;
 						width: 368px;
 						margin: 0;
-						transition: transform 200ms ease;
-						-o-transition: transform 200ms ease;
-						-moz-transition: transform 200ms ease;
-						-webkit-transition: transform 200ms ease;
+						transition: transform 400ms ease;
+						-o-transition: transform 400ms ease;
+						-moz-transition: transform 400ms ease;
+						-webkit-transition: transform 400ms ease;
 					}
 					.p_about_b_clinics_galary_windows:hover .img{
 						-webkit-transform: scale(1.1);
@@ -2458,10 +2461,12 @@ button {
 /*about page end*/
 /*practice page*/
 		.p_practice {
-			text-align: left;
-			padding-bottom: 50px;
+			/*text-align: left;*/
 		}
 			.p_practice_menu {
+				padding-top: 30px;
+				padding-bottom: 0px;
+				margin-bottom: -20px;
 				color: #181815;
 				/* width: 1188px; */
 			}
@@ -2808,6 +2813,7 @@ button {
 .p_reviews-block{
 	/*padding-bottom: 50px;*/
 	margin-top: 55px;
+	margin-bottom: -30px;
 }
 	.p_reviews-single {
 		background-color: #fafafa;
@@ -2919,6 +2925,144 @@ button {
 	float: left;
 	width: 665px;
 }
+
+.b-pop {
+	width: 565px;
+	padding: 55px 70px;
+	box-sizing: border-box;
+	color: #2f2f2f;
+}
+	.b-pop h3 {
+		line-height: 1.222;
+		font-family: "Ubuntu-bold";
+		font-size: 36px;
+		margin-bottom: 27px;
+	}
+	.b-pop p {
+		margin-bottom: 20px;
+	}
+	.b-pop .input {
+		background: none;
+		border: none;
+		border-bottom: 2px solid #797979;
+		border-radius: none;
+		width: 50%;
+		box-sizing: border-box;
+		padding-top: 19px;
+		padding-bottom: 9px;
+		font-size: 18px;
+		color: #171717;
+		font-family: "Ubuntu-Light";
+	}
+	.b-for-auth{
+
+	}
+		.b-pop .input:last-child {
+			/* margin-bottom: 0; */
+		}
+	.b-pop .input-half {
+		width: 200px;
+	}
+	.b-pop textarea.input  {
+		margin-top: 35px;
+		max-width: 100%;
+		height: 240px;
+		resize: none;
+		padding: 20px;
+		margin-bottom: 25px;
+		border: 2px solid #797979;
+		background: none;
+		border-radius: none;
+		width: 100%;
+		box-sizing: border-box;
+		padding-top: 19px;
+		padding-bottom: 9px;
+		font-size: 18px;
+		color: #171717;
+		font-family: "Ubuntu-Light";
+	}
+	.b-pop .b-btn {
+		font-family: "Ubuntu-Medium";
+		font-size: 12px;
+		color: #ffffff;
+		background-color: #74bc40;
+		padding-right: 30px;
+		-webkit-transition: all 200ms ease-out;
+		   -moz-transition: all 200ms ease-out;
+		    -ms-transition: all 200ms ease-out;
+		   	 -o-transition: all 200ms ease-out;
+				transition: all 200ms ease-out;
+	}
+	.b-pop .b-btn:hover {
+	    background-color: #5fab28 !important;
+	}
+.b-auth-button{
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+	background-size: 50px;
+	font-size: 0px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	-webkit-transition: all 150ms ease-out;
+	   -moz-transition: all 150ms ease-out;
+	    -ms-transition: all 150ms ease-out;
+	   	 -o-transition: all 150ms ease-out;
+			transition: all 150ms ease-out;
+}
+	.b-auth-button:hover{
+		-webkit-transform: scale(1.1);
+		   -moz-transform: scale(1.1);
+		    -ms-transform: scale(1.1);
+		   	 -o-transform: scale(1.1);
+				transform: scale(1.1);
+	}
+.b-auth-button.b-vkontakte{
+	background-image: url('../i/vk.jpg');
+}
+.b-auth-button.b-odnoklassniki{
+	background-image: url('../i/ok.jpg');
+	margin-left: 15px;
+}
+.b-user-block{
+	position: relative;
+	margin-bottom: 15px;
+}
+.b-user-block input{
+	margin-bottom: 0px !important;
+	width: 159px !Important;
+}
+	.b-user-data{
+
+	}
+		.b-user-data .b-image{
+			width: 50px;
+			height: 50px;
+			display: none;
+			border-radius: 100px;
+			background-size: cover;
+		}
+		.b-user-data .b-name{
+			text-align: left;
+			margin-top: 0px;
+			margin-left: 0px;
+			font-size: 20px;
+		}
+	.b-review-logout{
+		float: left;
+		margin-left: 20px;
+		font-size: 20px;
+		margin-top: 0px;
+		display: inline-block;
+	}
+	.b-review-logout:hover{
+		text-decoration: underline;
+	}
+input[name="MAIL"]{
+	display: none;
+}
+
 .name, .phone {
 	display: inline-block;
 }
@@ -3498,8 +3642,8 @@ div.cs-skin-slide::before {
 }
 input.error {
 	border: none !important;
-	border-bottom: 1px solid #f00 !important;
-	box-shadow: 0px 1px 0px 0px #f00 !important;
+	border-bottom: 2px solid #f00 !important;
+	box-shadow: none;
 }
 .b-thanks {
 	color: #1f1f1f;

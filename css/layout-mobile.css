@@ -2004,11 +2004,15 @@ body {
 			}				
 				.p_services_mobile_menu {
 				}
+					.p_services_mobile_menu .ui-state-default {
+						color: #252525 !important;                                                                  ;
+					}		
 					.p_services_mobile_menu .ui-state-active {
-						color: #ffffff !important;                                                                  ;
+						background-color: #74bc40 !important;
+						color: #ffffff !important;  
 					}
 					.p_services_mobile_menu h3{
-					margin: none !important;
+					margin: 0 !important;
 					border: none !important;
 					display: table !important;
 					padding: 15px !important;
@@ -2017,6 +2021,7 @@ body {
 					text-transform: uppercase !important;
 					box-sizing: border-box !important;
 					width: 100% !important;
+					background-color: transparent !important;
 					}
 						.p_services_mobile_menu h3 span{
 							display: table-cell;vertical-align: middle;padding-left: 4px !important;
@@ -2029,6 +2034,8 @@ body {
 					}					
 					.p_services_mobile_menu div{
 					padding: 20px 0 10px 20px !important;
+					border: none !important;
+					background-color: transparent !important;
 					}
 					.p_services_mobile_menu a{
 					display: inherit !important;
@@ -2036,10 +2043,11 @@ body {
 					font-size: 22px !important;
 					line-height: 26px !important;
 					margin-bottom: 20px !important;
+					color: #74bc40 !important;
 					}					
 					.p_services_mobile_menu a:hover{
 						text-decoration: underline !important;
-					}	
+					}					
 .actions{margin-top: 35px;margin-bottom: -50px;}
 	.actions li{
 		margin-bottom: 30px;

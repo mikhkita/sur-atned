@@ -670,6 +670,13 @@ $(document).ready(function(){
                         adaptiveHeight: true
                     });
                 }
+                $(".p_doctors_menu").on("click","div", function (event) {
+                    if ($(this).hasClass('active')) {
+                        event.preventDefault();
+                        var top = $('[data-nrow-block='+$('.p_doctors_menu_item.active').attr('data-eventblock')+']').attr('offset');
+                        $('body,html').animate({scrollTop: top}, 500);
+                    }            
+                });                
                 //----------  slider drop bottom rules
                 $('.p_doctors_menu_item').click(function() {
                     if ($(this).hasClass('active')) {
@@ -683,7 +690,10 @@ $(document).ready(function(){
                     }
                     else { 
                         var hashdoc = $(this).attr('id');
-                        location.hash = '#' + hashdoc;       
+                        function hashadd (e) {  
+                            location.hash = '#' + hashdoc;  
+                        }
+                        setTimeout(hashadd, 1);                            
                         var dataEventVal = $(this).attr("data-eventblock");
                         var actButt = $(this).attr('data-mdbtn');
                         actButt = actButt-1;
@@ -892,8 +902,12 @@ $(document).ready(function(){
                     adaptiveHeight: true
                 });
             }
-            $('#pract-1').click(function(e) {
-            e.preventDefault();
+            $(".p_practice_menu").on("click","div", function (event) {
+                if ($(this).hasClass('active')) {
+                    event.preventDefault();
+                    var top = $('[data-nrow-block='+$('.p_practice_menu_item.active').attr('data-eventblock')+']').attr('offset')                    
+                    $('body,html').animate({scrollTop: top}, 500);
+                }            
             });
             //----------  slider drop bottom rules
             $('.p_practice_menu_item').click(function() {
@@ -909,7 +923,10 @@ $(document).ready(function(){
                  else {       
 
                     var hashpract = $(this).attr('id');
-                    location.hash = '#' + hashpract;                     
+                    function hashadd () {  
+                        location.hash = '#' + hashpract; 
+                    }
+                    setTimeout(hashadd, 1);                                        
                     var dataEventVal = $(this).attr("data-eventblock");
                     var actButt = $(this).attr('data-mdbtn');
                     actButt = actButt-1;
@@ -924,8 +941,8 @@ $(document).ready(function(){
                     $('[data-nrow-block='+dataEventVal+']').addClass("pract_info_show");
 
                     function scrll () {  
-                        var actscrll = $('.p_practice_menu_item.active').attr('data-eventblock')
-                        var offs = $('[data-nrow-block='+actscrll+']').attr('offset')
+                        var actscrll = $('.p_practice_menu_item.active').attr('data-eventblock');
+                        var offs = $('[data-nrow-block='+actscrll+']').attr('offset');
                         //var offs = $('.p_practice_menu_item:eq('+actButt+')').offset().top; 
                         $('html, body').animate({
                             scrollTop: offs
@@ -1115,14 +1132,12 @@ $(document).ready(function(){
             //----------  slider drop bottom rules
             $(".p_services_menu_item").on("click","a", function (event) {
                 if ($(this).parent().hasClass('active')) {
-                    var id = $(this).attr('href'),
-                    //узнаем высоту от начала страницы до блока на который ссылается якорь
-                    top = Number($('[data-nrow-block='+$('.p_services_menu_item.active a').attr('data-eventblock')+']').attr('offset'))+$('.p_services_menu_item.active').height();
-                    //анимируем переход на расстояние - top
+                    event.preventDefault();
+                    var top = Number($('[data-nrow-block='+$('.p_services_menu_item.active a').attr('data-eventblock')+']').attr('offset'));
                     $('body,html').animate({scrollTop: top}, 400);
                 }
                 // return false;
-            });                           
+            });    
             $('.p_services_menu_item a').click(function() {
                 var dataEventVal = $(this).attr("data-eventblock");
                 var actButt = $(this).parent().attr('data-msbtn');
@@ -1136,12 +1151,17 @@ $(document).ready(function(){
                     setTimeout(hashdel, 100);   
                     //$('.p_services_menu_info_triangle_im').removeClass('item_1').removeClass('item_2').removeClass('item_3').removeClass('item_0');       
                     //$('.p_services_menu_info_triangle_im').css('margin-left','auto');
-                    $(".p_services_menu_info").removeClass("serv_info_show"); 
-                    if ($('.slick-current').attr('data-slick-index') == currentCell) {
+                    $(".p_services_menu_info").removeClass("serv_info_show");
+                    if ($('[data-nrow-block='+currentRow+'] .slick-current').attr('data-slick-index') == currentCell) {
                         $('.p_services_menu_item').removeClass('active');                       
                     }
                  }
                  else { 
+                    var hashserv = $(this).attr('href');
+                    function hashadd () {  
+                        location.hash = hashserv; 
+                    }
+                    setTimeout(hashadd, 0);                    
                     //var triggerLayout = elem.offsetHeight;   
                     if ($('.serv_info_show').length) {
                         $('.p_services_menu [data-nslider='+currentRow+']').slick('slickGoTo', currentCell, false);

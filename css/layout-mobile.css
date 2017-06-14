@@ -2010,6 +2010,9 @@ body {
 					.p_services_mobile_menu .ui-state-active {
 						color: #ffffff !important;                                                                  ;
 					}
+					.p_services_mobile_menu .ui-accordion-content {
+						padding: 0 !important;
+					}
 					.p_services_mobile_menu h3{
 					margin: none !important;
 					border: none !important;
@@ -2031,7 +2034,8 @@ body {
 					width: 1px !important;
 					}					
 					.p_services_mobile_menu div{
-					padding: 20px 0 10px 20px !important;
+						border: none !important;
+						background-color: transparent !important;
 					}
 					.p_services_mobile_menu a{
 					display: inherit !important;
@@ -2042,7 +2046,11 @@ body {
 					}					
 					.p_services_mobile_menu a:hover{
 						text-decoration: underline !important;
-					}	
+					}
+					.p_services_mobile_menu ul {
+						padding: 20px 0 10px 20px !important;
+						box-sizing: border-box;
+					}				
 .actions{margin-top: 35px;margin-bottom: -50px;}
 	.actions li{
 		margin-bottom: 30px;

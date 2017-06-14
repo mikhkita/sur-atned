@@ -683,7 +683,6 @@ $(document).ready(function(){
                     }
                     else { 
                         var hashdoc = $(this).attr('id');
-                        console.log(hashdoc);
                         location.hash = '#' + hashdoc;       
                         var dataEventVal = $(this).attr("data-eventblock");
                         var actButt = $(this).attr('data-mdbtn');
@@ -893,14 +892,24 @@ $(document).ready(function(){
                     adaptiveHeight: true
                 });
             }
+            $('#pract-1').click(function(e) {
+            e.preventDefault();
+            });
             //----------  slider drop bottom rules
             $('.p_practice_menu_item').click(function() {
                  if ($(this).hasClass('active')) {
                     $('.p_practice_menu_item').removeClass('active');
                     $(".p_practice_slider_cont").removeClass("pract_info_show");
                     // console.log('closed must be');
+                    function hashdel () {  
+                        history.pushState('', document.title, window.location.pathname);
+                    }
+                    setTimeout(hashdel, 100);                     
                  }
-                 else {         
+                 else {       
+
+                    var hashpract = $(this).attr('id');
+                    location.hash = '#' + hashpract;                     
                     var dataEventVal = $(this).attr("data-eventblock");
                     var actButt = $(this).attr('data-mdbtn');
                     actButt = actButt-1;
@@ -927,6 +936,7 @@ $(document).ready(function(){
             });
 
             $('.map-cont-close').click(function() {
+                history.pushState('', document.title, window.location.pathname);
                 var actscrll = $('.p_practice_menu_item.active').attr('data-eventblock');
                 var offsc = Number($('[data-nrow-block='+actscrll+']').attr('offset'))-($('[data-eventblock='+actscrll+']').height());                
                     function scrlClose () {  
@@ -1019,7 +1029,14 @@ $(document).ready(function(){
                     $('.p_doctors_menu_item').removeClass('twocol');                    
                     mainf();
                 }                       
-            }    
+            }  
+            var currentlocation = window.location.href;
+            var startposition = currentlocation.indexOf("#");
+            if (startposition>0) {
+                var resultword = currentlocation.substring(startposition);
+                console.log(resultword);
+                $(''+resultword+'').click();
+            }               
         }    
     //---practice-page-slider     
     //---fastclick

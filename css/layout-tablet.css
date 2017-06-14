@@ -637,7 +637,7 @@ button {
 
 	}
 		.services .b-wide-block {
-			height: 738px;
+			height: 788px;
 			background-position: 50% 50%;
 			background-size: cover;
 		}
@@ -647,7 +647,7 @@ button {
 				.services-menu {
 					position: absolute;
 					/* bottom: 0px; */
-					margin-top: 412px;
+					margin-top: 452px;
 				}
 				.services-menu li {
 					display: inline-block;
@@ -690,7 +690,7 @@ button {
 				.services-text-container {
 					position: absolute;
 					display: table;
-					height: 398px;
+					height: 450px;
 					width: 370px;
 				}
 					.services-text {
@@ -715,14 +715,60 @@ button {
 					top: 0;
 					right: 0;
 				}
-					.services-image {
-						position: absolute;
-						top: 0;
-						right: 0;
-						width: 596px;
-						height: 520px;
-						background-position: 50% 50%;
-						background-size: cover;
+					.services-image{
+						background-size: contain;
+						background-repeat: no-repeat;
+						background-position: 50% 0%;
+					}
+					.img_diagnostika {
+						background-image: url('../i/services/diagn.png');
+						width: 380px;
+						height: 567px;
+						top: 50px;
+						right: 90px;
+					}
+					.img_terapevt,
+					.img_ortopedia {
+						background-image: url('../i/services/diag.png');
+						width: 600px;
+						height: 603px;
+						top: 0px;
+						right: -40px;
+					}
+					.img_implant {
+						background-image: url('../i/services/implant.png');						
+						width: 650px;
+						height: 503px;
+						top: 50px;
+						right: -30px;
+					}
+					.img_ortodontia {
+						background-image: url('../i/services/breket.png');
+						width: 560px;
+						height: 477px;
+						top: 50px;
+						right: 0px;
+					}
+					.img_estet {
+						background-image: url('../i/services/estet.png');
+						width: 380px;
+						height: 602px;
+						top: 30px;
+						right: 100px;
+					}
+					.img_child {
+						background-image: url('../i/services/detskaya.png');
+						width: 440px;
+						height: 536px;
+						top: 50px;
+						right: 100px;
+					}
+					.img_gigiena {
+						background-image: url('../i/services/prof.png');					
+						width: 540px;
+						height: 597px;
+						top: 50px;
+						right: 50px;
 					}
 					.services-images .show {
 					}
@@ -918,7 +964,7 @@ button {
 				font-family: "icomoon";
 				font-size: 15px;
 				content: "\e906";
-				margin-left: 5px;
+				margin-left: 2px;
 				line-height: 25px;
 			}
 			.map-cont-close:hover:after {
@@ -1037,7 +1083,7 @@ button {
 						}
 						.footer-logconts {
 							width: 255px;
-							margin-right: 70px; /*140px*/
+							margin-right: 60px; /*140px*/
 						}
 							.footer-logo {
 							margin-bottom: 26px;
@@ -1063,13 +1109,13 @@ button {
 									margin-bottom: 11px;
 								}
 						.footer-pages {
-							margin-right: 125px;
+							margin-right: 130px;
 						}
 							.footer-pages ul {
 								margin-top: 18px;
 							}
 						.footer-services {
-							margin-right: 54px;
+							margin-right: 65px;
 						}
 							.footer-services ul {
 								margin-top: 18px;
@@ -1145,6 +1191,9 @@ button {
 						font-size: 20px;
 						line-height: 55px;
 					}
+					.main-content_top_h1 h2{
+						max-width: 100%;
+					}
 					.main-content_top_h1 h3 {
 						font-size: 42px;
 						line-height: 42px;
@@ -1163,10 +1212,10 @@ button {
 					}		
 						.p_services_menu_item a {
 							font-size: 20px;
-							line-height: 24px;
-							padding: 25px 34px 32px 40px;
+							line-height: 30px;
+							padding: 25px 38px 32px 36px;
 							box-sizing: border-box;
-							height: 200px;
+							height: 210px;
 							width: 300px;
 							cursor: pointer;
 							vertical-align: bottom;
@@ -1194,14 +1243,14 @@ button {
 				.p_services_menu_info {
 					text-align: left;
 					width: 1560px;
-					min-height: 0px;
-					height: 0px;
+					/*min-height: 0px;*/
+					/*height: 0px;*/
 					margin-left: -280px;
 					top: -25px;
 				}
 				.serv_info_show {
-					min-height: 590px;
-					margin-bottom: 0px;
+					/*min-height: 590px;*/
+					/*margin-bottom: 0px;*/
 				}
 				.p_services_menu .slick-dots {
 				}
@@ -1219,7 +1268,7 @@ button {
 				}
 				.services_slide_close_btn:after {
 					font-size: 20px;
-					line-height: 29px;
+					line-height: 30px;
 				}				
 				.p_services_menu_info_triangle {
 					height: 31px;
@@ -1273,14 +1322,12 @@ button {
 						font-size: 14px;
 						line-height: 19px;
 						width: 140px;
-						height: 38px;
 						margin-bottom: 22px;
 						margin-right: 30px;
 					}
 					.p_services_menu_info_urls a:hover {
 					}
 					.p_services_menu_info_urls li{
-						float: left;
 						
 					}					
 /*конец Страница услуг*/
@@ -1369,6 +1416,7 @@ button {
 					width: 100%;
 					height: 596px;
 					margin-left: 86px;
+					background-position: -50px 50%; 
 				}
 				.p_doctors_slide_top .b-block {
 				/*width: 960px;*/
@@ -1379,7 +1427,7 @@ button {
 						padding-top: 111px;
 						width: 560px;
 					}
-						.p_doctors_slide_text h4 {
+						/*.p_doctors_slide_text h4 {
 							line-height: 24px;
 							font-size: 36px;
 							margin-bottom: 24px;
@@ -1400,7 +1448,7 @@ button {
 						}
 						.p_doctors_slide_btn {
 							padding-right: 25px;
-						}
+						}*/
 					.p_doctors_slide_close_btn {
 						top: 54px;
 						right: 12px;
@@ -1411,10 +1459,10 @@ button {
 						font-size: 20px;
 						line-height: 30px;
 					}					
-			.p_doctors_slide_bott {
+			/*.p_doctors_slide_bott {
 				padding: 54px 0 34px;
-			}
-				.p_doctors_slide_bott h3 {
+			}*/
+				/*.p_doctors_slide_bott h3 {
 					font-size: 18px;
 					margin-bottom: 22px;
 				}
@@ -1425,7 +1473,7 @@ button {
 						list-style-type: disc;
 						font-size: 16px;
 						line-height: 30px;
-					}
+					}*/
 				.p_doctors_menu .slick-dots {
 				}							
 /*doctors page*/

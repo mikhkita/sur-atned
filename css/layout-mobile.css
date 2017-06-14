@@ -132,9 +132,20 @@ h1,h2,h3,h4,h5,h6{
 .notmobile {
 	display: none !important;
 }
+.b-text h2 {
+    font-size: 25px;
+    margin-top: 26px;
+    line-height: 35px;
+}
+.b-text li:before {
+    margin-right: 7px;
+}
+.b-text li{
+	padding-left: 20px;
+}
 .main-content_top_h1 {
 	padding-top: 35px;
-	margin-bottom: 35px;
+	margin-bottom: 30px;
 	text-align: left;
 }
 	.main-content_top_h1 h1 {
@@ -150,6 +161,7 @@ h1,h2,h3,h4,h5,h6{
 		font-size: 30px;
 		line-height: 35px;
 		color: #181818;
+		max-width: 100%;
 	}
 .b-head {
 }
@@ -553,7 +565,8 @@ h1,h2,h3,h4,h5,h6{
 				}
 					.left-slider {
 						height: auto;
-						width: 100%;
+						width: 116%;
+						margin-left: -8%;
 						position: relative;
 						margin-bottom: 32px;
 						float: none !important;
@@ -601,7 +614,7 @@ h1,h2,h3,h4,h5,h6{
 					}
 					.about-right-slider-header {
 						font-size: 18px;
-						margin-left: 5%;
+						margin-left: 0px;
 						margin-top: 0;
 						margin-bottom: 10px;
 					}
@@ -1457,7 +1470,7 @@ body {
 					.p_about_b_about_text {
 						width: 100%;
 						padding: 0;
-						margin: 30px 0 35px 0;
+						margin: 0px 0px 10px 0;
 					}				
 						.p_about .main-content_top_h1 {
 							margin-bottom: 30px;
@@ -1554,7 +1567,7 @@ body {
 							margin-bottom: 22px;
 						}
 	.p_about_b_clinics {
-		padding: 20px 0 10px;
+		padding: 10px 0 10px;
 	}
 				.p_about_b_clinics_header h3 {
 					margin-bottom: 48px;
@@ -1613,6 +1626,8 @@ body {
 /*reviews page*/
 .p_reviews-block{
 	/*padding-bottom: 20px;*/
+	margin-top: 35px;
+	margin-bottom: -28px;
 }
 	.p_reviews-single {
 		width: 100%;
@@ -1675,6 +1690,7 @@ body {
 			.p_doctors_menu {
 				width: 100%;
 				margin: 0 auto;
+				margin-top: 35px;
 			}
 				.doctwrap {
 					display: inline-block;
@@ -1790,23 +1806,33 @@ body {
 				/* padding-top: 100px; */
 				}
 					.p_doctors_slide_text {
-						padding-top: 30px;
+						padding-top: 20px;
 						width: 100%;
+						padding-bottom: 30px;
 					}
+						.p_doctors_slide_text .b-text h2,
+						.p_doctors_slide_text .b-text h3,
+						.p_doctors_slide_text .b-text h4,
+						.p_doctors_slide_text .b-text h5,
+						.p_doctors_slide_text .b-text p,
+						.p_doctors_slide_text .b-text a,
+						.p_doctors_slide_text .b-text li{
+							color: #171717;
+						}
 						.p_doctors_slide_text h4 {
-							line-height: 36px;
-							font-size: 36px;
-							margin-bottom: 24px;
+							line-height: 33px;
+							font-size: 25px;
+							margin-bottom: 15px;
 							color: #171717;
 						}
 						.p_doctors_slide_text h5 {
-							font-size: 20px;
-							line-height: 20px;
+							font-size: 18px;
+							line-height: 28px;
 							text-transform: uppercase;
-							margin-bottom: 31px;
+							margin-bottom: 15px;
 							color: #171717;
 						}
-						.p_doctors_slide_text p {
+						/*.p_doctors_slide_text p {
 							margin-bottom: 30px;
 							font-size: 16px;
 							display: block;
@@ -1820,7 +1846,7 @@ body {
 						}
 						.p_doctors_slide_btn {
 							padding-right: 25px;
-						}
+						}*/
 					.p_doctors_slide_close_btn {
 						top: 54px;
 						right: 12px;
@@ -1837,7 +1863,7 @@ body {
 				padding: 30px 0 30px;
 				color: #000000;
 			}
-				.p_doctors_slide_bott h3 {
+				/*.p_doctors_slide_bott h3 {
 					font-size: 18px;
 					margin-bottom: 22px;
 				}
@@ -1849,7 +1875,7 @@ body {
 						list-style-position: inside;
 						font-size: 16px;
 						line-height: 30px;
-					}
+					}*/
 				.p_doctors_menu .slick-dots {
 					display: none !important;
 				}							
@@ -1963,7 +1989,7 @@ body {
 					display: none !important;
 				}							
 /*practice page*/
-/*Страница услуг*/
+/*ÃÂ¡Ã‘â€šÃ‘â‚¬ÃÂ°ÃÂ½ÃÂ¸Ã‘â€ ÃÂ° Ã‘Æ’Ã‘ÂÃÂ»Ã‘Æ’ÃÂ³*/
 .main-content {
 
 }
@@ -2017,9 +2043,7 @@ body {
 					.p_services_mobile_menu a:hover{
 						text-decoration: underline !important;
 					}	
-.actions{
-
-}
+.actions{margin-top: 35px;margin-bottom: -50px;}
 	.actions li{
 		margin-bottom: 30px;
 		margin-left: 0px;	
@@ -2045,7 +2069,19 @@ body {
 				.actions li .text .link{
 
 				}																	
-/*страница услуг*/
+.b-service{
+
+}
+	.b-service-text{
+		width: 100%;
+	}
+	.b-service-actions{
+		width: 100%;
+	}
+.b-content {
+    padding-bottom: 50px;
+}
+
 @media screen and (max-width: 360px){
 	.b-block .zapis-na-priem a {
 		font-size: 16px;

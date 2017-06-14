@@ -2011,6 +2011,9 @@ body {
 						background-color: #74bc40 !important;
 						color: #ffffff !important;  
 					}
+					.p_services_mobile_menu .ui-accordion-content {
+						padding: 0 !important;
+					}
 					.p_services_mobile_menu h3{
 					margin: 0 !important;
 					border: none !important;
@@ -2033,7 +2036,6 @@ body {
 					width: 1px !important;
 					}					
 					.p_services_mobile_menu div{
-					padding: 20px 0 10px 20px !important;
 					border: none !important;
 					background-color: transparent !important;
 					}
@@ -2047,7 +2049,11 @@ body {
 					}					
 					.p_services_mobile_menu a:hover{
 						text-decoration: underline !important;
-					}					
+					}
+					.p_services_mobile_menu ul {
+						padding: 20px 0 10px 20px !important;
+						box-sizing: border-box;
+					}				
 .actions{margin-top: 35px;margin-bottom: -50px;}
 	.actions li{
 		margin-bottom: 30px;

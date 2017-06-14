@@ -2003,6 +2003,8 @@ body {
 					}					
 					.p_services_mobile_menu div{
 					padding: 20px 0 10px 20px !important;
+					border: none !important;
+					background-color: transparent !important;
 					}
 					.p_services_mobile_menu a{
 					display: inherit !important;
@@ -2010,6 +2012,7 @@ body {
 					font-size: 22px !important;
 					line-height: 26px !important;
 					margin-bottom: 20px !important;
+					color: #74bc40 !important;
 					}					
 					.p_services_mobile_menu a:hover{
 						text-decoration: underline !important;

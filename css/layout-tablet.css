@@ -436,7 +436,6 @@ button {
 				}
 					.back-slider .slick-dots {
 						position: absolute;
-						top: 143px;
 						left: 50%;
 						margin-left: 440px;
 						/* cursor: pointer; */
@@ -523,7 +522,7 @@ button {
 					.front-slide h2 {
 						font-family: "Ubuntu-Bold";
 						line-height: 40px;
-						width: 200px;
+						width: 350px;
 						display: inline-block;
 						margin-bottom: 20px;
 						font-size: 32px;
@@ -870,7 +869,6 @@ button {
 							}
 							.review-single-full .review-single-name {
 								display: inline-block;
-								padding: 27px; 
 								text-align: left;
 							}	
 							.review-single-full .review-single-text {
@@ -1485,7 +1483,7 @@ button {
 				/* width: 1188px; */
 			}
 				.p_practice_menu_item {
-					height: 211px;
+					height: 165px;
 					width: 300px;
 					margin-right: 30px;
 					background-repeat: no-repeat;
@@ -1497,12 +1495,13 @@ button {
 				}		
 					.p_practice_menu_vcard {
 						width: 100%;
-						padding: 24px 30px 26px 30px;
+						padding: 20px 20px 20px 20px;
 						bottom: 0;
 						box-sizing: border-box;
 					}									
 						.p_practice_menu_vcard h5{
 							line-height: 26px;
+							font-size: 16px;
 						}																																					
 	.hidden .p_practice_slider {
 	}
@@ -1518,6 +1517,9 @@ button {
 	}	
 		.p_practice_slide {
 			width: 1560px;
+		}
+		.p_practice_slide h2{
+			font-size: 38px;
 		}
 	.pract_info_show {
 		min-height: 600px;
@@ -1818,7 +1820,7 @@ div.cs-select {
 	margin-top: 42px;
 }
 .ui-datepicker {
-	width: 368px !important;
+	width: 339px !important;
 }
 #b-popup-3 .left {
 	width: 620px;

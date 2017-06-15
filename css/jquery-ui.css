@@ -314,12 +314,15 @@ button.ui-button::-moz-focus-inner {
 }
 .ui-datepicker {
 	width: 17em;
-	padding: .2em .2em 0;
+	padding: 1em 1em 0.7em;
 	display: none;
 }
 .ui-datepicker .ui-datepicker-header {
 	position: relative;
 	padding: .2em 0;
+	border: 0px;
+	border-radius: 0px;
+	background: #FFF;
 }
 .ui-datepicker .ui-datepicker-prev,
 .ui-datepicker .ui-datepicker-next {
@@ -380,7 +383,7 @@ button.ui-button::-moz-focus-inner {
 }
 .ui-datepicker td {
 	border: 0;
-	padding: 1px;
+	padding: 0px;
 }
 .ui-datepicker td span,
 .ui-datepicker td a {
@@ -897,7 +900,7 @@ body .ui-tooltip {
 	font-size: 1em;
 }
 .ui-widget.ui-widget-content {
-	border: 1px solid #c5c5c5;
+	border: 0px;
 }
 .ui-widget-content {
 	border: 1px solid #dddddd;
@@ -928,10 +931,12 @@ body .ui-tooltip {
 works properly when clicked or hovered */
 html .ui-button.ui-state-disabled:hover,
 html .ui-button.ui-state-disabled:active {
-	border: 1px solid #c5c5c5;
-	background: #f6f6f6;
+	border: 1px solid #efefef;
+	background: #FFF;
 	font-weight: normal;
 	color: #454545;
+	/* margin-bottom: -1px; */
+	margin-right: -1px;
 }
 .ui-state-default a,
 .ui-state-default a:link,
@@ -951,10 +956,13 @@ a:visited.ui-button,
 .ui-widget-header .ui-state-focus,
 .ui-button:hover,
 .ui-button:focus {
-	border: 1px solid #cccccc;
-	background: #ededed;
+	border: 0px;
+	background: #f5f5f5;
 	font-weight: normal;
 	color: #2b2b2b;
+}
+.ui-widget-header .ui-state-hover{
+	border-radius: 100px;
 }
 .ui-state-hover a,
 .ui-state-hover a:hover,
@@ -979,10 +987,10 @@ a.ui-button:focus {
 a.ui-button:active,
 .ui-button:active,
 .ui-button.ui-state-active:hover {
-	border: 1px solid #003eff;
+	/* border: 1px solid #74bc40 !important; */
 	background: #007fff;
 	font-weight: normal;
-	color: #ffffff;
+	color: #ffffff !important;
 }
 .ui-icon-background,
 .ui-state-active .ui-icon-background {
@@ -1001,8 +1009,8 @@ a.ui-button:active,
 .ui-state-highlight,
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight {
-	border: 1px solid #dad55e;
-	background: #fffa90;
+	/* border: 1px solid #dad55e; */
+	background: #ecffde;
 	color: #777620;
 }
 .ui-state-checked {

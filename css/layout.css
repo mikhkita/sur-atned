@@ -750,7 +750,7 @@ button {
 					.back-slider .slick-dots {
 						z-index: 10;
 						position: absolute;
-						top: 143px;
+						top: 160px;
 						left: 50%;
 						margin-left: 554px;
 						background-color: transparent;
@@ -849,7 +849,7 @@ button {
 					.front-slide h2 {
 						font-family: "Ubuntu-Bold";
 						line-height: 40px;
-						width: 200px;
+						width: 400px;
 						display: inline-block;
 						margin-bottom: 20px;
 						font-size: 32px;
@@ -1304,6 +1304,7 @@ button {
 								border-radius: 55px;
 								overflow: hidden;
 								margin-left: -46px;
+								background-color: #e1e1e1;
 							}
 							.review-single-name {
 								display: table-cell;
@@ -1426,7 +1427,7 @@ button {
 							}
 							.review-single-full .review-single-name {
 								display: inline-block;
-								padding: 27px; 
+								padding: 11px 27px; 
 								text-align: left;
 							}	
 							.review-single-full .review-single-text {
@@ -1726,6 +1727,7 @@ button {
 		padding-top: 20px;
 	}
 		.b-action-img{
+			margin: 0px !important;
 			width: 300px;
 			height: 300px;
 			background-position: 50% 50%;
@@ -1755,7 +1757,7 @@ button {
 .main-content {
 
 }
-	.main-content .b-wide-block {
+	.inner .b-wide-block {
 		-webkit-transform: none;
 		   -moz-transform: none;
 		    -ms-transform: none;
@@ -1799,10 +1801,10 @@ button {
 							width: 267px;
 							cursor: pointer;
 							vertical-align: bottom;
-							transition: color 200ms ease, background-color 200ms ease;
-							-o-transition: color 200ms ease, background-color 200ms ease;
-							-moz-transition:color 200ms ease, background-color 200ms ease;
-							-webkit-transition:color 200ms ease, background-color 200ms ease;
+							transition: color 200ms ease-out, background-color 200ms ease-out;
+							-o-transition: color 200ms ease-out, background-color 200ms ease-out;
+							-moz-transition: color 200ms ease-out, background-color 200ms ease-out;
+							-webkit-transition: color 200ms ease-out, background-color 200ms ease-out;
 						}
 						.p_services_menu_item a:hover span {
 							color: #74bc40;
@@ -1880,6 +1882,7 @@ button {
 					display: none;
 				}
 				.p_services_menu_info_slider_items {
+					min-height: 500px;
 					position: relative;
 				}
 				.services_slide_close_btn {
@@ -2472,7 +2475,7 @@ button {
 			}
 				.p_practice_menu_item {
 					display: inline-block;
-					height: 256px;
+					height: 200px;
 					width: 365px;
 					margin-right: 32px;
 					background-position: 50% 50%;
@@ -2494,11 +2497,30 @@ button {
 						background-color: rgba(116,188,64,0.9);
 						box-sizing: border-box;
 						position: absolute;
-					}									
+						opacity: 1;
+						-webkit-transform: translateY(105px);
+						   -moz-transform: translateY(105px);
+						    -ms-transform: translateY(105px);
+						   	 -o-transform: translateY(105px);
+								transform: translateY(105px);
+						-webkit-transition: transform 300ms ease-out, opacity 300ms ease-out;
+						   -moz-transition: transform 300ms ease-out, opacity 300ms ease-out;
+						    -ms-transition: transform 300ms ease-out, opacity 300ms ease-out;
+						   	 -o-transition: transform 300ms ease-out, opacity 300ms ease-out;
+								transition: transform 300ms ease-out, opacity 300ms ease-out;
+					}			
+						.p_practice_menu_item:hover .p_practice_menu_vcard{
+							opacity: 1;
+							-webkit-transform: translateY(0px);
+							   -moz-transform: translateY(0px);
+							    -ms-transform: translateY(0px);
+							   	 -o-transform: translateY(0px);
+									transform: translateY(0px);
+						}								
 						.p_practice_menu_vcard h5{
 							text-transform: uppercase;
 							font-family: "Ubuntu-Medium";
-							font-size: 22px;
+							font-size: 18px;
 							line-height: 26px;
 							color: #ffffff;
 						}																																					
@@ -2591,7 +2613,7 @@ button {
 			}
 			.p_practice_slide .map-cont-close {
 			top: 65px;
-			right: 20px;
+			right: 0px;
 			width: 29px;
 			height: 29px;
 			}
@@ -2841,6 +2863,7 @@ button {
 				display: table-cell;
 				vertical-align: middle;
 				float: none !important;
+				background-color: #e2e1e1;
 			}
 			.p_reviews-single-name {
 				display: table-cell;
@@ -2945,7 +2968,7 @@ button {
 		background: none;
 		border: none;
 		border-bottom: 2px solid #797979;
-		border-radius: none;
+		border-radius: 0px;
 		width: 50%;
 		box-sizing: border-box;
 		padding-top: 19px;
@@ -2972,7 +2995,7 @@ button {
 		margin-bottom: 25px;
 		border: 2px solid #797979;
 		background: none;
-		border-radius: none;
+		border-radius: 0px;
 		width: 100%;
 		box-sizing: border-box;
 		padding-top: 19px;
@@ -3076,7 +3099,7 @@ input[name="MAIL"]{
 	background: none;
 	border: none;
 	border-bottom: 2px solid #ffffff;
-	border-radius: none;
+	border-radius: 0px;
 	width: 297px;
 	padding-top: 19px;
 	padding-bottom: 9px;
@@ -3121,7 +3144,7 @@ textarea::-webkit-input-placeholder {
 	color: rgb(56,56,56);
 	margin-left: 30px;
 	border: none;
-	border-radius: none;
+	border-radius: 0px;
 	box-sizing: border-box;
 	padding-left: 35px;
 	margin-top: 20px;
@@ -3535,9 +3558,13 @@ div.cs-skin-slide::before {
 	transform: rotate(45deg);
 }
 .ui-state-hover {
-	border: none !important;
-	background: none !important;
+	/* border: none !important; */
+	/* background: none !important; */
 	cursor: pointer;
+	background: #fafafa;
+}
+.ui-accordion .ui-accordion-header{
+	background: transparent;
 }
 .ui-datepicker-prev-hover {
 	top: 2px !important;
@@ -3548,15 +3575,16 @@ div.cs-skin-slide::before {
 	right: 2px !important;
 }
 .ui-datepicker-calendar .ui-state-hover {
-	border: 1px solid #cccccc !important;
+	border: 1px solid #efefef !important;
+	background: #fafafa;
 }
 .ui-state-active {
 	background: #74bc40 !important;
-	border: 1px solid #4caf50 !important;
+	/* border: 1px solid #4caf50 !important; */
 }
 .ui-datepicker {
 	border-radius: 0px !important;
-	width: 458px !important;
+	width: 429px !important;
 	position: absolute !important;
 }
 .ui-icon {
@@ -3677,6 +3705,7 @@ input.error {
 	width: 465px;
 	height: 90px;
 	top: 48px;
+	cursor: pointer;
 	left: 30px;
 }
 .time-section label {
@@ -3766,6 +3795,8 @@ input.error {
 			top: 50%;
 			margin-top: -100px;
 			border-radius: 100px;
+			/*border: 1px solid #e8e8e8;*/
+			/*background-color: #f2f2f2;*/
 			background-position: 50% 50%;
 			background-size: cover;
 		}
@@ -3807,6 +3838,7 @@ input.error {
 			.b-other-actions li{
 				margin-bottom: 20px;
 				display: table;
+				padding-left: 0px;
 			}
 				.b-other-actions li a{
 					color: #0e0e0e;

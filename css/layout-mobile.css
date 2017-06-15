@@ -1285,7 +1285,7 @@ div.cs-skin-slide {
 }
 .date-inp .date-icon {
 	font-size: 18px;
-	top: 3.4em;
+	top: 1.5em;
 }
 .left input {
 	font-size: 16px;
@@ -1329,7 +1329,6 @@ div.cs-select {
 }
 .div-cal {
 	width: 100%;
-	top: -170px;
 	left: 0px;
 }
 .ui-datepicker {

@@ -1288,11 +1288,13 @@ $(function(){
         } else {
             if ( $(event.target).closest("a,tr,.ui-datepicker-title,.ui-datepicker-calendar").length ) return;
             $('.div-cal').removeClass("open-cal");
+            $('.ui-datepicker').removeClass("open-ui");
             event.stopPropagation();
         }
     });
     $('.date-div').click(function(){
         $('.div-cal').addClass("open-cal");
+        $('.ui-datepicker').addClass("open-ui");
     });
     $('.p_doctors_menu').on('afterChange',function(event,slick,currentSlide){
         var Morph = function( $btn, opts ) {

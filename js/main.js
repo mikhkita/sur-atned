@@ -75,7 +75,8 @@ $(document).ready(function(){
         nextText: "",
         onSelect: function(dateText){
             $('#date').val(dateText);
-            $('#date-2').val(dateText)
+            $('#date-2').val(dateText);
+            $('.ui-datepicker').removeClass("open-ui");
             $('.div-cal').removeClass("open-cal");
         }
     });

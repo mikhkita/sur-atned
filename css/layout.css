@@ -3594,6 +3594,16 @@ div.cs-skin-slide::before {
 	border-radius: 0px !important;
 	width: 429px !important;
 	position: absolute !important;
+	visibility: hidden;
+	background-color: rgba(255,255,255,0.8);
+	-webkit-transform: scale3d(0.5,0,1);
+	-moz-transform: scale3d(0.5,0,1);
+	-o-transform: scale3d(0.5,0,1);
+	transform: scale3d(0.5,0,1);
+	-webkit-transition: transform 0.5s ease-in-out !important;
+	-moz-transition: transform 0.5s ease-in-out !important;
+	-o-transition: transform 0.5s ease-in-out !important;
+	transition: transform 0.5s ease-in-out !important;
 }
 .ui-icon {
 	background: none !important;
@@ -3675,6 +3685,14 @@ div.cs-skin-slide::before {
 }
 .open-cal {
 	display: block;
+	visibility: visible;
+}
+.open-ui {
+	visibility: visible;
+	-webkit-transform: scale3d(1,1,1);
+	-moz-transform: scale3d(1,1,1);
+	-o-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
 }
 input.error {
 	border: none !important;

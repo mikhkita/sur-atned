@@ -3684,7 +3684,7 @@ div.cs-skin-slide::before {
 	z-index: 10000;
 }
 .open-cal {
-	display: block;
+	/*display: block;*/
 	visibility: visible;
 }
 .open-ui {

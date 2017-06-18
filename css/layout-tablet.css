@@ -1828,10 +1828,11 @@ div.cs-select {
 .div-cal {
 	left: 0px;
 	width: 375px;
+	top: 44px;
 }
 .date-div {
 	width: 100%;
-	top: 48px;
+	top: 44px;
 	left: 0px;
 }
 .cs-select > span {

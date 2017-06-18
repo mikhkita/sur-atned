@@ -540,7 +540,8 @@ $(document).ready(function(){
             $( "#accordion" ).accordion({
                 collapsible: true,
                 active: false,
-                icons: false
+                icons: false,
+                heightStyle: "content"
             });
             }   
         //---menu services index page mobile         
@@ -729,7 +730,7 @@ $(document).ready(function(){
                     else { 
                         var hashdoc = $(this).attr('id');
                         function hashadd (e) {  
-                            location.hash = '#' + hashdoc;  
+                            location.hash = hashdoc;  
                         }
                         setTimeout(hashadd, 1);                            
                         var dataEventVal = $(this).attr("data-eventblock");
@@ -1171,7 +1172,7 @@ $(document).ready(function(){
             $(".p_services_menu_item").on("click","a", function (event) {
                 if ($(this).parent().hasClass('active')) {
                     event.preventDefault();
-                    var top = Number($('[data-nrow-block='+$('.p_services_menu_item.active a').attr('data-eventblock')+']').attr('offset'));
+                    var top = Number($('[data-nrow-block='+$('.p_services_menu_item.active a').attr('data-eventblock')+']').attr('offset'))+$('.p_services_menu_item.active').height();
                     $('body,html').animate({scrollTop: top}, 400);
                 }
                 // return false;
@@ -1263,7 +1264,8 @@ $(document).ready(function(){
         $( "#accordion" ).accordion({
             collapsible: true,
             active: false,
-            icons: false
+            icons: false,
+            heightStyle: "content"
         });
         //---service page accordion mobile 
         var currentlocation = window.location.href;
@@ -1285,13 +1287,11 @@ $(function(){
         } else {
             if ( $(event.target).closest("a,tr,.ui-datepicker-title,.ui-datepicker-calendar").length ) return;
             $('.div-cal').removeClass("open-cal");
-            $('.ui-datepicker').removeClass("open-ui");
             event.stopPropagation();
         }
     });
     $('.date-div').click(function(){
         $('.div-cal').addClass("open-cal");
-        $('.ui-datepicker').addClass("open-ui");
     });
     $('.p_doctors_menu').on('afterChange',function(event,slick,currentSlide){
         var Morph = function( $btn, opts ) {

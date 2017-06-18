@@ -561,6 +561,7 @@ h1,h2,h3,h4,h5,h6{
 
 	}
 		.about-company .b-wide-block {
+			overflow: hidden;
 		}
 			.about-company .b-wide-block .b-block {
 				padding-top: 3px;
@@ -587,7 +588,7 @@ h1,h2,h3,h4,h5,h6{
 						}
 						.left-slider .b-btn-prev {
 							position: absolute;
-							right: 80px;
+							right: calc(2% + 80px);
 							bottom: -21px;
 							/* margin-top: -24px; */
 							z-index: 10;
@@ -598,7 +599,7 @@ h1,h2,h3,h4,h5,h6{
 						.left-slider .b-btn-next {
 							margin-top: -24px;
 							position: absolute;
-							right: 20px;
+							right: calc(2% + 20px);
 						}
 					.right-slider .slick-dots {
 						display: none !important;
@@ -1285,7 +1286,7 @@ div.cs-skin-slide {
 }
 .date-inp .date-icon {
 	font-size: 18px;
-	top: 1.5em;
+	top: 3.4em;
 }
 .left input {
 	font-size: 16px;
@@ -1329,6 +1330,7 @@ div.cs-select {
 }
 .div-cal {
 	width: 100%;
+	top: -170px;
 	left: 0px;
 }
 .ui-datepicker {
@@ -2091,7 +2093,7 @@ body {
 						text-decoration: underline !important;
 					}
 					.p_services_mobile_menu ul {
-						padding: 10px 0 10px 59px !important;
+						padding: 10px 0 10px 61px !important;
 						box-sizing: border-box;
 					}				
 .actions{margin-top: 35px;margin-bottom: -50px;}
@@ -2282,5 +2284,17 @@ body {
 	}
 	.p_practice_menu_item{
 		height: 150px;
+	}
+	.p_services_mobile_menu h3 span{
+		padding-left: 30px !important;
+    	padding-top: 17px;
+    	font-size: 22px !important;
+	}
+	.p_services_mobile_menu h3:before{
+		font-size: 64px !important;
+	}
+
+	.p_services_mobile_menu ul {
+	    padding: 10px 0 10px 96px !important;
 	}
 }

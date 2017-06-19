@@ -78,6 +78,8 @@ $(document).ready(function(){
             $('#date-2').val(dateText);
             $('.ui-datepicker').removeClass("open-ui");
             $('.div-cal').removeClass("open-cal");
+            $('.date-div').removeClass("open-date");
+            $('.date-icon').removeClass("open-icon");
         }
     });
     customHandlers["myFunc"] = function($form){}
@@ -1289,12 +1291,16 @@ $(function(){
             if ( $(event.target).closest("a,tr,.ui-datepicker-title,.ui-datepicker-calendar").length ) return;
             $('.div-cal').removeClass("open-cal");
             $('.ui-datepicker').removeClass("open-ui");
+            $('.date-div').removeClass("open-date");
+            $('.date-icon').removeClass("open-icon");
             event.stopPropagation();
         }
     });
     $('.date-div').click(function(){
         $('.div-cal').addClass("open-cal");
         $('.ui-datepicker').addClass("open-ui");
+        $('.date-div').addClass("open-date");
+        $('.date-icon').addClass("open-icon");
     });
     $('.p_doctors_menu').on('afterChange',function(event,slick,currentSlide){
         var Morph = function( $btn, opts ) {

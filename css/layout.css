@@ -3159,6 +3159,10 @@ textarea::-webkit-input-placeholder {
 	margin-bottom: 28px;
 	font-family: "Ubuntu-Light";
 	opacity: 0.8;
+	-webkit-transition: opacity 0.01s ease-in-out 0.5s;
+	-moz-transition: opacity 0.01s ease-in-out 0.5s;
+	-o-transition: opacity 0.01s ease-in-out 0.5s;
+	transition: opacity 0.01s ease-in-out 0.5s;
 }
 .date-inp .date-icon {
 	position: absolute;
@@ -3772,6 +3776,13 @@ input.error {
 }
 .open-icon {
 	visibility: hidden !important;
+	opacity: 0 !important;
+	-webkit-transition: opacity 0.01s ease-in-out !important;
+	-moz-transition: opacity 0.01s ease-in-out !important;
+	-o-transition: opacity 0.01s ease-in-out !important;
+	transition: opacity 0.01s ease-in-out !important;
+}
+.open-inp {
 	opacity: 0 !important;
 	-webkit-transition: opacity 0.01s ease-in-out !important;
 	-moz-transition: opacity 0.01s ease-in-out !important;

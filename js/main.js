@@ -80,6 +80,7 @@ $(document).ready(function(){
             $('.div-cal').removeClass("open-cal");
             $('.date-div').removeClass("open-date");
             $('.date-icon').removeClass("open-icon");
+            $('#date').removeClass("open-inp");
         }
     });
     customHandlers["myFunc"] = function($form){}
@@ -1293,6 +1294,7 @@ $(function(){
             $('.ui-datepicker').removeClass("open-ui");
             $('.date-div').removeClass("open-date");
             $('.date-icon').removeClass("open-icon");
+            $('#date').removeClass("open-inp");
             event.stopPropagation();
         }
     });
@@ -1301,6 +1303,7 @@ $(function(){
         $('.ui-datepicker').addClass("open-ui");
         $('.date-div').addClass("open-date");
         $('.date-icon').addClass("open-icon");
+        $('#date').addClass("open-inp");
     });
     $('.p_doctors_menu').on('afterChange',function(event,slick,currentSlide){
         var Morph = function( $btn, opts ) {

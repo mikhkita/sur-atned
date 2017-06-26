@@ -1297,6 +1297,13 @@ $(function(){
             $('#date').removeClass("open-inp");
             event.stopPropagation();
         }
+        if ( $(event.target).closest(".ajax").length ) {
+            if ( !($('.custom-checkbox').hasClass("checked")) ) {
+                $('.custom-checkbox').addClass('err');
+            } else {
+                $('.custom-checkbox').removeClass('err');
+            }
+        }
     });
     $('.date-div').click(function(){
         $('.div-cal').addClass("open-cal");
@@ -1304,6 +1311,15 @@ $(function(){
         $('.date-div').addClass("open-date");
         $('.date-icon').addClass("open-icon");
         $('#date').addClass("open-inp");
+    });
+    $('.custom-checkbox').click(function(){
+        if ($('.custom-checkbox').hasClass("checked")){
+            $('.custom-checkbox').removeClass("checked");
+            $('#agree').checked("false");
+        } else {
+            $('.custom-checkbox').addClass("checked");
+            $('#agree').checked("true");
+        }
     });
     $('.p_doctors_menu').on('afterChange',function(event,slick,currentSlide){
         var Morph = function( $btn, opts ) {

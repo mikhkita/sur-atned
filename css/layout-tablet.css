@@ -1838,6 +1838,11 @@ div.cs-select {
 .cs-select > span {
 	padding: 34px;
 }
+input.error {
+	border: none !important;
+	border-bottom: 2px solid #f00 !important;
+	box-shadow: none;
+}
 @media (-webkit-min-device-pixel-ratio: 1.5) {
 	.b-icon:before{
 	}
@@ -1847,4 +1852,18 @@ div.cs-select {
 }
 @media screen and (max-width: 1020px){
 
+}
+@media screen and (min-width: 768px) and (max-width: 980px) {
+	.b-popup {
+		width: 750px !important;
+	}
+	.left input {
+		width: 360px !important;
+	}
+	.left textarea {
+		width: 360px !important;
+	}
+	.b-popup .left {
+		width: 370px;
+	}
 }

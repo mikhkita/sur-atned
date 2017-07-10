@@ -83,21 +83,39 @@ $(document).ready(function(){
             $('#date').removeClass("open-inp");
         }
     });
-    $('.custom-checkbox').click(function(){
-        if ($('.custom-checkbox').hasClass("checked")){
-            $('.custom-checkbox').removeClass("checked");
+    $('#checkbox').click(function(event){
+        if ($('#checkbox').hasClass("checked")){
+            $('#checkbox').removeClass("checked");
             $('#agree').checked("false");
         } else {
-            $('.custom-checkbox').addClass("checked");
+            $('#checkbox').addClass("checked");
             $('#agree').checked("true");
+        }
+    });
+    $('#checkbox-2').click(function(event){
+        if ($('#checkbox-2').hasClass("checked")){
+            $('#checkbox-2').removeClass("checked");
+            $('#agree-2').checked("false");
+        } else {
+            $('#checkbox-2').addClass("checked");
+            $('#agree-2').checked("true");
         }
     });
     $('body').click(function(event){
         if ( $(event.target).hasClass("ajax") ) {
-            if ( !($('.custom-checkbox').hasClass("checked")) ) {
-                $('.custom-checkbox').addClass('err');
-            } else {
-                $('.custom-checkbox').removeClass('err');
+            if ( $('.zapis-na-priem .morphing-btn-clone').hasClass("morphing-btn-clone_visible") ) {
+                if ( !($('#checkbox').hasClass("checked")) ) {
+                    $('#checkbox').addClass('err');
+                } else {
+                    $('#checkbox').removeClass('err');
+                }
+            }
+            if ( $('.callback .morphing-btn-clone').hasClass("morphing-btn-clone_visible") ) {
+                if ( !($('#checkbox-2').hasClass("checked")) ) {
+                    $('#checkbox-2').addClass('err');
+                } else {
+                    $('#checkbox-2').removeClass('err');
+                }
             }
         }
     });
